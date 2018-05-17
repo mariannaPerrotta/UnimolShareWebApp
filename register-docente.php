@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>UnimolShare - Registrazione Studente</title>
+    <title>UnimolShare - Registrazione Docente</title>
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -19,7 +19,7 @@
 <body class="bg-dark">
 <div class="container">
     <div class="card card-register mx-auto mt-5">
-        <div class="card-header">Registra studente</div>
+        <div class="card-header">Registra docente</div>
         <div class="card-body">
             <form>
                 <div class="form-group">
@@ -42,7 +42,7 @@
                         </div>
                         <div class="col-md-6">
                             <label for="exampleInputMatricola">Matricola</label>
-                            <input class="form-control" id="exampleInputMatricola" type="matricola" placeholder="Inserisci matricola">
+                            <input class="form-control" id="exampleInputMatricola" type="text" aria-describedby="matricolaHelp" placeholder="Inserisci matricola">
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" href="login.html">Registrati come studente</a>
+                <a class="btn btn-primary btn-block" href="login.html">Registrati come docente</a>
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="login.html">Login</a>
