@@ -9,11 +9,11 @@
     <meta name="author" content="">
     <title>UnimolShare - Login</title>
     <!-- Bootstrap core CSS-->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="../css/sb-admin.css" rel="stylesheet">
 </head>
 
 <body class="bg-dark">
@@ -36,21 +36,21 @@
                             <input class="form-check-input" type="checkbox"> Memorizza password</label>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" href="index.html">Login</a>
+                <a class="btn btn-primary btn-block" href="index.php">Login</a>
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="register-studente.html">Registrati come studente</a>
                 <a class="d-block small" href="register-docente.html">Registrati come docente</a>
-                <a class="d-block small" href="forgot-password.html">Password dimenticata?</a>
+                <a class="d-block small" href="../forgot-password.html">Password dimenticata?</a>
             </div>
         </div>
     </div>
 </div>
 <!-- Bootstrap core JavaScript-->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 </body>
 
 </html>
