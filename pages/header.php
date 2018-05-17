@@ -24,9 +24,11 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
+
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-link" data-toggle="tooltip" data-placement="right" title="Charts">
           <?php echo(isset($action)&&($action=='home'))?>
-          <a href="index.php?action=home">
+          <a class="nav-link" href="index.php?action=home">
               <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Home</span>
           </a>

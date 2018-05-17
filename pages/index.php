@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+
+if (isset($_GET['action']))
+    $action = $_GET['action'];
+else
+    $action = 'home';
 ?>
 
 <html lang ="en">
@@ -22,11 +28,12 @@ session_start();
 
 <body>
 <div id="wrapper">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <?php
        include('./header.php');
     ?>
 
-
+</nav>
     <?php
     switch ($action){
         case 'home':
