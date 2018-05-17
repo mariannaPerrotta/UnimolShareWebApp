@@ -39,9 +39,9 @@
                 <a class="btn btn-primary btn-block" href="index.php">Login</a>
             </form>
             <div class="text-center">
-                <a class="d-block small mt-3" href="register-studente.html">Registrati come studente</a>
-                <a class="d-block small" href="register-docente.html">Registrati come docente</a>
-                <a class="d-block small" href="../forgot-password.html">Password dimenticata?</a>
+                <a class="d-block small mt-3" href="register-studente.php">Registrati come studente</a>
+                <a class="d-block small" href="register-docente.php">Registrati come docente</a>
+                <a class="d-block small" href="forgot-password.php">Password dimenticata?</a>
             </div>
         </div>
     </div>

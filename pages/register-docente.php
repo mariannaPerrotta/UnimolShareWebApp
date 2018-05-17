@@ -61,8 +61,8 @@
                 <a class="btn btn-primary btn-block" href="login.html">Registrati come docente</a>
             </form>
             <div class="text-center">
-                <a class="d-block small mt-3" href="login.html">Login</a>
-                <a class="d-block small" href="../forgot-password.html">Password dimenticata?</a>
+                <a class="d-block small mt-3" href="login.php">Login</a>
+                <a class="d-block small" href="forgot-password.php">Password dimenticata?</a>
             </div>
         </div>
     </div>

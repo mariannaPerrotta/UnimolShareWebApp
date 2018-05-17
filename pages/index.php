@@ -1,5 +1,5 @@
 <?php
-sension_stert();
+session_start();
 ?>
 
 <html lang ="en">
