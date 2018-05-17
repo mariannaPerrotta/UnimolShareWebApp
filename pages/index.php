@@ -29,7 +29,7 @@ sension_stert();
 
     <?php
     switch ($action){
-        case home:
+        case 'home':
             include 'home.php';
             break;
     }
