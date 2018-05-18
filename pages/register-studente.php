@@ -58,10 +58,10 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" href="login.html">Registrati come studente</a>
+                <a class="btn btn-primary btn-block" href="login.php">Registrati come studente</a>
             </form>
             <div class="text-center">
-                <a class="d-block small mt-3" href="login.html">Login</a>
+                <a class="d-block small mt-3" href="login.php">Login</a>
                 <a class="d-block small" href="forgot-password.php">Password dimenticata?</a>
             </div>
         </div>

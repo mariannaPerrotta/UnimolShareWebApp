@@ -29,11 +29,12 @@
         <div class="form-group">
           <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci indirizzo email">
         </div>
-        <a class="btn btn-primary btn-block" href="login.html">Recupera password</a>
+        <a class="btn btn-primary btn-block" href="login.php">Recupera password</a>
       </form>
       <div class="text-center">
-        <a class="d-block small mt-3" href="register.html">Registra account</a>
-        <a class="d-block small" href="login.html">Login</a>
+        <a class="d-block small mt-3" href="login.php">Login</a>
+        <a class="d-block small" href="register-studente.php">Registrati come studente</a>
+          <a class="d-block small" href="register-docente.php">Registrati come docente</a>
       </div>
     </div>
   </div>

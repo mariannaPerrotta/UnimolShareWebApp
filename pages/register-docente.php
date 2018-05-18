@@ -58,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" href="login.html">Registrati come docente</a>
+                <a class="btn btn-primary btn-block" href="login.php">Registrati come docente</a>
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="login.php">Login</a>
