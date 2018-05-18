@@ -36,7 +36,7 @@ document.getElementById("btnlogin").onclick= function () {
                 window.location.assign('index.php')// serve per cambiare pagina
 
             }
-            alert("OK " + data.error);
+
 
             console.log(data);
 
