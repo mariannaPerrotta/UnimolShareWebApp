@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -36,7 +36,8 @@
                             <input class="form-check-input" type="checkbox"> Memorizza password</label>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" href="index.php">Login</a>
+                <a class="btn btn-primary btn-block" id="btnlogin">Login</a>
+
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="register-studente.php">Registrati come studente</a>
@@ -50,7 +51,14 @@
 <script src="../vendor/jquery/jquery.min.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
+
 <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<script src="../js/login.js"></script>
+
+
+<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
 </body>
 
 </html>
