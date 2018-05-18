@@ -36,7 +36,7 @@
                             <input class="form-check-input" type="checkbox"> Memorizza password</label>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" id="btnlogin">Login</a>
+                <a class="btn btn-primary btn-block" style="color:white" id="btnlogin">Login</a>
 
             </form>
             <div class="text-center">
