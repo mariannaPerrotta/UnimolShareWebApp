@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-
+//gestione azioni
 if (isset($_GET['action']))
     $action = $_GET['action'];
 else
