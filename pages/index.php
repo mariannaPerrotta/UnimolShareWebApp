@@ -36,7 +36,7 @@ else
 </nav>
     <?php
     switch ($action){
-        case 'home':
+        case 'home' :
             include 'home.php';
             break;
     }

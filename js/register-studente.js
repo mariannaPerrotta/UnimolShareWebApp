@@ -39,8 +39,7 @@ document.getElementById("btnregister-studente").onclick= function () {
 
         data: data,
 
-        dataType:"json", //json perchè l'output deve essere un json
-
+        dataType:"json",
 
         success: function (data) {
 
