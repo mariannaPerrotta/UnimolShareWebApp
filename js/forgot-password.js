@@ -5,15 +5,11 @@ document.getElementById("btnforgot-password").onclick= function () {
 
     var email = $("#exampleInputEmail1").val();
 
-    var password =$("#exampleInputPassword1").val();
-
 // questo serve per mettere insieme i due input
 
     var data = {
 
         email: email,
-
-        password: password,
     };
 
 // qui chiamate il servizio
