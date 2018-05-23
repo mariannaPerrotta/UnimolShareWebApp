@@ -1,4 +1,3 @@
-//btnlogin è l'id del bottone login
 document.getElementById("btnlogin").onclick= function () {
 
 //input da dare al servizio, quelli nelle parentesi sono gli id dei reattangoli in cui inserite username e password
@@ -6,6 +5,8 @@ document.getElementById("btnlogin").onclick= function () {
     var email = $("#exampleInputEmail1").val();
 
     var password =$("#exampleInputPassword1").val();
+
+
 
 // questo serve per mettere insieme i due input
 
@@ -15,6 +16,7 @@ document.getElementById("btnlogin").onclick= function () {
 
         password: password,
     };
+
 
 // qui chiamate il servizio
 
@@ -32,8 +34,32 @@ document.getElementById("btnlogin").onclick= function () {
 // funzione che dice che è stato effettuato il servizio
         success: function (data) {
 //questo serve per vedere quando l'utente è autenticato
+
+
+
             if(data.error==false){
-                window.location.assign('index.php')// serve per cambiare pagina
+
+
+                $.ajax({
+                        url: "http://localhost/UnimolShareWebApp/pages/session.php",
+
+                        type: 'POST',
+
+                        data: ({matr: data.utente.matricola}),
+
+                        dataType: "html",
+
+                        success:function (data) {
+                            //alert("yes " + JSON.stringify(data));
+                            window.location.assign('index.php');
+
+                        }
+                    }
+
+
+                )
+
+                // serve per cambiare pagina
 
             }
 
@@ -53,7 +79,5 @@ document.getElementById("btnlogin").onclick= function () {
 
 
     });
-
-
 
 };

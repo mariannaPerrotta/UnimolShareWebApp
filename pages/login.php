@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +24,7 @@
     <div class="card card-login mx-auto mt-5">
         <div class="card-header">Login</div>
         <div class="card-body">
-            <form>
+            <form method="POST">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Indirizzo email</label>
                     <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">

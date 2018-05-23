@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,14 +26,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
 
-      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-link" data-toggle="tooltip" data-placement="right" title="Charts">
-          <?php echo(isset($action)&&($action=='home'))?>
-          <a class="nav-link" href="index.php?action=home">
-              <i class="fa fa-fw fa-dashboard"></i>
-            <span class="nav-link-text">Home</span>
-          </a>
-        </li>
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+            <li class="nav-link" data-toggle="tooltip" data-placement="right" title="Charts">
+                <a class="nav-link" href="index.php?action=home">
+
+                    <i class="fa fa-fw fa-dashboard"></i>
+                    <span class="nav-link-text">Home</span>
+                </a>
+            </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="../charts.html">
             <i class="fa fa-fw fa-area-chart"></i>
@@ -168,24 +169,15 @@
             </div>
           </form>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
-        </li>
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                  <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+          </li>
       </ul>
     </div>
   </nav>
   <div class="content-wrapper">
 
-    <!-- /.container-fluid-->
-    <!-- /.content-wrapper-->
-    <footer class="sticky-footer">
-      <div class="container">
-        <div class="text-center">
-          <small>Copyright © Your Website 2018</small>
-        </div>
-      </div>
-    </footer>
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
@@ -202,12 +194,13 @@
           </div>
           <div class="modal-body">Seleziona "Logout" se sei pronto a terminare la sessione corrente.</div>
           <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancella</button>
-            <a class="btn btn-primary" href="login.php">Logout</a>
+            <button class="btn btn-secondary" type="button" data-dismiss="modal" >Cancella</button>
+            <a class="btn btn-primary"  href="logout.php">Logout</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
     <!-- Bootstrap core JavaScript-->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -215,6 +208,12 @@
     <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="../js/sb-admin.min.js"></script>
+
+
+
+
+
+
     <!-- Custom scripts for this page-->
     <!-- Toggle between fixed and static navbar-->
     <script>
@@ -233,7 +232,7 @@
     });
 
     </script>
-  </div>
+
 </body>
 
 </html>

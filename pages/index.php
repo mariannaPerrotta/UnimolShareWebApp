@@ -1,12 +1,20 @@
 <?php
 session_start();
 
+if (empty($_SESSION['utente'])){
+
+    header("location: ./login.php");
+}
+  else{
 //gestione azioni
-if (isset($_GET['action']))
-    $action = $_GET['action'];
-else
-    $action = 'home';
+if (isset($_GET['action'])){
+    $action = $_GET['action'];}
+else{
+   // header("location: ./index.php");
+    $action = 'home';}
+  }
 ?>
+
 
 <html lang ="en">
 
@@ -27,11 +35,12 @@ else
 
 
 <body>
-<div id="wrapper">
-    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+<div >
+   <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <?php
        include('./header.php');
     ?>
+
 
 </nav>
     <?php
@@ -40,9 +49,6 @@ else
             include 'home.php';
             break;
 
-        case 'login' :
-            include 'login.php';
-            break;
     }
 
     ?>
@@ -63,5 +69,8 @@ else
 <!-- Custom scripts for this page-->
 <script src="../js/sb-admin-datatables.min.js"></script>
 <script src="../js/sb-admin-charts.min.js"></script>
+<script src="../js/login.js"></script>
+
+
 </body>
 </html>
