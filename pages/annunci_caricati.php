@@ -17,20 +17,31 @@
 </head>
 
 <body class="container">
-<!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
-    <div class="card mt-3 col-md-4">
-        <div class="card-body">
-            <form method="POST">
-                <div class="form-group">
-                        <label for="titolodocumento">Titolo documento:</label>
-                </div>
-                <div class="form-group">
-                        <label for="materiadocumento">Materia:</label>
-                </div>
-                <a class="btn btn-primary btn-block" style="color:white" id="btnvisualizzadocumento">Download documento</a>
-            </form>
-        </div>
+<!--fare for per visualizzare 1 carta per ogni annuncio con chiamata php-->
+<div class="card mt-3 col-md-4">
+    <div class="card-body">
+        <form method="POST">
+            <div class="form-group">
+                <label for="titololibro">Titolo libro:</label>
+            </div>
+            <div class="form-group">
+                <label for="autorelibro">Autore:</label>
+            </div>
+            <div class="form-group">
+                <label for="edizionelibro">Edizione:</label>
+            </div>
+            <div class="form-group">
+                <label for="prezzoannuncio">Prezzo:</label>
+            </div>
+            <div class="form-group">
+                <label for="casaeditrice">Casa editrice:</label>
+            </div>
+            <div class="form-group">
+                <label for="materia">Materia:</label>
+            </div>
+        </form>
     </div>
+</div>
 
 <!-- Bootstrap core JavaScript-->
 <script src="../vendor/jquery/jquery.min.js"></script>
