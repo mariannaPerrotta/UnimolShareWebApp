@@ -58,6 +58,7 @@
                         </div>
                     </div>
                 </div>
+                <!--- NON SO COME FAR CARICARE UN IMMAGINE A UN UTENTE--->
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
