@@ -33,8 +33,8 @@
       </form>
       <div class="text-center">
         <a class="d-block small mt-3" href="login.php">Login</a>
-        <a class="d-block small" href="register-studente.php">Registrati come studente</a>
-          <a class="d-block small" href="register-docente.php">Registrati come docente</a>
+        <a class="d-block small" href="registrazione_studente.php">Registrati come studente</a>
+          <a class="d-block small" href="registrazione_docente.php">Registrati come docente</a>
       </div>
     </div>
   </div>

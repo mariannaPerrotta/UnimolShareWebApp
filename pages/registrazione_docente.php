@@ -62,7 +62,7 @@
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="login.php">Login</a>
-                <a class="d-block small" href="forgot-password.php">Password dimenticata?</a>
+                <a class="d-block small" href="password_dimenticata.php">Password dimenticata?</a>
             </div>
         </div>
     </div>

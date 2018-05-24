@@ -19,7 +19,7 @@
 <body class="bg-dark">
 <div class="container">
     <div class="card card-register mx-auto mt-5">
-        <div class="card-header">Aggiungi documento Docente</div>
+        <div class="card-header">Aggiungi documento Studente</div>
         <div class="card-body">
             <form>
                 <div class="form-group">
@@ -33,7 +33,7 @@
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="exampleInputCodDocente">Codice Docente</label>
+                            <label for="exampleInputCodDocente">Codice studente</label>
                             <input class="form-control" id="exampleInputCodDocente" type="email" aria-describedby="CodDocenteHelp" placeholder="Inserisci Codice docente">
                         </div>
                     </div>
@@ -41,14 +41,20 @@
                 <div form="form-group">
                     <li class="nav-item" data-toggle="tooltip" title="Materie">
                         <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#ExampleMaterie" data-parent="#exampleAccordion">
-                                <span class="nav-link-text">Materie</span>
-                            </a>
-                            <ul class="sidenav-second-level collapse" id="ExampleMaterie">
-                                <li>
-                                    <a href="login.php">Matematica</a>
-                                </li>
-                            </ul>
-                        </div>
+                            <span class="nav-link-text">Materie</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="ExampleMaterie">
+                            <li>
+                                <a href="login.php">Matematica</a>
+                            </li>
+                            <li>
+                                <a href="login.php">Programmazione</a>
+                            </li>
+                            <li>
+                                <a href="login.php">Ingegneria del software</a>
+                            </li>
+                        </ul>
+                </div>
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
@@ -59,14 +65,14 @@
                 </div>
                 <div class = "form-group">
                     <div class = "form-row">
-                <a class="btn btn-primary btn-block" href="Aggiungi_documento_docente.php">Aggiungi</a>
+                        <a class="btn btn-primary btn-block" href="aggiungi_documento_studente.php">Aggiungi</a>
                     </div>
                 </div>
         </div>
-                </div>
-            </form>
-        </div>
     </div>
+    </form>
+</div>
+</div>
 </div>
 <!-- Bootstrap core JavaScript-->
 <script src="../vendor/jquery/jquery.min.js"></script>
