@@ -27,49 +27,73 @@
 
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-link" data-toggle="tooltip" data-placement="right" title="Charts">
+          <?php echo(isset($action)&&($action=='home'))?>
           <a class="nav-link" href="index.php?action=home">
-              <i class="fa fa-fw fa-home"></i>
+              <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Home</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="login.php">
-            <i class="fa fa-fw fa-arrow-right"></i>
-            <span class="nav-link-text">Login</span>
+          <a class="nav-link" href="../charts.html">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">Charts</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libri consigliati">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="../tables.html">
-            <i class="fa fa-fw fa-book"></i>
-            <span class="nav-link-text">Libri consigliati</span>
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">Tables</span>
           </a>
         </li>
 
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documenti">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-file"></i>
-            <span class="nav-link-text">Documenti</span>
+            <span class="nav-link-text">Example Pages</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-              <a href="login.php">Lista documenti</a>
+              <a href="login.php">Login Page</a>
             </li>
             <li>
-              <a href="register-docente.php">Documenti caricati</a>
+              <a href="register-docente.php">Registration Page</a>
+            </li>
+            <li>
+              <a href="../forgot-password.php">Forgot Password Page</a>
+            </li>
+            <li>
+              <a href="../blank.html">Blank Page</a>
             </li>
           </ul>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Annunci">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-sitemap"></i>
-            <span class="nav-link-text">Annunci</span>
+            <span class="nav-link-text">Menu Levels</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseMulti">
             <li>
-              <a href="#">Lista annunci</a>
+              <a href="#">Second Level Item</a>
             </li>
             <li>
-              <a href="#">Annunci caricati</a>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
+              <ul class="sidenav-third-level collapse" id="collapseMulti2">
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </li>
@@ -79,12 +103,6 @@
             <span class="nav-link-text">Link</span>
           </a>
         </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profilo">
-              <a class="nav-link" href="#">
-                  <i class="fa fa-fw fa-male"></i>
-                  <span class="nav-link-text">Profilo</span>
-              </a>
-          </li>
       </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
@@ -94,7 +112,17 @@
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
+
         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-bell"></i>
+            <span class="d-lg-none">Alerts
+              <span class="badge badge-pill badge-warning">6 New</span>
+            </span>
+            <span class="indicator text-warning d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
           <div class="dropdown-menu" aria-labelledby="alertsDropdown">
             <h6 class="dropdown-header">New Alerts:</h6>
             <div class="dropdown-divider"></div>
@@ -150,7 +178,44 @@
   <div class="content-wrapper">
 
     <!-- /.container-fluid-->
-
+      <div class="container">
+              <div class="card-header">Aggiungi documento Docente</div>
+                  <form>
+                      <div class="form-group">
+                          <div class="form-row">
+                              <div class="col-md-6 mt-5">
+                                  <label for="exampleInputTitolo">Titolo</label>
+                                  <input class="form-control" id="exampleInputTitolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci titolo">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="form-row">
+                              <div class="col-md-6">
+                                  <label for="exampleInputCodDocente">Codice Docente</label>
+                                  <input class="form-control" id="exampleInputCodDocente" type="email" aria-describedby="CodDocenteHelp" placeholder="Inserisci Codice docente">
+                              </div>
+                          </div>
+                      </div>
+                          <div class="form-group">
+                              <div class="form-row">
+                                      <div class="col-md-6">
+                                          <label for="exampleInputMatricola">Codice Materia</label>
+                                          <input class="form-control" id="exampleInputCodMateria" type="text" aria-describedby="CodMateriaHelp" placeholder="Inserisci Codice materia">
+                                      </div>
+                              </div>
+                          </div>
+                      <div class="form-group">
+                          <div class="form-row">
+                              <div class="col-md-6">
+                                  <label for="exampleInputLink">Link</label>
+                                  <input class="form-control" id="exampleInputLink" type="text" placeholder="Link">
+                              </div>
+                          </div>
+                      </div>
+                      <a class="btn btn-primary btn-block col-md-6 mt-5" href="home.php">Aggiungi</a>
+                  </form>
+      </div>
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
       <div class="container">

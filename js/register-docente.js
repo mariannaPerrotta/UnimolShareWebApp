@@ -1,5 +1,7 @@
+//btnlogin è l'id del bottone login
 document.getElementById("btnregister-docente").onclick= function () {
 
+//input da dare al servizio, quelli nelle parentesi sono gli id dei reattangoli in cui inserite i vari campi
 
     var nome = $("#exampleInputNome1").val();
 
@@ -13,6 +15,7 @@ document.getElementById("btnregister-docente").onclick= function () {
 
     var Conferma_password =$("#exampleConfirmPassword").val();
 
+// questo serve per mettere insieme i due input
 
     var data = {
 
@@ -29,6 +32,7 @@ document.getElementById("btnregister-docente").onclick= function () {
         conferma_pasword : conferma_password,
     };
 
+// qui chiamate il servizio
 
     $.ajax({
 
@@ -41,8 +45,9 @@ document.getElementById("btnregister-docente").onclick= function () {
         dataType:"json", //json perchè l'output deve essere un json
 
 
+// funzione che dice che è stato effettuato il servizio
         success: function (data) {
-
+//questo serve per vedere quando l'utente è autenticato
             if(data.error==false){
                 window.location.assign('index.php')// serve per cambiare pagina
 

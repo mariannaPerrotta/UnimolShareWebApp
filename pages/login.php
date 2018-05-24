@@ -23,8 +23,8 @@
         <div class="card-body">
             <form>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Indirizzo email</label>
-                    <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
+                    <label for="email">Indirizzo email</label>
+                    <input class="form-control" id="email" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
