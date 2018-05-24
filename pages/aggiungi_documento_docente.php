@@ -39,34 +39,52 @@
                     </div>
                 </div>
                 <div form="form-group">
-                    <li class="nav-item" data-toggle="tooltip" title="Materie">
-                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#ExampleMaterie" data-parent="#exampleAccordion">
-                                <span class="nav-link-text">Materie</span>
-                            </a>
-                            <ul class="sidenav-second-level collapse" id="ExampleMaterie">
-                                <li>
-                                    <a href="login.php">Matematica</a>
-                                </li>
-                            </ul>
-                        </div>
-                <div class="form-group">
                     <div class="form-row">
-                        <div class="col-md-6">
-                            <label for="exampleInputLink">Link</label>
-                            <input class="form-control" id="exampleInputLink" type="text" placeholder="Link">
-                        </div>
+                        <a class="nav-link nav-link-collapse" data-toggle="collapse" style="padding-top: 15px;padding-right: 10px;" href="#collapseMulti" data-parent="#exampleAccordion" aria-expanded="true">
+                            <i class="fa fa-fw fa-arrow-circle-down"></i>
+                        </a>
+                        <label style="padding-top: 15px;padding-bottom: 15px;" for="exampleInputCodDocente">Materie</label>
                     </div>
-                </div>
-                <div class = "form-group">
-                    <div class = "form-row">
-                <a class="btn btn-primary btn-block" href="aggiungi_documento_docente.php">Aggiungi</a>
-                    </div>
+
+                    <ul class="sidenav-second-level collapse show" id="collapseMulti" style="">
+                        <li>
+                            <a href="login.php">Matematica</a>
+                        </li>
+                        <li>
+                            <a href="login.php">Programmazione</a>
+                        </li>
+                        <li>
+                            <a href="login.php">Ingegneria del software</a>
+                        </li>
+                        <li>
+                            <a href="login.php">Calcolo numerico</a>
+                        </li>
+                        <li>
+                            <a href="login.php">Fisica</a>
+                        </li>
+                    </ul>
                 </div>
         </div>
+        <div class="form-group">
+            <div class="form-row" style="margin-right: 25px; margin-left: 25px;">
+                <a class="btn btn-primary btn-block" href="login.php">Link utili</a>
+            </div>
+        </div>
+        <div class = "form-group">
+            <<<<<<< HEAD:pages/Aggiungi_documento_docente.php
+            <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
+                <a class="btn btn-primary btn-block" href="Aggiungi_documento_docente.php">Aggiungi</a>
+                =======
+                <div class = "form-row">
+                    <a class="btn btn-primary btn-block" href="aggiungi_documento_docente.php">Aggiungi</a>
+                    >>>>>>> origin/master:pages/aggiungi_documento_docente.php
                 </div>
-            </form>
+            </div>
         </div>
     </div>
+    </form>
+</div>
+</div>
 </div>
 <!-- Bootstrap core JavaScript-->
 <script src="../vendor/jquery/jquery.min.js"></script>
