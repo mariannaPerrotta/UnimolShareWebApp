@@ -66,7 +66,7 @@
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Annunci">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-hand-paper-o"></i>
+            <i class="fa fa-fw fa-paper-plane"></i>
             <span class="nav-link-text">Annunci</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseMulti">
@@ -79,10 +79,7 @@
             <li>
               <a href="#">Lista annunci</a>
             </li>
-            <li>
-              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
-            </li>
-          </ul>
+            </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
           <a class="nav-link" href="#">
