@@ -70,6 +70,10 @@ else{
 <script src="../js/sb-admin-datatables.min.js"></script>
 <script src="../js/sb-admin-charts.min.js"></script>
 <script src="../js/login.js"></script>
+<script src="../js/forgot-password.js"></script>
+<script src="../js/register-docente.js"></script>
+<script src="../js/register-studente.js"></script>
+<script src="../js/Aggiungi_documento_docente.js"></script>
 
 
 </body>
