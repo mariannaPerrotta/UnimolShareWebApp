@@ -54,10 +54,10 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-              <a href="aggiungi_documento_studente.php">Aggiungi documento</a>
+              <a href="Aggiungi_documento_studente.php">Aggiungi documento</a>
             </li>
             <li>
-              <a href="registrazione_docente.php">Documenti caricati</a>
+              <a href="documenti_caricati.php.php">Documenti caricati</a>
             </li>
             <li>
               <a href="../forgot-password.php">Lista documenti</a>

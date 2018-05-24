@@ -6,7 +6,7 @@ if (empty($_SESSION['utente'])){
     header("location: ./login.php");
 }
   else{
-//gestione azioni
+    //gestione azioni
 if (isset($_GET['action'])){
     $action = $_GET['action'];}
 else{
@@ -48,7 +48,6 @@ else{
         case 'home' :
             include 'home.php';
             break;
-
     }
 
     ?>
