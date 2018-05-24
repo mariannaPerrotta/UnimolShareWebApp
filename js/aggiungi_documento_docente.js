@@ -47,6 +47,7 @@ document.getElementById("btnaggiungidocumento").onclick= function () {
 
 
     });
+}
 
 
 
