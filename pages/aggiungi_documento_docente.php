@@ -71,13 +71,8 @@
             </div>
         </div>
         <div class = "form-group">
-            <<<<<<< HEAD:pages/Aggiungi_documento_docente.php
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
                 <a class="btn btn-primary btn-block" href="Aggiungi_documento_docente.php">Aggiungi</a>
-                =======
-                <div class = "form-row">
-                    <a class="btn btn-primary btn-block" href="aggiungi_documento_docente.php">Aggiungi</a>
-                    >>>>>>> origin/master:pages/aggiungi_documento_docente.php
                 </div>
             </div>
         </div>
