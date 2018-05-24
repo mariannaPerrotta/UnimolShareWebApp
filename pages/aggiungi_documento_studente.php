@@ -65,7 +65,7 @@
                 </div>
                 <div class = "form-group">
                     <div class = "form-row">
-                        <a class="btn btn-primary btn-block" href="Aggiungi_documento_studente.php">Aggiungi</a>
+                        <a class="btn btn-primary btn-block" href="aggiungi_documento_studente.php">Aggiungi</a>
                     </div>
                 </div>
         </div>
