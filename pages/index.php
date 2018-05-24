@@ -48,7 +48,12 @@ else{
         case 'home' :
             include 'home.php';
             break;
-
+        case 'add' :
+            include 'Aggiungi_documento_docente.php';
+            break;
+             case 'profilo' :
+                 include 'profilo.php';
+                 break;
     }
 
     ?>

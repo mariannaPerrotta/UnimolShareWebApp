@@ -35,7 +35,7 @@
                 </a>
             </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profilo">
-          <a class="nav-link" href="login.php">
+          <a class="nav-link" href="index.php?action=profilo">
             <i class="fa fa-fw fa-male"></i>
             <span class="nav-link-text">Profilo</span>
           </a>
