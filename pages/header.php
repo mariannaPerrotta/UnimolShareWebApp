@@ -49,15 +49,15 @@
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documenti">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-file-archive-o"></i>
+            <i class="fa fa-fw fa-file"></i>
             <span class="nav-link-text">Documenti</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-              <a href="Aggiungi_documento_studente.php">Aggiungi documento</a>
+              <a href="aggiungi_documento_studente.php">Aggiungi documento</a>
             </li>
             <li>
-              <a href="register-docente.php">Documenti caricati</a>
+              <a href="registrazione_docente.php">Documenti caricati</a>
             </li>
             <li>
               <a href="../forgot-password.php">Lista documenti</a>
@@ -99,7 +99,7 @@
         <li class="nav-item">
           <form class="form-inline my-2 my-lg-0 mr-lg-2">
             <div class="input-group">
-              <input class="form-control" type="text" placeholder="Search for...">
+              <input class="form-control" type="text" placeholder="Ricerca">
               <span class="input-group-append">
                 <button class="btn btn-primary" type="button">
                   <i class="fa fa-search"></i>
