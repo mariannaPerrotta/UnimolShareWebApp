@@ -48,6 +48,10 @@ else{
         case 'home' :
             include 'home.php';
             break;
+        case 'aggiungi_documento_studente' :
+            include 'aggiungi_documento_studente.php';
+            break;
+
 
     }
 
