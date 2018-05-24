@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,51 +26,75 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
 
-      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-link" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="index.php?action=home">
-              <i class="fa fa-fw fa-home"></i>
-            <span class="nav-link-text">Home</span>
-          </a>
-        </li>
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+            <li class="nav-link" data-toggle="tooltip" data-placement="right" title="Charts">
+                <a class="nav-link" href="index.php?action=home">
+
+                    <i class="fa fa-fw fa-dashboard"></i>
+                    <span class="nav-link-text">Home</span>
+                </a>
+            </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="login.php">
-            <i class="fa fa-fw fa-arrow-right"></i>
-            <span class="nav-link-text">Login</span>
+          <a class="nav-link" href="../charts.html">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">Charts</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libri consigliati">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="../tables.html">
-            <i class="fa fa-fw fa-book"></i>
-            <span class="nav-link-text">Libri consigliati</span>
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">Tables</span>
           </a>
         </li>
 
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documenti">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-file"></i>
-            <span class="nav-link-text">Documenti</span>
+            <span class="nav-link-text">Example Pages</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-              <a href="login.php">Lista documenti</a>
+              <a href="login.php">Login Page</a>
             </li>
             <li>
-              <a href="register-docente.php">Documenti caricati</a>
+              <a href="register-docente.php">Registration Page</a>
+            </li>
+            <li>
+              <a href="../forgot-password.php">Forgot Password Page</a>
+            </li>
+            <li>
+              <a href="../blank.html">Blank Page</a>
             </li>
           </ul>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Annunci">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-sitemap"></i>
-            <span class="nav-link-text">Annunci</span>
+            <span class="nav-link-text">Menu Levels</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseMulti">
             <li>
-              <a href="#">Lista annunci</a>
+              <a href="#">Second Level Item</a>
             </li>
             <li>
-              <a href="#">Annunci caricati</a>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
+              <ul class="sidenav-third-level collapse" id="collapseMulti2">
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </li>
@@ -79,12 +104,6 @@
             <span class="nav-link-text">Link</span>
           </a>
         </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profilo">
-              <a class="nav-link" href="#">
-                  <i class="fa fa-fw fa-male"></i>
-                  <span class="nav-link-text">Profilo</span>
-              </a>
-          </li>
       </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
@@ -94,7 +113,17 @@
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
+
         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-bell"></i>
+            <span class="d-lg-none">Alerts
+              <span class="badge badge-pill badge-warning">6 New</span>
+            </span>
+            <span class="indicator text-warning d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
           <div class="dropdown-menu" aria-labelledby="alertsDropdown">
             <h6 class="dropdown-header">New Alerts:</h6>
             <div class="dropdown-divider"></div>
@@ -140,25 +169,15 @@
             </div>
           </form>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
-        </li>
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                  <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+          </li>
       </ul>
     </div>
   </nav>
   <div class="content-wrapper">
 
-    <!-- /.container-fluid-->
-
-    <!-- /.content-wrapper-->
-    <footer class="sticky-footer">
-      <div class="container">
-        <div class="text-center">
-          <small>Copyright © Your Website 2018</small>
-        </div>
-      </div>
-    </footer>
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
@@ -175,12 +194,13 @@
           </div>
           <div class="modal-body">Seleziona "Logout" se sei pronto a terminare la sessione corrente.</div>
           <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancella</button>
-            <a class="btn btn-primary" href="login.php">Logout</a>
+            <button class="btn btn-secondary" type="button" data-dismiss="modal" >Cancella</button>
+            <a class="btn btn-primary"  href="logout.php">Logout</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
     <!-- Bootstrap core JavaScript-->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -188,6 +208,12 @@
     <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="../js/sb-admin.min.js"></script>
+
+
+
+
+
+
     <!-- Custom scripts for this page-->
     <!-- Toggle between fixed and static navbar-->
     <script>
@@ -206,7 +232,7 @@
     });
 
     </script>
-  </div>
+
 </body>
 
 </html>
