@@ -21,8 +21,8 @@
 <div class="content-wrapper">
 <div class="card card-register mx-auto mt-5" style="border-color: #007bff; border-radius: 3%">
     <div class="card-body">
-        <form method="POST">
-            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 60%; color:white; " id="btnrimuoviannuncio">
+        <form method="POST" style="padding-left: 20px;">
+            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0px;color:white;width: 114px; " id="btnrimuoviannuncio">
                 <i class="fa fa-fw fa-minus-circle"></i>
                 <label for="rimuoviannuncio" style="padding-left: auto">Rimuovi</label>
             </a>

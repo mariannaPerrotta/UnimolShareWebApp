@@ -66,7 +66,7 @@
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px; color: #bd2130">
-                <a>I campi con * sono obbligatori</a>
+                <a>* campi obbligatori</a>
             </div>
         </div>
     </div>
