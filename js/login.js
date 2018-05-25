@@ -40,6 +40,7 @@ document.getElementById("btnlogin").onclick= function () {
             if(data.error==false){
 
 
+                var tabella= data.utente.tabella;
                 $.ajax({
                         url: "http://localhost/UnimolShareWebApp/pages/session.php",
 
@@ -50,14 +51,42 @@ document.getElementById("btnlogin").onclick= function () {
                         dataType: "html",
 
                         success:function (data) {
-                            //alert("yes " + JSON.stringify(data));
-                            window.location.assign('index.php');
+                             alert("yes " + JSON.stringify(data));
+                            // window.location.assign('index.php');
+
+
+                            $.ajax({
+                                    url: "http://localhost/UnimolShareWebApp/pages/utente.php",
+
+                                    type: 'POST',
+
+                                    data: ({tab: tabella}),
+
+                                    dataType: "html",
+
+                                    success:function (data) {
+                                         alert("yes " + JSON.stringify(data));
+                                        if( data=="studente"){
+                                            window.location.assign('index.php');
+                                        }
+                                        if( data=="docente"){
+                                            window.location.assign('index_doc.php');
+                                        }
+
+                                    }
+                                }
+
+
+                            )
 
                         }
                     }
 
 
                 )
+
+
+
 
                 // serve per cambiare pagina
 

@@ -9,11 +9,11 @@
     <meta name="author" content="">
     <title>UnimolShare - Aggiungi documento</title>
     <!-- Bootstrap core CSS-->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
-    <link href="../css/sb-admin.css" rel="stylesheet">
+    <link href="../../css/sb-admin.css" rel="stylesheet">
 </head>
 
 <body class="bg-dark">
@@ -48,26 +48,26 @@
 
                     <ul class="sidenav-second-level collapse show" id="collapseMulti" style="">
                         <li>
-                            <a href="login.php">Matematica</a>
+                            <a href="../login.php">Matematica</a>
                         </li>
                         <li>
-                            <a href="login.php">Programmazione</a>
+                            <a href="../login.php">Programmazione</a>
                         </li>
                         <li>
-                            <a href="login.php">Ingegneria del software</a>
+                            <a href="../login.php">Ingegneria del software</a>
                         </li>
                         <li>
-                            <a href="login.php">Calcolo numerico</a>
+                            <a href="../login.php">Calcolo numerico</a>
                         </li>
                         <li>
-                            <a href="login.php">Fisica</a>
+                            <a href="../login.php">Fisica</a>
                         </li>
                     </ul>
                 </div>
         </div>
         <div class="form-group">
             <div class="form-row" style="margin-right: 25px; margin-left: 25px;">
-                <a class="btn btn-primary btn-block" href="login.php">Link utili</a>
+                <a class="btn btn-primary btn-block" href="../login.php">Link utili</a>
             </div>
         </div>
         <div class = "form-group">
@@ -82,10 +82,10 @@
 </div>
 </div>
 <!-- Bootstrap core JavaScript-->
-<script src="../vendor/jquery/jquery.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../vendor/jquery/jquery.min.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
-<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 </body>
 
 </html>

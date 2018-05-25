@@ -26,8 +26,8 @@ session_start();
         <div class="card-body">
             <form method="POST">
                 <div class="form-group">
-                    <label for="email">Indirizzo email</label>
-                    <input class="form-control" id="email" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
+                    <label for="exampleInputEmail1">Indirizzo email</label>
+                    <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
@@ -43,8 +43,8 @@ session_start();
 
             </form>
             <div class="text-center">
-                <a class="d-block small mt-3" href="registrazione_studente.php">Registrati come studente</a>
-                <a class="d-block small" href="registrazione_docente.php">Registrati come docente</a>
+                <a class="d-block small mt-3" href="Studente/registrazione_studente.php">Registrati come studente</a>
+                <a class="d-block small" href="Docente/registrazione_docente.php">Registrati come docente</a>
                 <a class="d-block small" href="password_dimenticata.php">Password dimenticata?</a>
             </div>
         </div>
