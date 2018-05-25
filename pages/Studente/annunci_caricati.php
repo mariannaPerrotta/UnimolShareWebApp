@@ -9,19 +9,20 @@
     <meta name="author" content="">
     <title>UnimolShare - I tuoi documenti</title>
     <!-- Bootstrap core CSS-->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
-    <link href="../css/sb-admin.css" rel="stylesheet">
+    <link href="../../css/sb-admin.css" rel="stylesheet">
 </head>
 
-<body class="container">
+<body class="container bg-dark">
 <!--fare for per visualizzare 1 carta per ogni annuncio con chiamata php-->
-<div class="card mt-3 col-md-4">
+
+<div class="card mt-3 col-md-4"style="border-color: #007bff; border-radius: 3%">
     <div class="card-body">
         <form method="POST">
-            <div class="form-group">
+            <div class="form-group mt-3">
                 <label for="titololibro">Titolo libro:</label>
             </div>
             <div class="form-group">
@@ -44,16 +45,16 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<script src="../vendor/jquery/jquery.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../vendor/jquery/jquery.min.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
 
-<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<script src="../js/login.js"></script>
+<script src="../../js/login.js"></script>
 
 
-<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 </body>
 
