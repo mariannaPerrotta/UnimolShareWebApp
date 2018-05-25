@@ -10,11 +10,11 @@
   <meta name="author" content="">
   <title>UnimolShare</title>
   <!-- Bootstrap core CSS-->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
-  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
-  <link href="../css/sb-admin.css" rel="stylesheet">
+  <link href="../../css/sb-admin.css" rel="stylesheet">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -41,7 +41,7 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libri consigliati">
-          <a class="nav-link" href="../tables.html">
+          <a class="nav-link" href="../../tables.html">
             <i class="fa fa-fw fa-book"></i>
             <span class="nav-link-text">Libri Consigliati</span>
           </a>
@@ -57,7 +57,7 @@
               <a href="aggiungi_documento_studente.php">Aggiungi documento</a>
             </li>
             <li>
-              <a href="registrazione_docente.php">Documenti caricati</a>
+              <a href="../Docente/registrazione_docente.php">Documenti caricati</a>
             </li>
             <li>
               <a href="../forgot-password.php">Lista documenti</a>
@@ -134,19 +134,19 @@
           <div class="modal-body">Seleziona "Logout" se sei pronto a terminare la sessione corrente.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal" >Cancella</button>
-            <a class="btn btn-primary"  href="logout.php">Logout</a>
+            <a class="btn btn-primary"  href="../logout.php">Logout</a>
           </div>
         </div>
       </div>
     </div>
   </div>
     <!-- Bootstrap core JavaScript-->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Core plugin JavaScript-->
-    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->
-    <script src="../js/sb-admin.min.js"></script>
+    <script src="../../js/sb-admin.min.js"></script>
 
 
 
