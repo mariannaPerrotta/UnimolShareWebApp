@@ -3,7 +3,7 @@ session_start();
 
 if (empty($_SESSION['utente'])){
 
-    header("location: ./login.php");
+    header("location: ../login.php");
 }
   else{
 //gestione azioni

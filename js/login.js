@@ -28,14 +28,12 @@ document.getElementById("btnlogin").onclick= function () {
 
         data: data,
 
-        dataType:"html", //json perchè l'output deve essere un json
+        dataType:"json", //json perchè l'output deve essere un json
 
 
 // funzione che dice che è stato effettuato il servizio
         success: function (data) {
 //questo serve per vedere quando l'utente è autenticato
-
-            alert("yes " + JSON.stringify(data));
 
             if(data.error==false){
 
@@ -67,10 +65,10 @@ document.getElementById("btnlogin").onclick= function () {
                                     success:function (data) {
                                          alert("yes " + JSON.stringify(data));
                                         if( data=='studente'){
-                                            window.location.assign('../Studente/index.php');
+                                            window.location.assign('Studente/index.php');
                                         }
                                         if( data=="docente"){
-                                            window.location.assign('index_doc.php');
+                                            window.location.assign('Docente/index_doc.php');
                                         }
 
                                     }
