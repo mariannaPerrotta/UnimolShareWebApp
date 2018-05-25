@@ -18,8 +18,8 @@
 
 <body class="container bg-dark">
 <!--fare for per visualizzare 1 carta per ogni annuncio con chiamata php-->
-
-<div class="card mt-3 col-md-4"style="border-color: #007bff; border-radius: 3%">
+<div class="content-wrapper">
+<div class="card card-register mx-auto mt-5" style="border-color: #007bff; border-radius: 3%">
     <div class="card-body">
         <form method="POST">
             <a class="btn btn-primary btn-block ml-auto" style="padding-left: 60%; color:white; " id="btnrimuoviannuncio">
@@ -47,7 +47,7 @@
         </form>
     </div>
 </div>
-
+</div>
 <!-- Bootstrap core JavaScript-->
 <script src="../../vendor/jquery/jquery.min.js"></script>
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

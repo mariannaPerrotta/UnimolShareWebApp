@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>UnimolShare - Aggiungi documento</title>
+    <title>UnimolShare - I tuoi annunci</title>
     <!-- Bootstrap core CSS-->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -16,8 +16,7 @@
     <link href="../../css/sb-admin.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
-<div class="container">
+<div class="content-wrapper" id="page-wrapper">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Aggiungi documento Studente</div>
         <div class="card-body">
@@ -65,11 +64,3 @@
         </div>
     </div>
 
-<!-- Bootstrap core JavaScript-->
-<script src="../../vendor/jquery/jquery.min.js"></script>
-<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- Core plugin JavaScript-->
-<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
-</body>
-
-</html>

@@ -35,7 +35,7 @@ else{
 
 
 <body>
-<div >
+<div>
    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <?php
        include('./header.php');
@@ -48,23 +48,17 @@ else{
         case 'home' :
             include 'home.php';
             break;
-        case 'aggiungi_documento_studente' :
+        case 'documentoStudente' :
             include 'aggiungi_documento_studente.php';
             break;
-        case 'home' :
-            include 'home.php';
-            break;
-        case 'aggiungi_documento_studente' :
-            include 'aggiungi_documento_studente.php';
-            break;
-        case 'aggiungi_documento_annuncio' :
+        case 'aggiungiAnnuncio' :
             include 'aggiungi_annuncio.php';
             break;
-        case 'segnala_profilo' :
-            include 'segnala_profilo.php';
+        case 'annunciiCaricati' :
+            include 'annunci_caricati.php';
             break;
-        case 'registrazione_studente' :
-            include 'registrazione_studente.php';
+        case 'segnalaProfilo' :
+            include 'segnala_profilo.php';
             break;
 
     }

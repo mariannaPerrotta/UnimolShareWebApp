@@ -17,7 +17,7 @@
 </head>
 
 <body class="bg-dark">
-<div class="container">
+<div class="content-wrapper">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Aggiungi annuncio</div>
         <div class="card-body">
