@@ -21,13 +21,18 @@
 <div class="card mt-3 col-md-4" style="border-color: #007bff; border-radius: 3%" >
     <div class="card-body">
         <form method="POST">
-            <div class="form-group">
+            <div class="form-group" style="padding-top: 1%; padding-left: 70%">
+                <i class="fa fa-fw fa-minus-circle mt-3"></i>
+                <label for="rimuovidocumento" style="padding-left: auto">Rimuovi</label>
+            </div>
+            <div class="form-group mt-4">
                 <label for="titolodocumento">Titolo documento:</label>
             </div>
             <div class="form-group">
                 <label for="materiadocumento">Materia:</label>
             </div>
             <a class="btn btn-primary btn-block" style="color:white" id="btnvisualizzadocumento">Download documento</a>
+
         </form>
     </div>
 </div>
