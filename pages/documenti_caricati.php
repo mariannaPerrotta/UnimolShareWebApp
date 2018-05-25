@@ -16,21 +16,21 @@
     <link href="../css/sb-admin.css" rel="stylesheet">
 </head>
 
-<body class="container">
+<body class="container bg-dark">
 <!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
-    <div class="card mt-3 col-md-4">
-        <div class="card-body">
-            <form method="POST">
-                <div class="form-group">
-                        <label for="titolodocumento">Titolo documento:</label>
-                </div>
-                <div class="form-group">
-                        <label for="materiadocumento">Materia:</label>
-                </div>
-                <a class="btn btn-primary btn-block" style="color:white" id="btnvisualizzadocumento">Download documento</a>
-            </form>
-        </div>
+<div class="card mt-3 col-md-4" style="border-color: #007bff; border-radius: 3%" >
+    <div class="card-body">
+        <form method="POST">
+            <div class="form-group">
+                <label for="titolodocumento">Titolo documento:</label>
+            </div>
+            <div class="form-group">
+                <label for="materiadocumento">Materia:</label>
+            </div>
+            <a class="btn btn-primary btn-block" style="color:white" id="btnvisualizzadocumento">Download documento</a>
+        </form>
     </div>
+</div>
 
 <!-- Bootstrap core JavaScript-->
 <script src="../vendor/jquery/jquery.min.js"></script>
