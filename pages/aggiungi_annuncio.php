@@ -58,15 +58,6 @@
                         </div>
                     </div>
                 </div>
-                <!--- NON SO COME FAR CARICARE UN IMMAGINE A UN UTENTE--->
-                <div class="form-group">
-                    <div class="form-row">
-                        <div class="col-md-6">
-                            <label for="exampleInputMateria">Immagine</label>
-                            <input class="form-control" id="exampleInputImmagine" type="text" aria-describedby="ImmagineHelp" placeholder="Inserisci immagine">
-                        </div>
-                    </div>
-                </div>
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
