@@ -52,7 +52,7 @@ else{
             include 'aggiungi_documento_studente.php';
             break;
         case 'aggiungi_documento_annuncio' :
-            include 'aggiungi_documento_annuncio.php';
+            include 'aggiungi_annuncio.php';
             break;
         case 'segnala_profilo' :
             include 'segnala_profilo.php';
