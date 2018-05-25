@@ -22,20 +22,20 @@ document.getElementById("btnlogin").onclick= function () {
 
     $.ajax({
 
-        url: "http://localhost/UnimolShare/public/login",
+        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/login",
 
         type: 'POST',
 
         data: data,
 
-        dataType:"json", //json perchè l'output deve essere un json
+        dataType:"html", //json perchè l'output deve essere un json
 
 
 // funzione che dice che è stato effettuato il servizio
         success: function (data) {
 //questo serve per vedere quando l'utente è autenticato
 
-
+            alert("yes " + JSON.stringify(data));
 
             if(data.error==false){
 
@@ -66,8 +66,8 @@ document.getElementById("btnlogin").onclick= function () {
 
                                     success:function (data) {
                                          alert("yes " + JSON.stringify(data));
-                                        if( data=="studente"){
-                                            window.location.assign('index.php');
+                                        if( data=='studente'){
+                                            window.location.assign('../Studente/index.php');
                                         }
                                         if( data=="docente"){
                                             window.location.assign('index_doc.php');
