@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>UnimolShare - I tuoi documenti</title>
+    <title>UnimolShare - I tuoi annunci</title>
     <!-- Bootstrap core CSS-->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -22,6 +22,10 @@
 <div class="card mt-3 col-md-4"style="border-color: #007bff; border-radius: 3%">
     <div class="card-body">
         <form method="POST">
+            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 60%; color:white; " id="btnrimuoviannuncio">
+                <i class="fa fa-fw fa-minus-circle"></i>
+                <label for="rimuoviannuncio" style="padding-left: auto">Rimuovi</label>
+            </a>
             <div class="form-group mt-3">
                 <label for="titololibro">Titolo libro:</label>
             </div>
