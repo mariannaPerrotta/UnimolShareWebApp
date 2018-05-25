@@ -54,11 +54,11 @@ else{
         case 'aggiungi_documento_annuncio' :
             include 'aggiungi_documento_annuncio.php';
             break;
-        case 'registrazione_studente' :
-            include 'registrazione_studente.php';
-            break;
         case 'segnala_profilo' :
             include 'segnala_profilo.php';
+            break;
+        case 'registrazione_studente' :
+            include 'registrazione_studente.php';
             break;
 
 
