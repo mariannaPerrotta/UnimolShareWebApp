@@ -13,10 +13,10 @@
     <!-- Custom fonts for this template-->
     <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
-    <link href="../../css/sb-admin.css" rel="stylesheet">
+    <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<div class="content-wrapper" id="page-wrapper">
+<div class="content-wrapper">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Aggiungi documento Studente</div>
         <div class="card-body">
