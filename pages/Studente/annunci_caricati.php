@@ -18,11 +18,11 @@
 
 <body class="container bg-dark">
 <!--fare for per visualizzare 1 carta per ogni annuncio con chiamata php-->
-<div class="content-wrapper">
+<div class="content-wrapper bg-dark">
 <div class="card card-register mx-auto mt-5" style="border-color: #007bff; border-radius: 3%">
     <div class="card-body">
-        <form method="POST" style="padding-left: 20px;">
-            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0px;color:white;width: 114px; " id="btnrimuoviannuncio">
+        <form method="POST" style="padding-left: 5%;">
+            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 20%; " id="btnrimuoviannuncio">
                 <i class="fa fa-fw fa-minus-circle"></i>
                 <label for="rimuoviannuncio" style="padding-left: auto">Rimuovi</label>
             </a>

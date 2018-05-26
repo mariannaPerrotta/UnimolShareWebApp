@@ -20,11 +20,11 @@
 <!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
 <div class="card mt-3 col-md-4" style="border-color: #007bff; border-radius: 3%" >
     <div class="card-body">
-        <form method="POST">
-            <div class="form-group" style="padding-top: 1%; padding-left: 70%">
-                <i class="fa fa-fw fa-minus-circle mt-3"></i>
-                <label for="rimuovidocumento" style="padding-left: auto">Rimuovi</label>
-            </div>
+        <form method="POST" style="padding-left: 0.25%">
+            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuoviannuncio">
+                <i class="fa fa-fw fa-minus-circle"></i>
+                <label for="rimuoviannuncio" style="padding-left: auto">Rimuovi</label>
+            </a>
             <div class="form-group mt-4">
                 <label for="titolodocumento">Titolo documento:</label>
             </div>
