@@ -19,7 +19,7 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" >
-    <a class="navbar-brand" href="index.php">UnimolShare</a>
+    <a class="navbar-brand" href="index_doc.php">UnimolShare</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,25 +27,24 @@
 
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
             <li class="nav-link" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="index.php?action=home">
+                <a class="nav-link" href="index_doc.php?action=home">
 
                     <i class="fa fa-fw fa-home"></i>
                     <span class="nav-link-text">Home</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profilo">
-                <a class="nav-link" href="index.php?action=profilo">
-                    <i class="fa fa-fw fa-user-circle-o"></i>
+                <a class="nav-link" href="index_doc.php?action=profilo">
+                    <i class="fa fa-fw fa-male"></i>
                     <span class="nav-link-text">Profilo</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libri scelti">
-                <a class="nav-link" href="../tables.html">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libri consigliati">
+                <a class="nav-link" href="libri_caricati.php">
                     <i class="fa fa-fw fa-book"></i>
-                    <span class="nav-link-text">Libri Scelti</span>
+                    <span class="nav-link-text">Libri che hai consigliato</span>
                 </a>
             </li>
-
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documenti">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-file"></i>
@@ -53,14 +52,11 @@
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
                     <li>
-                        <?php echo (isset($action) && $action == 'documentoStudente') ? "<li class=\"active\">" : "<li class=\"\">"; ?>
-                        <a href="index.php?action=documentoStudente">Aggiungi documento</a>
+                        <?php echo (isset($action) && $action == 'documentoDocente') ? "<li class=\"active\">" : "<li class=\"\">"; ?>
+                        <a href="index_doc.php?action=documentoStudente">Aggiungi documento</a>
                     </li>
                     <li>
                         <a href="registrazione_docente.php">Documenti caricati</a>
-                    </li>
-                    <li>
-                        <a href="../forgot-password.php">Lista documenti</a>
                     </li>
                 </ul>
             </li>
