@@ -21,9 +21,9 @@
 <div class="card mt-3 col-md-4" style="border-color: #007bff; border-radius: 3%" >
     <div class="card-body">
         <form method="POST" style="padding-left: 0.25%">
-            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuoviannuncio">
+            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuovidocumento">
                 <i class="fa fa-fw fa-minus-circle"></i>
-                <label for="rimuoviannuncio" style="padding-left: auto">Rimuovi</label>
+                <label for="rimuovidocumento" style="padding-left: auto">Rimuovi</label>
             </a>
             <div class="form-group mt-4">
                 <label for="titolodocumento">Titolo documento:</label>
