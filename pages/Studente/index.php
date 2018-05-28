@@ -91,7 +91,6 @@ else{
 <script src="../js/forgot-password.js"></script>
 <script src="../js/register-docente.js"></script>
 <script src="../js/register-studente.js"></script>
-<script src="../js/Aggiungi_documento_docente.js"></script>
 
 
 </body>
