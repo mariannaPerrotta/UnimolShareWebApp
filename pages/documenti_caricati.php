@@ -13,21 +13,26 @@
     <!-- Custom fonts for this template-->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
-    <link href="../css/sb-admin.css" rel="stylesheet">
+    <link href="../css/c.css" rel="stylesheet">
 </head>
 
 <body class="container bg-dark">
 <!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
 <div class="card mt-3 col-md-4" style="border-color: #007bff; border-radius: 3%" >
     <div class="card-body">
-        <form method="POST">
-            <div class="form-group">
+        <form method="POST" style="padding-left: 0.25%">
+            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuovidocumento">
+                <i class="fa fa-fw fa-minus-circle"></i>
+                <label for="rimuovidocumento" style="padding-left: auto">Rimuovi</label>
+            </a>
+            <div class="form-group mt-4">
                 <label for="titolodocumento">Titolo documento:</label>
             </div>
             <div class="form-group">
                 <label for="materiadocumento">Materia:</label>
             </div>
             <a class="btn btn-primary btn-block" style="color:white" id="btnvisualizzadocumento">Download documento</a>
+
         </form>
     </div>
 </div>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>UnimolShare - I tuoi annunci</title>
+    <title>UnimolShare - Il tuo profilo</title>
     <!-- Bootstrap core CSS-->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -15,38 +15,35 @@
     <!-- Custom styles for this template-->
     <link href="../../css/c.css" rel="stylesheet">
 </head>
-
 <body class="container bg-dark">
-<!--fare for per visualizzare 1 carta per ogni annuncio con chiamata php-->
-<div class="content-wrapper bg-dark">
-<div class="card card-register mx-auto mt-5" style="border-color: #007bff; border-radius: 3%">
+<div class="card mt-3 col-md-4"style="border-color: #007bff; border-radius: 3%">
     <div class="card-body">
-        <form method="POST" style="padding-left: 5%;">
-            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 20%; " id="btnrimuoviannuncio">
-                <i class="fa fa-fw fa-minus-circle"></i>
-                <label for="rimuoviannuncio" style="padding-left: auto">Rimuovi</label>
+        <form method="POST" style="padding-left: 0.25%">
+            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnmodificaprofilo">
+                <i class="fa fa-fw fa-pencil-square"></i>
+                <label for="modificaprofilo" style="padding-left: auto">Modifica</label>
             </a>
             <div class="form-group mt-3">
-                <label for="titololibro">Titolo libro:</label>
+                <label for="matricola">Matricola:</label>
             </div>
             <div class="form-group">
-                <label for="autorelibro">Autore:</label>
+                <label for="nome">Nome:</label>
             </div>
             <div class="form-group">
-                <label for="edizionelibro">Edizione:</label>
+                <label for="cognome">Cognome:</label>
             </div>
             <div class="form-group">
-                <label for="prezzoannuncio">Prezzo:</label>
+                <label for="CDL">Corso di Laurea:</label>
             </div>
             <div class="form-group">
-                <label for="casaeditrice">Casa editrice:</label>
+                <label for="Email">Email:</label>
             </div>
             <div class="form-group">
-                <label for="materia">Materia:</label>
+                <label for="password" type="password">Password:</label>
             </div>
+
         </form>
     </div>
-</div>
 </div>
 <!-- Bootstrap core JavaScript-->
 <script src="../../vendor/jquery/jquery.min.js"></script>

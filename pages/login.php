@@ -16,7 +16,7 @@ session_start();
     <!-- Custom fonts for this template-->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
-    <link href="../css/sb-admin.css" rel="stylesheet">
+    <link href="../css/c.css" rel="stylesheet">
 </head>
 
 <body class="bg-dark">

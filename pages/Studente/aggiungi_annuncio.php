@@ -13,11 +13,11 @@
     <!-- Custom fonts for this template-->
     <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
-    <link href="../../css/sb-admin.css" rel="stylesheet">
+    <link href="../../css/c.css" rel="stylesheet">
 </head>
 
 <body class="bg-dark">
-<div class="container">
+<div class="content-wrapper">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Aggiungi annuncio</div>
         <div class="card-body">
@@ -66,15 +66,12 @@
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px; color: #bd2130">
-                <a>I campi con * sono obbligatori</a>
+                <a>* campi obbligatori</a>
             </div>
         </div>
     </div>
 </div>
-</form>
-</div>
-</div>
-</div>
+
 <!-- Bootstrap core JavaScript-->
 <script src="../../vendor/jquery/jquery.min.js"></script>
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 echo($_POST['matr']);
 
 $_matricola = ($_POST['matr']);

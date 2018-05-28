@@ -1,25 +1,24 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<html lang ="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>UnimolShare</title>
-  <!-- Bootstrap core CSS-->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template-->
-  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <!-- Custom styles for this template-->
-  <link href="../css/sb-admin.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>UnimolShare</title>
+    <!-- Bootstrap core CSS-->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="../../css/c.css" rel="stylesheet">
 </head>
+
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" >
     <a class="navbar-brand" href="index.php">UnimolShare</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -35,7 +34,7 @@
                 </a>
             </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profilo">
-          <a class="nav-link" href="login.php">
+          <a class="nav-link" href="index.php?action=profilo">
             <i class="fa fa-fw fa-male"></i>
             <span class="nav-link-text">Profilo</span>
           </a>
@@ -54,7 +53,8 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-              <a href="aggiungi_documento_studente.php">Aggiungi documento</a>
+                <?php echo (isset($action) && $action == 'documentoStudente') ? "<li class=\"active\">" : "<li class=\"\">"; ?>
+              <a href="index.php?action=documentoStudente">Aggiungi documento</a>
             </li>
             <li>
               <a href="registrazione_docente.php">Documenti caricati</a>
@@ -71,10 +71,14 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseMulti">
             <li>
-              <a href="#">Aggiungi annuncio</a>
+                <?php echo (isset($action) && $action == 'aggiungiAnnuncio') ? "<li class=\"active\">" : "<li class=\"\">"; ?>
+
+                <a href="index.php?action=aggiungiAnnuncio">Aggiungi annuncio</a>
             </li>
             <li>
-              <a href="#">Annunci caricati</a>
+                <?php echo (isset($action) && $action == 'annunciiCaricati') ? "<li class=\"active\">" : "<li class=\"\">"; ?>
+
+                <a href="index.php?action=annunciiCaricati">Annunci caricati</a>
             </li>
             <li>
               <a href="#">Lista annunci</a>
@@ -134,23 +138,24 @@
           <div class="modal-body">Seleziona "Logout" se sei pronto a terminare la sessione corrente.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal" >Cancella</button>
-            <a class="btn btn-primary"  href="logout.php">Logout</a>
+            <a class="btn btn-primary"  href="../logout.php">Logout</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-    <!-- Bootstrap core JavaScript-->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Core plugin JavaScript-->
-    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom scripts for all pages-->
-    <script src="../js/sb-admin.min.js"></script>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Core plugin JavaScript-->
+
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <script src="../js/login.js"></script>
 
 
-
-
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 
     <!-- Custom scripts for this page-->
