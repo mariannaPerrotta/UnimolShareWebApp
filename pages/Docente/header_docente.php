@@ -35,7 +35,7 @@
 
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profilo">
                 <a class="nav-link" href="index_doc.php?action=profilo">
-                    <i class="fa fa-fw fa-male"></i>
+                    <i class="fa fa-fw fa-user-circle-o"></i>
                     <span class="nav-link-text">Profilo</span>
                 </a>
             </li>
