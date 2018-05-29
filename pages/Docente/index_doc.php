@@ -38,20 +38,25 @@ else{
 <div >
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
         <?php
-        include('./header.php');
+        include('./header_docente.php');
         ?>
 
 
     </nav>
     <?php
     switch ($action){
-        case 'home' :
-            include 'home.php';
+        case 'home_doc' :
+            include 'home_doc.php';
             break;
         case 'aggiungi_documento_doc' :
-            include 'aggiungi_documento_docente.php.php';
+            include 'aggiungi_documento_docente.php';
             break;
-
+        case 'libriCaricati' :
+            include 'libri_caricati.php';
+            break;
+        case 'aggiungiLibro' :
+            include 'aggiungi_libro.php';
+            break;
     }
 
     ?>
