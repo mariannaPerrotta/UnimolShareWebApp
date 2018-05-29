@@ -3,7 +3,7 @@ session_start();
 
 if (empty($_SESSION['utente'])){
 
-    header("location: ./login.php");
+    header("location: ../login.php");
 }
   else{
 //gestione azioni
@@ -30,12 +30,12 @@ else{
     <!-- Custom fonts for this template-->
     <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
-    <link href="../../css/sb-admin.css" rel="stylesheet">
+    <link href="../../css/c.css" rel="stylesheet">
 </head>
 
 
 <body>
-<div >
+<div>
    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <?php
        include('./header.php');
@@ -48,25 +48,21 @@ else{
         case 'home' :
             include 'home.php';
             break;
-        case 'aggiungi_documento_studente' :
+        case 'documentoStudente' :
             include 'aggiungi_documento_studente.php';
             break;
-        case 'home' :
-            include 'home.php';
-            break;
-        case 'aggiungi_documento_studente' :
-            include 'aggiungi_documento_studente.php';
-            break;
-        case 'aggiungi_documento_annuncio' :
+        case 'aggiungiAnnuncio' :
             include 'aggiungi_annuncio.php';
             break;
-        case 'segnala_profilo' :
+        case 'annunciiCaricati' :
+            include 'annunci_caricati.php';
+            break;
+        case 'segnalaProfilo' :
             include 'segnala_profilo.php';
             break;
-        case 'registrazione_studente' :
-            include 'registrazione_studente.php';
+        case 'documentoCaricati' :
+            include 'documenti_caricati.pho';
             break;
-
     }
 
     ?>
@@ -91,6 +87,7 @@ else{
 <script src="../js/forgot-password.js"></script>
 <script src="../js/register-docente.js"></script>
 <script src="../js/register-studente.js"></script>
+<script src="../js/Aggiungi_documento_docente.js"></script>
 
 
 </body>

@@ -26,13 +26,13 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
 
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-            <li class="nav-link" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="index.php?action=home">
+
+                <a class="nav-link" >
 
                     <i class="fa fa-fw fa-home"></i>
-                    <span class="nav-link-text">Home</span>
+                    <span class="nav-link-text" href="index_doc.php?action=home">Home</span>
                 </a>
-            </li>
+
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profilo">
           <a class="nav-link" href="index.php?action=profilo">
             <i class="fa fa-fw fa-user-circle-o"></i>

@@ -26,13 +26,13 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
 
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-            <li class="nav-link" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="index_doc.php?action=home">
+
+                <a class="nav-link" href="index_doc.php?action=home_doc">
 
                     <i class="fa fa-fw fa-home"></i>
-                    <span class="nav-link-text">Home</span>
+                    <span class="nav-link-text" >Home</span>
                 </a>
-            </li>
+
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profilo">
                 <a class="nav-link" href="index_doc.php?action=profilo">
                     <i class="fa fa-fw fa-male"></i>
@@ -40,7 +40,7 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libri consigliati">
-                <a class="nav-link" href="libri_caricati.php">
+                <a class="nav-link" href="index_doc.php?action=libriCaricati">
                     <i class="fa fa-fw fa-book"></i>
                     <span class="nav-link-text">Libri che hai consigliato</span>
                 </a>
@@ -52,8 +52,8 @@
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
                     <li>
-                        <?php echo (isset($action) && $action == 'documentoDocente') ? "<li class=\"active\">" : "<li class=\"\">"; ?>
-                        <a href="index_doc.php?action=documentoStudente">Aggiungi documento</a>
+                        <?php echo (isset($action) && $action == 'aggiungi_documento_doc') ? "<li class=\"active\">" : "<li class=\"\">"; ?>
+                        <a href="index_doc.php?action=aggiungi_documento_doc">Aggiungi documento</a>
                     </li>
                     <li>
                         <a href="registrazione_docente.php">Documenti caricati</a>
