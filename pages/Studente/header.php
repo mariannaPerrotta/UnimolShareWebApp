@@ -162,7 +162,8 @@
     <!-- Toggle between fixed and static navbar-->
     <script>
     $('#toggleNavPosition').click(function() {
-      $('body').toggleClass('fixed-nav');
+      $('body').toggleClass('' +
+          'fixed-nav');
       $('nav').toggleClass('fixed-top static-top');
     });
 
