@@ -72,7 +72,7 @@
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
-                <a class="btn btn-primary btn-block" href="Aggiungi_documento_docente.php">Aggiungi</a>
+                <a class="btn btn-primary btn-block" href="Aggiungi_documento_doc.php">Aggiungi</a>
                 </div>
             </div>
         </div>
