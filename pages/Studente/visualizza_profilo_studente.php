@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,9 +18,9 @@ session_start();
 </head>
 
 <body class="container bg-dark">
-<div class="card mt-3 col-md-4"style="border-color: #007bff; border-radius: 3%">
+<div class="card mt-3 col-md-4"style="border-color: #007bff; border-radius: 3%; margin-left: auto!important; margin-right: auto!important;">
     <div class="card-body">
-        <form method="POST" style="padding-left: 0.25%">
+        <form method="POST" >
             <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnmodificaprofilo">
                 <i class="fa fa-fw fa-pencil-square"></i>
                 <label for="modificaprofilo" style="padding-left: auto">Modifica</label>

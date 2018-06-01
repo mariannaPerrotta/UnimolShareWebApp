@@ -24,7 +24,7 @@
 </head>
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 <!-- Navigation-->
-<section class="special-area bg-white section_padding_100" id="about">
+<section class="special-area bg-white section_padding_100" style="padding-top: unset" id="about">
     <div class="container">
         <div class="row">
             <div class="col-12">
