@@ -17,7 +17,7 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<body class="container bg-dark">
+<body class="container bg-dark" style="padding-top: unset">
 <!--fare for per visualizzare 1 carta per ogni annuncio con chiamata php-->
 <div class="content-wrapper bg-dark">
 <div class="card card-register mx-auto mt-5" style="border-color: #007bff; border-radius: 3%">
