@@ -11,7 +11,7 @@
     <!-- Title -->
     <title>UnimolShare</title>
 
-    <!-- Favicon -->
+
     <link rel="icon" href="">
 
 
