@@ -41,14 +41,14 @@
                     <span class="nav-link-text">Profilo</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documenti">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libro">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-paper-plane"></i>
                     <span class="nav-link-text">Libri</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseMulti">
                     <li>
-                        <a href="index_doc.php?action=aggiungi_libro">Aggiungi liro</a>
+                        <a href="index_doc.php?action=aggiungi_libro">Aggiungi libro</a>
                     </li>
                     <li>
                         <a href="index_doc.php?action=libriCaricati" >Libri caricati</a>
@@ -57,11 +57,11 @@
                 </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documenti">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-paper-plane"></i>
                     <span class="nav-link-text">Documenti</span>
                 </a>
-                <ul class="sidenav-second-level collapse" id="collapseMulti">
+                <ul class="sidenav-second-level collapse" id="collapseMulti2">
                     <li>
                         <a href="index_doc.php?action=aggiungi_documento_doc">Aggiungi documento</a>
                     </li>
