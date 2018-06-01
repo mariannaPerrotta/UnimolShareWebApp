@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +27,7 @@
                 <label for="modificaprofilo" style="padding-left: auto">Modifica</label>
             </a>
             <div class="form-group mt-3">
-                <label for="matricola">Matricola:</label>
+                <label for="matricola">Matricola: <?php echo($_SESSION['utente']['matr'])?></label>
             </div>
             <div class="form-group">
                 <label for="nome">Nome:</label>

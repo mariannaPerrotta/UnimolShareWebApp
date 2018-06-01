@@ -38,46 +38,39 @@ document.getElementById("btnlogin").onclick= function () {
             if(data.error==false){
 
 
-                var tabella= data.utente.tabella;
+
+                var utente={
+                    matr: data.utente.matricola,
+                    nome: data.utente.nome,
+                    cognome: data.utente.cognome,
+                    email: data.utente.email,
+                    tipo: data.utente.tabella,
+
+                }
+              //  var tabella= data.utente.tabella;
+
+                alert("yes " + JSON.stringify(utente.tipo));
                 $.ajax({
                         url: "http://localhost/UnimolShareWebApp/pages/session.php",
 
                         type: 'POST',
 
-                        data: ({matr: data.utente.matricola}),
+                        data: utente,
 
                         dataType: "html",
 
                         success:function (data) {
-                             alert("yes " + JSON.stringify(data));
-                            // window.location.assign('index.php');
+                            alert("yes " + JSON.stringify(data));
+                            if( data=="studente"){
+                                window.location.assign('Studente/index.php');
+                            }
+                            if( data=="docente"){
+                                window.location.assign('Docente/index_doc.php');
+                            }
 
-
-                            $.ajax({
-                                    url: "http://localhost/UnimolShareWebApp/pages/utente.php",
-
-                                    type: 'POST',
-
-                                    data: ({tab: tabella}),
-
-                                    dataType: "html",
-
-                                    success:function (data) {
-                                         alert("yes " + JSON.stringify(data));
-                                        if( data=='studente'){
-                                            window.location.assign('Studente/index.php');
-                                        }
-                                        if( data=="docente"){
-                                            window.location.assign('Docente/index_doc.php');
-                                        }
-
-                                    }
-                                }
-
-
-                            )
 
                         }
+
                     }
 
 
