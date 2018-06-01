@@ -1,4 +1,4 @@
-<html lang ="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -18,20 +18,22 @@
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" >
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <a class="navbar-brand" href="index_doc.php">UnimolShare</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
 
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
 
-                <a class="nav-link" href="index_doc.php?action=home_doc">
+            <a class="nav-link" href="index_doc.php?action=home_doc">
 
-                    <i class="fa fa-fw fa-home"></i>
-                    <span class="nav-link-text" >Home</span>
-                </a>
+                <i class="fa fa-fw fa-home"></i>
+                <span class="nav-link-text">Home</span>
+            </a>
 
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profilo">
                 <a class="nav-link" href="index_doc.php?action=profilo">
@@ -46,18 +48,17 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documenti">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="index_doc.php?action=documenti_doc"
+                   data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-file"></i>
                     <span class="nav-link-text">Documenti</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
                     <li>
-                        <?php echo (isset($action) && $action == 'aggiungi_documento_doc') ? "<li class=\"active\">" : "<li class=\"\">"; ?>
+
                         <a href="index_doc.php?action=aggiungi_documento_doc">Aggiungi documento</a>
                     </li>
-                    <li>
-                        <a href="registrazione_docente.php">Documenti caricati</a>
-                    </li>
+
                 </ul>
             </li>
         </ul>
@@ -95,7 +96,8 @@
         <i class="fa fa-angle-up"></i>
     </a>
     <!-- Logout Modal-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -106,8 +108,8 @@
                 </div>
                 <div class="modal-body">Seleziona "Logout" se sei pronto a terminare la sessione corrente.</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal" >Cancella</button>
-                    <a class="btn btn-primary"  href="../logout.php">Logout</a>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancella</button>
+                    <a class="btn btn-primary" href="../logout.php">Logout</a>
                 </div>
             </div>
         </div>
@@ -130,7 +132,7 @@
 <!-- Custom scripts for this page-->
 <!-- Toggle between fixed and static navbar-->
 <script>
-    $('#toggleNavPosition').click(function() {
+    $('#toggleNavPosition').click(function () {
         $('body').toggleClass('fixed-nav');
         $('nav').toggleClass('fixed-top static-top');
     });
@@ -138,7 +140,7 @@
 </script>
 <!-- Toggle between dark and light navbar-->
 <script>
-    $('#toggleNavColor').click(function() {
+    $('#toggleNavColor').click(function () {
         $('nav').toggleClass('navbar-dark navbar-light');
         $('nav').toggleClass('bg-dark bg-light');
         $('body').toggleClass('bg-dark bg-light');

@@ -24,7 +24,7 @@
 </head>
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 <!-- Navigation-->
-<section class="special-area bg-white section_padding_100" id="about">
+<section class="special-area bg-white section_padding_100" style="padding-top: unset" id="about">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -34,7 +34,7 @@
                     <h2>UnimolShare</h2>
                     <div class="line-shape"></div>
                     <p></p>
-                    <p>Una piattaforma unica in cui gli studenti possono condividere e scaricare documenti di altri studenti
+                    <br><p>Una piattaforma unica in cui gli studenti possono condividere e scaricare documenti di altri studenti<br>
                      o docenti, e questi ultimi possono caricare il materiale ufficiale dei corsi.</p>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                         <i class="fa fa-fw fa-file" aria-hidden="true"></i>
                     </div>
                     <h4>Documenti caricati</h4>
-                    <a style="color:black" href="https://unimol.esse3.cineca.it/Home.do">Clicca qui per visualizzare i documenti caricati</a>
+                    <a style="color:black" href="../../pages/documenti_caricati.php">Clicca qui per visualizzare i documenti caricati</a>
                     <p></p>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                         <i class="fa fa-fw fa-paper-plane" aria-hidden="true"></i>
                     </div>
                     <h4>Annunci caricati</h4>
-                    <a style="color:black" href="https://unimol.esse3.cineca.it/Home.do">Clicca qui per visualizzare gli annunci caricati</a>
+                    <a style="color:black" href="../../pages/annunci_caricati.php">Clicca qui per visualizzare gli annunci caricati</a>
                     <p></p>
                 </div>
             </div>

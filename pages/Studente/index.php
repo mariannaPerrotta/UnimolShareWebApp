@@ -11,7 +11,7 @@ if (isset($_GET['action'])){
     $action = $_GET['action'];}
 else{
    // header("location: ./index.php");
-    $action = 'home';}
+    $action = "home";}
   }
 ?>
 
@@ -37,7 +37,7 @@ else{
 
 <body>
 <div>
-   <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+<!--   <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">-->
     <?php
        include('./header.php');
     ?>
@@ -62,8 +62,20 @@ else{
             include 'segnala_profilo.php';
             break;
         case 'documentoCaricati' :
-            include 'documenti_caricati.pho';
+            include 'documenti_caricati.php';
             break;
+
+        case 'profilo':
+            include 'visualizza_profilo_studente.php';
+            break;
+
+        case 'libri_consigliati':
+            include 'libri_consigliati.php';
+            break;
+        case 'lista_documenti':
+            include 'lista_documenti.php';
+            break;
+
     }
 
     ?>
