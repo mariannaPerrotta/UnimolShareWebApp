@@ -16,8 +16,8 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
-<div class="content-wrapper">
+<body class="content bg-dark" style="padding-top: unset">
+<div class="content-wrapper bg-dark">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Aggiungi documento Docente</div>
         <div class="card-body">
