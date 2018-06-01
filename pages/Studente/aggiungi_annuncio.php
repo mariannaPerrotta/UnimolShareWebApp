@@ -42,24 +42,34 @@
                             <input class="form-control" id="exampleInputCorsoDiStudio" type="text" aria-describedby="CorsoDiStudioHelp" placeholder="Inserisci il corso">
                         </div>
                         <div class="col-md-6">
-                            <label for="exampleInputMateria">Materia*</label>
-                            <input class="form-control" id="exampleInputMateria" type="text" aria-describedby="MateriaHelp" placeholder="Inserisci la materia">
+                            <label for="InputContattoTelefonico">Contatto telefonico</label>
+                            <input class="form-control" id="exampleInputContattoTelefonico" type="text" aria-describedby="ContattoTelefonicoHelp" placeholder="Inserisci telefono">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="exampleInputMateria">Contatto telefonico</label>
-                            <input class="form-control" id="exampleInputContattoTelefonico" type="text" aria-describedby="ContattoTelefonicoHelp" placeholder="Inserisci telefono">
-                        </div>
-                        <div class="col-md-6">
                             <label for="exampleInputPrezzo">Prezzo*</label>
                             <input class="form-control" id="exampleInputPrezzo" type="text" aria-describedby="PrezzoHelp" placeholder="Inserisci il prezzo">
                         </div>
                     </div>
                 </div>
-        </div>
+                <div form="form-group">
+                    <div class="form-row">
+                        <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="Materie">Materie*</label>
+                        <select name="Materia" id="Materia" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
+                            <option value="Matematica"> Matematica </option>
+                            <option value="Programmazione"> Programmazione </option>
+                            <option value="Informatica giuridica"> Informatica giuridica </option>
+                            <option value="Linguaggi formali"> Linguaggi formali </option>
+                            <option value="Architettura degli elaboratori"> Architettura degli elaboratori </option>
+                            <option value="Evoluzione del calcolo automatico0"> Evoluzione del calcolo automatico </option>
+                            <option value="Inglese"> Inglese </option>
+                            <option value="Sistemi operativi"> Sistemi operativi </option>
+                        </select>
+                    </div>
+                </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
                 <a class="btn btn-primary btn-block" href="../login.php">Aggiungi</a>
@@ -71,6 +81,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <!-- Bootstrap core JavaScript-->
