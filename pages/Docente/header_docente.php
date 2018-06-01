@@ -29,12 +29,12 @@
 
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
 
-            <a class="nav-link" href="index_doc.php?action=home_doc">
-
-                <i class="fa fa-fw fa-home"></i>
-                <span class="nav-link-text">Home</span>
-            </a>
-
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Home">
+                <a class="nav-link" href="index.php?action=home_doc">
+                    <i class="fa fa-fw fa-home"></i>
+                    <span class="nav-link-text">Home</span>
+                </a>
+            </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profilo">
                 <a class="nav-link" href="index_doc.php?action=profilo">
                     <i class="fa fa-fw fa-user-circle-o"></i>
@@ -43,7 +43,7 @@
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libro">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa-paper-plane"></i>
+                    <i class="fa fa-fw fa-book"></i>
                     <span class="nav-link-text">Libri</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseMulti">
@@ -58,7 +58,7 @@
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documenti">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2" data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa-paper-plane"></i>
+                    <i class="fa fa-fw fa-file"></i>
                     <span class="nav-link-text">Documenti</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseMulti2">

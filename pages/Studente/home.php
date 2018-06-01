@@ -31,11 +31,11 @@
                 <!-- Section Heading Area -->
                 <center> <img src="../../img/unishareBianco.png" height="300" width="350"> </center>
                 <div class="section-heading text-center">
-                    <h2>UnimolShare</h2>
+                    <h2><font color="#007bff">UnimolShare</font></h2>
                     <div class="line-shape"></div>
                     <p></p>
-                    <br><p>Una piattaforma unica in cui gli studenti possono condividere e scaricare documenti di altri studenti<br>
-                     o docenti, e questi ultimi possono caricare il materiale ufficiale dei corsi.</p>
+                    <br><p><font size="4" color="black">Una piattaforma unica in cui gli studenti possono condividere e scaricare documenti di altri studenti<br>
+                     o docenti, e questi ultimi possono caricare il materiale ufficiale dei corsi.</font></p>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@
                     <div class="single-icon">
                         <i class="fa fa-fw fa-file" aria-hidden="true"></i>
                     </div>
-                    <h4>Documenti caricati</h4>
+                    <h4><font color="#007bff">Documenti caricati</font></h4>
                     <a style="color:black" href="../../pages/documenti_caricati.php">Clicca qui per visualizzare i documenti caricati</a>
                     <p></p>
                 </div>
@@ -58,7 +58,7 @@
                     <div class="single-icon">
                         <i class="fa fa-fw fa-paper-plane" aria-hidden="true"></i>
                     </div>
-                    <h4>Annunci caricati</h4>
+                    <h4><font color="#007bff">Annunci caricati</font></h4>
                     <a style="color:black" href="../../pages/annunci_caricati.php">Clicca qui per visualizzare gli annunci caricati</a>
                     <p></p>
                 </div>
@@ -69,7 +69,7 @@
                     <div class="single-icon">
                         <i class="fa fa-fw fa-users" aria-hidden="true"></i>
                     </div>
-                    <h4>Portale dello studente</h4>
+                    <h4><font color="#007bff">Portale dello studente</font></h4>
                     <a style="color:black" href="https://unimol.esse3.cineca.it/Home.do">Clicca qui per essere reindirizzato sul portale</a>
                     </span>
                     </a>
@@ -85,7 +85,7 @@
                 <div class="col-12 text-center">
                     <!-- Heading Text  -->
                     <div class="section-heading">
-                        <h2>Team di sviluppo</h2>
+                        <h2><font color="#007bff">Team di sviluppo</font></h2>
                         <div class="line-shape"></div>
                     </div>
                 </div>
@@ -285,6 +285,14 @@
         </div>
         </div>
     </section>
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="text-center">
+                <small>Copyright © UnimolShare 2018</small>
+            </div>
+        </div>
+    </footer>
 
 <!-- Bootstrap core JavaScript-->
 <script src="../vendor/jquery/jquery.min.js"></script>
