@@ -34,7 +34,7 @@
                     <h2><font color="#007bff">UnimolShare</font></h2>
                     <div class="line-shape"></div>
                     <p></p>
-                    <br><p><font size="5" color="black">Una piattaforma unica in cui gli studenti possono condividere e scaricare documenti di altri studenti<br>
+                    <br><p><font size="4" color="black">Una piattaforma unica in cui gli studenti possono condividere e scaricare documenti di altri studenti<br>
                      o docenti, e questi ultimi possono caricare il materiale ufficiale dei corsi.</font></p>
                 </div>
             </div>
