@@ -17,7 +17,7 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<div class="content-wrapper" style=" background: unset">
+<div class="content-wrapper" style=" background: unset; padding-left:2%; padding-right: 2%">
 <div class="card card-register mx-auto mt-5"style=" border-radius: 3%; margin-bottom: auto!important;">
     <div class="card-header">Il mio profilo</div>
     <div class="card-body">

@@ -18,7 +18,7 @@
 
 <body class="container bg-dark" style="padding-top: unset">
 <!--fare for per visualizzare 1 carta per ogni libro con chiamata php-->
-<div class="content-wrapper bg-dark">
+<div class="content-wrapper bg-dark" style="padding-left:2%; padding-right: 2%">
     <div class="card card-register mx-auto mt-5" style=" border-radius: 3%">
         <div class="card-body">
             <form method="POST" style="padding-left: 5%;">

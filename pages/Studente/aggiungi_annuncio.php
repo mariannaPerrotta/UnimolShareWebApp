@@ -18,7 +18,7 @@
 </head>
 
 <body class="bg-dark">
-<div class="content-wrapper" style="background: unset">
+<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%">
     <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
         <div class="card-header">Aggiungi annuncio</div>
         <div class="card-body">
