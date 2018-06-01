@@ -1,8 +1,11 @@
 <?php
 session_start();
-echo($_POST['tab']);
 
-$_tabella = ($_POST['tab']);
 
-return  $response=($_tabella);
+$_POST['matr']= $_SESSION["utente"]["matr"];
+$matr= $_POST['matr'];
+echo($_POST['matr']);
+return  $response=($matr);
 ?>
+
+
