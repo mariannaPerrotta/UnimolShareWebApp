@@ -16,10 +16,9 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<body class="container bg-dark" style="padding-top: unset"
-">
-<!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
-<div class="card mt-3 col-md-4" style="border-radius: 3%">
+<div class="content-wrapper" style="background: unset">
+    <!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
+    <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
     <div class="card-body">
         <form method="POST" style="padding-left: 0.25%">
             <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%"
@@ -38,7 +37,7 @@
         </form>
     </div>
 </div>
-
+</div>
 <!-- Bootstrap core JavaScript-->
 <script src="../../vendor/jquery/jquery.min.js"></script>
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -51,7 +50,7 @@
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-</body>
+
 
 </html>
 

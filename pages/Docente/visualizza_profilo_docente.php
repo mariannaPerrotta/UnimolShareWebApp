@@ -15,8 +15,10 @@
     <!-- Custom styles for this template-->
     <link href="../../css/c.css" rel="stylesheet">
 </head>
-<body class="container bg-dark" style="padding-top: unset" style="padding-top: unset">
-<div class="card mt-3 col-md-4" style=" border-radius: 3%; margin-left: auto; margin-right: auto">
+
+<div class="content-wrapper" style=" background: unset">
+    <div class="card card-register mx-auto mt-5"style=" border-radius: 3%; margin-bottom: auto!important;">
+        <div class="card-header">Il mio profilo</div>
     <div class="card-body">
         <form method="POST" style="padding-left: 0.25%">
             <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%"
@@ -72,7 +74,7 @@
 
         </form>
     </div>
-</div>
+</div></div>
 <!-- Bootstrap core JavaScript-->
 <script src="../../vendor/jquery/jquery.min.js"></script>
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -85,6 +87,6 @@
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-</body>
+
 
 </html>
