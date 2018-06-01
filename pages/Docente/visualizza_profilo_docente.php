@@ -33,7 +33,7 @@
                 <label for="cognome">Cognome: <font color="blue"><?php echo($_SESSION['utente']['cognome'])?></font></label>
             </div>
             <div class="form-group">
-                <label for="CDL">Corso di Laurea: <font color="blue"><?php echo($_SESSION['utente']['CDL'])?></font></label>
+                <label for="CDL">Corso di Laurea: <font color="blue"></font></label>
             </div>
             <div form="form-group">
                 <div class="form-row">
