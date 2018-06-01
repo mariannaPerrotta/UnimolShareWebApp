@@ -18,6 +18,7 @@ session_start();
     <!-- Custom styles for this template-->
     <link href="../../css/c.css" rel="stylesheet">
 </head>
+
 <body class="container bg-dark">
 <div class="card mt-3 col-md-4"style="border-color: #007bff; border-radius: 3%">
     <div class="card-body">

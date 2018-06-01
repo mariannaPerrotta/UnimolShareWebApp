@@ -54,7 +54,7 @@ else{
         case 'aggiungiAnnuncio' :
             include 'aggiungi_annuncio.php';
             break;
-        case 'annunciiCaricati' :
+        case 'annunciCaricati' :
             include 'annunci_caricati.php';
             break;
         case 'segnalaProfilo' :
