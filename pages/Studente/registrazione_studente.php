@@ -28,36 +28,36 @@ session_start();
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="exampleInputName">Nome</label>
-                            <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Inserisci nome">
+                            <label for="InputName">Nome</label>
+                            <input class="form-control" id="InputName" type="text" aria-describedby="nameHelp" placeholder="Inserisci nome">
                         </div>
                         <div class="col-md-6">
-                            <label for="exampleInputLastName">Cognome</label>
-                            <input class="form-control" id="exampleInputLastName" type="text" aria-describedby="nameHelp" placeholder="Inserisci cognome">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-row">
-                        <div class="col-md-6">
-                            <label for="exampleInputEmail1">Indirizzo email</label>
-                            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="exampleInputMatricola">Matricola</label>
-                            <input class="form-control" id="exampleInputMatricola" type="matricola" placeholder="Inserisci matricola">
+                            <label for="InputLastName">Cognome</label>
+                            <input class="form-control" id="InputLastName" type="text" aria-describedby="nameHelp" placeholder="Inserisci cognome">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
+                            <label for="InputEmail1">Indirizzo email</label>
+                            <input class="form-control" id="InputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
                         </div>
                         <div class="col-md-6">
-                            <label for="exampleConfirmPassword">Conferma password</label>
-                            <input class="form-control" id="exampleConfirmPassword" type="password" placeholder="Conferma password">
+                            <label for="InputMatricola">Matricola</label>
+                            <input class="form-control" id="InputMatricola" type="matricola" placeholder="Inserisci matricola">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="InputPassword1">Password</label>
+                            <input class="form-control" id="InputPassword1" type="password" placeholder="Password">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="ConfirmPassword">Conferma password</label>
+                            <input class="form-control" id="ConfirmPassword" type="password" placeholder="Conferma password">
                         </div>
                     </div>
                 </div>

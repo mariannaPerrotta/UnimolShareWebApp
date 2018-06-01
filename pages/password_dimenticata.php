@@ -27,7 +27,7 @@
       </div>
       <form>
         <div class="form-group">
-          <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci indirizzo email">
+          <input class="form-control" id="InputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci indirizzo email">
         </div>
         <a class="btn btn-primary btn-block" href="login.php">Recupera password</a>
       </form>

@@ -1,13 +1,13 @@
 document.getElementById("btnaggiungidocumento").onclick= function () {
 
 
-    var titolo = $("#exampleInputTitolo").val();
+    var titolo = $("#InputTitolo").val();
 
-    var CodStudente =$("#exampleInputCodDocente").val();
+    var CodStudente =$("#InputCodDocente").val();
 
-    var Materia =$("#exampleInputCodMateria").val();
+    var Materia =$("#InputCodMateria").val();
 
-    var Link =$("#exampleInputLink").val();
+    var Link =$("#InputLink").val();
 
 
     var data = {
