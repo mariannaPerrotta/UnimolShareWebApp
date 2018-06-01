@@ -43,7 +43,7 @@
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libro">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa-paper-plane"></i>
+                    <i class="fa fa-fw fa-book"></i>
                     <span class="nav-link-text">Libri</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseMulti">
@@ -58,7 +58,7 @@
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documenti">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2" data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa-paper-plane"></i>
+                    <i class="fa fa-fw fa-file"></i>
                     <span class="nav-link-text">Documenti</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseMulti2">

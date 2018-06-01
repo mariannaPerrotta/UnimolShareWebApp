@@ -15,7 +15,6 @@ if (empty($_SESSION['utente'])) {
 }
 ?>
 
-
 <html lang="en">
 
 <head>
