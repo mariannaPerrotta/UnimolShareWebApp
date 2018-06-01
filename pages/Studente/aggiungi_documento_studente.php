@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,8 +27,8 @@
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="exampleInputTitolo">Titolo</label>
-                            <input class="form-control" id="exampleInputTitolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci titolo">
+                            <label for="InputTitolo">Titolo</label>
+                            <input class="form-control" id="InputTitolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci titolo">
                         </div>
                     </div>
                 </div>
@@ -34,7 +37,7 @@
                         <a class="nav-link nav-link-collapse" data-toggle="collapse" style="padding-top: 15px;padding-right: 10px;" href="#collapseMulti" data-parent="#exampleAccordion" aria-expanded="true">
                             <i class="fa fa-fw fa-arrow-circle-down"></i>
                         </a>
-                        <label style="padding-top: 15px;padding-bottom: 15px;" for="exampleInputCodDocente">Materie</label>
+                        <label style="padding-top: 15px;padding-bottom: 15px;" for="InputCodDocente">Materie</label>
                     </div>
 
                     <ul class="sidenav-second-level collapse show" id="collapseMulti" style="">

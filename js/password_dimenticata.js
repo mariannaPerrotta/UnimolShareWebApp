@@ -1,7 +1,7 @@
 document.getElementById("btnforgot-password").onclick= function () {
 
 
-    var email = $("#exampleInputEmail1").val();
+    var email = $("#InputEmail1").val();
 
 
     var data = {

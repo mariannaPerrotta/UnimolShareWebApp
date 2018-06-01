@@ -2,9 +2,9 @@ document.getElementById("btnlogin").onclick= function () {
 
 //input da dare al servizio, quelli nelle parentesi sono gli id dei reattangoli in cui inserite username e password
 
-    var email = $("#exampleInputEmail1").val();
+    var email = $("#InputEmail").val();
 
-    var password =$("#exampleInputPassword1").val();
+    var password =$("#InputPassword").val();
 
 
 

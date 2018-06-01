@@ -2,17 +2,17 @@ document.getElementById("btnregister-studente").onclick= function () {
 
 
 
-    var nome = $("#exampleInputNome1").val();
+    var nome = $("#InputNome1").val();
 
-    var cognome = $("#exampleInputCognome1").val();
+    var cognome = $("#InputCognome1").val();
 
-    var email = $("#exampleInputEmail1").val();
+    var email = $("#InputEmail1").val();
 
-    var matricola = $("#exampleInputMatricola1").val();
+    var matricola = $("#InputMatricola1").val();
 
-    var password =$("#exampleInputPassword1").val();
+    var password =$("#InputPassword1").val();
 
-    var password =$("#exampleConfirmPassword").val();
+    var password =$("#ConfirmPassword").val();
 
 
     var data = {

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +14,7 @@
     <!-- Favicon -->
     <link rel="icon" href="">
 
+
     <!-- Core Stylesheet -->
     <link href="../../css/cssHome/style.css" rel="stylesheet">
 
@@ -30,6 +29,7 @@
         <div class="row">
             <div class="col-12">
                 <!-- Section Heading Area -->
+                <center> <img src="../../img/unishareBianco.png" height="300" width="350"> </center>
                 <div class="section-heading text-center">
                     <h2>UnimolShare</h2>
                     <div class="line-shape"></div>
