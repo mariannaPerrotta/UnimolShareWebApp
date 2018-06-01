@@ -25,7 +25,7 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 <!-- Navigation-->
 <section class="special-area bg-white section_padding_100" style="padding-top: unset" id="about">
-    <div class="container">
+    <div class="content-wrapper" style="padding-left:2%; padding-right: 2%">
         <div class="row">
             <div class="col-12">
                 <!-- Section Heading Area -->
@@ -71,7 +71,7 @@
 
     <!-- ***** Our Team Area Start ***** -->
     <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
-        <div class="container">
+        <div class="content-wrapper" style="padding-left:2%; padding-right: 2%">
             <div class="row">
                 <div class="col-12 text-center">
                     <!-- Heading Text  -->
