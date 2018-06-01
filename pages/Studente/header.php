@@ -40,7 +40,7 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libri consigliati">
-          <a class="nav-link" href="../tables.html">
+          <a class="nav-link"  href="index.php?action=libri_consigliati">
             <i class="fa fa-fw fa-book"></i>
             <span class="nav-link-text">Libri Consigliati</span>
           </a>
@@ -119,31 +119,6 @@
       </ul>
     </div>
   </nav>
-  <div class="content-wrapper">
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
-    <!-- Logout Modal-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Sicuro di voler uscire?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">Seleziona "Logout" se sei pronto a terminare la sessione corrente.</div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal" >Cancella</button>
-            <a class="btn btn-primary"  href="../logout.php">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Bootstrap core JavaScript-->
   <script src="../vendor/jquery/jquery.min.js"></script>

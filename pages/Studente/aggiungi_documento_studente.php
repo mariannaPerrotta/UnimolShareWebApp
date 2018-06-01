@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,8 +17,8 @@ session_start();
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<div class="content-wrapper">
-    <div class="card card-register mx-auto mt-5">
+<div class="content-wrapper" style="background: unset">
+    <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
         <div class="card-header">Aggiungi documento Studente</div>
         <div class="card-body">
             <form>
