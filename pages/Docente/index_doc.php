@@ -1,22 +1,22 @@
 <?php
 session_start();
 
-if (empty($_SESSION['utente'])){
+if (empty($_SESSION['utente'])) {
 
     header("location: ./login.php");
-}
-else{
+} else {
 //gestione azioni
-    if (isset($_GET['action'])){
-        $action = $_GET['action'];}
-    else{
+    if (isset($_GET['action'])) {
+        $action = $_GET['action'];
+    } else {
         // header("location: ./index.php");
-        $action = 'home';}
+        $action = 'home';
+    }
 }
 ?>
 
 
-<html lang ="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -35,7 +35,7 @@ else{
 
 
 <body>
-<div >
+<div>
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
         <?php
         include('./header_docente.php');
@@ -44,7 +44,7 @@ else{
 
     </nav>
     <?php
-    switch ($action){
+    switch ($action) {
         case 'home_doc' :
             include 'home_doc.php';
             break;
@@ -56,6 +56,12 @@ else{
             break;
         case 'aggiungiLibro' :
             include 'aggiungi_libro.php';
+            break;
+        case 'documenti_doc' :
+            include 'documenti_caricati_doc.php';
+            break;
+        case 'profilo' :
+            include 'visualizza_profilo_docente.php';
             break;
     }
 

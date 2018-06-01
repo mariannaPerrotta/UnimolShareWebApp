@@ -53,7 +53,6 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-                <?php echo (isset($action) && $action == 'documentoStudente') ? "<li class=\"active\">" : "<li class=\"\">"; ?>
               <a href="index.php?action=documentoStudente">Aggiungi documento</a>
             </li>
             <li>
@@ -71,13 +70,9 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseMulti">
             <li>
-                <?php echo (isset($action) && $action == 'aggiungiAnnuncio') ? "<li class=\"active\">" : "<li class=\"\">"; ?>
-
                 <a href="index.php?action=aggiungiAnnuncio">Aggiungi annuncio</a>
             </li>
             <li>
-                <?php echo (isset($action) && $action == 'annunciiCaricati') ? "<li class=\"active\">" : "<li class=\"\">"; ?>
-
                 <a href="index.php?action=annunciCaricati" id="btnAnnunciCaricati">Annunci caricati</a>
             </li>
             <li>
@@ -85,12 +80,12 @@
             </li>
             </ul>
         </li>
-<!--        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">-->
-<!--          <a class="nav-link" href="#">-->
-<!--            <i class="fa fa-fw fa-link"></i>-->
-<!--            <span class="nav-link-text">Link</span>-->
-<!--          </a>-->
-<!--        </li>-->
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-link"></i>
+            <span class="nav-link-text">Link</span>
+          </a>
+        </li>
       </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
@@ -113,8 +108,8 @@
           </form>
         </li>
           <li class="nav-item">
-              <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-                  <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+              <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="../logout.php">
+                  <i class="fa fa-fw fa-sign-out"  ></i>Logout</a>
           </li>
       </ul>
     </div>
