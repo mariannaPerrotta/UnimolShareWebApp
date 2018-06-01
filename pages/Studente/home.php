@@ -34,7 +34,7 @@
                     <h2>UnimolShare</h2>
                     <div class="line-shape"></div>
                     <p></p>
-                    <p>Una piattaforma unica in cui gli studenti possono condividere e scaricare documenti di altri studenti
+                    <br><p>Una piattaforma unica in cui gli studenti possono condividere e scaricare documenti di altri studenti<br>
                      o docenti, e questi ultimi possono caricare il materiale ufficiale dei corsi.</p>
                 </div>
             </div>
