@@ -48,7 +48,7 @@
                         <i class="fa fa-fw fa-file" aria-hidden="true"></i>
                     </div>
                     <h4>Documenti caricati</h4>
-                    <a style="color:black" href="https://unimol.esse3.cineca.it/Home.do">Clicca qui per visualizzare i documenti caricati</a>
+                    <a style="color:black" href="../../pages/documenti_caricati.php">Clicca qui per visualizzare i documenti caricati</a>
                     <p></p>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                         <i class="fa fa-fw fa-paper-plane" aria-hidden="true"></i>
                     </div>
                     <h4>Annunci caricati</h4>
-                    <a style="color:black" href="https://unimol.esse3.cineca.it/Home.do">Clicca qui per visualizzare gli annunci caricati</a>
+                    <a style="color:black" href="../../pages/annunci_caricati.php">Clicca qui per visualizzare gli annunci caricati</a>
                     <p></p>
                 </div>
             </div>
