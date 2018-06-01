@@ -57,10 +57,10 @@
               <a href="index.php?action=documentoStudente">Aggiungi documento</a>
             </li>
             <li>
-              <a href="documenti_caricati.php">Documenti caricati</a>
+              <a href="index.php?action=documenti_caricati.php">Documenti caricati</a>
             </li>
             <li>
-              <a href="../forgot-password.php">Lista documenti</a>
+              <a href="index.php?action=lista_documenti.php">Lista documenti</a>
             </li>
           </ul>
         </li>
@@ -85,12 +85,12 @@
             </li>
             </ul>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-          <a class="nav-link" href="#">
-            <i class="fa fa-fw fa-link"></i>
-            <span class="nav-link-text">Link</span>
-          </a>
-        </li>
+<!--        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">-->
+<!--          <a class="nav-link" href="#">-->
+<!--            <i class="fa fa-fw fa-link"></i>-->
+<!--            <span class="nav-link-text">Link</span>-->
+<!--          </a>-->
+<!--        </li>-->
       </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">

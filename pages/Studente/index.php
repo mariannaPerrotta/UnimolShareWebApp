@@ -68,14 +68,14 @@ else{
         case 'profilo':
             include 'visualizza_profilo_studente.php';
             break;
-        case 'link':
-
-            include 'link.php';
-            break;
 
         case 'libri_consigliati':
             include 'libri_consigliati.php';
             break;
+        case 'lista_documenti':
+            include 'lista_documenti.php';
+            break;
+
     }
 
     ?>
