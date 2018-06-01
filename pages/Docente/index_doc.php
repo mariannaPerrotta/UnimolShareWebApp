@@ -10,7 +10,7 @@ if (empty($_SESSION['utente'])) {
         $action = $_GET['action'];
     } else {
         // header("location: ./index.php");
-        $action = 'home';
+        $action = 'home_doc';
     }
 }
 ?>
