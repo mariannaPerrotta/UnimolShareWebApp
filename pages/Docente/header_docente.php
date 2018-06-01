@@ -29,12 +29,12 @@
 
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
 
-            <a class="nav-link" href="index_doc.php?action=home_doc">
-
-                <i class="fa fa-fw fa-home"></i>
-                <span class="nav-link-text">Home</span>
-            </a>
-
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Home">
+                <a class="nav-link" href="index.php?action=home_doc">
+                    <i class="fa fa-fw fa-home"></i>
+                    <span class="nav-link-text">Home</span>
+                </a>
+            </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profilo">
                 <a class="nav-link" href="index_doc.php?action=profilo">
                     <i class="fa fa-fw fa-user-circle-o"></i>
