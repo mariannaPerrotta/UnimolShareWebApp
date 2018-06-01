@@ -24,16 +24,16 @@
                 <label for="modificaprofilo" style="padding-left: auto">Modifica</label>
             </a>
             <div class="form-group mt-3">
-                <label for="matricola">Matricola:</label>
+                <label for="matricola">Matricola: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
             </div>
             <div class="form-group">
-                <label for="nome">Nome:</label>
+                <label for="nome">Nome: <font color="blue"><?php echo($_SESSION['utente']['nome'])?></font></label>
             </div>
             <div class="form-group">
-                <label for="cognome">Cognome:</label>
+                <label for="cognome">Cognome: <font color="blue"><?php echo($_SESSION['utente']['cognome'])?></font></label>
             </div>
             <div class="form-group">
-                <label for="CDL">Corso di Laurea:</label>
+                <label for="CDL">Corso di Laurea: <font color="blue"><?php echo($_SESSION['utente']['CDL'])?></font></label>
             </div>
             <div form="form-group">
                 <div class="form-row">
