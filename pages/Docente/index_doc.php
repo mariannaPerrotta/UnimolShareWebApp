@@ -54,7 +54,7 @@ if (empty($_SESSION['utente'])) {
         case 'libriCaricati' :
             include 'libri_caricati.php';
             break;
-        case 'aggiungiLibro' :
+        case 'aggiungi_libro' :
             include 'aggiungi_libro.php';
             break;
         case 'documenti_doc' :
