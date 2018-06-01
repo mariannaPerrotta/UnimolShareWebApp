@@ -37,7 +37,7 @@ else{
 
 <body>
 <div>
-<!--   <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">-->
+<!--   <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <?php
        include('./header.php');
     ?>

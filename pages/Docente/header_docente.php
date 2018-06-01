@@ -29,34 +29,44 @@
 
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
 
-            <a class="nav-link" href="index_doc.php?action=home_doc">
-
-                <i class="fa fa-fw fa-home"></i>
-                <span class="nav-link-text">Home</span>
-            </a>
-
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Home">
+                <a class="nav-link" href="index.php?action=home_doc">
+                    <i class="fa fa-fw fa-home"></i>
+                    <span class="nav-link-text">Home</span>
+                </a>
+            </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profilo">
                 <a class="nav-link" href="index_doc.php?action=profilo">
                     <i class="fa fa-fw fa-user-circle-o"></i>
                     <span class="nav-link-text">Profilo</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libri consigliati">
-                <a class="nav-link" href="index_doc.php?action=libriCaricati">
-                    <i class="fa fa-fw fa-book"></i>
-                    <span class="nav-link-text">Libri che hai consigliato</span>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libro">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-paper-plane"></i>
+                    <span class="nav-link-text">Libri</span>
                 </a>
+                <ul class="sidenav-second-level collapse" id="collapseMulti">
+                    <li>
+                        <a href="index_doc.php?action=aggiungi_libro">Aggiungi libro</a>
+                    </li>
+                    <li>
+                        <a href="index_doc.php?action=libriCaricati" >Libri caricati</a>
+                    </li>
+
+                </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documenti">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="index_doc.php?action=documenti_doc"
-                   data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa-file"></i>
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-paper-plane"></i>
                     <span class="nav-link-text">Documenti</span>
                 </a>
-                <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+                <ul class="sidenav-second-level collapse" id="collapseMulti2">
                     <li>
-
                         <a href="index_doc.php?action=aggiungi_documento_doc">Aggiungi documento</a>
+                    </li>
+                    <li>
+                        <a href="index_doc.php?action=documenti_doc" >Documenti caricati</a>
                     </li>
 
                 </ul>

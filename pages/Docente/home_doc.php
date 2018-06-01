@@ -31,11 +31,11 @@
                 <!-- Section Heading Area -->
                 <center> <img src="../../img/unishareBianco.png" height="300" width="350"> </center>
                 <div class="section-heading text-center">
-                    <h2>UnimolShare</h2>
+                    <h2><font color="#007bff">UnimolShare</font></h2>
                     <div class="line-shape"></div>
                     <p></p>
-                    <br><p>Una piattaforma unica in cui gli studenti possono condividere e scaricare documenti di altri studenti<br>
-                        o docenti, e questi ultimi possono caricare il materiale ufficiale dei corsi.</p>
+                    <br><p><font size="5" color="black">Una piattaforma unica in cui gli studenti possono condividere e scaricare documenti di altri studenti<br>
+                            o docenti, e questi ultimi possono caricare il materiale ufficiale dei corsi.</font></p>
                 </div>
             </div>
         </div>
@@ -276,6 +276,14 @@
         </div>
         </div>
     </section>
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="text-center">
+                <small>Copyright © UnimolShare 2018</small>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap core JavaScript-->
     <script src="../vendor/jquery/jquery.min.js"></script>
