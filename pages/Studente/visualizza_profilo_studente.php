@@ -18,7 +18,7 @@
 </head>
 
 <body class="container bg-dark" style="padding-top: unset">
-<div class="card mt-3 col-md-4"style="border-color: #007bff; border-radius: 3%; margin-left: auto!important; margin-right: auto!important;">
+<div class="card mt-3 col-md-4"style=" border-radius: 3%; margin-left: auto!important; margin-right: auto!important;">
     <div class="card-body">
         <form method="POST" >
             <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnmodificaprofilo">

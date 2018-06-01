@@ -18,7 +18,7 @@
 
 <body class="container bg-dark" style="padding-top: unset" style="padding-top: unset">
 <!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
-<div class="card mt-3 col-md-4" style="border-color: #007bff; border-radius: 3%" >
+<div class="card mt-3 col-md-4" style="border-radius: 3%" >
     <div class="card-body">
         <form method="POST" style="padding-left: 0.25%">
             <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuovidocumento">
