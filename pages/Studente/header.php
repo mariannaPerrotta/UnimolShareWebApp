@@ -28,7 +28,6 @@
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
 
                 <a class="nav-link" >
-
                     <i class="fa fa-fw fa-home"></i>
                     <span class="nav-link-text" href="index_doc.php?action=home">Home</span>
                 </a>
@@ -57,7 +56,7 @@
               <a href="index.php?action=documentoStudente">Aggiungi documento</a>
             </li>
             <li>
-              <a href="registrazione_docente.php">Documenti caricati</a>
+              <a href="documenti_caricati.php">Documenti caricati</a>
             </li>
             <li>
               <a href="../forgot-password.php">Lista documenti</a>
@@ -78,7 +77,7 @@
             <li>
                 <?php echo (isset($action) && $action == 'annunciiCaricati') ? "<li class=\"active\">" : "<li class=\"\">"; ?>
 
-                <a href="index.php?action=annunciiCaricati">Annunci caricati</a>
+                <a href="index.php?action=annunciCaricati" id="btnAnnunciCaricati">Annunci caricati</a>
             </li>
             <li>
               <a href="#">Lista annunci</a>
