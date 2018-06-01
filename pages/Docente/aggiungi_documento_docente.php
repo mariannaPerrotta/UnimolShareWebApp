@@ -17,7 +17,7 @@
 </head>
 
 <body class="bg-dark" style="padding-top: unset">
-<div class="content-wrapper">
+<div class="content-wrapper bg-dark">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Aggiungi documento Docente</div>
         <div class="card-body">
