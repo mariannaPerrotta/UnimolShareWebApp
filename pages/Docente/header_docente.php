@@ -58,9 +58,7 @@
 
                         <a href="index_doc.php?action=aggiungi_documento_doc">Aggiungi documento</a>
                     </li>
-                    <li>
-                        <a href="registrazione_docente.php">Documenti caricati</a>
-                    </li>
+
                 </ul>
             </li>
         </ul>
