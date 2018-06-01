@@ -56,10 +56,10 @@
               <a href="index.php?action=documentoStudente">Aggiungi documento</a>
             </li>
             <li>
-              <a href="index.php?action=documenti_caricati.php">Documenti caricati</a>
+              <a href="index.php?action=documenti_caricati">Documenti caricati</a>
             </li>
             <li>
-              <a href="index.php?action=lista_documenti.php">Lista documenti</a>
+              <a href="index.php?action=lista_documenti">Lista documenti</a>
             </li>
           </ul>
         </li>

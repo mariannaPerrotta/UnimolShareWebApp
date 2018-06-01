@@ -61,7 +61,7 @@ else{
         case 'segnalaProfilo' :
             include 'segnala_profilo.php';
             break;
-        case 'documentoCaricati' :
+        case 'documenti_caricati' :
             include 'documenti_caricati.php';
             break;
 
