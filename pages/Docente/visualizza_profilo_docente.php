@@ -35,6 +35,9 @@
             <div class="form-group">
                 <label for="CDL">Corso di Laurea: <font color="blue"></font></label>
             </div>
+            <div class="form-group">
+                <label for="Email">Email: <font color="blue"><?php echo($_SESSION['utente']['email'])?> </font></label>
+            </div>
             <div form="form-group">
                 <div class="form-row">
                     <a class="nav-link nav-link-collapse" data-toggle="collapse" style="padding-top: 0px;padding-right: 10px; padding-left: 0px;" href="#collapseMulti" data-parent="#exampleAccordion" aria-expanded="true">
@@ -60,12 +63,6 @@
                         <a href="../login.php">Fisica</a>
                     </li>
                 </ul>
-            </div>
-            <div class="form-group">
-                <label for="Email">Email:</label>
-            </div>
-            <div class="form-group">
-                <label for="password" type="password">Password:</label>
             </div>
 
         </form>
