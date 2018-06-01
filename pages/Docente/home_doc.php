@@ -42,7 +42,7 @@
 
         <div class="row">
             <!-- Single Special Area -->
-            <div class="col-12 col-md-4" style="margin-left: auto" style="margin-right: auto" >
+            <div class="col-12 col-md-4" style="margin-left: auto" style="margin-right: auto"  style="padding-top: unset">
                 <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
                     <div class="single-icon">
                         <i class="fa fa-fw fa-file" aria-hidden="true"></i>
