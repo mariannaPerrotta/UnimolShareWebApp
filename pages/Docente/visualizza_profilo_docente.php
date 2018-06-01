@@ -15,7 +15,7 @@
     <!-- Custom styles for this template-->
     <link href="../../css/c.css" rel="stylesheet">
 </head>
-<body class="container bg-dark" style="padding-top: unset">
+<body class="container bg-dark" style="padding-top: unset" style="padding-top: unset">
 <div class="card mt-3 col-md-4"style="border-color: #007bff; border-radius: 3%; margin-left: auto; margin-right: auto">
     <div class="card-body">
         <form method="POST" style="padding-left: 0.25%">
