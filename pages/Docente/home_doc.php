@@ -29,10 +29,10 @@
         <div class="row">
             <div class="col-12">
                 <!-- Section Heading Area -->
-                <center> <img src="../../img/unishareBianco.png" height="300" width="350"> </center>
+                <center> <img src="../../img/unishareBlu.png" height="300" width="350"> </center>
                 <div class="section-heading text-center">
                     <h2><font color="#007bff">UnimolShare</font></h2>
-                    <div class="line-shape"></div>
+                    <div class="line-shape" style="background-color: #17a2b8"></div>
                     <p></p>
                     <br><p><font size="4" color="black">Una piattaforma unica in cui gli studenti possono condividere e scaricare documenti di altri studenti<br>
                             o docenti, e questi ultimi possono caricare il materiale ufficiale dei corsi.</font></p>
@@ -45,10 +45,10 @@
             <div class="col-12 col-md-4" style="margin-left: auto" style="margin-right: auto"  style="padding-top: unset">
                 <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
                     <div class="single-icon">
-                        <i class="fa fa-fw fa-file" aria-hidden="true"></i>
+                        <i class="fa fa-fw fa-file" aria-hidden="true" style="color: #17a2b8"></i>
                     </div>
                     <h4><font color="#007bff">Documenti caricati</font></h4>
-                    <a style="color:black" href="../../pages/documenti_caricati.php">Clicca qui per visualizzare i documenti caricati</a>
+                    <a style="color:black" href="index_doc.php?action=documenti_caricati_doc">Clicca qui per visualizzare i documenti caricati</a>
                     <p></p>
                 </div>
             </div>
@@ -58,7 +58,7 @@
             <div class="col-12 col-md-4" style="margin-left: auto" style="margin-right: auto" >
                 <div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
                     <div class="single-icon">
-                        <i class="fa fa-fw fa-users" aria-hidden="true"></i>
+                        <i class="fa fa-fw fa-users" aria-hidden="true" style="color: #17a2b8"></i>
                     </div>
                     <h4><font color="#007bff">Portale del docente</font></h4>
                     <a style="color:black" href="https://unimol.esse3.cineca.it/Home.do">Clicca qui per essere reindirizzato al portale</a>
@@ -96,8 +96,8 @@
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Francesco Ranieri</h4>
-                            <p>Nullafacente</p>
+                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -115,8 +115,8 @@
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Danilo Sprovieri</h4>
-                            <p>Onesto</p>
+                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -134,8 +134,8 @@
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Jonathan Drini</h4>
-                            <p>Fut</p>
+                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -153,8 +153,8 @@
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Domenico Romano</h4>
-                            <p>In giro per isernia</p>
+                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -172,8 +172,8 @@
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Domenico Romano</h4>
-                            <p>In giro per isernia</p>
+                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -191,8 +191,8 @@
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Domenico Romano</h4>
-                            <p>In giro per isernia</p>
+                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -210,8 +210,8 @@
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Domenico Romano</h4>
-                            <p>In giro per isernia</p>
+                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -229,8 +229,8 @@
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Domenico Romano</h4>
-                            <p>In giro per isernia</p>
+                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -248,8 +248,8 @@
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Domenico Romano</h4>
-                            <p>In giro per isernia</p>
+                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -267,8 +267,8 @@
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Domenico Romano</h4>
-                            <p>In giro per isernia</p>
+                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <p></p>
                         </div>
                     </div>
                 </div>
