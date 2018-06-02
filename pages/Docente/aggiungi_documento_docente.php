@@ -40,7 +40,7 @@
                 </div>
                 <div form="form-group">
                     <div class="form-row">
-                        <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="Materie">Materie*</label>
+                        <label style="padding-right: 2%" for="Materie">Materie*</label>
                         <select name="Materia" id="Materia" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
                             <option value="Matematica"> Matematica </option>
                             <option value="Programmazione"> Programmazione </option>
