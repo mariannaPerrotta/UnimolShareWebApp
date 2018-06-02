@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-12">
                 <!-- Section Heading Area -->
-                <center> <img src="../../img/unishareBlu.png" height="300" width="350"> </center>
+                <center> <img src="../../img/UnishareBlu.png" height="300" width="350"> </center>
                 <div class="section-heading text-center">
                     <h2><font color="#007bff">UnimolShare</font></h2>
                     <div class="line-shape" style="background-color: #17a2b8"></div>
