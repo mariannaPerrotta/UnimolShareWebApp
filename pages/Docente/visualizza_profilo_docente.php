@@ -43,34 +43,6 @@
             <div class="form-group">
                 <label for="Email">Email: <font color="blue"><?php echo($_SESSION['utente']['email']) ?> </font></label>
             </div>
-            <div form="form-group">
-                <div class="form-row">
-                    <a class="nav-link nav-link-collapse" data-toggle="collapse"
-                       style="padding-top: 0px;padding-right: 10px; padding-left: 0px;" href="#collapseMulti"
-                       data-parent="#exampleAccordion" aria-expanded="true">
-                        <i class="fa fa-fw fa-arrow-circle-down"></i>
-                    </a>
-                    <label style="padding-top: 0px;padding-bottom: 15px;" for="exampleInputCodDocente">Materie</label>
-                </div>
-
-                <ul class="sidenav-second-level collapse show" id="collapseMulti" style="">
-                    <li>
-                        <a href="../login.php">Matematica</a>
-                    </li>
-                    <li>
-                        <a href="../login.php">Programmazione</a>
-                    </li>
-                    <li>
-                        <a href="../login.php">Ingegneria del software</a>
-                    </li>
-                    <li>
-                        <a href="../login.php">Calcolo numerico</a>
-                    </li>
-                    <li>
-                        <a href="../login.php">Fisica</a>
-                    </li>
-                </ul>
-            </div>
 
         </form>
     </div>
