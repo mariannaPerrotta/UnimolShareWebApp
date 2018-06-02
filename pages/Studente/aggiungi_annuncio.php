@@ -42,8 +42,17 @@
                             <input class="form-control" id="exampleInputCorsoDiStudio" type="text" aria-describedby="CorsoDiStudioHelp" placeholder="Inserisci il corso">
                         </div>
                         <div class="col-md-6">
-                            <label for="exampleInputMateria">Materia*</label>
-                            <input class="form-control" id="exampleInputMateria" type="text" aria-describedby="MateriaHelp" placeholder="Inserisci la materia">
+                            <label style="padding-right: 2%" for="Materie">Materia*</label>
+                            <select name="Materia" id="Materia" style="height: 37px; border-top-width: 1px;">
+                                <option value="Matematica"> Matematica </option>
+                                <option value="Programmazione"> Programmazione </option>
+                                <option value="Informatica giuridica"> Informatica giuridica </option>
+                                <option value="Linguaggi formali"> Linguaggi formali </option>
+                                <option value="Architettura degli elaboratori"> Architettura degli elaboratori </option>
+                                <option value="Evoluzione del calcolo automatico0"> Evoluzione del calcolo automatico </option>
+                                <option value="Inglese"> Inglese </option>
+                                <option value="Sistemi operativi"> Sistemi operativi </option>
+                            </select>
                         </div>
                     </div>
                 </div>
