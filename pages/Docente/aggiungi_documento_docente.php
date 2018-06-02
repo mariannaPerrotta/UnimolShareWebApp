@@ -17,7 +17,7 @@
 </head>
 
 <body class="bg-dark" style="padding-top: unset">
-<div class="content-wrapper bg-dark">
+<div class="content-wrapper bg-dark" style="padding-left:2%; padding-right: 2%">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Aggiungi documento Docente</div>
         <div class="card-body">
@@ -40,29 +40,18 @@
                 </div>
                 <div form="form-group">
                     <div class="form-row">
-                        <a class="nav-link nav-link-collapse" data-toggle="collapse" style="padding-top: 15px;padding-right: 10px;" href="#collapseMulti" data-parent="#exampleAccordion" aria-expanded="true">
-                            <i class="fa fa-fw fa-arrow-circle-down"></i>
-                        </a>
-                        <label style="padding-top: 15px;padding-bottom: 15px;" for="exampleInputCodDocente">Materie</label>
+                        <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="Materie">Materie*</label>
+                        <select name="Materia" id="Materia" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
+                            <option value="Matematica"> Matematica </option>
+                            <option value="Programmazione"> Programmazione </option>
+                            <option value="Informatica giuridica"> Informatica giuridica </option>
+                            <option value="Linguaggi formali"> Linguaggi formali </option>
+                            <option value="Architettura degli elaboratori"> Architettura degli elaboratori </option>
+                            <option value="Evoluzione del calcolo automatico0"> Evoluzione del calcolo automatico </option>
+                            <option value="Inglese"> Inglese </option>
+                            <option value="Sistemi operativi"> Sistemi operativi </option>
+                        </select>
                     </div>
-
-                    <ul class="sidenav-second-level collapse show" id="collapseMulti" style="">
-                        <li>
-                            <a href="../login.php">Matematica</a>
-                        </li>
-                        <li>
-                            <a href="../login.php">Programmazione</a>
-                        </li>
-                        <li>
-                            <a href="../login.php">Ingegneria del software</a>
-                        </li>
-                        <li>
-                            <a href="../login.php">Calcolo numerico</a>
-                        </li>
-                        <li>
-                            <a href="../login.php">Fisica</a>
-                        </li>
-                    </ul>
                 </div>
         </div>
         <div class="form-group">

@@ -18,13 +18,13 @@
 
 <body class="container bg-dark" style="padding-top: unset">
 <!--fare for per visualizzare 1 carta per ogni libro con chiamata php-->
-<div class="content-wrapper bg-dark">
-    <div class="card card-register mx-auto mt-5">
+<div class="content-wrapper bg-dark" style="padding-left:2%; padding-right: 2%">
+    <div class="card card-register mx-auto mt-5" style=" border-radius: 3%">
         <div class="card-body">
             <form method="POST" style="padding-left: 5%;">
-                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 20%; " id="btnrimuovilibro">
+                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuovilibro">
                     <i class="fa fa-fw fa-minus-circle"></i>
-                    <label for="rimuovilibro" style="padding-left: auto">Rimuovi</label>
+                    <label for="rimuovidocumento" style="padding-left: auto">Rimuovi</label>
                 </a>
                 <div class="form-group mt-3">
                     <label for="titololibro">Titolo:</label>

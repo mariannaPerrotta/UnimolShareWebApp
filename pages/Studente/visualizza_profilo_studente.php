@@ -17,8 +17,9 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<body class="container bg-dark">
-<div class="card mt-3 col-md-4"style="border-color: #007bff; border-radius: 3%; margin-left: auto!important; margin-right: auto!important;">
+<div class="content-wrapper" style=" background: unset; padding-left:2%; padding-right: 2%">
+<div class="card card-register mx-auto mt-5"style=" border-radius: 3%; margin-bottom: auto!important;">
+    <div class="card-header">Il mio profilo</div>
     <div class="card-body">
         <form method="POST" >
             <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnmodificaprofilo">
@@ -45,7 +46,7 @@
 
         </form>
     </div>
-</div>
+</div> </div>
 <!-- Bootstrap core JavaScript-->
 <script src="../../vendor/jquery/jquery.min.js"></script>
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -58,6 +59,6 @@
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-</body>
+
 
 </html>

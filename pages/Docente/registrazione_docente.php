@@ -16,7 +16,7 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark" style="padding-top: unset">
 <div class="container">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Registra docente</div>

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Title -->
+
     <title>UnimolShare</title>
 
     <!-- Favicon -->
@@ -25,7 +25,7 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 <!-- Navigation-->
 <section class="special-area bg-white section_padding_100" style="padding-top: unset" id="about">
-    <div class="container">
+    <div class="content-wrapper" style="padding-left:2%; padding-right: 2%">
         <div class="row">
             <div class="col-12">
                 <!-- Section Heading Area -->
@@ -42,7 +42,7 @@
 
         <div class="row">
             <!-- Single Special Area -->
-            <div class="col-12 col-md-4" style="margin-left: auto" style="margin-right: auto" >
+            <div class="col-12 col-md-4" style="margin-left: auto" style="margin-right: auto"  style="padding-top: unset">
                 <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
                     <div class="single-icon">
                         <i class="fa fa-fw fa-file" aria-hidden="true"></i>
@@ -71,7 +71,7 @@
 
     <!-- ***** Our Team Area Start ***** -->
     <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
-        <div class="container">
+        <div class="content-wrapper" style="padding-left:2%; padding-right: 2%">
             <div class="row">
                 <div class="col-12 text-center">
                     <!-- Heading Text  -->
