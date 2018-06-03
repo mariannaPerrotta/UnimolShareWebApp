@@ -47,8 +47,7 @@ else{
             include 'home.php';
             break;
         case 'documentoStudente' :
-            include 'aggiungi_documento_studente2.php';
-            //include 'aggiungi_documento_studente.php';
+            include 'aggiungi_documento_studente.php';
             break;
         case 'aggiungiAnnuncio' :
             include 'aggiungi_annuncio.php';

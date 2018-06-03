@@ -48,6 +48,9 @@
                 $menuName = 'file.pdf';
                 $result = move_uploaded_file($_FILES['file']['tmp_name'], $pdfPath . $menuName);
                 if ($result == 1) {
+
+                    /*** Invio dei dati al DB tramite rest ***/
+
                     echo 'File caricato';
                 } else {
                     echo 'Si è verficato un errore';
