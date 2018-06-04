@@ -12,6 +12,7 @@ $(document).ready(function() {
 
         success: function (data) {
             var matricola = data;
+
             $.ajax({
 
                 url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzaannunciopermatricola",
