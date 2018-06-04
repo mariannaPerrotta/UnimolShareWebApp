@@ -37,6 +37,15 @@
                 <div class="form-group">
                     <label for="edizionelibro">Edizione: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
                 </div>
+                <div class="form-group">
+                    <label for="cdl">Corso di laurea: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
+                </div>
+                <div class="form-group">
+                    <label for="materia">Materia: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
+                </div>
+                <div class="form-group">
+                    <label for="docente">Docente: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
+                </div>
             </form>
         </div>
     </div>

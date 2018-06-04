@@ -47,6 +47,7 @@ $(document).ready(function() {
                                 '                                    <label for="autore">Autore:' + ' '+ data.consigliati[i].autore + '</label>' +
                                 '                                    <label for="casaEditrice">Casa editrice:' + ' '+ data.consigliati[i].casaEditrice + '</label>' +
                                 '                                    <label for="edizione">Edizione:' + ' '+ data.consigliati[i].edizione + '</label>' +
+                                /*AGGIUNGERE CDL - MATERIA - NOME DOCENTE*/
                                 '                                </div>' +
                                 '                                </div>' +
                                 '                                </form>' +
