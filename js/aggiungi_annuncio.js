@@ -1,6 +1,6 @@
 document.getElementById("btnAggiungi_annuncio").onclick= function () {
 
-    var titolo = $("#InputTitolo").val();
+    var Titolo = $("#InputTitolo").val();
 
 
 
@@ -50,7 +50,7 @@ document.getElementById("btnAggiungi_annuncio").onclick= function () {
 
     $.ajax({
 
-        url: "http://localhost/UnimolShare/public/index.php/Aggiungi_annuncio",
+        url: "http://localhost/UnimolShare/public/index.php/aggiungi_annuncio",
 
         type: 'POST',
 
