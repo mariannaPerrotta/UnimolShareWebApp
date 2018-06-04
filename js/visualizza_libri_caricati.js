@@ -39,20 +39,20 @@ $(book).ready(function () {
 
                             libri.push(libro);
 
-                            $('#card_libri_consigliati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
+                            /*$('#card_libri_consigliati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
                                 '                                    <div class="card-body">' +
                                 '                                    <form method="POST" style="padding-left: 0.25%">' +
                                 '                                    <div class="form-group mt-4">' +
-                                '                                    <label for="titololibro">Titolo libro:' + ' ' + data.consigliati[i].titolo + '</label>' +
-                                '                                    <label for="autore">Autore:' + ' ' + data.consigliati[i].autore + '</label>' +
-                                '                                    <label for="casaEditrice">Casa editrice:' + ' ' + data.consigliati[i].casa_editrice + '</label>' +
-                                '                                    <label for="edizione">Edizione:' + ' ' + data.consigliati[i].edizione + '</label>' +
+                                '                                    <label for="titololibro">Titolo libro:' + ' ' + data.libri[i].titolo + '</label>' +
+                                '                                    <label for="autore">Autore:' + ' ' + data.libri[i].autore + '</label>' +
+                                '                                    <label for="casaEditrice">Casa editrice:' + ' ' + data.libri[i].casa_editrice + '</label>' +
+                                '                                    <label for="edizione">Edizione:' + ' ' + data.libri[i].edizione + '</label>' +
                                 '                                </div>' +
                                 '                                </div>' +
                                 '                                </form>' +
                                 '                                </div>' +
                                 '                                </div>' +
-                                '                            }');
+                                '                            }');*/
                         }
                     }
 
