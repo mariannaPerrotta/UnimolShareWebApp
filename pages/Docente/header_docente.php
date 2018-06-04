@@ -102,7 +102,7 @@
 <div class="content-wrapper">
 
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top" style="z-index: 2147483647;">
+    <a class="scroll-to-top rounded" href="#page-top" style="z-index: 2147483647;" >
         <i class="fa fa-angle-up"></i>
     </a>
     <!-- Logout Modal-->
