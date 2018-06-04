@@ -1,4 +1,3 @@
-
 document.getElementById("aggiungi").onclick = function () {
 
     var formData = new FormData($("#form-carica").get(0));
