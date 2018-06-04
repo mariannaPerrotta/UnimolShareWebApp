@@ -17,7 +17,6 @@
 </head>
 
 <div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="card_documenti_caricati">
-    <!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
 
 </div>
 

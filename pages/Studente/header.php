@@ -73,7 +73,7 @@
                 <a href="index.php?action=aggiungiAnnuncio">Aggiungi annuncio</a>
             </li>
             <li>
-                <a href="index.php?action=annunciCaricati" id="btnAnnunciCaricati">Annunci caricati</a>
+                <a href="index.php?action=annunciCaricati">Annunci caricati</a>
             </li>
             <li>
               <a href="#">Lista annunci</a>

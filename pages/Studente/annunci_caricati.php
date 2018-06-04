@@ -56,7 +56,7 @@
 
 <script src="../../js/login.js"></script>
 
-<script src="../../js/annunci_caricati.js"></script>
+<script src="../../js/visualizza_annunci_caricati.js"></script>
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
