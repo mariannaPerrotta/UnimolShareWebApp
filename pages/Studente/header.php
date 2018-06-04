@@ -113,8 +113,8 @@
   <div class="content-wrapper">
 
       <!-- Scroll to Top Button-->
-      <a class="scroll-to-top rounded" href="#page-top">
-          <i class="fa fa-angle-up"></i>
+      <a class="scroll-to-top rounded" href="#page-top" style="z-index: 2147483647;">
+          <i class="fa fa-angle-up" ></i>
       </a>
       <!-- Logout Modal-->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
