@@ -7,7 +7,6 @@ document.getElementById("btnlogin").onclick= function () {
     var password =$("#InputPassword").val();
 
 
-
 // questo serve per mettere insieme i due input
 
     var data = {
