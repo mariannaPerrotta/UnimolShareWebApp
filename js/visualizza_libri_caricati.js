@@ -25,7 +25,7 @@ $(book).ready(function () {
 
                     if (data.libri.error == false) {
 
-                        var n = data.annunci.lenght;  // n = libri.lenght ???
+                        var n = data.libri.lenght;  // n = libri.lenght ???
                         var libri = [];
                         for (var i = 0; i < n; i++) {
 
