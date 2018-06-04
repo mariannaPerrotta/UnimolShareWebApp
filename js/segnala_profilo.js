@@ -21,7 +21,7 @@ document.getElementById("btnsegnalaprofilo").onclick= function () {
 
     $.ajax({
 
-        url: "http://localhost/UnimolShare/public/pages/Studente/segnala_profilo",
+        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/segnalazione",
 
         type: 'POST',
 
