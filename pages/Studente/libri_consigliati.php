@@ -24,7 +24,7 @@
             <form method="POST" style="padding-left: 5%;">
                 <div class="form-group mt-3">
 
-                    // DA MODIFICARE LA STAMPA A VIDEO
+                    DA MODIFICARE LA STAMPA A VIDEO<br><br>
 
                     <label for="titololibro">Titolo libro: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
                 </div>
