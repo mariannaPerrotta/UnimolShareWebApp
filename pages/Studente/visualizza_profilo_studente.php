@@ -40,7 +40,8 @@
                                 color="blue"><?php echo($_SESSION['utente']['cognome']) ?> </font></label>
                 </div>
                 <div class="form-group">
-                    <label for="CDL">Corso di Laurea: <font color="blue"></font></label>
+                    <label for="CDL">Corso di Laurea: <font
+                                    color="blue"><?php echo($_SESSION['utente']['cdl']) ?></font></label>
                 </div>
                 <div class="form-group">
                     <label for="Email">Email: <font
