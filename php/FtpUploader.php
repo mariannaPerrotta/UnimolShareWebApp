@@ -52,7 +52,7 @@ class FtpUploader
             while (in_array($fileName, $contents_on_server));
 
             //Upload to Server
-            $link = $ftpFolder.$fileName;
+            $link = $ftpFolder.$fileName.".pdf";
             $upload = ftp_put($ftp_connessione, $link, $file_da_caricare, FTP_BINARY);
 
             // controllo se upload andato a buon fine
