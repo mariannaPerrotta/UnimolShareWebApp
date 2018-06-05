@@ -1,23 +1,16 @@
-$(document).ready(function () {
+document.getElementById("materia_libri").onclick =function () {
 
-    $.ajax({
-        url: "http://localhost/UnimolShareWebApp/pages/matricola.php",
 
-        type: 'POST',
 
-        data: {matricola: null},
+    alert("gg");
 
-        dataType: "html",
-
-        success: function (data) {
-            var matricola = data;
             $.ajax({
 
-                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriapercdl",
+                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzalibripermateria",
 
                 type: 'POST',
 
-                data: {matricola: matricola},
+                data: {materia: materia},
 
                 dataType: "json",
 
@@ -30,24 +23,24 @@ $(document).ready(function () {
                         for (var i = 0; i < n; i++) {
 
                             var libro = {
-                                titolo: data.array[i].titolo,
-                                autore: data.array[i].autore,
-                                casa_editrice: data.array[i].casa_editrice,
-                                edizione: data.array[i].edizione,
-                                link: data.array[i].link,
+                                titolo: data.libri[i].titolo,
+                                autore: data.libri[i].autore,
+                                casa_editrice: data.libri[i].casa_editrice,
+                                edizione: data.libri[i].edizione,
+                                link: data.libri[i].link,
                             }
 
-                            array.push(nomi_materie);
+                            array.push(libro);
 
                             $('#card_libri_consigliati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
                                 '                                    <div class="card-body">' +
                                 '                                    <form method="POST" style="padding-left: 0.25%">' +
                                 '                                    <div class="form-group mt-4">' +
-                                '                                    <label for="titololibro">Titolo:' + ' ' + data.array[i].titolo + '</label>' +
-                                '                                    <label for="titololibro">Autore:' + ' ' + data.array[i].autore + '</label>' +
-                                '                                    <label for="titololibro">Casa Editrice:' + ' ' + data.array[i].casa_editrice + '</label>' +
-                                '                                    <label for="titololibro">Edizione:' + ' ' + data.array[i].edizione + '</label>' +
-                                '                                    <label for="titololibro">Link:' + ' ' + data.array[i].link + '</label>' +
+                                '                                    <label for="titololibro">Titolo:' + ' ' + array[i].titolo + '</label>' +
+                                '                                    <label for="titololibro">Autore:' + ' ' +array[i].autore + '</label>' +
+                                '                                    <label for="titololibro">Casa Editrice:' + ' ' + array[i].casa_editrice + '</label>' +
+                                '                                    <label for="titololibro">Edizione:' + ' ' + array[i].edizione + '</label>' +
+                                '                                    <label for="titololibro">Link:' + ' ' + array[i].link + '</label>' +
 
                                 '                                </div>' +
                                 '                                </div>' +
@@ -74,8 +67,6 @@ $(document).ready(function () {
 
             });
 
-        }
 
-    });
 
-})
+}

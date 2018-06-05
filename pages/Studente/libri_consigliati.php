@@ -16,39 +16,7 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%">
-    <!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
-    <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
-        <div class="card-header">Libri consigliati</div>
-        <div class="card-body">
-            <form method="POST" style="padding-left: 5%;">
-                <div class="form-group mt-3">
-
-                    DA MODIFICARE LA STAMPA A VIDEO<br><br>
-
-                    <label for="titololibro">Titolo libro: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
-                </div>
-                <div class="form-group">
-                    <label for="autorelibro">Autore: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
-                </div>
-                <div class="form-group">
-                    <label for="casaeditrice">Casa editrice: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
-                </div>
-                <div class="form-group">
-                    <label for="edizionelibro">Edizione: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
-                </div>
-                <div class="form-group">
-                    <label for="cdl">Corso di laurea: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
-                </div>
-                <div class="form-group">
-                    <label for="materia">Materia: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
-                </div>
-                <div class="form-group">
-                    <label for="docente">Docente: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
-                </div>
-            </form>
-        </div>
-    </div>
+<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="card_libri_consigliati">
 </div>
 <!-- Bootstrap core JavaScript-->
 <script src="../../vendor/jquery/jquery.min.js"></script>

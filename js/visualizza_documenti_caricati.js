@@ -41,7 +41,7 @@ $(document).ready(function() {
                                 '                                    <form method="POST" style="padding-left: 0.25%">' +
                                 '                                    <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuovidocumento">' +
                                 '                                    <i class="fa fa-fw fa-minus-circle"></i>' +
-                                '                                    <label for="rimuovidocumento" style="padding-left: auto" id="'+data.documenti[i]+'">Rimuovi</label>' +
+                                '                                    <label for="rimuovidocumento" style="padding-left: auto" id="'+documenti[i]+'">Rimuovi</label>' +
                                 '                                    </a>' +
                                 '                                    <div class="form-group mt-4">' +
                                 '                                    <label for="titolodocumento">Titolo documento:' + ' '+ documenti[i].titolo + '</label>' +
