@@ -34,6 +34,7 @@
                             <div class="col-md-6">
                                 <label for="InputTitolo">Titolo</label>
                                 <input class="form-control" id="InputTitolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci titolo">
+                                <input id="InputMatricola" type="hidden" value="<?php echo ($_SESSION['utente']['matr']);?>">
                             </div>
                         </div>
                     </div>
