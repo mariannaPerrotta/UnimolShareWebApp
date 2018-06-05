@@ -34,9 +34,9 @@ $(document).ready(function() {
                             var annuncio = {
                                 titolo: data.annunci[i].titolo,
                                 autore: data.annunci[i].autore,
-                                corsodistudio: data.annunci[i].corsodistudio,
+
                                 materia: data.annunci[i].materia,
-                                contattotelefonico: data.annunci[i].contattotelefonico,
+                                contatto: data.annunci[i].contatto,
                                 prezzo: data.annunci[i].prezzo,
                             }
 
