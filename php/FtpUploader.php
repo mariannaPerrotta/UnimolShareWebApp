@@ -49,13 +49,21 @@ class FtpUploader
 
                 //Aggiorno il link nel db tramite servizio REST
                 $urlRest = 'http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricadocumento';
-                $data = array(
-                    'titolo' => $fileName,
-                    'codice_docente' => $cod_doc,
-                    'codice_studente' => $cod_stud,
-                    'codice_materia' => $cod_mat,
-                    'link' => $link
-                );
+                if($cod_doc !== "") {
+                    $data = array(
+                        'titolo' => $fileName,
+                        'codice_docente' => $cod_doc,
+                        'codice_materia' => $cod_mat,
+                        'link' => $link
+                    );
+                } else{
+                    $data = array(
+                        'titolo' => $fileName,
+                        'codice_studente' => $cod_stud,
+                        'codice_materia' => $cod_mat,
+                        'link' => $link
+                    );
+                }
 
                 $options = array(
                     'http' => array(
@@ -69,7 +77,6 @@ class FtpUploader
 
                 if((json_decode($response))->{'error'}){
                     $response = "Si è verificato un errore durante l'aggiornamento del DB!";
-                    $response = $response." ".$fileName." ".$cod_doc." ".$cod_stud." ".$cod_mat." ".$link;
                 } else {
                     $response = (json_decode($response))->{'message'};
                 }
