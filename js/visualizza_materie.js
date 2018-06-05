@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $.ajax({
-        url: "http://localhost/UnimolShareWebApp/pages/utente.php",
+        url: "http://localhost/UnimolShareWebApp/pages/cdl.php",
 
         type: 'POST',
 
@@ -10,19 +10,18 @@ $(document).ready(function() {
         dataType: "html",
 
         success: function (data) {
-            var cdl = 1;
+            var cdl = data;
             $.ajax({
 
                 url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriapercdl",
 
                 type: 'POST',
 
-                data: {cdl: cdl},
+                data: {cod_cdl: cdl},
 
                 dataType: "json",
 
                 success: function (data) {
-
                     if (data.nomi_materie.error == false) {
 
                         var n = data.nomi_materie.contatore;
@@ -40,23 +39,21 @@ $(document).ready(function() {
                                 '                                    <div class="card-body">' +
                                 '                                    <form method="POST" style="padding-left: 0.25%">' +
                                 '                                    <div class="form-group mt-4">' +
-                                '                                    <label for="titololibro">' + ' '+ data.array[i].nome + '</label>' +
+                                '                                    <button id="materia_libri"   value="'+array[i].nome+'" for="titololibro">' + ' '+ array[i].nome + '</button>' +
 
                                 /*AGGIUNGERE CDL - MATERIA - NOME DOCENTE*/
                                 '                                </div>' +
                                 '                                </div>' +
                                 '                                </form>' +
-                                '                                </div>' +
+
                                 '                                </div>' +
                                 '                            }');
 
 
 
                         }
+
                     }
-
-
-
 
                 },
                 error: function (err) {
