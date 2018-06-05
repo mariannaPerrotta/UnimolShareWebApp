@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $.ajax({
-        url: "http://localhost/UnimolShareWebApp/pages/cdl.php",
+        url: "../../pages/cdl.php",
 
         type: 'POST',
 
@@ -22,34 +22,28 @@ $(document).ready(function() {
                 dataType: "json",
 
                 success: function (data) {
-                    if (data.nomi_materie.error == false) {
+                    if (data.nomi_materie.error === false) {
 
                         var n = data.nomi_materie.contatore;
                         var array = [];
+                        var hook = '#form_materie';
                         for (var i = 0; i < n; i++) {
+
 
                             var materia = {
                                 nome: data.nomi_materie[i].nome,
-
                             }
-
                             array.push(materia);
 
-                            $('#card_materie').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
-                                '                                    <div class="card-body">' +
-                                '                                    <form method="POST" style="padding-left: 0.25%">' +
-                                '                                    <div class="form-group mt-4">' +
-                                '                                    <button id="materia_libri"   value="'+array[i].nome+'" for="titololibro">' + ' '+ array[i].nome + '</button>' +
+                            if(i > 0) {
+                                hook = '#' + array[i - 1].nome;
+                            }
 
+
+                            $(hook).append(' <div id ="'+array[i].nome+'" class="form-group mt-4">' +
+                                '               <button id="'+array[i].nome+'_button" type="button"  value="'+array[i].nome+'" onclick="MyClick('+"'"+array[i].nome+"'"+')">' + ' '+ array[i].nome + '</button>' +
                                 /*AGGIUNGERE CDL - MATERIA - NOME DOCENTE*/
-                                '                                </div>' +
-                                '                                </div>' +
-                                '                                </form>' +
-
-                                '                                </div>' +
-                                '                            }');
-
-
+                                '            </div>');
 
                         }
 
