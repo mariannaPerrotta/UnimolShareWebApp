@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="utf-8">
@@ -35,6 +35,7 @@
                                 <label for="InputTitolo">Titolo</label>
                                 <input class="form-control" id="InputTitolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci titolo">
                                 <input id="InputMatricola" type="hidden" value="<?php echo ($_SESSION['utente']['matr']);?>">
+                                <input id="InputTipo" type="hidden" value="<?php echo ($_SESSION['utente']['tipo']);?>">
                             </div>
                         </div>
                     </div>
