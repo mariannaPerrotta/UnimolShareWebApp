@@ -1,26 +1,25 @@
-document.getElementById("btnAggiungi_annuncio").onclick= function () {
+document.getElementById("aggiungi_annuncio").onclick= function () {
 
-    var Titolo = $("#InputTitolo").val();
-
-
-
-    var Autore = $("#InputAutore").val();
+    var Titolo = $("#exampleInputTitolo").val();
 
 
 
-    var CorsoDiStudio= $("#InputCorsoDiStudio").val();
+    var Autore = $("#exampleInputAutore").val();
 
 
 
-    var Materia =$("#InputMateria").val();
+    var CorsoDiStudio= $("#exampleInputCorsoDiStudio").val();
 
 
 
-    var ContattoTelefonico =$("#InputContattoTelefonico").val();
 
 
 
-    var Prezzo =$("#InputPrezzo").val();
+    var ContattoTelefonico =$("#exampleInputContattoTelefonico").val();
+
+
+
+    var Prezzo =$("#exampleInputPrezzo").val();
 
 
 
@@ -35,10 +34,6 @@ document.getElementById("btnAggiungi_annuncio").onclick= function () {
 
         CorsoDiStudio: CorsoDiStudio,
 
-
-        Materia: Materia,
-
-
         ContattoTelefonico: ContattoTelefonico,
 
 
@@ -50,7 +45,7 @@ document.getElementById("btnAggiungi_annuncio").onclick= function () {
 
     $.ajax({
 
-        url: "http://localhost/UnimolShare/public/index.php/aggiungi_annuncio",
+        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricaannuncio",
 
         type: 'POST',
 
@@ -61,7 +56,8 @@ document.getElementById("btnAggiungi_annuncio").onclick= function () {
         success: function (data) {
 
             if(data.error==false){
-                window.location.assign('index.php')
+                alert("Annuncio caricato");
+                window.location.assign('index.php?action=aggiungiAnnuncio');
             }
 
 

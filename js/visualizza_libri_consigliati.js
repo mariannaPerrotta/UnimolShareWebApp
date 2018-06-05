@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $.ajax({
-        url: "http://localhost/UnimolShareWebApp/pages/utente.php",
+        url: "http://localhost/UnimolShareWebApp/pages/matricola.php",
 
         type: 'POST',
 

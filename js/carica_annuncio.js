@@ -1,11 +1,16 @@
 document.getElementById("aggiungi").onclick = function () {
 
-    var formData = new FormData($("#form-carica").get(0));
-    var urlUploder = "../../php/uploader.php";
+    var titolo = $("#InputTitolo").val();
+    var contatto = $("#InputContatto").val();
+    var prezzo = $("#InputPrezzo").val();
+    var edizione = $("#InputEdizione").val();
+    var casaeditrice = $("#InputCasaEditrice").val();
+    var autore = $("#InputAutore").val();
 
+    //Carico localmente il file
     $.ajax({
 
-        url: urlUploder,
+        url: "",
         type: "POST",
         data: formData,
         contentType: false,
@@ -16,7 +21,5 @@ document.getElementById("aggiungi").onclick = function () {
             alert(data);
 
         },
-
-
     });
 }

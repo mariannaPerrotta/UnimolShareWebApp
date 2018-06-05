@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
     $.ajax({
-        url: "http://localhost/UnimolShareWebApp/pages/utente.php",
+        url: "http://localhost/UnimolShareWebApp/pages/matricola.php",
 
         type: 'POST',
 
@@ -33,11 +33,11 @@ $(document).ready(function() {
 
                             var annuncio = {
                                 titolo: data.annunci[i].titolo,
-                                autore: data.annunci[i].autore,
-                                corsodistudio: data.annunci[i].corsodistudio,
-                                materia: data.annunci[i].materia,
-                                contattotelefonico: data.annunci[i].contattotelefonico,
-                                prezzo: data.annunci[i].prezzo,
+                                contatto: data.annunci[i].contatto,
+                                prezzo: data.annunci[i].prezzo,                                prezzo: data.annunci[i].prezzo,
+                                edizione: data.annunci[i].edizione,
+                                casa_editrice: data.annunci[i].casa_editrice,
+                                autore:data.annunci[i].autore,
                             }
 
                             annunci.push(annuncio);
@@ -52,8 +52,20 @@ $(document).ready(function() {
                                 '                                    <div class="form-group mt-4">' +
                                 '                                    <label for="titoloannuncio">Titolo annuncio:' + ' '+ annunci[i].titolo + '</label>' +
                                 '                                </div>' +
-                                '                                <div class="form-group">' +
-                                '                                    <label for="materiaannuncio">Materia:</label>' +
+                                '                                    <div class="form-group mt-4">' +
+                                '                                    <label for="contattoannuncio">Contatto annuncio:' + ' '+ annunci[i].contatto + '</label>' +
+                                '                                </div>' +
+                                '                                    <div class="form-group mt-4">' +
+                                '                                    <label for="prezzoannuncio">Prezzo annuncio:' + ' '+ annunci[i].prezzo + '</label>' +
+                                '                                </div>' +
+                                '                                    <div class="form-group mt-4">' +
+                                '                                    <label for="edizioneannuncio">Edizione annuncio:' + ' '+ annunci[i].edizione + '</label>' +
+                                '                                </div>' +
+                                '                                    <div class="form-group mt-4">' +
+                                '                                    <label for="casaeditriceannuncio">Casa editrice annuncio:' + ' '+ annunci[i].casa_editrice + '</label>' +
+                                '                                </div>' +
+                                '                                    <div class="form-group mt-4">' +
+                                '                                    <label for="autoreannuncio">Autore annuncio:' + ' '+ annunci[i].autore + '</label>' +
                                 '                                </div>' +
                                 '                                <a class="btn btn-primary btn-block" style="color:white" id="btnvisualizzaannuncio">Download annuncio</a>' +
                                 '\n' +

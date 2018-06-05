@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="documenti_caricati">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
