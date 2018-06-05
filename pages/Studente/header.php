@@ -93,9 +93,9 @@
         <li class="nav-item">
           <form class="form-inline my-2 my-lg-0 mr-lg-2">
             <div class="input-group">
-              <input class="form-control" type="text" placeholder="Ricerca">
-              <span class="input-group-append">
-                <button class="btn btn-primary" type="button">
+              <input class="form-control" id="InputRicerca" type="text" placeholder="Ricerca">
+              <span class="input-group-append" >
+                <button class="btn btn-primary" id="idRicerca" type="button">
                   <i class="fa fa-search"></i>
                 </button>
               </span>
