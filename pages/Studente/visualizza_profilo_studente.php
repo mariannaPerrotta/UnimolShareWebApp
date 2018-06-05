@@ -39,9 +39,7 @@
                     <label for="cognome">Cognome: <font
                                 color="blue"><?php echo($_SESSION['utente']['cognome']) ?> </font></label>
                 </div>
-                <div class="form-group">
-                    <label for="CDL">Corso di Laurea: <font
-                                    color="blue"><?php echo($_SESSION['utente']['cdl']) ?></font></label>
+                <div class="form-group" id="idCdL">
                 </div>
                 <div class="form-group">
                     <label for="Email">Email: <font
@@ -62,6 +60,7 @@
 
 <script src="../../js/login.js"></script>
 
+<script src="../../js/visualizza_profilo_studente.js"></script>
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 

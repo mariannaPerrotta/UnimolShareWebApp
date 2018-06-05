@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     $.ajax({
         url: "http://localhost/UnimolShareWebApp/pages/matricola.php",
@@ -13,8 +13,7 @@ $(document).ready(function() {
             var matricola = data;
             $.ajax({
 
-                // URL DA MODIFICARE
-                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzalibriconsigliati",
+                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriapercdl",
 
                 type: 'POST',
 
@@ -24,30 +23,32 @@ $(document).ready(function() {
 
                 success: function (data) {
 
-                    if (data.consigliati.error == false) {
+                    if (data.libri.error == false) {
 
-                        var n = data.consigliati.contatore;
-                        var consigliati = [];
+                        var n = data.libri.contatore;
+                        var array = [];
                         for (var i = 0; i < n; i++) {
 
-                            var consigliati = {
-                                titolo: data.consigliati[i].titolo,
-                                autore: data.consigliati[i].autore,
-                                casaEditrice: data.consigliati[i].casaEditrice,
-                                edizione: data.consigliati[i].edizione,
+                            var libro = {
+                                titolo: data.array[i].titolo,
+                                autore: data.array[i].autore,
+                                casa_editrice: data.array[i].casa_editrice,
+                                edizione: data.array[i].edizione,
+                                link: data.array[i].link,
                             }
 
-                            consigliati.push(consigliato);
+                            array.push(nomi_materie);
 
                             $('#card_libri_consigliati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
                                 '                                    <div class="card-body">' +
                                 '                                    <form method="POST" style="padding-left: 0.25%">' +
                                 '                                    <div class="form-group mt-4">' +
-                                '                                    <label for="titololibro">Titolo libro:' + ' '+ data.consigliati[i].titolo + '</label>' +
-                                '                                    <label for="autore">Autore:' + ' '+ data.consigliati[i].autore + '</label>' +
-                                '                                    <label for="casaEditrice">Casa editrice:' + ' '+ data.consigliati[i].casaEditrice + '</label>' +
-                                '                                    <label for="edizione">Edizione:' + ' '+ data.consigliati[i].edizione + '</label>' +
-                                /*AGGIUNGERE CDL - MATERIA - NOME DOCENTE*/
+                                '                                    <label for="titololibro">Titolo:' + ' ' + data.array[i].titolo + '</label>' +
+                                '                                    <label for="titololibro">Autore:' + ' ' + data.array[i].autore + '</label>' +
+                                '                                    <label for="titololibro">Casa Editrice:' + ' ' + data.array[i].casa_editrice + '</label>' +
+                                '                                    <label for="titololibro">Edizione:' + ' ' + data.array[i].edizione + '</label>' +
+                                '                                    <label for="titololibro">Link:' + ' ' + data.array[i].link + '</label>' +
+
                                 '                                </div>' +
                                 '                                </div>' +
                                 '                                </form>' +
@@ -56,11 +57,8 @@ $(document).ready(function() {
                                 '                            }');
 
 
-
                         }
                     }
-
-
 
 
                 },

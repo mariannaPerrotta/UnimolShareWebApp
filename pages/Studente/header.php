@@ -40,7 +40,7 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libri consigliati">
-          <a class="nav-link"  href="index.php?action=libri_consigliati">
+          <a class="nav-link"  href="index.php?action=visualizza_materie">
             <i class="fa fa-fw fa-book"></i>
             <span class="nav-link-text">Libri Consigliati</span>
           </a>
@@ -93,9 +93,9 @@
         <li class="nav-item">
           <form class="form-inline my-2 my-lg-0 mr-lg-2">
             <div class="input-group">
-              <input class="form-control" type="text" placeholder="Ricerca">
-              <span class="input-group-append">
-                <button class="btn btn-primary" type="button">
+              <input class="form-control" id="InputRicerca" type="text" placeholder="Ricerca">
+              <span class="input-group-append" >
+                <button class="btn btn-primary" id="idRicerca" type="button">
                   <i class="fa fa-search"></i>
                 </button>
               </span>
