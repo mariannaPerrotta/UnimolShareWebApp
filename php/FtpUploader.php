@@ -18,12 +18,13 @@ class FtpUploader
     public function upload($fileName, $cod_doc, $cod_stud, $cod_mat) {
 
         //Configurazione ftp del server backend
-        $ftp_server="ftp.unimolshare.altervista.org";
-        $ftp_username="unimolshare";
-        $ftp_password="FAq3EG9G3ufj";
+        $http_server = "http://unimolshare.altervista.org";
+        $ftp_server= "ftp.unimolshare.altervista.org";
+        $ftp_username= "unimolshare";
+        $ftp_password= "FAq3EG9G3ufj";
         //Indirizzi
-        $ftpFolder = "/file/test/";
-        $localFolder = "../FILEPDFTEST/";
+        $ftpFolder = "/file/documents/";
+        $localFolder = "../FILETMP/";
         $response = "";
 
         // stabilisco la connessione al server ftp
@@ -38,8 +39,20 @@ class FtpUploader
         } else {
             // se connessione ha avuto buon fine faccio UPLOAD del file nel Server
             $file_da_caricare = $localFolder.$fileName;
-            $link = $ftpFolder.$fileName;
+            $contents_on_server = ftp_nlist($ftp_connessione, $ftpFolder); //Returns an array of filenames from the specified directory on success or FALSE on error.
 
+            //Automatic rename file if it exist
+            $i = 0;
+            $fileNameOld = $fileName;
+            do {
+                if($i > 0)
+                    $fileName = $fileNameOld."_".$i;
+                $i++;
+            }// Test if file is in the ftp_nlist array
+            while (in_array($fileName, $contents_on_server));
+
+            //Upload to Server
+            $link = $ftpFolder.$fileName;
             $upload = ftp_put($ftp_connessione, $link, $file_da_caricare, FTP_BINARY);
 
             // controllo se upload andato a buon fine
@@ -47,6 +60,7 @@ class FtpUploader
                 $response = "Si è verificato un errore durante il caricamento!";
             } else {
 
+                $link = $http_server.$ftpFolder.$fileName.".pdf";
                 //Aggiorno il link nel db tramite servizio REST
                 $urlRest = 'http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricadocumento';
                 if($cod_doc !== "") {
@@ -82,22 +96,6 @@ class FtpUploader
                 }
 
             }
-
-            /*
-            //se invece voglio effettuare un DOWNLOAD:
-            $file_da_scaricare = $ftpFolder.$fileName;
-            $dove_scaricare = $ftpFolder.$fileName;
-
-            $download = ftp_get($ftp_connessione, $dove_scaricare, $file_da_scaricare, FTP_BINARY);
-
-            // controllo se download andato a buon fine
-            if (!$download) {
-                echo "Si è verificato un errore durante il download!<br>";
-            } else {
-                echo "Download avvenuto con successo<br>";
-            }
-
-            */
 
             // chiudo connessione FTP
             ftp_quit($ftp_connessione);

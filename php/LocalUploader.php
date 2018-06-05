@@ -8,7 +8,7 @@
     require "FtpUploader.php";
 
     //Indirizzo
-    $pdfPath = "../FILEPDFTEST/";
+    $pdfPath = "../FILETMP/";
     $maxSize = 102400; //MAX 100 MB
 
     //Controlli sul file
