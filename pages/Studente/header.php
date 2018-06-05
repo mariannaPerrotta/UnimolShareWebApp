@@ -40,7 +40,7 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libri consigliati">
-          <a class="nav-link"  href="index.php?action=libri_consigliati">
+          <a class="nav-link"  href="index.php?action=visualizza_materie">
             <i class="fa fa-fw fa-book"></i>
             <span class="nav-link-text">Libri Consigliati</span>
           </a>

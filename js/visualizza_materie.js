@@ -1,63 +1,61 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     $.ajax({
         url: "http://localhost/UnimolShareWebApp/pages/utente.php",
 
         type: 'POST',
 
-        data: {matricola: null},
+        data: {cdl: null},
 
         dataType: "html",
 
         success: function (data) {
-            var matricola = data;
+            var cdl = 1;
             $.ajax({
-                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzaannunciopermatricola",
+
+                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriapercdl",
 
                 type: 'POST',
 
-                data: {matricola: matricola},
+                data: {cdl: cdl},
 
                 dataType: "json",
 
                 success: function (data) {
 
-                    if (data.annnunci.error == false) {
+                    if (data.nomi_materie.error == false) {
 
-                        var n = data.annunci.contatore;
-                        var annunci = [];
+                        var n = data.nomi_materie.contatore;
+                        var array = [];
                         for (var i = 0; i < n; i++) {
 
-                            var annuncio = {
-                                titolo: data.annunci[i].titolo,
-                                autore: data.annunci[i].autore,
-                                cdl: data.annunci[i].cdl,
-                                materia: data.annunci[i].materia,
-                                prezzo: data.annunci[i].prezzo,
+                            var materia = {
+                                nome: data.nomi_materie[i].nome,
+
                             }
 
-                            annunci.push(annuncio);
+                            array.push(materia);
 
-                            $('#card_lista_annunci').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
+                            $('#card_materie').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
                                 '                                    <div class="card-body">' +
                                 '                                    <form method="POST" style="padding-left: 0.25%">' +
                                 '                                    <div class="form-group mt-4">' +
-                                '                                    <label for="titolo">Titolo:' + ' ' + annunci[i].titolo + '</label>' +
-                                '                                </div>' +
-                                '                                <div class="form-group">' +
-                                '                                    <label for="autore">Autore:</label>' +
-                                '                                </div>' +
+                                '                                    <label for="titololibro">' + ' '+ data.array[i].nome + '</label>' +
 
-
-                                '\n' +
+                                /*AGGIUNGERE CDL - MATERIA - NOME DOCENTE*/
+                                '                                </div>' +
+                                '                                </div>' +
                                 '                                </form>' +
                                 '                                </div>' +
                                 '                                </div>' +
                                 '                            }');
 
 
+
                         }
                     }
+
+
 
 
                 },

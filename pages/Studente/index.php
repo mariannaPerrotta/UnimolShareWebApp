@@ -73,6 +73,9 @@ else{
         case 'lista_annunci':
             include 'lista_annunci.php';
             break;
+        case 'visualizza_materie':
+            include 'visualizza_materie.php';
+            break;
 
     }
 
