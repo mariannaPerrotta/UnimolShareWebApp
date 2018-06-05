@@ -34,7 +34,7 @@ document.getElementById("btnlogin").onclick= function () {
         success: function (data) {
 //questo serve per vedere quando l'utente è autenticato
 
-            if(data.error==false){
+            if(data.error===false){
 
 
 
@@ -50,7 +50,7 @@ document.getElementById("btnlogin").onclick= function () {
 
                 alert("yes " + JSON.stringify(utente.tipo));
                 $.ajax({
-                        url: "http://localhost/UnimolShareWebApp/pages/session.php",
+                        url: "../pages/session.php",
 
                         type: 'POST',
 
@@ -60,10 +60,10 @@ document.getElementById("btnlogin").onclick= function () {
 
                         success:function (data) {
                             alert("yes " + JSON.stringify(data));
-                            if( data=="studente"){
+                            if( data==="studente"){
                                 window.location.assign('Studente/index.php');
                             }
-                            if( data=="docente"){
+                            if( data==="docente"){
                                 window.location.assign('Docente/index_doc.php');
                             }
 
