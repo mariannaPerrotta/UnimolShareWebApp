@@ -1,3 +1,5 @@
+/*Dato che non posso sapere a priori che id avrà il button (non so quanti ne saranno visualizzati)
+invece di cercare l'elemento nel js, attivo una funzione js col click del button stesso*/
 function MyClick(materia) {
 
             $.ajax({

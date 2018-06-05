@@ -29,16 +29,19 @@ $(document).ready(function() {
                         var hook = '#form_materie';
                         for (var i = 0; i < n; i++) {
 
-
                             var materia = {
                                 nome: data.nomi_materie[i].nome,
                             }
                             array.push(materia);
 
+                            //Aggancia il nuovo codice HTML all'elemento precedente
+                            /*Onestamente penso funzioni anche senza, solo che non andava niente
+                            e ho iniziato a fare un po' di prove. Pensavo di agganciare ogni elemento
+                            al precedente invece che sempre allo stesso "#form_materie"
+                             */
                             if(i > 0) {
                                 hook = '#' + array[i - 1].nome;
                             }
-
 
                             $(hook).append(' <div id ="'+array[i].nome+'" class="form-group mt-4">' +
                                 '               <button id="'+array[i].nome+'_button" type="button"  value="'+array[i].nome+'" onclick="MyClick('+"'"+array[i].nome+"'"+')">' + ' '+ array[i].nome + '</button>' +
