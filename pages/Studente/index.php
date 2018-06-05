@@ -61,16 +61,17 @@ else{
         case 'documenti_caricati' :
             include 'documenti_caricati.php';
             break;
-
         case 'profilo':
             include 'visualizza_profilo_studente.php';
             break;
-
         case 'libri_consigliati':
             include 'libri_consigliati.php';
             break;
         case 'lista_documenti':
             include 'lista_documenti.php';
+            break;
+        case 'lista_annunci':
+            include 'lista_annunci.php';
             break;
 
     }

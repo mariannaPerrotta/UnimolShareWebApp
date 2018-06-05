@@ -17,7 +17,6 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
 <div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%">
     <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
         <div class="card-header">Aggiungi annuncio</div>
@@ -71,7 +70,7 @@
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
-                <a class="btn btn-primary btn-block" href="../login.php">Aggiungi</a>
+                <a id="aggiungi" class="btn btn-primary btn-block" href="#">Aggiungi</a>
             </div>
         </div>
         <div class = "form-group">
@@ -81,12 +80,7 @@
         </div>
     </div>
 </div>
+<script src="../../js/carica_annuncio.js"></script>
 
-<!-- Bootstrap core JavaScript-->
-<script src="../../vendor/jquery/jquery.min.js"></script>
-<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- Core plugin JavaScript-->
-<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
-</body>
 
 </html>

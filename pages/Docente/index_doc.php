@@ -62,6 +62,7 @@ if (empty($_SESSION['utente'])) {
         case 'profilo' :
             include 'visualizza_profilo_docente.php';
             break;
+
     }
 
     ?>
