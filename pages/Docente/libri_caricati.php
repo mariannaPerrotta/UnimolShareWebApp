@@ -16,34 +16,39 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<body class="container bg-dark">
+<body class="container bg-dark" style="padding-top: unset">
 <!--fare for per visualizzare 1 carta per ogni libro con chiamata php-->
-<div class="content-wrapper bg-dark" style="padding-top: unset">
-    <div class="card card-register mx-auto mt-5" style="border-color: #007bff; border-radius: 3%">
+<div class="content-wrapper bg-dark" style="padding-left:2%; padding-right: 2%">
+    <div class="card card-register mx-auto mt-5" style=" border-radius: 3%">
         <div class="card-body">
             <form method="POST" style="padding-left: 5%;">
-                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 20%; " id="btnrimuovilibro">
+                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%"
+                   id="btnrimuoviannuncio">
                     <i class="fa fa-fw fa-minus-circle"></i>
-                    <label for="rimuovilibro" style="padding-left: auto">Rimuovi</label>
+                    <label for="rimuovidocumento" style="padding-left: auto">Rimuovi</label>
                 </a>
                 <div class="form-group mt-3">
-                    <label for="titololibro">Titolo:</label>
+                    <label for="titololibro">Titolo libro: <font
+                                color="blue"><?php echo($_SESSION['utente']['matr']) ?></font></label>
                 </div>
                 <div class="form-group">
-                    <label for="autorelibro">Autore:</label>
+                    <label for="autorelibro">Autore: <font
+                                color="blue"><?php echo($_SESSION['utente']['matr']) ?></font></label>
                 </div>
                 <div class="form-group">
-                    <label for="edizionelibro">Edizione:</label>
+                    <label for="casaeditrice">Casa editrice: <font
+                                color="blue"><?php echo($_SESSION['utente']['matr']) ?></font></label>
                 </div>
                 <div class="form-group">
-                    <label for="casaeditrice">Casa editrice:</label>
+                    <label for="edizionelibro">Edizione: <font
+                                color="blue"><?php echo($_SESSION['utente']['matr']) ?></font></label>
                 </div>
-                <div class="form-group">
-                    <label for="materia">Materia:</label>
-                </div>
-            </form>
+                <label for="materia">Materia: <font
+                            color="blue"><?php echo($_SESSION['utente']['matr']) ?></font></label>
         </div>
+        </form>
     </div>
+</div>
 </div>
 <!-- Bootstrap core JavaScript-->
 <script src="../../vendor/jquery/jquery.min.js"></script>

@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="utf-8">
@@ -17,41 +17,48 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<div class="content-wrapper" style="background: unset">
+<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%">
     <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
         <div class="card-header">Aggiungi documento Studente</div>
-        <div class="card-body">
-            <form>
-                <div class="form-group">
-                    <div class="form-row">
-                        <div class="col-md-6">
-                            <label for="InputTitolo">Titolo</label>
-                            <input class="form-control" id="InputTitolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci titolo">
+            <div class="card-body">
+                <form id = "form-carica">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <input class="form-control-file" type="file" id="file" name="file">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div form="form-group">
-                    <div class="form-row">
-                        <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="Materie">Materie*</label>
-                        <select name="Materia" id="Materia" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
-                            <option value="Matematica"> Matematica </option>
-                            <option value="Programmazione"> Programmazione </option>
-                            <option value="Informatica giuridica"> Informatica giuridica </option>
-                            <option value="Linguaggi formali"> Linguaggi formali </option>
-                            <option value="Architettura degli elaboratori"> Architettura degli elaboratori </option>
-                            <option value="Evoluzione del calcolo automatico0"> Evoluzione del calcolo automatico </option>
-                            <option value="Inglese"> Inglese </option>
-                            <option value="Sistemi operativi"> Sistemi operativi </option>
-                        </select>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="InputTitolo">Titolo</label>
+                                <input class="form-control" id="InputTitolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci titolo">
+                                <input id="InputMatricola" type="hidden" value="<?php echo ($_SESSION['utente']['matr']);?>">
+                                <input id="InputTipo" type="hidden" value="<?php echo ($_SESSION['utente']['tipo']);?>">
+                            </div>
+                        </div>
                     </div>
-                </div>
-        </div>
-        <div class = "form-group">
-            <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
-                <a class="btn btn-primary btn-block" href="Aggiungi_documento_docente.php">Aggiungi</a>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="lista_materie">Materia</label>
+                                <select name="Materia" id="lista_materie" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class = "form-group">
+                <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
+                    <div class="col-md-12">
+                        <a id = "aggiungi" class="btn btn-primary btn-block" href="#">Aggiungi</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="../../js/visualizza_materie_per_menu.js"></script>
+    <script src="../../js/carica_documento.js"></script>
 
 </html>

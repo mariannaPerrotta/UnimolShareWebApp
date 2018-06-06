@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,33 +16,39 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<body class="container bg-dark">
-<div class="card mt-3 col-md-4"style="border-color: #007bff; border-radius: 3%; margin-left: auto!important; margin-right: auto!important;">
-    <div class="card-body">
-        <form method="POST" >
-            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnmodificaprofilo">
-                <i class="fa fa-fw fa-pencil-square"></i>
-                <label for="modificaprofilo" style="padding-left: auto">Modifica</label>
-            </a>
-            <div class="form-group mt-3">
+<div class="content-wrapper" style=" background: unset; padding-left:2%; padding-right: 2%">
+    <div class="card card-register mx-auto mt-5" style=" border-radius: 3%; margin-bottom: auto!important;">
+        <div class="card-header">Il mio profilo</div>
+        <div class="card-body">
+            <form method="POST">
+                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%"
+                   id="btnmodificaprofilo">
+                    <i class="fa fa-fw fa-pencil-square"></i>
+                    <label for="modificaprofilo" style="padding-left: auto">Modifica</label>
+                </a>
+                <div class="form-group mt-3">
 
-                <label for="matricola">Matricola: <font color="blue"><?php echo($_SESSION['utente']['matr'])?></font></label>
-            </div>
-            <div class="form-group">
-                <label for="nome ">Nome: <font color="blue"><?php echo($_SESSION['utente']['nome'])?></font> </label>
-            </div>
-            <div class="form-group">
-                <label for="cognome">Cognome: <font color="blue"><?php echo($_SESSION['utente']['cognome'])?> </font></label>
-            </div>
-            <div class="form-group">
-                <label for="CDL">Corso di Laurea: <font color="blue"></font></label>
-            </div>
-            <div class="form-group">
-                <label for="Email">Email: <font color="blue"><?php echo($_SESSION['utente']['email'])?> </font></label>
-            </div>
+                    <label for="matricola">Matricola: <font
+                                color="blue"><?php echo($_SESSION['utente']['matr']) ?></font></label>
+                </div>
+                <div class="form-group">
+                    <label for="nome ">Nome: <font color="blue"><?php echo($_SESSION['utente']['nome']) ?></font>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="cognome">Cognome: <font
+                                color="blue"><?php echo($_SESSION['utente']['cognome']) ?> </font></label>
+                </div>
+                <div class="form-group" id="idCdL">
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email: <font
+                                color="blue"><?php echo($_SESSION['utente']['email']) ?> </font></label>
+                </div>
 
 
-        </form>
+            </form>
+        </div>
     </div>
 </div>
 <!-- Bootstrap core JavaScript-->
@@ -55,9 +60,9 @@
 
 <script src="../../js/login.js"></script>
 
+<script src="../../js/visualizza_profilo_studente.js"></script>
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-</body>
 
 </html>

@@ -1,13 +1,13 @@
-document.getElementById("btnaggiungidocumento").onclick= function () {
+document.getElementById("btnaggiungidocumento").onclick = function () {
 
 
     var titolo = $("#exampleInputTitolo").val();
 
-    var CodDocente =$("#exampleInputCodDocente").val();
+    var CodDocente = $("#exampleInputCodDocente").val();
 
-    var CodMateria =$("#exampleInputCodMateria").val();
+    var CodMateria = $("#exampleInputCodMateria").val();
 
-    var Link =$("#exampleInputLink").val();
+    var Link = $("#exampleInputLink").val();
 
 
     var data = {
@@ -31,12 +31,12 @@ document.getElementById("btnaggiungidocumento").onclick= function () {
 
         data: data,
 
-        dataType:"json",
+        dataType: "json",
 
 
         success: function (data) {
 
-            if(data.error==false){
+            if (data.error == false) {
                 window.location.assign('index.php')
             }
 

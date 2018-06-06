@@ -38,13 +38,10 @@ else{
 <body>
 <div>
 <!--   <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-    <?php
-       include('./header.php');
-    ?>
 
-
-</nav>
+</nav-->
     <?php
+    include('./header.php');
     switch ($action){
         case 'home' :
             include 'home.php';
@@ -64,16 +61,20 @@ else{
         case 'documenti_caricati' :
             include 'documenti_caricati.php';
             break;
-
         case 'profilo':
             include 'visualizza_profilo_studente.php';
             break;
-
         case 'libri_consigliati':
             include 'libri_consigliati.php';
             break;
         case 'lista_documenti':
             include 'lista_documenti.php';
+            break;
+        case 'lista_annunci':
+            include 'lista_annunci.php';
+            break;
+        case 'visualizza_materie':
+            include 'visualizza_materie.php';
             break;
 
     }

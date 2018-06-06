@@ -16,8 +16,8 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark" style="padding-top: unset">
-<div class="container">
+
+<div class="content-wrapper bg-dark" style="padding-left:2%; padding-right: 2%">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Aggiungi un nuovo libro da consigliare!</div>
         <div class="card-body">
@@ -25,8 +25,16 @@
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6 mt-2">
-                            <label for="CodDocente">Codice Docente*</label>
+                            <label for="CodDocente">Matircola Docente*</label>
                             <input class="form-control" id="CodDocente" type="text" aria-describedby="CodDocenteHelp" placeholder="Inserisci la tua matricola">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-6 mt-2">
+                            <label for="Titolo">Titolo*</label>
+                            <input class="form-control" id="Titolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci il titolo">
                         </div>
                     </div>
                 </div>
@@ -56,8 +64,9 @@
                 </div>
                 <div form="form-group">
                     <div class="form-row">
-                        <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="Materie">Materie*</label>
-                        <select name="Materia" id="Materia" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
+                        <div class="col-md-6 mt-3">
+                        <label style="padding-right: 2%" for="Materie">Materie*</label>
+                        <select name="Materia" id="Materia" style="height: 37px; border-top-width: 1px;">
                             <option value="Matematica"> Matematica </option>
                             <option value="Programmazione"> Programmazione </option>
                             <option value="Informatica giuridica"> Informatica giuridica </option>
@@ -68,6 +77,7 @@
                             <option value="Sistemi operativi"> Sistemi operativi </option>
                         </select>
                         </div>
+                    </div>
                 </div>
         </div>
         <div class = "form-group">

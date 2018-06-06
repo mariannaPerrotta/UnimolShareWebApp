@@ -19,7 +19,7 @@ session_start();
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark" style="padding-top: unset">
 <div class="container">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Registra studente</div>
@@ -67,10 +67,23 @@ session_start();
                 <a class="d-block small mt-3" href="../login.php">Login</a>
                 <a class="d-block small" href="../password_dimenticata.php">Password dimenticata?</a>
             </div>
+
+<!--            <div class="form-group">-->
+<!--                <div class="form-row">-->
+<!--                    <div class="col-md-6">-->
+<!--                        <label for="InputEmail1">Indirizzo email</label>-->
+<!--                        <select  name="Cdl" id="cdl">-->
+<!---->
+<!--                        </select>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
         </div>
     </div>
 </div>
 <!-- Bootstrap core JavaScript-->
+
 <script src="../../vendor/jquery/jquery.min.js"></script>
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->

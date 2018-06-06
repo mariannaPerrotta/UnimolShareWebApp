@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>UnimolShare - Libri consigliati</title>
+    <title>UnimolShare - I tuoi documenti</title>
     <!-- Bootstrap core CSS-->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -16,8 +16,16 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="card_libri_consigliati">
+<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%">
+    <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
+        <div class="card-body">
+            <form id="form_materie" method="POST" style="padding-left: 0.25%">
+            </form>
+        </div>
+    </div>
 </div>
+
+
 <!-- Bootstrap core JavaScript-->
 <script src="../../vendor/jquery/jquery.min.js"></script>
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -27,10 +35,9 @@
 
 <script src="../../js/login.js"></script>
 
-<script src="../../js/visualizza_libri_consigliati.js"></script>
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
-
-</div>
+<script src="../../js/visualizza_materie.js"></script>
+<script src="../../js/visualizza_libri_consigliati.js"></script>
 
 </html>

@@ -17,8 +17,7 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
-<div class="content-wrapper" style="background: unset">
+<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%">
     <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
         <div class="card-header">Aggiungi annuncio</div>
         <div class="card-body">
@@ -30,49 +29,39 @@
                             <input class="form-control" id="exampleInputTitolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci titolo">
                         </div>
                         <div class="col-md-6">
-                            <label for="exampleInputAutore">Autore*</label>
-                            <input class="form-control" id="exampleInputTitolo" type="text" aria-describedby="AutoreHelp" placeholder="Inserisci autore">
+                            <label for="InputContatto">Contatto</label>
+                            <input class="form-control" id="InputContatto" type="text" aria-describedby="ContattoHelp" placeholder="Inserisci contatto">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="exampleInputCorsoDiStudio">Corso di studio*</label>
-                            <input class="form-control" id="exampleInputCorsoDiStudio" type="text" aria-describedby="CorsoDiStudioHelp" placeholder="Inserisci il corso">
+                            <label for="InputPrezzo">Prezzo*</label>
+                            <input class="form-control" id="InputPrezzo" type="text" aria-describedby="PrezzoHelp" placeholder="Inserisci prezzo">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputContattoTelefonico">Contatto telefonico</label>
-                            <input class="form-control" id="exampleInputContattoTelefonico" type="text" aria-describedby="ContattoTelefonicoHelp" placeholder="Inserisci telefono">
+                            <label for="InputEdizione">Edizione*</label>
+                            <input class="form-control" id="InputEdizione" type="text" aria-describedby="EdizioneHelp" placeholder="Inserisci edizione">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="exampleInputPrezzo">Prezzo*</label>
-                            <input class="form-control" id="exampleInputPrezzo" type="text" aria-describedby="PrezzoHelp" placeholder="Inserisci il prezzo">
+                            <label for="InputCasaEditrice">Casa editrice*</label>
+                            <input class="form-control" id="InputCasaEditrice" type="text" aria-describedby="CasaEditriceHelp" placeholder="Inserisci casa editrice">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="InputAutore">Autore*</label>
+                            <input class="form-control" id="InputAutore" type="text" aria-describedby="AutoreHelp" placeholder="Inserisci autore">
                         </div>
                     </div>
                 </div>
-                <div form="form-group">
-                    <div class="form-row">
-                        <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="Materie">Materie*</label>
-                        <select name="Materia" id="Materia" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
-                            <option value="Matematica"> Matematica </option>
-                            <option value="Programmazione"> Programmazione </option>
-                            <option value="Informatica giuridica"> Informatica giuridica </option>
-                            <option value="Linguaggi formali"> Linguaggi formali </option>
-                            <option value="Architettura degli elaboratori"> Architettura degli elaboratori </option>
-                            <option value="Evoluzione del calcolo automatico0"> Evoluzione del calcolo automatico </option>
-                            <option value="Inglese"> Inglese </option>
-                            <option value="Sistemi operativi"> Sistemi operativi </option>
-                        </select>
-                    </div>
-                </div>
+        </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
-                <a class="btn btn-primary btn-block" href="../login.php">Aggiungi</a>
+                <a id="aggiungi_annuncio" class="btn btn-primary btn-block" >Aggiungi</a>
             </div>
         </div>
         <div class = "form-group">
@@ -82,13 +71,7 @@
         </div>
     </div>
 </div>
-</div>
+<script src="../../js/carica_annuncio.js"></script>
 
-<!-- Bootstrap core JavaScript-->
-<script src="../../vendor/jquery/jquery.min.js"></script>
-<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- Core plugin JavaScript-->
-<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
-</body>
 
 </html>

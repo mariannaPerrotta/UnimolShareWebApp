@@ -16,7 +16,7 @@
 </head>
 
 
-<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+<body class="fixed-nav sticky-footer bg-dark" id="page-top" style="padding-top: unset">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <a class="navbar-brand" href="index_doc.php">UnimolShare</a>
@@ -102,7 +102,7 @@
 <div class="content-wrapper">
 
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
+    <a class="scroll-to-top rounded" href="#page-top" style="z-index: 2147483647;" >
         <i class="fa fa-angle-up"></i>
     </a>
     <!-- Logout Modal-->

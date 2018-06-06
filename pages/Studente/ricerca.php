@@ -16,8 +16,12 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="card_libri_consigliati">
+<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="ricerca">
+
 </div>
+
+
+
 <!-- Bootstrap core JavaScript-->
 <script src="../../vendor/jquery/jquery.min.js"></script>
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -27,7 +31,7 @@
 
 <script src="../../js/login.js"></script>
 
-<script src="../../js/visualizza_libri_consigliati.js"></script>
+<script src="../../js/ricerca.js"></script>
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 

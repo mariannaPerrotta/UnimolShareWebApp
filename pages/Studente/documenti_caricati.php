@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,26 +16,10 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<body class="container bg-dark" style="padding-top: unset">
-<!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
-<div class="card mt-3 col-md-4" style="border-color: #007bff; border-radius: 3%; margin-left: auto!important; margin-right: auto!important;" >
-    <div class="card-body">
-        <form method="POST" style="padding-left: 0.25%">
-            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuovidocumento">
-                <i class="fa fa-fw fa-minus-circle"></i>
-                <label for="rimuovidocumento" style="padding-left: auto">Rimuovi</label>
-            </a>
-            <div class="form-group mt-4">
-                <label for="titolodocumento">Titolo documento:</label>
-            </div>
-            <div class="form-group">
-                <label for="materiadocumento">Materia:</label>
-            </div>
-            <a class="btn btn-primary btn-block" style="color:white" id="btnvisualizzadocumento">Download documento</a>
+<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="card_documenti_caricati">
 
-        </form>
-    </div>
 </div>
+
 
 <!-- Bootstrap core JavaScript-->
 <script src="../../vendor/jquery/jquery.min.js"></script>
@@ -47,9 +30,8 @@
 
 <script src="../../js/login.js"></script>
 
-
+<script src="../../js/visualizza_documenti_caricati.js"></script>
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-</body>
 
 </html>

@@ -40,7 +40,7 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libri consigliati">
-          <a class="nav-link"  href="index.php?action=libri_consigliati">
+          <a class="nav-link"  href="index.php?action=visualizza_materie">
             <i class="fa fa-fw fa-book"></i>
             <span class="nav-link-text">Libri Consigliati</span>
           </a>
@@ -56,7 +56,7 @@
               <a href="index.php?action=documentoStudente">Aggiungi documento</a>
             </li>
             <li>
-              <a href="index.php?action=documenti_caricati">Documenti caricati</a>
+              <a href="index.php?action=documenti_caricati" >Documenti caricati</a>
             </li>
             <li>
               <a href="index.php?action=lista_documenti">Lista documenti</a>
@@ -73,7 +73,7 @@
                 <a href="index.php?action=aggiungiAnnuncio">Aggiungi annuncio</a>
             </li>
             <li>
-                <a href="index.php?action=annunciCaricati" id="btnAnnunciCaricati">Annunci caricati</a>
+                <a href="index.php?action=annunciCaricati">Annunci caricati</a>
             </li>
             <li>
               <a href="#">Lista annunci</a>
@@ -93,9 +93,9 @@
         <li class="nav-item">
           <form class="form-inline my-2 my-lg-0 mr-lg-2">
             <div class="input-group">
-              <input class="form-control" type="text" placeholder="Ricerca">
-              <span class="input-group-append">
-                <button class="btn btn-primary" type="button">
+              <input class="form-control" id="InputRicerca" type="text" placeholder="Ricerca">
+              <span class="input-group-append" >
+                <button class="btn btn-primary" id="idRicerca" type="button">
                   <i class="fa fa-search"></i>
                 </button>
               </span>
@@ -113,8 +113,8 @@
   <div class="content-wrapper">
 
       <!-- Scroll to Top Button-->
-      <a class="scroll-to-top rounded" href="#page-top">
-          <i class="fa fa-angle-up"></i>
+      <a class="scroll-to-top rounded" href="#page-top" style="z-index: 2147483647;" >
+          <i class="fa fa-angle-up" ></i>
       </a>
       <!-- Logout Modal-->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -145,7 +145,8 @@
 
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <script src="../js/login.js"></script>
+  <script src="../../js/login.js"></script>
+
 
 
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
