@@ -39,7 +39,6 @@ $(document).ready(function() {
                                 contatto: data.annunci[i].contatto,
                                 prezzo: data.annunci[i].prezzo,
                             }
-
                             annunci.push(annuncio);
 
                             $('#card_annunci_caricati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
