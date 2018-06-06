@@ -43,64 +43,119 @@ document.getElementById("btnlogin").onclick= function () {
                     cognome: data.utente.cognome,
                     email: data.utente.email,
                     tipo: data.utente.tabella,
-                    cdl: null,
+                    cdl:[],
                 }
 
-                //  var tabella= data.utente.tabella;
-                $.ajax({
+                if(data.utente.tabella==="studente"){
+                    $.ajax({
 
-                    url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzacdlperidstudente",
+                        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzacdlperidstudente",
 
-                    type: 'POST',
+                        type: 'POST',
 
-                    data: {matricola: utente.matr},
+                        data: {matricola: utente.matr},
 
-                    dataType: "json",
+                        dataType: "json",
 
-                    success: function (data) {
+                        success: function (data) {
 
-                        if (data.CDL.error == false) {
+                            if (data.CDL.error == false) {
 
 
-                            utente.cdl = data.CDL[0].id;
+                                utente.cdl = data.CDL[0].id;
 
-                          //  alert(utente.cdl);
-                            // $('#idCdL').append(' <label for="CDL" id="idCdL">Corso di Laurea:'+' '+'cdl.nome</label>');
 
-                            $.ajax({
-                                    url: "../pages/session.php",
+                                $.ajax({
+                                        url: "../pages/session.php",
 
-                                    type: 'POST',
+                                        type: 'POST',
 
-                                    data: utente,
+                                        data: utente,
 
-                                    dataType: "html",
+                                        dataType: "html",
 
-                                    success: function (data) {
-                                        alert("yes " + JSON.stringify(utente.tipo));
+                                        success: function (data) {
 
-                                        alert("yes " + JSON.stringify(data));
-                                        if (data === "studente") {
-                                            window.location.assign('Studente/index.php');
+                                                window.location.assign('Studente/index.php');
+
+
+
                                         }
-                                        if (data === "docente") {
-                                            window.location.assign('Docente/index_doc.php');
-                                        }
-
 
                                     }
+                                )
+                            }
 
-                                }
-                            )
+
+
                         }
 
 
-                        // serve per cambiare pagina
+                    })
+                }
+                if(data.utente.tabella==="docente"){
+                    $.ajax({
 
-                    }
+                        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzacdlperiddocente",
+
+                        type: 'POST',
+
+                        data: {iddoc: data.utente.matricola},
+
+                        dataType: "json",
+
+                        success: function (data) {
 
 
-                })
+                            if (data.CDL.error === false) {
+
+                                var n = data.CDL.contatore;
+                                var lista_cdl = [];
+                                for (var i = 0; i < n; i++) {
+
+                                    var cdl = {
+                                        id_cdl: data.CDL[i].id_cdl,
+                                    }
+
+
+                                    lista_cdl.push(cdl);
+
+
+                                }
+                                utente.cdl= lista_cdl;
+
+
+                                $.ajax({
+                                        url: "../pages/session.php",
+
+                                        type: 'POST',
+
+                                        data: utente,
+
+                                        dataType: "html",
+
+                                        success: function (data) {
+
+                                                window.location.assign('Docente/index_doc.php');
+
+
+                                        }
+
+                                    }
+                                )
+                            }
+
+
+
+                        }
+
+
+                    })
+                }
+
+
+
+
 
             }
 
