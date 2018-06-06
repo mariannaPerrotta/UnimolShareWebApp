@@ -76,7 +76,7 @@
                 <a href="index.php?action=annunciCaricati">Annunci caricati</a>
             </li>
             <li>
-              <a href="#">Lista annunci</a>
+              <a href="index.php?action=lista_annunci">Lista annunci</a>
             </li>
             </ul>
         </li>
