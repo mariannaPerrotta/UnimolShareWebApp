@@ -38,8 +38,7 @@ $(document).ready(function() {
                                 materia: data.annunci[i].materia,
                                 contatto: data.annunci[i].contatto,
                                 prezzo: data.annunci[i].prezzo,
-                            }FAq3EG9G3ufj
-
+                            }
                             annunci.push(annuncio);
 
                             $('#card_annunci_caricati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
