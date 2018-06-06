@@ -32,6 +32,7 @@ $(document).ready(function() {
                             var documento = {
                                 titolo: data.documenti[i].titolo,
                                 link: data.documenti[i].link,
+                                id: data.documenti[i].id,
                             }
 
                             documenti.push(documento);
@@ -41,7 +42,7 @@ $(document).ready(function() {
                                 '                                    <form method="POST" style="padding-left: 0.25%">' +
                                 '                                    <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuovidocumento">' +
                                 '                                    <i class="fa fa-fw fa-minus-circle"></i>' +
-                                '                                    <label for="rimuovidocumento" style="padding-left: auto" id="'+documenti[i]+'">Rimuovi</label>' +
+                                '                                    <label for="rimuovidocumento" style="padding-left: auto" id="'+documenti[i].id+'_rimuovi" onclick="MyClick('+"'"+documenti[i].id+"'"+')">Rimuovi</label>' +
                                 '                                    </a>' +
                                 '                                    <div class="form-group mt-4">' +
                                 '                                    <label for="titolodocumento">Titolo documento:' + ' '+ documenti[i].titolo + '</label>' +
@@ -49,7 +50,7 @@ $(document).ready(function() {
                                 '                                <div class="form-group">' +
                                 '                                    <label for="materiadocumento">Materia:</label>' +
                                 '                                </div>' +
-                                '                                <a class="btn btn-primary btn-block" style="color:white" id="btnvisualizzadocumento">Download documento</a>' +
+                                '                                <a class="btn btn-primary btn-block" style="color:white" id="'+documenti[i].id+'_download" onclick="MyClick('+"'"+documenti[i].id+"'"+')">Download documento</a>' +
                                 '\n' +
                                 '                                </form>' +
                                 '                                </div>' +

@@ -17,34 +17,13 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%">
-    <!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
-            <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
-                <div class="card-body">
-                    <form method="POST" style="padding-left: 0.25%">
-                <div class="form-group mt-4">
-                    <label for="titolodocumento">Titolo documento:</label>
-                </div>
-                <div class="form-group">
-                    <label for="materiadocumento">Materia:</label>
-                </div>
-                <div form="form-group">
-                    <div class="form-row">
-                        <label style="padding-bottom: 15px;padding-right: 2%" for="Valutazione">Valutazione</label>
-                        <select name="Valutazione" id="Valutazione" style="height: 27px; border-top-width: 1px;">
-                            <option value="1"> ★ </option>
-                            <option value="2"> ★★ </option>
-                            <option value="3"> ★★★ </option>
-                            <option value="4"> ★★★★ </option>
-                            <option value="5"> ★★★★★ </option>
-                        </select>
-                    </div>
-                </div>
-                <a class="btn btn-primary btn-block" style="color:white" id="btnvisualizzadocumento">Download documento</a>
+<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="form_materie">
 
-            </form>
-        </div>
-    </div>
+</div>
+
+<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="lista_documenti">
+    <!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
+
 </div>
 
 <!-- Bootstrap core JavaScript-->
@@ -56,7 +35,8 @@
 
 <script src="../../js/login.js"></script>
 
-
+<script src="../../js/visualizza_materie.js"></script>
+<script src="../../js/visualizza_documenti.js"></script>
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 
