@@ -50,7 +50,7 @@
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <script src="../../js/login.js"></script>
-<scripo src="../../js/lista_annunci.js"></scripo>
+<script src="../../js/lista_annunci.js"></script>
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 

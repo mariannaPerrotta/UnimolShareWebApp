@@ -10,18 +10,18 @@ $(document).ready(function () {
         dataType: "html",
 
         success: function (data) {
-            var cdl = data.id_cdl;
+            var cdl = data;
+
             $.ajax({
                 url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriapercdl",
 
                 type: 'POST',
 
-                data: {id_cdl: cdl},
+                data: {cod_cdl: cdl},
 
                 dataType: "json",
 
                 success: function (data) {
-
                     if (data.nomi_materie.error == false) {
 
                         var n = data.nomi_materie.contatore;
@@ -29,12 +29,12 @@ $(document).ready(function () {
                         for (var i = 0; i < n; i++) {
 
                             var materia = {
-                                nome: data.materie[i],
+                                nome: data.nomi_materie[i].nome,
                             }
 
                             materie.push(materia);
 
-                            $('card_lista_annunci').append('<div class="card header">Materia:'+materie[i].nome+'</div>');
+                            $('#card_lista_annunci').append('');
 
                             $.ajax({
                                 url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzaannunciopermateria",
@@ -59,7 +59,8 @@ $(document).ready(function () {
 
                                             annunci.push(annuncio);
 
-                                            $('#card_lista_annunci').append('<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
+                                            $('#card_lista_annunci').append('<div class="card card-register mx-auto mt-5 " style="margin-bottom: 3rem!important">Materia:'+materie[i].nome+'</div>'+
+                                                '           <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
                                                 '        <div class="card-body">\n' +
                                                 '            <form method="POST" style="padding-left: 0.25%">\n' +
                                                 '                <div class="form-group mt-4">\n' +

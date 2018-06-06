@@ -25,7 +25,8 @@
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<script src="../../js/login.js"></script>
+<script src="../../js/visualizza_materie.js"></script>
+
 
 <script src="../../js/visualizza_libri_consigliati.js"></script>
 

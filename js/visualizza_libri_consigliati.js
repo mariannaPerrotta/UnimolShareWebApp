@@ -1,10 +1,11 @@
 /*Dato che non posso sapere a priori che id avrà il button (non so quanti ne saranno visualizzati)
 invece di cercare l'elemento nel js, attivo una funzione js col click del button stesso*/
+
 function MyClick(materia) {
 
             $.ajax({
 
-                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzalibripermateria",
+                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzalibropermateria",
 
                 type: 'POST',
 
@@ -19,12 +20,12 @@ function MyClick(materia) {
 
                             var n = data.libri.contatore;
 
-                            alert(n);
 
                             if (n === 0)
                                 alert("Non ci sono libri per questa materia");
 
                             var array = [];
+                            $("#form_materie").html("");
                             for (var i = 0; i < n; i++) {
 
                                 var libro = {
@@ -37,11 +38,8 @@ function MyClick(materia) {
 
                                 array.push(libro);
 
-                                var str = 'Libro n. ' + (i + 1) + '\n\nTitolo: ' + libro.titolo + '\nAutore: ' + libro.autore + '\nCasa Editrice: ' + libro.casa_editrice + '\nEdizione: ' + libro.edizione + '\nLink: ' + libro.link;
 
-                                alert(str);
-
-                                $('#card_libri_consigliati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
+                                $('#form_materie').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
                                     '                                    <div class="card-body">' +
                                     '                                    <form method="POST" style="padding-left: 0.25%">' +
                                     '                                    <div class="form-group mt-4">' +
@@ -56,7 +54,7 @@ function MyClick(materia) {
                                     '                                </form>' +
                                     '                                </div>' +
                                     '                                </div>' +
-                                    '                            }');
+                                    '                            ');
 
 
                             }

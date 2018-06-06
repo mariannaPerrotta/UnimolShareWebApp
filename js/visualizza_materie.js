@@ -42,8 +42,8 @@ $(document).ready(function() {
                                 '        <div class="card-body">' +
                                 '            <form  method="POST" style="padding-left: 0.25%">' +
 
-                                '           <div id ="'+array[i].nome+'" class="form-group mt-4">' +
-                                '               <a id="'+array[i].nome+'_button"   value="'+array[i].nome+'" onclick="MyClick('+"'"+array[i].nome+"'"+')">' + ' '+ array[i].nome + '</a>' +
+                                '           <div id ="'+array[i].nome+'_button"  class="form-group mt-4" value="'+array[i].nome+'" onclick="MyClick('+"'"+array[i].nome+"'"+')">' +
+                                '               <a id="'+array[i].nome+'" >' + ' '+ array[i].nome + '</a>' +
                                 '            </div>'+
                                 '            </form>' +
                                 '        </div>' +
