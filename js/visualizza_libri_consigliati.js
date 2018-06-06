@@ -43,11 +43,12 @@ function MyClick(materia) {
                                     '                                    <div class="card-body">' +
                                     '                                    <form method="POST" style="padding-left: 0.25%">' +
                                     '                                    <div class="form-group mt-4">' +
-                                    '                                    <label for="titololibro">Titolo:' + ' ' + array[i].titolo + '</label>' +
-                                    '                                    <label for="titololibro">Autore:' + ' ' + array[i].autore + '</label>' +
-                                    '                                    <label for="titololibro">Casa Editrice:' + ' ' + array[i].casa_editrice + '</label>' +
-                                    '                                    <label for="titololibro">Edizione:' + ' ' + array[i].edizione + '</label>' +
-                                    '                                    <label for="titololibro">Link:' + ' ' + array[i].link + '</label>' +
+                                    '                                    <label for="titololibro">Titolo:' + ' ' + array[i].titolo + '</label>\n' + '<br>' +
+
+                                    '                                    <label for="titololibro">Autore:' + ' ' + array[i].autore+ '</label>' +'<br>' +
+                                    '                                    <label for="titololibro">Casa Editrice:' + ' ' + array[i].casa_editrice + '</label>' +'<br>' +
+                                    '                                    <label for="titololibro">Edizione:' + ' ' + array[i].edizione + '</label>' +'<br>' +
+                                    '                                    <label for="titololibro">Link:' + ' ' + array[i].link + '</label>' +'<br>' +
 
                                     '                                </div>' +
                                     '                                </div>' +
