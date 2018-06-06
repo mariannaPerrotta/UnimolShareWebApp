@@ -44,7 +44,6 @@
                 <div class="form-group">
                     <label for="Email">Email: <font
                                 color="blue"><?php echo($_SESSION['utente']['email']) ?> </font></label>
-                </div>
 
 
             </form>

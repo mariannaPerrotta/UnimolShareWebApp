@@ -1,27 +1,18 @@
-document.getElementById("aggiungi_annuncio").onclick= function () {
+document.getElementById("aggiungi_annuncio").onclick = function () {
 
     var Titolo = $("#exampleInputTitolo").val();
-
 
 
     var Autore = $("#exampleInputAutore").val();
 
 
-
-    var CorsoDiStudio= $("#exampleInputCorsoDiStudio").val();
-
+    var CorsoDiStudio = $("#exampleInputCorsoDiStudio").val();
 
 
+    var ContattoTelefonico = $("#exampleInputContattoTelefonico").val();
 
 
-
-    var ContattoTelefonico =$("#exampleInputContattoTelefonico").val();
-
-
-
-    var Prezzo =$("#exampleInputPrezzo").val();
-
-
+    var Prezzo = $("#exampleInputPrezzo").val();
 
 
     var data = {
@@ -40,7 +31,6 @@ document.getElementById("aggiungi_annuncio").onclick= function () {
         Prezzo: Prezzo,
 
 
-
     };
 
     $.ajax({
@@ -51,11 +41,11 @@ document.getElementById("aggiungi_annuncio").onclick= function () {
 
         data: data,
 
-        dataType:"json",
+        dataType: "json",
 
         success: function (data) {
 
-            if(data.error==false){
+            if (data.error == false) {
                 alert("Annuncio caricato");
                 window.location.assign('index.php?action=aggiungiAnnuncio');
             }
