@@ -1,22 +1,22 @@
 <?php
 session_start();
 
-if (empty($_SESSION['utente'])){
+if (empty($_SESSION['utente'])) {
 
     header("location: ../login.php");
-}
-  else{
+} else {
 //gestione azioni
-if (isset($_GET['action'])){
-    $action = $_GET['action'];}
-else{
-   // header("location: ./index.php");
-    $action = "home";}
-  }
+    if (isset($_GET['action'])) {
+        $action = $_GET['action'];
+    } else {
+        // header("location: ./index.php");
+        $action = "home";
+    }
+}
 ?>
 
 
-<html lang ="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -37,12 +37,12 @@ else{
 
 <body>
 <div>
-<!--   <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <!--   <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
 
-</nav-->
+    </nav-->
     <?php
     include('./header.php');
-    switch ($action){
+    switch ($action) {
         case 'home' :
             include 'home.php';
             break;
@@ -76,7 +76,9 @@ else{
         case 'visualizza_materie':
             include 'visualizza_materie.php';
             break;
-
+        case 'segnala_profilo':
+            include 'segnala_profilo.php';
+            break;
     }
 
     ?>
@@ -98,10 +100,11 @@ else{
 <script src="../../js/sb-admin-datatables.min.js"></script>
 <script src="../../js/sb-admin-charts.min.js"></script>
 <script src="../../js/login.js"></script>
-<script src="../js/forgot-password.js"></script>
-<script src="../js/register-docente.js"></script>
-<script src="../js/register-studente.js"></script>
-<script src="../js/Aggiungi_documento_docente.js"></script>
+<script src="../js/password_dimenticata.js"></script>
+<script src="../js/registrazione_docente.js"></script>
+<script src="../js/registrazione_studente.js"></script>
+<script src="../js/aggiungi_documento_docente.js"></script>
+<script src="../js/segnala_profilo.js"></script>
 
 
 </body>
