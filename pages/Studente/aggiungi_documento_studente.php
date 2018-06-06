@@ -43,7 +43,7 @@
                         <div class="form-row">
                             <div class="col-md-6">
                                 <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="lista_materie">Materia</label>
-                                <select name="Materia" id="lista_materie" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
+                                <select name="Materia" id="btnmaterie" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
                                 </select>
                             </div>
                         </div>
@@ -60,5 +60,5 @@
     </div>
     <script src="../../js/visualizza_materie_per_menu.js"></script>
     <script src="../../js/carica_documento.js"></script>
-
+<script src="../../js/materie.js"></script>
 </html>

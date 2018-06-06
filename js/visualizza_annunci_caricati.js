@@ -38,7 +38,7 @@ $(document).ready(function() {
                                 materia: data.annunci[i].materia,
                                 contatto: data.annunci[i].contatto,
                                 prezzo: data.annunci[i].prezzo,
-                            }
+                            }FAq3EG9G3ufj
 
                             annunci.push(annuncio);
 
