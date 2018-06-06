@@ -16,13 +16,8 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%">
-    <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
-        <div class="card-body">
-            <form id="form_materie" method="POST" style="padding-left: 0.25%">
-            </form>
-        </div>
-    </div>
+<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="form_materie">
+
 </div>
 
 

@@ -26,7 +26,7 @@ $(document).ready(function() {
 
                         var n = data.nomi_materie.contatore;
                         var array = [];
-                        var hook = '#form_materie';
+
                         for (var i = 0; i < n; i++) {
 
                             var materia = {
@@ -34,19 +34,21 @@ $(document).ready(function() {
                             }
                             array.push(materia);
 
-                            //Aggancia il nuovo codice HTML all'elemento precedente
-                            /*Onestamente penso funzioni anche senza, solo che non andava niente
-                            e ho iniziato a fare un po' di prove. Pensavo di agganciare ogni elemento
-                            al precedente invece che sempre allo stesso "#form_materie"
-                             */
                             if(i > 0) {
                                 hook = '#' + array[i - 1].nome;
                             }
 
-                            $(hook).append(' <div id ="'+array[i].nome+'" class="form-group mt-4">' +
-                                '               <button id="'+array[i].nome+'_button" type="button"  value="'+array[i].nome+'" onclick="MyClick('+"'"+array[i].nome+"'"+')">' + ' '+ array[i].nome + '</button>' +
-                                /*AGGIUNGERE CDL - MATERIA - NOME DOCENTE*/
-                                '            </div>');
+                            $('#form_materie').append('  <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
+                                '        <div class="card-body">' +
+                                '            <form  method="POST" style="padding-left: 0.25%">' +
+
+                                '           <div id ="'+array[i].nome+'" class="form-group mt-4">' +
+                                '               <a id="'+array[i].nome+'_button"   value="'+array[i].nome+'" onclick="MyClick('+"'"+array[i].nome+"'"+')">' + ' '+ array[i].nome + '</a>' +
+                                '            </div>'+
+                                '            </form>' +
+                                '        </div>' +
+                                '    </div>'
+                               );
 
                         }
 
@@ -61,7 +63,8 @@ $(document).ready(function() {
 
 
                 }
-
+                // '            <div id ="'+array[i].nome+'" class="form-group mt-4">' +
+                // '               <a id="'+array[i].nome+'_button"   value="'+array[i].nome+'" onclick="MyClick('+"'"+array[i].nome+"'"+')"+ ' '+ array[i].nome + '</a>' +
 
             });
 

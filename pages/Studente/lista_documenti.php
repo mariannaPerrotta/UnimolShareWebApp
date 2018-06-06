@@ -19,9 +19,9 @@
 
 <div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%">
     <!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
-    <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
-        <div class="card-body">
-            <form method="POST" style="padding-left: 0.25%">
+            <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
+                <div class="card-body">
+                    <form method="POST" style="padding-left: 0.25%">
                 <div class="form-group mt-4">
                     <label for="titolodocumento">Titolo documento:</label>
                 </div>
