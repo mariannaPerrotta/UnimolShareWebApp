@@ -38,24 +38,34 @@ $(document).ready(function () {
                                 contatto: data.annunci[i].contatto,
                                 prezzo: data.annunci[i].prezzo,
                             }
-
-
+                            function nome_materie(){
+                                var materia;
                             $.ajax({
                                 url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriaperid",
 
                                 type: 'POST',
 
+
+
                                 data: {id: annuncio.materia},
 
                                 dataType: "json",
 
-                                success: function (data2, annuncio) {
-                                    annuncio.materia = data2.nomi_materie[0].nome;
-                                    alert(data.annunci[i].titolo);
-                                    annunci.push(annuncio);
-                                }
-                            })
+                                async: false,
 
+                                success: function (data2) {
+
+                                    materia = data2.nomi_materie[0].nome;
+
+                                }
+
+                            });
+                                return materia;
+                            }
+                          var  materia2=nome_materie();
+
+                            annuncio.materia=  materia2;
+                            annunci.push(annuncio);
 
                             $('#card_annunci').append('  <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
                                 '        <div class="card-body" >\n' +
@@ -82,6 +92,7 @@ $(document).ready(function () {
                                 '            </form>\n' +
                                 '        </div>\n' +
                                 '    </div>');
+
 
 
                         }
