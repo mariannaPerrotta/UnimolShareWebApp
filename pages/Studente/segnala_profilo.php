@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,26 +25,38 @@ session_start();
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="exampleInputNome">Nome*</label>
-                            <input class="form-control" id="exampleInputNome" type="text" aria-describedby="NomeHelp" placeholder="Inserisci nome">
+                            <label for="InputNome">Nome*</label>
+                            <input class="form-control" id="InputNome" type="text" aria-describedby="NomeHelp" placeholder="Inserisci nome">
                         </div>
                         <div class="col-md-6">
-                            <label for="exampleInputCognome">Cognome*</label>
-                            <input class="form-control" id="exampleInputCognome" type="text" aria-describedby="CognomeHelp" placeholder="Inserisci cognome">
+                            <label for="InputCognome">Cognome*</label>
+                            <input class="form-control" id="InputCognome" type="text" aria-describedby="CognomeHelp" placeholder="Inserisci cognome">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-row">
-                            <label for="exampleInputMotivo">Motivo della segnalazione*</label>
-                            <textarea class="form-control" id="exampleInputMotivo" type="text" aria-describedby="MotivoHelp" placeholder="Inserisci il motivo della segnalazione" style = "padding-bottom:200px; word-break: break-all;">
+                            <label for="InputMotivo">Motivo della segnalazione*</label>
+                            <textarea class="form-control" id="InputMotivo" type="text" aria-describedby="MotivoHelp" placeholder="Inserisci il motivo della segnalazione" style = "padding-bottom:200px; word-break: break-all;">
                             </textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="InputContatto">Contatto da segnalare</label>
+                            <input class="form-control" id="InputContatto" type="text" aria-describedby="ContattoHelp" placeholder="Inserisci contatto">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="InputEmail">Email da segnalare</label>
+                            <input class="form-control" id="InputEmail" type="text" aria-describedby=EmailHelp" placeholder="Inserisci email">
+                        </div>
                     </div>
                 </div>
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
-                <a class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal" style="color: white">Invia</a>
+                <a class="btn btn-primary btn-block" data-toggle="modal" data-target="#Modal" style="color: white">Invia</a>
             </div>
         </div>
         <div class = "form-group">
@@ -61,11 +70,11 @@ session_start();
                 <i class="fa fa-angle-up"></i>
             </a>
             <!-- Logout Modal-->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Sicuro di aver inserito i dati correttamente?</h5>
+                            <h5 class="modal-title" id="ModalLabel">Sicuro di aver inserito i dati correttamente?</h5>
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
@@ -73,7 +82,7 @@ session_start();
                         <div class="modal-body">Seleziona "Invia" per inviare la segnalazione.</div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" type="button" data-dismiss="modal" >Cancella</button>
-                            <a class="btn btn-primary"  href="../logout.php">Invia</a>
+                            <a class="btn btn-primary" href="#">Invia</a>
                         </div>
                     </div>
                 </div>
@@ -88,6 +97,8 @@ session_start();
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<script src="../../js/segnala_profilo.js"></script>
 </body>
 
 </html>

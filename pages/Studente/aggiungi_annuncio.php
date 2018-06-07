@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="utf-8">
@@ -22,7 +22,7 @@
     <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
         <div class="card-header">Aggiungi annuncio</div>
         <div class="card-body">
-            <form>
+            <form id="form-carica">
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
@@ -63,10 +63,7 @@
                     <div class="form-row">
                         <div class="col-md-6">
                             <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="lista_materie">Materia</label>
-
-                            <select name="Materia" id="btnmaterie" style="width: 102px;height: 27px; border-top-width: 1px; margin-top: 14px;">
-
-
+                            <select name="Materia" id="btnmaterie" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
                             </select>
                         </div>
                     </div>
@@ -74,7 +71,7 @@
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
-                <a id="aggiungi_annuncio" class="btn btn-primary btn-block" >Aggiungi</a>
+                <a id="aggiungi" class="btn btn-primary btn-block" href="lista_annunci.php">Aggiungi</a>
             </div>
         </div>
         <div class = "form-group">
