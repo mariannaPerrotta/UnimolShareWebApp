@@ -58,6 +58,6 @@
         </div>
     </div>
 </div>
-<script src="../../js/carica_documento.js"></script>
+<script src="../../js/carica_documento.js.js"></script>
 
 </html>

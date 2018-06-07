@@ -26,8 +26,8 @@
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="exampleInputTitolo">Titolo*</label>
-                            <input class="form-control" id="exampleInputTitolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci titolo">
+                            <label for="InputTitolo">Titolo*</label>
+                            <input class="form-control" id="InputTitolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci titolo">
                         </div>
                         <div class="col-md-6">
                             <label for="InputContatto">Contatto</label>

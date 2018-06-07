@@ -51,13 +51,13 @@
             <div class = "form-group">
                 <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
                     <div class="col-md-12">
-                        <a id = "aggiungi" class="btn btn-primary btn-block" href="#">Aggiungi</a>
+                        <a id = "aggiungi" class="btn btn-primary btn-block" >Aggiungi</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="../../js/visualizza_materie_per_menu.js"></script>
-    <script src="../../js/carica_documento.js"></script>
+    <script src="../../js/visualizza_materie.js"></script>
+    <script src="../../js/carica_documento.js.js"></script>
 <script src="../../js/materie.js"></script>
 </html>
