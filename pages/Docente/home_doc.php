@@ -40,9 +40,9 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-md-center">
             <!-- Single Special Area -->
-            <div class="col-12 col-md-4" style="margin-left: auto" style="margin-right: auto"  style="padding-top: unset">
+            <div class="col-12 col-md-4"">
                 <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
                     <div class="single-icon">
                         <i class="fa fa-fw fa-file" aria-hidden="true" style="color: #17a2b8"></i>
@@ -53,9 +53,7 @@
                 </div>
             </div>
             <!-- Single Special Area -->
-
-            <!-- Single Special Area -->
-            <div class="col-12 col-md-4" style="margin-left: auto" style="margin-right: auto" >
+            <div class="col-12 col-md-4">
                 <div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
                     <div class="single-icon">
                         <i class="fa fa-fw fa-users" aria-hidden="true" style="color: #17a2b8"></i>
@@ -106,7 +104,7 @@
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="https://www.facebook.com/danilo.sprovieri"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/Dani2097https://github.com/Dani2097"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/Dani2097"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>

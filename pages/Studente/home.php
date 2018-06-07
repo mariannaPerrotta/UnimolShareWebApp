@@ -115,7 +115,7 @@
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="https://www.facebook.com/danilo.sprovieri"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/Dani2097https://github.com/Dani2097"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/Dani2097"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
