@@ -16,36 +16,9 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%">
+<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="card_annunci">
     <!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
-    <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
-        <div class="card-body">
-            <form method="POST" style="padding-left: 5%;">
-                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuoviannuncio">
-                    <i class="fa fa-fw fa-minus-circle"></i>
-                    <label for="rimuovidocumento" style="padding-left: auto">Rimuovi</label>
-                </a>
-                <div class="form-group mt-3">
-                    <label for="titololibro">Titolo libro:</label>
-                </div>
-                <div class="form-group">
-                    <label for="autorelibro">Autore:</label>
-                </div>
-                <div class="form-group">
-                    <label for="edizionelibro">Edizione:</label>
-                </div>
-                <div class="form-group">
-                    <label for="prezzoannuncio">Prezzo:</label>
-                </div>
-                <div class="form-group">
-                    <label for="casaeditrice">Casa editrice:</label>
-                </div>
-                <div class="form-group">
-                    <label for="materia">Materia:</label>
-                </div>
-            </form>
-        </div>
-    </div>
+
 </div>
 <!-- Bootstrap core JavaScript-->
 <script src="../../vendor/jquery/jquery.min.js"></script>

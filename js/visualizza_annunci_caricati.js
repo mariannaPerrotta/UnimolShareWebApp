@@ -1,21 +1,21 @@
-
-$(document).ready(function() {
+$(document).ready(function () {
 
     $.ajax({
-        url: "http://localhost/UnimolShareWebApp/pages/utente.php",
+        url: "http://localhost/UnimolShareWebApp/pages/matricola.php",
 
         type: 'POST',
 
-        data: {matricola: null},
+        data: {matr: null},
 
         dataType: "html",
 
         success: function (data) {
+
             var matricola = data;
 
             $.ajax({
 
-                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzaannunciopermatricola",
+                url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzaannuncioperid",
 
                 type: 'POST',
 
@@ -24,8 +24,8 @@ $(document).ready(function() {
                 dataType: "json",
 
                 success: function (data) {
-
                     if (data.annunci.error == false) {
+
 
                         var n = data.annunci.contatore;
                         var annunci = [];
@@ -34,39 +34,58 @@ $(document).ready(function() {
                             var annuncio = {
                                 titolo: data.annunci[i].titolo,
                                 autore: data.annunci[i].autore,
-
-                                materia: data.annunci[i].materia,
+                                materia: data.annunci[i].cod_materia,
                                 contatto: data.annunci[i].contatto,
                                 prezzo: data.annunci[i].prezzo,
                             }
-                            annunci.push(annuncio);
 
-                            $('#card_annunci_caricati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
-                                '                                    <div class="card-body">' +
-                                '                                    <form method="POST" style="padding-left: 0.25%">' +
-                                '                                    <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuoviannuncio">' +
-                                '                                    <i class="fa fa-fw fa-minus-circle"></i>' +
-                                '                                    <label for="rimuoviannuncio" style="padding-left: auto">Rimuovi</label>' +
-                                '                                    </a>' +
-                                '                                    <div class="form-group mt-4">' +
-                                '                                    <label for="titoloannuncio">Titolo annuncio:' + ' '+ annunci[i].titolo + '</label>' +
-                                '                                </div>' +
-                                '                                <div class="form-group">' +
-                                '                                    <label for="materiaannuncio">Materia:</label>' +
-                                '                                </div>' +
-                                '                                <a class="btn btn-primary btn-block" style="color:white" id="btnvisualizzaannuncio">Download annuncio</a>' +
-                                '\n' +
-                                '                                </form>' +
-                                '                                </div>' +
-                                '                                </div>' +
-                                '                            }');
 
+                            $.ajax({
+                                url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriaperid",
+
+                                type: 'POST',
+
+                                data: {id: annuncio.materia},
+
+                                dataType: "json",
+
+                                success: function (data2, annuncio) {
+                                    annuncio.materia = data2.nomi_materie[0].nome;
+                                    alert(data.annunci[i].titolo);
+                                    annunci.push(annuncio);
+                                }
+                            })
+
+
+                            $('#card_annunci').append('  <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
+                                '        <div class="card-body" >\n' +
+                                '            <form method="POST" style="padding-left: 5%;">\n' +
+                                '                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuoviannuncio">\n' +
+                                '                    <i class="fa fa-fw fa-minus-circle"></i>\n' +
+                                '                    <label for="rimuovidocumento" style="padding-left: auto">Rimuovi</label>\n' +
+                                '                </a>\n' +
+                                '                <div class="form-group mt-3">\n' +
+                                '                    <label for="titololibro">Titolo Libro:' + ' ' + annunci[i].titolo + '</label>\n' +
+                                '                </div>\n' +
+                                '                <div class="form-group">\n' +
+                                '                    <label for="autorelibro">Autore:' + ' ' + annunci[i].autore + '</label>\n' +
+                                '                </div>\n' +
+                                '                <div class="form-group">\n' +
+                                '                    <label for="edizionelibro">Materia:' + ' ' + annunci[i].materia + '</label>\n' +
+                                '                </div>\n' +
+                                '                <div class="form-group">\n' +
+                                '                    <label for="prezzoannuncio">Prezzo:' + ' ' + annunci[i].prezzo + '</label>\n' +
+                                '                </div>\n' +
+                                '                <div class="form-group">\n' +
+                                '                    <label for="casaeditrice">Contatto:' + ' ' + annunci[i].contatto + '</label>\n' +
+                                '                </div>\n' +
+                                '            </form>\n' +
+                                '        </div>\n' +
+                                '    </div>');
 
 
                         }
                     }
-
-
 
 
                 },

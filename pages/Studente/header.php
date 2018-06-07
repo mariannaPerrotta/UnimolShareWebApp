@@ -47,11 +47,11 @@
         </li>
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documenti">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapsePages" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-file"></i>
             <span class="nav-link-text">Documenti</span>
           </a>
-          <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+          <ul class="sidenav-second-level collapse" id="collapsePages">
             <li>
               <a href="index.php?action=documentoStudente">Aggiungi documento</a>
             </li>
@@ -80,6 +80,12 @@
             </li>
             </ul>
         </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Segnala profilo">
+                <a class="nav-link"  href="index.php?action=segnala_profilo">
+                    <i class="fa fa-fw fa-lock"></i>
+                    <span class="nav-link-text">Segnala profilo</span>
+                </a>
+            </li>
 
       </ul>
       <ul class="navbar-nav sidenav-toggler">
