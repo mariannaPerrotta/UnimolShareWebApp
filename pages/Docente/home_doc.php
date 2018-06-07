@@ -66,7 +66,7 @@
             </div>
         </div>
     </div>
-
+</section>
     <!-- ***** Our Team Area Start ***** -->
     <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
         <div class="content-wrapper" style="padding-left:2%; padding-right: 2%">
