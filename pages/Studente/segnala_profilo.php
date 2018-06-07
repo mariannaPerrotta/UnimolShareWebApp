@@ -44,11 +44,11 @@
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputContatto">Contatto</label>
+                            <label for="InputContatto">Contatto da segnalare</label>
                             <input class="form-control" id="InputContatto" type="text" aria-describedby="ContattoHelp" placeholder="Inserisci contatto">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputEmail">Email</label>
+                            <label for="InputEmail">Email da segnalare</label>
                             <input class="form-control" id="InputEmail" type="text" aria-describedby=EmailHelp" placeholder="Inserisci email">
                         </div>
                     </div>
