@@ -43,23 +43,23 @@
         <div class="row justify-content-md-center">
             <!-- Single Special Area -->
             <div class="col-12 col-md-4"">
-                <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
+                <div button class="single-special text-center wow fadeInUp" data-wow-delay="0.2s" onclick="window.open('index_doc.php?action=documenti_caricati_doc');"</button>
                     <div class="single-icon">
                         <i class="fa fa-fw fa-file" aria-hidden="true" style="color: #17a2b8"></i>
                     </div>
                     <h4><font color="#007bff">Documenti caricati</font></h4>
-                    <a style="color:black" href="index_doc.php?action=documenti_caricati_doc">Clicca qui per visualizzare i documenti caricati</a>
+                    <a style="color:black">Clicca qui per visualizzare i documenti caricati</a>
                     <p></p>
                 </div>
             </div>
             <!-- Single Special Area -->
             <div class="col-12 col-md-4">
-                <div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
+                <div button class="single-special text-center wow fadeInUp" data-wow-delay="0.6s" onclick="window.open('https://unimol.esse3.cineca.it/Home.do');"</button>
                     <div class="single-icon">
                         <i class="fa fa-fw fa-users" aria-hidden="true" style="color: #17a2b8"></i>
                     </div>
                     <h4><font color="#007bff">Portale del docente</font></h4>
-                    <a style="color:black" href="https://unimol.esse3.cineca.it/Home.do">Clicca qui per essere reindirizzato al portale</a>
+                    <a style="color:black">Clicca qui per essere reindirizzato al portale</a>
                     </span>
                     </a>
                 </div>
