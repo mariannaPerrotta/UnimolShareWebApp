@@ -66,7 +66,6 @@
             </div>
         </div>
     </div>
-</section>
     <!-- ***** Our Team Area Start ***** -->
     <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
         <div class="content-wrapper" style="padding-left:2%; padding-right: 2%">
@@ -83,7 +82,7 @@
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/team-1.jpg" alt="">
+                            <img src="../../img/team-img/francesco.jpeg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="https://www.facebook.com/francesco.ranieri.796" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
@@ -100,7 +99,7 @@
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/team-2.jpg" alt="">
+                            <img src="../../img/team-img/danilo.jpeg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="https://www.facebook.com/danilo.sprovieri" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
@@ -117,7 +116,7 @@
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/team-3.jpg" alt="">
+                            <img src="../../img/team-img/jonathan.jpeg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="https://www.facebook.com/jonathan.drini.7" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
@@ -134,7 +133,7 @@
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/team-1.jpg" alt="">
+                            <img src="../../img/team-img/pierluigi.jpeg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="https://www.facebook.com/profile.php?id=100007936870644" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
@@ -170,7 +169,7 @@
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/team-1.jpg" alt="">
+                            <img src="../../img/team-img/michela.jpeg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="https://www.facebook.com/mikela.patullo" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
@@ -221,7 +220,7 @@
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/team-1.jpg" alt="">
+                            <img src="../../img/team-img/marianna.jpeg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="https://www.facebook.com/marianna.perrotta1" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
