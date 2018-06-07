@@ -58,6 +58,6 @@
         </div>
     </div>
     <script src="../../js/visualizza_materie.js"></script>
-    <script src="../../js/carica_documento.js.js"></script>
+    <script src="../../js/carica_documento.js"></script>
 <script src="../../js/materie.js"></script>
 </html>
