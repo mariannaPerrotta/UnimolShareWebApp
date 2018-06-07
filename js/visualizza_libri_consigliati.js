@@ -25,7 +25,7 @@ function MyClick(materia) {
                         alert("Non ci sono libri per questa materia");
 
                     var array = [];
-                    $("#form_materie").html("");
+                    $("#form_materie").html(" ");
                     for (var i = 0; i < n; i++) {
 
                         var libro = {
