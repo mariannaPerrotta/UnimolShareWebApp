@@ -3,11 +3,11 @@ document.getElementById("btnaggiungidocumento").onclick= function () {
 
     var titolo = $("#InputTitolo").val();
 
-    var CodStudente =$("#InputCodDocente").val();
+    var CodStudente = $("#InputCodDocente").val();
 
-    var Materia =$("#InputCodMateria").val();
+    var Materia = $("#InputCodMateria").val();
 
-    var Link =$("#InputLink").val();
+    var Link = $("#InputLink").val();
 
 
     var data = {
@@ -31,12 +31,12 @@ document.getElementById("btnaggiungidocumento").onclick= function () {
 
         data: data,
 
-        dataType:"json",
+        dataType: "json",
 
 
         success: function (data) {
 
-            if(data.error==false){
+            if (data.error == false) {
                 window.location.assign('index.php')
             }
 
@@ -46,7 +46,6 @@ document.getElementById("btnaggiungidocumento").onclick= function () {
         },
 
 
-    });
-
-
+    })
+}
 

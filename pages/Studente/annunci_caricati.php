@@ -26,19 +26,16 @@
                     <label for="rimuovidocumento" style="padding-left: auto">Rimuovi</label>
                 </a>
                 <div class="form-group mt-3">
-                    <label for="titololibro">Titolo libro:</label>
+                    <label for="titoloannuncio">Titolo annuncio:</label>
                 </div>
                 <div class="form-group">
-                    <label for="autorelibro">Autore:</label>
+                    <label for="autoreannuncio">Autore:</label>
                 </div>
                 <div class="form-group">
-                    <label for="edizionelibro">Edizione:</label>
+                    <label for="cdsannuncio">Corso di studio:</label>
                 </div>
                 <div class="form-group">
                     <label for="prezzoannuncio">Prezzo:</label>
-                </div>
-                <div class="form-group">
-                    <label for="casaeditrice">Casa editrice:</label>
                 </div>
                 <div class="form-group">
                     <label for="materia">Materia:</label>
