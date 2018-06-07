@@ -18,29 +18,7 @@
 
 <div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="card_lista_annunci">
 </div>
-                <!-- Scroll to Top Button-->
-                <a class="scroll-to-top rounded" href="#">
-                    <i class="fa fa-angle-up"></i>
-                </a>
-                <!-- Logout Modal-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header" href="btnContattaVenditore">
-                                <h5 class="modal-title" id="exampleModalLabel">Contatti</h5>
-                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">Email: </div>
-                            <div class="modal-body">Telefono: </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
+
 
 <!-- Bootstrap core JavaScript-->
 <script src="../../vendor/jquery/jquery.min.js"></script>

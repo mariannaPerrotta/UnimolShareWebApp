@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>UnimolShare - Modifica profilo</title>
+    <title>UnimolShare - Il tuo profilo</title>
     <!-- Bootstrap core CSS-->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -16,24 +16,51 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%">
-    <!--//fare for per visualizzare 1 carta per ogni documento con chiamata php-->
-    <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
+<div class="content-wrapper" style=" background: unset; padding-left:2%; padding-right: 2%">
+    <div class="card card-register mx-auto mt-5" style=" border-radius: 3%; margin-bottom: auto!important;">
+        <div class="card-header">Il mio profilo</div>
         <div class="card-body">
-            <form method="POST" style="padding-left: 5%;">
-                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnmodificaprofilo">
-                    <i class="fa fa-fw fa-minus-circle"></i>
-                    <label for="modificaprofilo" style="padding-left: auto">Fatto</label>
-                </a>
-                <div class="form-group">
-                    <div class="form-row">
-                        <div class="col-md-6">
-                            <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="vecchia_password">Vecchia Password</label>
-                            <select name="Materia" id="lista_materie" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
-                            </select>
+            <form method="POST">
+                <div class="form-group mt-3">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="InputName">Nome</label>
+                                <input class="form-control" id="InputName" type="text" aria-describedby="nameHelp" placeholder="Inserisci nuovo nome">
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="InputSurname">Cognome</label>
+                                <input class="form-control" id="InputSurname" type="text" aria-describedby="surnameHelp" placeholder="Inserisci nuovo cognome">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="InputNewPassword">Vecchia password</label>
+                                <input class="form-control" id="InputNewPassword" type="text" aria-describedby="newpasswordHelp" placeholder="Inserisci la vecchia password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="InputOldPassword">Nuova password</label>
+                                <input class="form-control" id="InputOldPassword" type="text" aria-describedby="oldpasswordHelp" placeholder="Inserisci la nuova password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "form-group">
+                        <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
+                            <div class="col-md-12">
+                                <a id = "modifica" class="btn btn-primary btn-block" href="#">Modifica</a>
+                            </div>
+                        </div>
+                    </div>
             </form>
         </div>
     </div>
@@ -47,10 +74,9 @@
 
 <script src="../../js/login.js"></script>
 
-<script src="../../js/visualizza_annunci_caricati.js"></script>
+<script src="../../js/modifica_profilo.js"></script>
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-</div>
 
 </html>
