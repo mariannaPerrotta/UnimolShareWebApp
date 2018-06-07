@@ -97,8 +97,8 @@
                             <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="https://www.facebook.com/francesco.ranieri.796"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/franciu97"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/francesco.ranieri.796" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/franciu97" target=”_blank”><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -114,8 +114,8 @@
                             <img src="../../img/team-img/team-2.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="https://www.facebook.com/danilo.sprovieri"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/Dani2097"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/danilo.sprovieri" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/Dani2097" target=”_blank”><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -131,8 +131,8 @@
                             <img src="../../img/team-img/team-3.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="https://www.facebook.com/jonathan.drini.7"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/MrJo1996"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/jonathan.drini.7" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/MrJo1996" target=”_blank”><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -148,8 +148,8 @@
                             <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="https://www.facebook.com/profile.php?id=100007936870644"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/RedGii"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100007936870644" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/RedGii" target=”_blank”><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -165,8 +165,8 @@
                             <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="https://www.facebook.com/LaDoroo"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/Dorothea96"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/LaDoroo" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/Dorothea96" target=”_blank”><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -184,8 +184,8 @@
                             <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="https://www.facebook.com/mikela.patullo"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/mikela-96"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/mikela.patullo" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/mikela-96" target=”_blank”><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -201,8 +201,8 @@
                             <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="https://www.facebook.com/andrea.petrella.5"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/andreacb94"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/andrea.petrella.5" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/andreacb94" target=”_blank”><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -218,8 +218,8 @@
                             <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="https://www.facebook.com/domenico.romano.5"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/asertoPasso"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/domenico.romano.5" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/asertoPasso" target=”_blank”><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -235,8 +235,8 @@
                             <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="https://www.facebook.com/marianna.perrotta1"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/mariannaPerrotta"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/marianna.perrotta1" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/mariannaPerrotta" target=”_blank”><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -252,8 +252,8 @@
                             <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="https://www.facebook.com/chiara.ricciardi.10"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/cricciardi"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/chiara.ricciardi.10" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/cricciardi" target=”_blank”><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
