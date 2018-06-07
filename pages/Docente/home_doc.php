@@ -77,26 +77,24 @@
                     <!-- Heading Text  -->
                     <div class="section-heading">
                         <h2><font color="#007bff">Team di sviluppo</font></h2>
-                        <div class="line-shape"></div>
+                        <div class="line-shape" style="background-color: #17a2b8"></div>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-md-center">
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/francesco.ranieri.796"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/franciu97"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <h4><font color="#007bff">Francesco<br>Ranieri</font></h4>
                             <p></p>
                         </div>
                     </div>
@@ -107,15 +105,13 @@
                             <img src="../../img/team-img/team-2.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/danilo.sprovieri"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/Dani2097https://github.com/Dani2097"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <h4><font color="#007bff">Danilo<br>Sprovieri</font></h4>
                             <p></p>
                         </div>
                     </div>
@@ -126,15 +122,13 @@
                             <img src="../../img/team-img/team-3.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/jonathan.drini.7"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/MrJo1996"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <h4><font color="#007bff">Jonathan<br>Drini</font></h4>
                             <p></p>
                         </div>
                     </div>
@@ -142,18 +136,16 @@
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/team-4.jpg" alt="">
+                            <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100007936870644"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/RedGii"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <h4><font color="#007bff">Pierluigi<br>Cosco</font></h4>
                             <p></p>
                         </div>
                     </div>
@@ -161,18 +153,35 @@
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/team-4.jpg" alt="">
+                            <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/LaDoroo"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/Dorothea96"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <h4><font color="#007bff">Dorothea<br>Messina</font></h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image">
+                            <img src="../../img/team-img/team-1.jpg" alt="">
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a href="https://www.facebook.com/mikela.patullo"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/mikela-96"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <h4><font color="#007bff">Michela<br>Patullo</font></h4>
                             <p></p>
                         </div>
                     </div>
@@ -180,18 +189,16 @@
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/team-4.jpg" alt="">
+                            <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/andrea.petrella.5"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/andreacb94"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <h4><font color="#007bff">Andrea<br>Petrella</font></h4>
                             <p></p>
                         </div>
                     </div>
@@ -199,18 +206,16 @@
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/team-4.jpg" alt="">
+                            <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/domenico.romano.5"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/asertoPasso"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <h4><font color="#007bff">Domenico<br>Romano</font></h4>
                             <p></p>
                         </div>
                     </div>
@@ -218,18 +223,16 @@
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/team-4.jpg" alt="">
+                            <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/marianna.perrotta1"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/mariannaPerrotta"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <h4><font color="#007bff">Marianna<br>Perrotta</font></h4>
                             <p></p>
                         </div>
                     </div>
@@ -237,37 +240,16 @@
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/team-4.jpg" alt="">
+                            <img src="../../img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/chiara.ricciardi.10"><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/cricciardi"><i class="fa fa-github-square" style="margin-top: 30%" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-2">
-                    <div class="single-team-member">
-                        <div class="member-image">
-                            <img src="../../img/team-img/team-4.jpg" alt="">
-                            <div class="team-hover-effects">
-                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member-text">
-                            <h4><font color="#007bff">Francesco Ranieri</font></h4>
+                            <h4><font color="#007bff">Chiara<br>Ricciardi</font></h4>
                             <p></p>
                         </div>
                     </div>
