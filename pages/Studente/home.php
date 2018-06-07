@@ -24,7 +24,7 @@
 </head>
 <body class="container bg-dark" id="page-top" >
 <!-- Navigation-->
-< class="special-area bg-white section_padding_100" style="padding-top: unset" id="about" >
+<section class="special-area bg-white section_padding_100" style="padding-top: unset" id="about" >
     <div class="content-wrapper" style="padding-left:2%; padding-right: 2%">
         <div class="row">
             <div class="col-12">
@@ -77,8 +77,9 @@
             </div>
         </div>
     </div>
+</section>
     <!-- ***** Our Team Area Start ***** -->
-    <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
+    <section class="our-Team-area bg-white section_padding_100_50 clearfix" style="padding-top: unset" id="team">
         <div class="content-wrapper" style="padding-left:2%; padding-right: 2%">
             <div class="row">
                 <div class="col-12 text-center">
