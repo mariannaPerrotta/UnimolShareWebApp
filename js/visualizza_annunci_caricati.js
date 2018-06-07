@@ -39,7 +39,8 @@ $(document).ready(function () {
                                 prezzo: data.annunci[i].prezzo,
                             }
 
-
+                            var materia;
+                            function nome_materie(){
                             $.ajax({
                                 url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriaperid",
 
@@ -49,13 +50,17 @@ $(document).ready(function () {
 
                                 dataType: "json",
 
-                                success: function (data2, annuncio) {
-                                    annuncio.materia = data2.nomi_materie[0].nome;
-                                    alert(data.annunci[i].titolo);
-                                    annunci.push(annuncio);
-                                }
-                            })
+                                success: function (data2) {
 
+                                   materia= data2.nomi_materie[0].nome;
+
+                                }
+
+                            })
+                                return materia;
+                            }
+                          var  materia2=nome_materie();
+                           alert(JSON.stringify(materia2));
 
                             $('#card_annunci').append('  <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
                                 '        <div class="card-body" >\n' +
@@ -82,6 +87,7 @@ $(document).ready(function () {
                                 '            </form>\n' +
                                 '        </div>\n' +
                                 '    </div>');
+
 
 
                         }
