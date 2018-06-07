@@ -25,36 +25,49 @@
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="exampleInputName">Nome</label>
+                            <label for="InputName">Nome</label>
                             <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Inserisci nome">
                         </div>
                         <div class="col-md-6">
-                            <label for="exampleInputLastName">Cognome</label>
-                            <input class="form-control" id="exampleInputLastName" type="text" aria-describedby="nameHelp" placeholder="Inserisci cognome">
+                            <label for="InputLastName">Cognome</label>
+                            <input class="form-control" id="InputLastName" type="text" aria-describedby="nameHelp" placeholder="Inserisci cognome">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="exampleInputEmail1">Indirizzo email</label>
-                            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
+                            <label for="InputEmail1">Indirizzo email</label>
+                            <input class="form-control" id="InputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
                         </div>
                         <div class="col-md-6">
-                            <label for="exampleInputMatricola">Matricola</label>
-                            <input class="form-control" id="exampleInputMatricola" type="text" aria-describedby="matricolaHelp" placeholder="Inserisci matricola">
+                            <label for="InputMatricola">Matricola</label>
+                            <input class="form-control" id="InputMatricola" type="text" aria-describedby="matricolaHelp" placeholder="Inserisci matricola">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-row">
+                        <div class="col-md-6" id="form_cdl">
+                            <label for="corsi_di_laurea">Corsi di laurea</label>
+                            <select class="form-control" id="corsi_di_laurea"  placeholder="Seleziona i tuoi corsi di laurea">
+                            </select>
+                        </div>
+<!--                        <div class="col-md-6">-->
+<!--                            <label for="InputMatricola">Matricola</label>-->
+<!--                            <input class="form-control" id="InputMatricola" type="text" aria-describedby="matricolaHelp" placeholder="Inserisci matricola">-->
+<!--                        </div>-->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row">
                         <div class="col-md-6">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
+                            <label for="InputPassword1">Password</label>
+                            <input class="form-control" id="InputPassword1" type="password" placeholder="Password">
                         </div>
                         <div class="col-md-6">
-                            <label for="exampleConfirmPassword">Conferma password</label>
-                            <input class="form-control" id="exampleConfirmPassword" type="password" placeholder="Conferma password">
+                            <label for="ConfirmPassword">Conferma password</label>
+                            <input class="form-control" id="ConfirmPassword" type="password" placeholder="Conferma password">
                         </div>
                     </div>
                 </div>
@@ -72,6 +85,7 @@
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../../js/cdl_docente.js"></script>
 </body>
 
 </html>
