@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 
                         $('#corsi_di_laurea').append('<br>' +
-                            '<input type="checkbox" name="' + array[i].nome +'" value="' + array[i].nome +'"/> '+ array[i].nome+' </input>'
+                            '<input id="check_'+array[i].nome+'" type="checkbox" name="' + array[i].nome +'" value="' + array[i].id +'"/> '+ array[i].nome+' </input>'
 
 
                         );

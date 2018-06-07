@@ -1,8 +1,6 @@
 //btnlogin è l'id del bottone login
 document.getElementById("btnregisterdoc").onclick= function () {
 
-    alert("almeno entra");
-
 //input da dare al servizio, quelli nelle parentesi sono gli id dei reattangoli in cui inserite i vari campi
 
     var nome = $("#InputNome").val();
@@ -16,8 +14,6 @@ document.getElementById("btnregisterdoc").onclick= function () {
     var password =$("#InputPassword").val();
 
     var Conferma_password =$("#ConfirmPassword").val();
-
-    alert(nome+' '+cognome + ' ' + email + ' ' + matricola + ' ' +password);
 
 
     if (password !== Conferma_password){
@@ -54,82 +50,79 @@ document.getElementById("btnregisterdoc").onclick= function () {
             dataType: "json", //json perchè l'output deve essere un json
 
 
-// funzione che dice che è stato effettuato il servizio
+            // funzione che dice che è stato effettuato il servizio
             success: function (data) {
 
-                alert("tenta di registrare");
-                alert(JSON.stringify(data.error));
-
-//questo serve per vedere quando l'utente è autenticato
                 if (JSON.stringify(data.error) === "false") {
 
-                    alert("già è qualcosa ha registrato");
-
-
+                    //Serializzo gli elemento successivi a checkbox
                     var checkbox = document.getElementById("checkbox").childNodes;
                     var text = (checkbox[1].textContent);
-                    text = text.replace('  ',' ');
+                    text = text.replace('  ',' '); //Elimino i doppi spazi
 
+                    //Converto il testo serializzato in elementi di un array
                     var array = [];
                     var tmp = "";
-
                     for(var i = 1; i < text.length; i++) {
                         var current = text[i];
                         tmp = tmp + current;
                         if(current === ' ') {
                             // Check the element has no children && that it is not empty
+                            tmp = tmp.replace(' ',''); //Elimino gli spazi nelle stringhe
                             array.push(tmp);
                             tmp = "";
                         }
                     }
+                    //Scorro l'array dalla posizione 1 perché nella posizione 0 c'è "cdl"
                     for (var i = 1; i < array.length; i++) {
 
-                        alert("siamo nel for");
+                        var id = 'check_' + array[i];
+                        if (document.getElementById(id).checked) { //Solo se l'elemento è selezionato lo aggiungo al docente
 
-                        var data = {
+                            id = document.getElementById(id).value;
+                            var data = {
+                                id: id,
+                                matricola: matricola
+                            };
 
-                            id: array[i],
+                            //Servizio REST per caricare cdl al Docente
+                            $.ajax({
 
-                            matricola: matricola
-                        };
+                                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricacdldocente",
 
-                        $.ajax({
+                                type: 'POST',
 
-                            url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricacdldocente",
+                                data: data,
 
-                            type: 'POST',
+                                dataType: "json", //json perchè l'output deve essere un json
 
-                            data: data,
+                                success: function (data) {
 
-                            dataType: "json", //json perchè l'output deve essere un json
+                                    alert("Abbiamo inviato un link di conferma alla tua email");
 
+                                },
 
-// funzione che dice che è stato effettuato il servizio
-                            success: function (data) {
+                                error: function (err) {
 
-                                alert("Bravoooooo");
-
-                            }
-                        });
+                                    alert("NO " + err.responseJSON.toString());
+                                    console.log(err.responseJSON);
+                                }
+                            });
+                        }
                     }
+                    console.log(data);
+                    window.location.assign('../../index.php')// serve per cambiare pagina
+                } else {
+                    alert(JSON.stringify(data.message))
                 }
-                console.log(data);
-                window.location.assign('./../index.php')// serve per cambiare pagina
 
             },
 
             error: function (err) {
 
                 alert("NO " + err.responseJSON.toString());
-
                 console.log(err.responseJSON);
-
-
             }
-
-
         });
-
     }
-
 };
