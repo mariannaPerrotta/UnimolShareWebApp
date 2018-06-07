@@ -1,74 +1,135 @@
 //btnlogin è l'id del bottone login
-document.getElementById("btnregister-docente").onclick= function () {
+document.getElementById("btnregisterdoc").onclick= function () {
+
+    alert("almeno entra");
 
 //input da dare al servizio, quelli nelle parentesi sono gli id dei reattangoli in cui inserite i vari campi
 
-    var nome = $("#exampleInputNome1").val();
+    var nome = $("#InputNome").val();
 
-    var cognome = $("#exampleInputCognome1").val();
+    var cognome = $("#InputCognome").val();
 
-    var email = $("#exampleInputEmail1").val();
+    var email = $("#InputEmail").val();
 
-    var matricola = $("#exampleInputMatricola1").val();
+    var matricola = $("#InputMatricola").val();
 
-    var password =$("#exampleInputPassword1").val();
+    var password =$("#InputPassword").val();
 
-    var Conferma_password =$("#exampleConfirmPassword").val();
+    var Conferma_password =$("#ConfirmPassword").val();
 
+    alert(nome+' '+cognome + ' ' + email + ' ' + matricola + ' ' +password);
+
+
+    if (password !== Conferma_password){
+        alert("Le password non coincidono");
+    }
+
+    else {
 // questo serve per mettere insieme i due input
 
-    var data = {
+        var data = {
 
-        nome: nome,
+            nome: nome,
 
-        cognome : cognome,
+            cognome: cognome,
 
-        email: email,
+            email: email,
 
-        matricola: matricola,
+            matricola: matricola,
 
-        password: password,
+            password: password
 
-        conferma_pasword : conferma_password,
-    };
+        };
 
 // qui chiamate il servizio
 
-    $.ajax({
+        $.ajax({
 
-        url: "http://localhost/UnimolShare/public/register-docente",
+            url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/registrazione",
 
-        type: 'POST',
+            type: 'POST',
 
-        data: data,
+            data: data,
 
-        dataType:"json", //json perchè l'output deve essere un json
+            dataType: "json", //json perchè l'output deve essere un json
 
 
 // funzione che dice che è stato effettuato il servizio
-        success: function (data) {
+            success: function (data) {
+
+                alert("tenta di registrare");
+                alert(JSON.stringify(data.error));
+
 //questo serve per vedere quando l'utente è autenticato
-            if(data.error==false){
-                window.location.assign('index.php')// serve per cambiare pagina
+                if (JSON.stringify(data.error) === "false") {
+
+                    alert("già è qualcosa ha registrato");
+
+
+                    var checkbox = document.getElementById("checkbox").childNodes;
+                    var text = (checkbox[1].textContent);
+                    text = text.replace('  ',' ');
+
+                    var array = [];
+                    var tmp = "";
+
+                    for(var i = 1; i < text.length; i++) {
+                        var current = text[i];
+                        tmp = tmp + current;
+                        if(current === ' ') {
+                            // Check the element has no children && that it is not empty
+                            array.push(tmp);
+                            tmp = "";
+                        }
+                    }
+                    for (var i = 1; i < array.length; i++) {
+
+                        alert("siamo nel for");
+
+                        var data = {
+
+                            id: array[i],
+
+                            matricola: matricola
+                        };
+
+                        $.ajax({
+
+                            url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricacdldocente",
+
+                            type: 'POST',
+
+                            data: data,
+
+                            dataType: "json", //json perchè l'output deve essere un json
+
+
+// funzione che dice che è stato effettuato il servizio
+                            success: function (data) {
+
+                                alert("Bravoooooo");
+
+                            }
+                        });
+                    }
+                }
+                console.log(data);
+                window.location.assign('./../index.php')// serve per cambiare pagina
+
+            },
+
+            error: function (err) {
+
+                alert("NO " + err.responseJSON.toString());
+
+                console.log(err.responseJSON);
+
 
             }
 
-            console.log(data);
 
-        },
+        });
 
-        error: function ( err) {
-
-            alert("NO " + err.responseJSON.toString());
-
-            console.log(err.responseJSON);
-
-
-        }
-
-
-    });
-
-
+    }
 
 };
