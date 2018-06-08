@@ -64,7 +64,7 @@
                 </div>
                 <div class="form-group">
                     <div class="form-row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 mt-3">
                             <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="lista_materie">Materia</label>
                             <select name="Materia" id="btnmaterie" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
                             </select>
@@ -93,5 +93,8 @@
 <!-- Core plugin JavaScript-->
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 </body>
+
+<script src="../../js/carica_libro.js"></script>
+<script src="../../js/materie.js"></script>
 
 </html>

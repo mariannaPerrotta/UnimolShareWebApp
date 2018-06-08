@@ -21,11 +21,11 @@
         <div class="card-header">Il mio profilo</div>
     <div class="card-body">
         <form method="POST" style="padding-left: 0.25%">
-            <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%"
-               id="btnmodificaprofilo">
-                <i class="fa fa-fw fa-pencil-square"></i>
-                <label for="modificaprofilo" style="padding-left: auto">Modifica</label>
-            </a>
+                <a class="btn btn-primary btn-block ml-auto" href="index.php?action=modifica_profilo_doc.php" style="padding-left: 0%;color:white;width: 30%"
+                   id="btnmodificaprofilo">
+                    <i class="fa fa-fw fa-pencil-square-o"></i>
+                    <label for="modificaprofilodoc" style="padding-left: auto" >Modifica</label>
+                </a>
             <div class="form-group mt-3">
                 <label for="matricola">Matricola: <font
                             color="blue"><?php echo($_SESSION['utente']['matr']) ?></font></label>
