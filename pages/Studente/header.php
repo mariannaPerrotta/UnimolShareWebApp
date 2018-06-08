@@ -101,7 +101,7 @@
             <div class="input-group">
               <input class="form-control" id="InputRicerca" type="text" placeholder="Ricerca">
               <span class="input-group-append" >
-                <button class="btn btn-primary" id="idRicerca" type="button" href="index.php?action=ricerca"  onclick="ricerca('InputRicerca')"  >
+                <button class="btn btn-primary" id="idRicerca" type="button" href="index.php?action=ricerca_1"  onclick="ricerca('InputRicerca')">
                   <i class="fa fa-search"></i>
                 </button>
               </span>
@@ -154,7 +154,7 @@
   <script src="../../js/login.js"></script>
 
 
-  <script src="../../js/ricerca.js"></script>
+  <script src="../../js/ricerca2.js"></script>
 
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
