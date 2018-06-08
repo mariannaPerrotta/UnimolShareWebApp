@@ -82,7 +82,7 @@
                         <div class="modal-body">Seleziona "Invia" per inviare la segnalazione.</div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" type="button" data-dismiss="modal" >Cancella</button>
-                            <a class="btn btn-primary" href="#">Invia</a>
+                            <a class="btn btn-primary" id="btnsegnalaprofilo" style="color:white">Invia</a>
                         </div>
                     </div>
                 </div>

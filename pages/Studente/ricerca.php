@@ -1,3 +1,12 @@
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $query = $_POST['key'];
+    $_SESSION['query'] = $query;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,8 +25,7 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="ricerca">
-
+<div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="ricerca" value="<?php echo($_SESSION['query'])?>">
 </div>
 
 
@@ -31,7 +39,7 @@
 
 <script src="../../js/login.js"></script>
 
-<script src="../../js/ricerca.js"></script>
+<script src="../../js/query_ricerca.js"></script>
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
