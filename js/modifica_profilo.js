@@ -1,4 +1,6 @@
-document.getElementById("btnmodificaprofilo").onclick= function () {
+document.getElementById("modifica").onclick= function () {
+
+
 
 
 }
