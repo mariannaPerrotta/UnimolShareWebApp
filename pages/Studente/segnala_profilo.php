@@ -17,7 +17,7 @@
 </head>
 
 <body class="bg-dark" style="padding-top: unset">
-<div class="container">
+<div class="content-wrapper bg-dark">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Segnala profilo</div>
         <div class="card-body">
@@ -39,7 +39,7 @@
                 <div class="form-group">
                     <div class="form-row">
                         <label for="InputMotivo">Motivo della segnalazione*</label>
-                        <textarea class="form-control" id="InputMotivo" type="text" aria-describedby="MotivoHelp"
+                        <input textarea class="form-control" id="InputMotivo" type="text" aria-describedby="MotivoHelp"
                                   placeholder="Inserisci il motivo della segnalazione"
                                   style="padding-bottom:200px; word-break: break-all;">
                             </textarea>
