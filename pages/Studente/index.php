@@ -36,7 +36,7 @@ if (empty($_SESSION['utente'])) {
 
 
 <body>
-<div>
+<div id="index">
     <!--   <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
 
     </nav-->
@@ -78,6 +78,9 @@ if (empty($_SESSION['utente'])) {
             break;
         case 'segnala_profilo':
             include 'segnala_profilo.php';
+            break;
+        case 'ricerca':
+            include 'ricerca.php';
             break;
     }
 

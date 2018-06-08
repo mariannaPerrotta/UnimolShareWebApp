@@ -1,6 +1,6 @@
-document.getElementById("idRicerca").onclick = function () {
-    alert("ok");
-    var key=$("#InputRicerca").val();
+function ricerca(id) {
+
+     var key=$("#id").val();
 
     var data={
         key: key,
@@ -24,7 +24,7 @@ document.getElementById("idRicerca").onclick = function () {
 
                 var n=data.lista.contatore;
                 var ricerche = [];
-
+                $('#index').html("");
                 for(var i =0; i<n; i++){
 
                     var ricerca = {
@@ -34,11 +34,13 @@ document.getElementById("idRicerca").onclick = function () {
                     }
 
                     ricerche.push(ricerca);
-                    //alert(JSON.stringify(ricerche[i].tabella));
-                    alert("ok");
-                        if((JSON.stringify(ricerche[i].tabella)) === "annuncio") {
 
-                            $('#ricerca').append('<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
+
+                        if(ricerche[i].tabella === "annuncio") {
+                            alert(JSON.stringify(ricerche[i].tabella));
+
+                            $('#index').append(
+                                '<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
                                 '        <div class="card-body">' +
                                 '            <form method="POST" style="padding-left: 0.25%">' +
                                 '                <div class="form-group mt-4">' +
