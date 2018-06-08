@@ -82,7 +82,7 @@
         </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Segnala profilo">
                 <a class="nav-link"  href="index.php?action=segnala_profilo">
-                    <i class="fa fa-fw fa-lock"></i>
+                    <i class="fa fa-fw fa-ban"></i>
                     <span class="nav-link-text">Segnala profilo</span>
                 </a>
             </li>
