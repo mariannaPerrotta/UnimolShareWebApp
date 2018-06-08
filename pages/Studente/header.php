@@ -96,24 +96,25 @@
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <form class="form-inline my-2 my-lg-0 mr-lg-2">
-            <div class="input-group">
-              <input class="form-control" id="InputRicerca" type="text" placeholder="Ricerca">
-              <span class="input-group-append" >
-                <button class="btn btn-primary" id="idRicerca" type="button" href="index.php?action=ricerca_1"  onclick="ricerca('InputRicerca')">
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
-            </div>
-          </form>
-        </li>
+<!--        <li class="nav-item">-->
+<!--          <form class="form-inline my-2 my-lg-0 mr-lg-2">-->
+<!--            <div class="input-group">-->
+<!--              <input class="form-control" id="InputRicerca" type="text" placeholder="Ricerca">-->
+<!--              <span class="input-group-append" >-->
+<!--                <button class="btn btn-primary" id="idRicerca" type="button" href="index.php?action=ricerca_1"  onclick="ricerca('InputRicerca')">-->
+<!--                  <i class="fa fa-search"></i>-->
+<!--                </button>-->
+<!--              </span>-->
+<!--            </div>-->
+<!--          </form>-->
+<!--        </li>-->
           <li class="nav-item">
               <a class="nav-link" data-toggle="modal" data-target="#exampleModal" >
                   <i class="fa fa-fw fa-sign-out"  ></i>Logout</a>
           </li>
 
       </ul>
+
 
   </nav>
   <div class="content-wrapper">
