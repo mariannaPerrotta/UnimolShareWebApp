@@ -145,7 +145,7 @@
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/pierluigi.jpg" alt="">
+                            <img src="../../img/team-img/pierluigi.jpeg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="https://www.facebook.com/profile.php?id=100007936870644" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>

@@ -32,9 +32,33 @@ $(document).ready(function() {
                             var documento = {
                                 titolo: data.documenti[i].titolo,
                                 link: data.documenti[i].link,
+                                materia: data.documenti[i].cod_materia,
                                 id: data.documenti[i].id,
                             }
 
+
+                            function nome_materie(){
+                                var materia;
+                                $.ajax({
+                                    url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriaperid",
+
+                                    type: 'POST',
+                                    data: {id: documento.materia},
+                                    dataType: "json",
+                                    async: false,
+
+                                    success: function (data2) {
+                                        materia = data2.nomi_materie[0].nome;
+
+                                    }
+
+                                });
+                                return materia;
+                            }
+
+                            var  materia2=nome_materie();
+
+                            documento.materia= materia2;
                             documenti.push(documento);
 
                             $('#card_documenti_caricati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
@@ -48,7 +72,7 @@ $(document).ready(function() {
                                 '                                    <label for="titolodocumento">Titolo documento:' + ' '+ documenti[i].titolo + '</label>' +
                                 '                                </div>' +
                                 '                                <div class="form-group">' +
-                                '                                    <label for="materiadocumento">Materia:</label>' +
+                                '                                    <label for="materiadocumento">Materia:' + ' ' + documenti[i].materia + '</label>' +
                                 '                                </div>' +
                                 '                                <a class="btn btn-primary btn-block" style="color:white" id="'+documenti[i].id+'_download" onclick="Download('+"'"+documenti[i].id+"'"+')">Download documento</a>' +
                                 '\n' +

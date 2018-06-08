@@ -74,7 +74,7 @@
 
 <script src="../../js/login.js"></script>
 
-<script src="../../js/modifica_profilo.js"></script>
+<script src="../../js/modifica_profilo_doc.js"></script>
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 

@@ -62,6 +62,9 @@ if (empty($_SESSION['utente'])) {
         case 'profilo' :
             include 'visualizza_profilo_docente.php';
             break;
+        case 'modifica_profilo_doc' :
+            include 'modifica_profilo_doc.php';
+            break;
 
     }
 

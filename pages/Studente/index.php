@@ -42,6 +42,7 @@ if (empty($_SESSION['utente'])) {
     </nav-->
     <?php
     include('./header.php');
+
     switch ($action) {
         case 'home' :
             include 'home.php';
@@ -79,8 +80,11 @@ if (empty($_SESSION['utente'])) {
         case 'segnala_profilo':
             include 'segnala_profilo.php';
             break;
-        case 'ricerca':
+        case 'ricerca_1':
             include 'ricerca.php';
+            break;
+        case 'modifica_profilo':
+            include 'modifica_profilo.php';
             break;
     }
 
