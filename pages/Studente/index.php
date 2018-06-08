@@ -82,6 +82,9 @@ if (empty($_SESSION['utente'])) {
         case 'ricerca':
             include 'ricerca.php';
             break;
+        case 'modifica_profilo':
+            include 'modifica_profilo.php';
+            break;
     }
 
     ?>
