@@ -37,7 +37,7 @@
                 <div class="form-group">
                     <div class="form-row">
                             <label for="InputMotivo">Motivo della segnalazione*</label>
-                            <textarea class="form-control" id="InputMotivo" type="text" aria-describedby="MotivoHelp" placeholder="Inserisci il motivo della segnalazione" style = "padding-bottom:200px; word-break: break-all;">
+                            <input textarea class="form-control" id="InputMotivo" type="text" aria-describedby="MotivoHelp" placeholder="Inserisci il motivo della segnalazione" style="padding-bottom:200px; word-break: break-all;">
                             </textarea>
                     </div>
                 </div>
