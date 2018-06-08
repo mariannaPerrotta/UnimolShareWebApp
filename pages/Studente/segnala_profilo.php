@@ -61,7 +61,7 @@
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px; color: #bd2130">
-                <a>I campi con * sono obbligatori</a>
+                <a>* campi obbligatori</a>
             </div>
         </div>
 
@@ -82,7 +82,7 @@
                         <div class="modal-body">Seleziona "Invia" per inviare la segnalazione.</div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" type="button" data-dismiss="modal" >Cancella</button>
-                            <a class="btn btn-primary" href="#">Invia</a>
+                            <a class="btn btn-primary" id="btnsegnalaprofilo" style="color:white">Invia</a>
                         </div>
                     </div>
                 </div>

@@ -16,15 +16,15 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
-<div class="content-wrapper" style=" background: unset; padding-left:2%; padding-right: 2%">
+<div class="content-wrapper bg-dark" style=" background: unset; padding-left:2%; padding-right: 2%">
     <div class="card card-register mx-auto mt-5" style=" border-radius: 3%; margin-bottom: auto!important;">
         <div class="card-header">Il mio profilo</div>
         <div class="card-body">
             <form method="POST">
-                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%"
+                <a class="btn btn-primary btn-block ml-auto" href="index.php?action=modifica_profilo" style="padding-left: 0%;color:white;width: 30%"
                    id="btnmodificaprofilo">
                     <i class="fa fa-fw fa-pencil-square"></i>
-                    <label for="modificaprofilo" style="padding-left: auto">Modifica</label>
+                    <label for="modificaprofilo" style="padding-left: auto" >Modifica</label>
                 </a>
                 <div class="form-group mt-3">
 
