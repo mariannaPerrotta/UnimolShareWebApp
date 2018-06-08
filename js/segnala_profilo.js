@@ -1,6 +1,5 @@
 document.getElementById("btnsegnalaprofilo").onclick = function () {
 
-
     var nome = $("#InputNome").val();
 
     var cognome = $("#InputCognome").val();
@@ -10,6 +9,7 @@ document.getElementById("btnsegnalaprofilo").onclick = function () {
     var contatto = $("#InputContatto").val();
 
     var email = $("#InputEmail").val();
+
 
     var data = {
 
