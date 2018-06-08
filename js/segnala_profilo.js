@@ -1,6 +1,5 @@
 document.getElementById("btnsegnalaprofilo").onclick = function () {
 
-
     var nome = $("#InputNome").val();
 
     var cognome = $("#InputCognome").val();
@@ -11,30 +10,31 @@ document.getElementById("btnsegnalaprofilo").onclick = function () {
 
     var email = $("#InputEmail").val();
 
+
     var data = {
 
-        Nome: nome,
+        nome: nome,
 
-        Cognome: cognome,
+        cognome: cognome,
 
-        Motivo: motivo,
+        motivo: motivo,
 
-        Contatto: contatto,
+        contatto: contatto,
 
-        Email: email,
+        email: email,
 
     };
 
 
     $.ajax({
 
-        url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/segnalazione",
+        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/segnalazione",
 
         type: 'POST',
 
         data: data,
 
-        dataType: "json",
+
 
         success: function (data) {
 
