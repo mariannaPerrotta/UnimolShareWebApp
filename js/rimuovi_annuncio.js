@@ -1,4 +1,5 @@
-function Rimuovi(id) {
+function RimuoviAnnuncio(id) {
+    alert(id);
     $.ajax({
         url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/rimuoviAnnuncio/" + id,
 
@@ -9,6 +10,7 @@ function Rimuovi(id) {
         dataType: "json",
 
         success: function (data) {
+
             if (data.error == "false") {
                 alert("Rimozione avvenuta con successo");
             }

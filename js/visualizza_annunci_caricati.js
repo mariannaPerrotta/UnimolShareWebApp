@@ -32,36 +32,34 @@ $(document).ready(function () {
                         for (var i = 0; i < n; i++) {
 
                             var annuncio = {
+                                id: data.annunci[i].id,
                                 titolo: data.annunci[i].titolo,
                                 autore: data.annunci[i].autore,
                                 materia: data.annunci[i].cod_materia,
                                 contatto: data.annunci[i].contatto,
                                 prezzo: data.annunci[i].prezzo,
                             }
+
+
                             function nome_materie(){
                                 var materia;
-                            $.ajax({
-                                url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriaperid",
+                                    $.ajax({
+                                         url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriaperid",
 
-                                type: 'POST',
-
-
-
-                                data: {id: annuncio.materia},
-
-                                dataType: "json",
-
-                                async: false,
+                                         type: 'POST',
+                                         data: {id: annuncio.materia},
+                                         dataType: "json",
+                                        async: false,
 
                                 success: function (data2) {
-
-                                    materia = data2.nomi_materie[0].nome;
+                                      materia = data2.nomi_materie[0].nome;
 
                                 }
 
                             });
                                 return materia;
                             }
+
                           var  materia2=nome_materie();
 
                             annuncio.materia=  materia2;
@@ -72,7 +70,7 @@ $(document).ready(function () {
                                 '            <form method="POST" style="padding-left: 5%;">\n' +
                                 '                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuoviannuncio">\n' +
                                 '                    <i class="fa fa-fw fa-minus-circle"></i>\n' +
-                                '                    <label for="rimuovidocumento" style="padding-left: auto">Rimuovi</label>\n' +
+                                '                    <label for="rimuovidocumento" style="padding-left: auto" id=" '+ annunci[i].id + '"onclick="RimuoviAnnuncio('+"'"+annunci[i].id+"'"+')">Rimuovi</label>\n' +
                                 '                </a>\n' +
                                 '                <div class="form-group mt-3">\n' +
                                 '                    <label for="titololibro">Titolo Libro:' + ' ' + annunci[i].titolo + '</label>\n' +
