@@ -42,7 +42,7 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libri consigliati">
           <a class="nav-link"  href="index.php?action=visualizza_materie">
             <i class="fa fa-fw fa-book"></i>
-            <span class="nav-link-text">Libri consigliati</span>
+            <span class="nav-link-text">Libri Consigliati</span>
           </a>
         </li>
 
@@ -82,7 +82,7 @@
         </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Segnala profilo">
                 <a class="nav-link"  href="index.php?action=segnala_profilo">
-                    <i class="fa fa-fw fa-ban"></i>
+                    <i class="fa fa-fw fa-lock"></i>
                     <span class="nav-link-text">Segnala profilo</span>
                 </a>
             </li>
@@ -101,8 +101,10 @@
             <div class="input-group">
               <input class="form-control" id="InputRicerca" type="text" placeholder="Ricerca">
               <span class="input-group-append" >
-                <button class="btn btn-primary" id="idRicerca" type="button" href="index.php?action=ricerca_1"  onclick="ricerca('InputRicerca')">
+                <button class="btn btn-primary" id="idRicerca" >
+                    <a class="nav-link"  href="index.php?action=ricerca" id="InputRicerca">
                   <i class="fa fa-search"></i>
+                    </a>
                 </button>
               </span>
             </div>
@@ -152,9 +154,6 @@
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <script src="../../js/login.js"></script>
-
-
-  <script src="../../js/ricerca2.js"></script>
 
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
