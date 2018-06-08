@@ -1,45 +1,50 @@
-document.getElementById("btnsegnalaprofilo").onclick= function () {
+document.getElementById("btnsegnalaprofilo").onclick = function () {
 
 
-    var Nome = $("#InputNome").val();
+    var nome = $("#InputNome").val();
 
-    var Cognome =$("#InputCognome").val();
+    var cognome = $("#InputCognome").val();
 
-    var Motivo =$("#InputMotivo").val();
+    var motivo = $("#InputMotivo").val();
 
+    var contatto = $("#InputContatto").val();
 
+    var email = $("#InputEmail").val();
 
     var data = {
 
-        Nome: Nome,
+        Nome: nome,
 
-        Cognome: Cognome,
+        Cognome: cognome,
 
-        Motivo: Motivo,
+        Motivo: motivo,
+
+        Contatto: contatto,
+
+        Email: email,
+
     };
 
 
     $.ajax({
 
-        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/segnalazione",
+        url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/segnalazione",
 
         type: 'POST',
 
         data: data,
 
-        dataType:"json",
+        dataType: "json",
 
         success: function (data) {
 
-            if(data.error==false){
+            if (data.error == false) {
                 window.location.assign('index.php')
             }
-
 
             console.log(data);
 
         },
-
 
     });
 }

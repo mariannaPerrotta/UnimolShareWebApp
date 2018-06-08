@@ -40,17 +40,17 @@ $(document).ready(function () {
                                 url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzaannunciopermateria",
                                 type: 'POST',
                                 data: {materia: materia.nome},
-                                dataType:'json',
+                                dataType: 'json',
 
                                 success: function (data) {
-                                    if(data.libri.error===false) {
+                                    if (data.libri.error === false) {
                                         var n = data.libri.contatore;
-                                        var annunci= [];
+                                        var annunci = [];
 
                                         var hook = $('#card_lista_annunci');
 
-                                        for(i=0; i<n; i++){
-                                            var annuncio={
+                                        for (i = 0; i < n; i++) {
+                                            var annuncio = {
                                                 titolo: data.libri[i].titolo,
                                                 prezzo: data.libri[i].prezzo,
                                                 edizione: data.libri[i].edizione,
@@ -61,34 +61,34 @@ $(document).ready(function () {
 
                                             annunci.push(annuncio);
 
-                                            hook.append('<div class="card card-register mx-auto mt-5" style="padding: 1%; margin-bottom: 3rem!important">Materia:'+' '+materie[i].nome+'</div>'+
+                                            hook.append('<div class="card card-register mx-auto mt-5" style="padding: 1%; margin-bottom: 3rem!important">Materia:' + ' ' + materie[i].nome + '</div>' +
                                                 '            <div class="card card-register mx-auto mt-2" style="margin-bottom: 3rem!important">\n' +
-                                                        '        <div class="card-body">\n' +
-                                                        '            <form method="POST" style="padding-left: 0.25%">\n' +
-                                                        '                <div class="form-group mt-4">\n' +
-                                                        '                    <label for="titoloannuncio">Titolo:'+' '+annunci[i].titolo+'</label>\n' +
-                                                        '                </div>\n' +
-                                                        '                <div class="form-group mt-4">\n' +
-                                                        '                    <label for="autoreannuncio">Autore:'+' '+annunci[i].autore+'</label>\n' +
-                                                        '                </div>\n' +
-                                                        '                <div class="form-group mt-4">\n' +
-                                                        '                    <label for="prezzoannuncio">Prezzo:'+' '+annunci[i].prezzo+'</label>\n' +
-                                                        '                </div>\n' +
-                                                        '                <div class="form-group mt-4">\n' +
-                                                        '                       <label for="casa_editrice">Casa Editrice:'+' '+annunci[i].casa_editrice+'</label>\n' +
+                                                '        <div class="card-body">\n' +
+                                                '            <form method="POST" style="padding-left: 0.25%">\n' +
+                                                '                <div class="form-group mt-4">\n' +
+                                                '                    <label for="titoloannuncio">Titolo:' + ' ' + annunci[i].titolo + '</label>\n' +
+                                                '                </div>\n' +
+                                                '                <div class="form-group mt-4">\n' +
+                                                '                    <label for="autoreannuncio">Autore:' + ' ' + annunci[i].autore + '</label>\n' +
+                                                '                </div>\n' +
+                                                '                <div class="form-group mt-4">\n' +
+                                                '                    <label for="prezzoannuncio">Prezzo:' + ' ' + annunci[i].prezzo + '</label>\n' +
+                                                '                </div>\n' +
+                                                '                <div class="form-group mt-4">\n' +
+                                                '                       <label for="casa_editrice">Casa Editrice:' + ' ' + annunci[i].casa_editrice + '</label>\n' +
                                                 '                        </div>\n' +
-                                                        '                <div class="form-group mt-4">\n' +
-                                                        '                    <label for="edizione">Edizione:'+' '+annunci[i].edizione+'</label>\n' +
+                                                '                <div class="form-group mt-4">\n' +
+                                                '                    <label for="edizione">Edizione:' + ' ' + annunci[i].edizione + '</label>\n' +
                                                 '                        </div>\n' +
-                                                        '                <div class = "form-group mt-4">\n' +
-                                                        '                    <div class = "form-row" style="margin-right: 25%; margin-left: 25%;">\n' +
-                                                        '                        <button type="button" class="btn btn-primary btn-block mt-4" onclick="ContattaVenditore('+"'"+'hook'+i+"'"+')" id="btnContattaVenditore'+i+'" style="color: white">Contatta Venditore</button>\n' +
-                                                        '                    </div>\n' +
-                                                        '               </div>\n' +
-                                                                        <!-- Metto già il campo ma lo metto nascosto -->
-                                                        '               <div class="form-group mt-4">\n' +
-                                                        '                    <label id="hook'+i+'" for="contatto" style="display: none;">Contatto: '+annunci[i].contatto+'</label>\n' +
-                                                        '               </div>\n');
+                                                '                <div class = "form-group mt-4">\n' +
+                                                '                    <div class = "form-row" style="margin-right: 25%; margin-left: 25%;">\n' +
+                                                '                        <button type="button" class="btn btn-primary btn-block mt-4" onclick="ContattaVenditore(' + "'" + 'hook' + i + "'" + ')" id="btnContattaVenditore' + i + '" style="color: white">Contatta Venditore</button>\n' +
+                                                '                    </div>\n' +
+                                                '               </div>\n' +
+                                                <!-- Metto già il campo ma lo metto nascosto -->
+                                                '               <div class="form-group mt-4">\n' +
+                                                '                    <label id="hook' + i + '" for="contatto" style="display: none;">Contatto: ' + annunci[i].contatto + '</label>\n' +
+                                                '               </div>\n');
 
 
                                         }
@@ -122,12 +122,12 @@ $(document).ready(function () {
 
 });
 
-function ContattaVenditore(hook){
+function ContattaVenditore(hook) {
 
     var element = (document.getElementById(hook));
 
     //Controllo la visibilità dell'elemento e la inverto
-    if(element.style.display === "none")
+    if (element.style.display === "none")
         element.style.display = "inline";
     else
         element.style.display = "none";
