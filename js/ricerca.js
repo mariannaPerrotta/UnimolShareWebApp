@@ -38,55 +38,56 @@ document.getElementById("idRicerca").onclick = function () {
                     alert("ok");
                         if((JSON.stringify(ricerche[i].tabella)) === "annuncio") {
 
-                            $('#ricerca').append('<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
-                                '        <div class="card-body">\n' +
-                                '            <form method="POST" style="padding-left: 0.25%">\n' +
-                                '                <div class="form-group mt-4">\n' +
-                                '                    <label for="titoloannuncio">Titolo:</label>\n' +
-                                '                </div>\n' +
-                                '                <div class="form-group">\n' +
-                                '                    <label for="autoreannuncio">Autore:</label>\n' +
-                                '                </div>\n' +
-                                '                <div class="form-group">\n' +
-                                '                    <label for="corsodistudioannuncio">Corso di studio:</label>\n' +
-                                '                </div>\n' +
-                                '                <div class="form-group">\n' +
-                                '                    <label for="materiaannuncio">Materia:</label>\n' +
-                                '                </div>\n' +
-                                '                <div class="form-group">\n' +
-                                '                    <label for="prezzoannuncio">Prezzo:</label>\n' +
-                                '                </div>\n' +
-                                '                <div class = "form-group">\n' +
-                                '                    <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">\n' +
-                                '                        <a class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal" style="color: white">Contatta Venditore</a>\n' +
-                                '                    </div>\n' +
-                                '                </div>\n' +
-                                '                <!-- Scroll to Top Button-->\n' +
-                                '                <a class="scroll-to-top rounded" href="#page-top">\n' +
-                                '                    <i class="fa fa-angle-up"></i>\n' +
-                                '                </a>\n' +
-                                '                <!-- Logout Modal-->\n' +
-                                '                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">\n' +
-                                '                    <div class="modal-dialog" role="document">\n' +
-                                '                        <div class="modal-content">\n' +
-                                '                            <div class="modal-header">\n' +
-                                '                                <h5 class="modal-title" id="exampleModalLabel">Contatti</h5>\n' +
-                                '                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">\n' +
-                                '                                    <span aria-hidden="true">×</span>\n' +
-                                '                                </button>\n' +
-                                '                            </div>\n' +
-                                '                            <div class="modal-body">Email: </div>\n' +
-                                '                            <div class="modal-body">Telefono: </div>\n' +
-                                '                            <div class="modal-footer">\n' +
-                                '                                <button class="btn btn-secondary" type="button" data-dismiss="modal" >Indietro</button>\n' +
-                                '                            </div>\n' +
-                                '                        </div>\n' +
-                                '                    </div>\n' +
-                                '                </div>\n' +
-                                '            </form>\n' +
-                                '        </div>\n' +
-                                '    </div>\n' +
-                                '</div>\n');
+                            $('#ricerca').append('<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
+                                '        <div class="card-body">' +
+                                '            <form method="POST" style="padding-left: 0.25%">' +
+                                '                <div class="form-group mt-4">' +
+                                '                    <label for="titoloannuncio">Titolo:</label>' +
+                                '                </div>' +
+                                '                <div class="form-group">' +
+                                '                    <label for="autoreannuncio">Autore:</label>' +
+                                '                </div>' +
+                                '                <div class="form-group">' +
+                                '                    <label for="corsodistudioannuncio">Corso di studio:</label>' +
+                                '                </div>' +
+                                '                <div class="form-group">' +
+                                '                    <label for="materiaannuncio">Materia:</label>' +
+                                '                </div>' +
+                                '                <div class="form-group">' +
+                                '                    <label for="prezzoannuncio">Prezzo:</label>' +
+                                '                </div>' +
+                                '                <div class = "form-group">' +
+                                '                    <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">' +
+                                '                        <a class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal" style="color: white">Contatta Venditore</a>' +
+                                '                    </div>' +
+                                '                </div>' +
+
+                                '                <a class="scroll-to-top rounded" href="#page-top">' +
+                                '                    <i class="fa fa-angle-up"></i>' +
+                                '                </a>' +
+
+                                '                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">' +
+                                '                    <div class="modal-dialog" role="document">' +
+                                '                        <div class="modal-content">' +
+                                '                            <div class="modal-header">' +
+                                '                                <h5 class="modal-title" id="exampleModalLabel">Contatti</h5>' +
+                                '                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">' +
+                                '                                    <span aria-hidden="true">×</span>' +
+                                '                                </button>' +
+                                '                            </div>' +
+                                '                            <div class="modal-body">Email: </div>' +
+                                '                            <div class="modal-body">Telefono: </div>' +
+                                '                            <div class="modal-footer">' +
+                                '                                <button class="btn btn-secondary" type="button" data-dismiss="modal" >Indietro</button>' +
+                                '                            </div>' +
+                                '                        </div>' +
+                                '                    </div>' +
+                                '                </div>' +
+                                '            </form>' +
+                                '        </div>' +
+                                '    </div>' +
+                                '</div>'
+                            );
                         }
 
                     if((JSON.stringify(ricerche[i].tabella)) === "dcs") {
@@ -116,7 +117,8 @@ document.getElementById("idRicerca").onclick = function () {
                             '\n' +
                             '            </form>\n' +
                             '        </div>\n' +
-                            '    </div>');
+                            '    </div>'
+                        );
 
                     }
                     if(JSON.stringify(ricerche[i].tabella) === "libri") {

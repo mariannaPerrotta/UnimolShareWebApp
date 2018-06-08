@@ -22,6 +22,7 @@ $(document).ready(function() {
                 dataType: "json",
 
                 success: function (data) {
+
                     if (data.nomi_materie.error === false) {
 
                         var n = data.nomi_materie.contatore;
