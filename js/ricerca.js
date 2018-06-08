@@ -1,29 +1,43 @@
 document.getElementById("idRicerca").onclick = function () {
-    var key=$(InputRicerca).val();
+    alert("ok");
+    var key=$("#InputRicerca").val();
 
     var data={
-        key: key
+        key: key,
     };
+
+
+
     $.ajax({
+
         url:"http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/ricerca",
-        type: "POST",
+        type: 'POST',
         data: data,
         dataType: "json",
 
         success: function (data) {
-            if(data.lista.error==false){
+
+           // alert(JSON.stringify(data.lista.error==false));
+
+            if(JSON.stringify(data.lista.error==false)){
+
+
                 var n=data.lista.contatore;
-                var ricerche= [];
+                var ricerche = [];
+
                 for(var i =0; i<n; i++){
-                    var ricerca={
-                        id: data.ricerche[i].id,
-                        titolo:data.ricerche[i].titolo,
-                        tabella:data.ricerche[i].tabella,
+
+                    var ricerca = {
+                        id: data.lista[i].id,
+                        titolo: data.lista[i].titolo,
+                        tabella: data.lista[i].tabella,
                     }
 
                     ricerche.push(ricerca);
-                    switch(data.ricerche[i].tabella){
-                        case 'annuncio':
+                    //alert(JSON.stringify(ricerche[i].tabella));
+                    alert("ok");
+                        if((JSON.stringify(ricerche[i].tabella)) === "annuncio") {
+
                             $('#ricerca').append('<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
                                 '        <div class="card-body">\n' +
                                 '            <form method="POST" style="padding-left: 0.25%">\n' +
@@ -73,39 +87,42 @@ document.getElementById("idRicerca").onclick = function () {
                                 '        </div>\n' +
                                 '    </div>\n' +
                                 '</div>\n');
-                            break;
-                        case 'docs':
-                            $('#ricerca').append('<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
-                                '        <div class="card-body">\n' +
-                                '            <form method="POST" style="padding-left: 0.25%">\n' +
-                                '                <div class="form-group mt-4">\n' +
-                                '                    <label for="titolodocumento">Titolo documento:</label>\n' +
-                                '                </div>\n' +
-                                '                <div class="form-group">\n' +
-                                '                    <label for="materiadocumento">Materia:</label>\n' +
-                                '                </div>\n' +
-                                '                <div form="form-group">\n' +
-                                '                    <div class="form-row">\n' +
-                                '                        <label style="padding-bottom: 15px;padding-right: 2%" for="Valutazione">Valutazione</label>\n' +
-                                '                        <select name="Valutazione" id="Valutazione" style="height: 27px; border-top-width: 1px;">\n' +
-                                '                            <option value="1"> ★ </option>\n' +
-                                '                            <option value="2"> ★★ </option>\n' +
-                                '                            <option value="3"> ★★★ </option>\n' +
-                                '                            <option value="4"> ★★★★ </option>\n' +
-                                '                            <option value="5"> ★★★★★ </option>\n' +
-                                '                        </select>\n' +
-                                '                    </div>\n' +
-                                '                </div>\n' +
-                                '                <a class="btn btn-primary btn-block" style="color:white" id="btnvisualizzadocumento">Download documento</a>\n' +
-                                '\n' +
-                                '            </form>\n' +
-                                '        </div>\n' +
-                                '    </div>');
-                            break;
-                        case 'libri':
-                            $('#ricerca').append//to do card libro
-                            break;
+                        }
+
+                    if((JSON.stringify(ricerche[i].tabella)) === "dcs") {
+
+                        $('#ricerca').append('<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
+                            '        <div class="card-body">\n' +
+                            '            <form method="POST" style="padding-left: 0.25%">\n' +
+                            '                <div class="form-group mt-4">\n' +
+                            '                    <label for="titolodocumento">Titolo documento:</label>\n' +
+                            '                </div>\n' +
+                            '                <div class="form-group">\n' +
+                            '                    <label for="materiadocumento">Materia:</label>\n' +
+                            '                </div>\n' +
+                            '                <div form="form-group">\n' +
+                            '                    <div class="form-row">\n' +
+                            '                        <label style="padding-bottom: 15px;padding-right: 2%" for="Valutazione">Valutazione</label>\n' +
+                            '                        <select name="Valutazione" id="Valutazione" style="height: 27px; border-top-width: 1px;">\n' +
+                            '                            <option value="1"> ★ </option>\n' +
+                            '                            <option value="2"> ★★ </option>\n' +
+                            '                            <option value="3"> ★★★ </option>\n' +
+                            '                            <option value="4"> ★★★★ </option>\n' +
+                            '                            <option value="5"> ★★★★★ </option>\n' +
+                            '                        </select>\n' +
+                            '                    </div>\n' +
+                            '                </div>\n' +
+                            '                <a class="btn btn-primary btn-block" style="color:white" id="btnvisualizzadocumento">Download documento</a>\n' +
+                            '\n' +
+                            '            </form>\n' +
+                            '        </div>\n' +
+                            '    </div>');
+
                     }
+                    if(JSON.stringify(ricerche[i].tabella) === "libri") {
+
+                    }
+
 
                 }
             }

@@ -152,7 +152,7 @@
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <script src="../../js/login.js"></script>
-
+  <script src="../../js/ricerca.js"></script>
 
 
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
