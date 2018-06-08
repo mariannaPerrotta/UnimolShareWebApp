@@ -40,7 +40,7 @@ function MyClick(materia) {
 
                         $('#lista_documenti').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
                             '                <div class="card-body">\n' +
-                            '                    <form method="POST" style="padding-left: 0.25%">\n' +
+                            '                    <form method="POST" style="padding-left: 0.25%"  id="'+ array[i].id+'">\n' +
                             '                <div class="form-group mt-4">\n' +
                             '                    <label for="titolodocumento">Titolo documento: '+' '+' '+array[i].titolo+'</label>\n' +
                             '                </div>\n' +
@@ -59,7 +59,7 @@ function MyClick(materia) {
                             '                        </select>\n' +
                             '                    </div>\n' +
                             '                </div>\n' +
-                            '                <a class="btn btn-primary btn-block" style="color:white" id="btnvisualizzadocumento">Download documento</a>\n' +
+                            '                <a class="btn btn-primary btn-block" style="color:white" id="'+ array[i].id+'" onclick="Download('+"'"+array[i].id+"'"+')">Download documento</a>\n' +
                             '\n' +
                             '            </form>\n' +
                             '        </div>\n' +

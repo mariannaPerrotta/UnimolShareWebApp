@@ -1,35 +1,34 @@
 document.getElementById("aggiungi_annuncio").onclick = function () {
 
-    var Titolo = $("#exampleInputTitolo").val();
+    var Titolo = $("#InputTitolo").val();
 
 
-    var Autore = $("#exampleInputAutore").val();
+    var Autore = $("#InputAutore").val();
 
 
-    var CorsoDiStudio = $("#exampleInputCorsoDiStudio").val();
+    var Edizione = $("#InputEdizione").val();
 
 
-    var ContattoTelefonico = $("#exampleInputContattoTelefonico").val();
+    var Contatto = $("#InputContatto").val();
 
 
-    var Prezzo = $("#exampleInputPrezzo").val();
+    var Prezzo = $("#InputPrezzo").val();
 
+    var CasaEditrice=$("#InputCasaEditrice").val();
 
     var data = {
 
-        Titolo: Titolo,
+        titolo: Titolo,
 
+        autore: Autore,
 
-        Autore: Autore,
+        edizione: Edizione,
 
+        contatto: Contatto,
 
-        CorsoDiStudio: CorsoDiStudio,
+        prezzo: Prezzo,
 
-        ContattoTelefonico: ContattoTelefonico,
-
-
-        Prezzo: Prezzo,
-
+        casa_editrice : CasaEditrice,
 
     };
 

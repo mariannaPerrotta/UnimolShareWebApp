@@ -34,7 +34,7 @@
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <script src="../../js/login.js"></script>
-
+<script src="../../js/download.js"></script>
 <script src="../../js/visualizza_materie.js"></script>
 <script src="../../js/visualizza_documenti.js"></script>
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>

@@ -25,20 +25,20 @@
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputName">Nome</label>
-                            <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Inserisci nome">
+                            <label for="InputNome">Nome</label>
+                            <input class="form-control" id="InputNome" type="text" aria-describedby="nameHelp" placeholder="Inserisci nome">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputLastName">Cognome</label>
-                            <input class="form-control" id="InputLastName" type="text" aria-describedby="nameHelp" placeholder="Inserisci cognome">
+                            <label for="InputCognome">Cognome</label>
+                            <input class="form-control" id="InputCognome" type="text" aria-describedby="nameHelp" placeholder="Inserisci cognome">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputEmail1">Indirizzo email</label>
-                            <input class="form-control" id="InputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
+                            <label for="InputEmail">Indirizzo email</label>
+                            <input class="form-control" id="InputEmail" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
                         </div>
                         <div class="col-md-6">
                             <label for="InputMatricola">Matricola</label>
@@ -48,10 +48,14 @@
                 </div>
                 <div class="form-group">
                     <div class="form-row">
-                        <div class="col-md-6" id="form_cdl">
-                            <label for="corsi_di_laurea">Corsi di laurea</label>
-                            <select class="form-control" id="corsi_di_laurea"  placeholder="Seleziona i tuoi corsi di laurea">
-                            </select>
+                        <div class="col-md-6" >
+                            <form action="">
+                                <fieldset id="checkbox">
+                                    <label id="corsi_di_laurea"> cdl</label>
+
+
+                                </fieldset>
+                            </form>
                         </div>
 <!--                        <div class="col-md-6">-->
 <!--                            <label for="InputMatricola">Matricola</label>-->
@@ -62,8 +66,8 @@
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputPassword1">Password</label>
-                            <input class="form-control" id="InputPassword1" type="password" placeholder="Password">
+                            <label for="InputPassword">Password</label>
+                            <input class="form-control" id="InputPassword" type="password" placeholder="Password">
                         </div>
                         <div class="col-md-6">
                             <label for="ConfirmPassword">Conferma password</label>
@@ -71,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" href="../login.php">Registrati come docente</a>
+                <button type="button" class="btn btn-primary btn-block" id="btnregisterdoc">Registrati come docente</button>
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="../login.php">Login</a>
@@ -86,6 +90,7 @@
 <!-- Core plugin JavaScript-->
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="../../js/cdl_docente.js"></script>
+<script src="../../js/registrazione_docente.js"></script>
 </body>
 
 </html>
