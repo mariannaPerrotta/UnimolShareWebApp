@@ -55,6 +55,10 @@
                             <label for="InputAutore">Autore*</label>
                             <input class="form-control" id="InputAutore" type="text" aria-describedby="AutoreHelp" placeholder="Inserisci autore">
                         </div>
+                        <div class="col-md-6" style="display: none">
+                            <label for="InputStudente">Autore*</label>
+                            <input class="form-control" id="InputStudente" type="text" value="<?php echo ($_SESSION['utente']['matr'])?>" ">
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
@@ -69,7 +73,7 @@
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
-                <a id="aggiungi" class="btn btn-primary btn-block" href="lista_annunci.php">Aggiungi</a>
+                <a id="aggiungi_annuncio" class="btn btn-primary btn-block">Aggiungi</a>
             </div>
         </div>
         <div class = "form-group">
@@ -79,6 +83,6 @@
         </div>
     </div>
 </div>
-<script src="../../js/carica_annuncio.js"></script>
+<script src="../../js/aggiungi_annuncio.js"></script>
 <script src="../../js/materie.js"></script>
 </html>

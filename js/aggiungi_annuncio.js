@@ -2,39 +2,31 @@ document.getElementById("aggiungi_annuncio").onclick = function () {
 
     var Titolo = $("#InputTitolo").val();
 
-
     var Autore = $("#InputAutore").val();
-
 
     var Edizione = $("#InputEdizione").val();
 
-
     var Contatto = $("#InputContatto").val();
-
 
     var Prezzo = $("#InputPrezzo").val();
 
     var CasaEditrice=$("#InputCasaEditrice").val();
 
+    var Cod_Studente=$("#InputStudente").val();
+
+    var Materia = $('#btnmaterie').find(":selected").text();
+
     var data = {
 
-        titolo: Titolo,
+        materia: Materia
 
-        autore: Autore,
+    }
 
-        edizione: Edizione,
 
-        contatto: Contatto,
-
-        prezzo: Prezzo,
-
-        casa_editrice : CasaEditrice,
-
-    };
 
     $.ajax({
 
-        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricaannuncio",
+        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzaidpermateria",
 
         type: 'POST',
 
@@ -42,18 +34,58 @@ document.getElementById("aggiungi_annuncio").onclick = function () {
 
         dataType: "json",
 
-        success: function (data) {
+        success: function (id_mat) {
 
-            if (data.error == false) {
-                alert("Annuncio caricato");
-                window.location.assign('index.php?action=aggiungiAnnuncio');
-            }
+            alert(id_mat.id);
+
+            var data = {
+
+                titolo: Titolo,
+
+                contatto: Contatto,
+
+                prezzo: Prezzo,
+
+                edizione: Edizione,
+
+                casa_editrice: CasaEditrice,
+
+                cod_studente: Cod_Studente,
+
+                autore: Autore,
+
+                cod_materia: id_mat
+
+            };
+
+            alert(JSON.stringify(data));
+
+            $.ajax({
+
+                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricaannuncio",
+
+                type: 'POST',
+
+                data: data,
+
+                dataType: "json",
+
+                success: function (data) {
 
 
-            console.log(data);
-
-        },
+                    alert(data.message);
 
 
+                    if (data.error == false) {
+                        alert("Annuncio caricato");
+                        //window.location.assign('index.php?action=aggiungiAnnuncio');
+                    }
+
+                    console.log(data);
+
+                }
+
+            });
+        }
     });
 }
