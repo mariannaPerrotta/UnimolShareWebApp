@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (empty($_SESSION['utente'])) {
+if (($_SESSION['utente']['tipo'])!= "studente") {
 
     header("location: ../login.php");
 } else {
@@ -80,7 +80,7 @@ if (empty($_SESSION['utente'])) {
         case 'segnala_profilo':
             include 'segnala_profilo.php';
             break;
-        case 'ricerca_1':
+        case 'ricerca':
             include 'ricerca.php';
             break;
         case 'modifica_profilo':
