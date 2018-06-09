@@ -5,7 +5,12 @@ document.getElementById("btnlogin").onclick= function () {
     var email = $("#InputEmail").val();
 
     var password =$("#InputPassword").val();
+    var campi_vuoti= false;
 
+    if(email.toString()==='' || password.toString()==='' ){
+        campi_vuoti=true;
+        alert("Campi vuoti");
+    }
 
 // questo serve per mettere insieme i due input
 
@@ -15,6 +20,8 @@ document.getElementById("btnlogin").onclick= function () {
 
         password: password,
     };
+
+
 
 
 // qui chiamate il servizio
@@ -157,6 +164,11 @@ document.getElementById("btnlogin").onclick= function () {
 
 
 
+            }
+            if(data.error===true){
+                if(campi_vuoti===false){
+                alert("Credenziali errate");
+                }
             }
 
         },
