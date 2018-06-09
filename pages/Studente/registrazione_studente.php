@@ -1,6 +1,15 @@
 <?php
 session_start();
+if(!empty($_SESSION['utente']['tipo'])){
+    if (($_SESSION['utente']['tipo'])== "studente") {
 
+        header("location: index.php");
+    }
+    if (($_SESSION['utente']['tipo'])== "docente") {
+
+        header("location: ../login.php");
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
