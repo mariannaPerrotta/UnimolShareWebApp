@@ -112,7 +112,6 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
 <script src="../../js/registrazione_studente.js"></script>
 <script src="../../js/aggiungi_documento_docente.js"></script>
 <script src="../../js/segnala_profilo.js"></script>
-<script src="../../js/ricerca.js"></script>
 
 </body>
 </html>
