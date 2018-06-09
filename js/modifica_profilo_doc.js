@@ -1,4 +1,4 @@
-document.getElementById("btnmodificaprofilodoc").onclick= function () {
+document.getElementById("btnmodificaprofilodoc").onclick = function () {
 
 
         var Nome = $("#InputNome").val();

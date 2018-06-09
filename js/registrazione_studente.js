@@ -1,4 +1,4 @@
-document.getElementById("btnregister-studente").onclick= function () {
+document.getElementById("btnregister-studente").onclick = function () {
 
 
 

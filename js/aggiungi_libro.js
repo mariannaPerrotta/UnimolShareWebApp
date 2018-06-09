@@ -1,4 +1,4 @@
-document.getElementById("btnaggiungilibro").onclick= function () {
+document.getElementById("btnaggiungilibro").onclick = function () {
 
 
     var CodDocente = $("#CodDocente").val();

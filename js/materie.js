@@ -1,4 +1,4 @@
-document.getElementById("btnmaterie").onclick= function () {
+document.getElementById("btnmaterie").onclick = function () {
 
     $.ajax({
         url: "../../pages/cdl.php",

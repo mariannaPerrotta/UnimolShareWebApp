@@ -1,4 +1,4 @@
-document.getElementById("btnforgot-password").onclick= function () {
+document.getElementById("btnforgot-password").onclick = function () {
 
 
     var email = $("#InputEmail1").val();

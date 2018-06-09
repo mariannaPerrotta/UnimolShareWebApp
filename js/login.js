@@ -1,4 +1,4 @@
-document.getElementById("btnlogin").onclick= function () {
+document.getElementById("btnlogin").onclick = function () {
 
 //input da dare al servizio, quelli nelle parentesi sono gli id dei reattangoli in cui inserite username e password
 
@@ -8,7 +8,7 @@ document.getElementById("btnlogin").onclick= function () {
     var campi_vuoti= false;
 
 //campi vuoti
-    if(email.toString()==='' || password.toString()==='' ){
+    if(email.toString() ==='' || password.toString() ==='' ){
         campi_vuoti=true;
         alert("Campi vuoti");
     }

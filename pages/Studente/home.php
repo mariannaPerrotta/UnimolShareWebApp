@@ -20,6 +20,8 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
 
     <link rel="icon" href="">
 
+    <!-- Bootstrap core CSS-->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Core Stylesheet -->
     <link href="../../css/cssHome/style.css" rel="stylesheet">
@@ -284,16 +286,14 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
     </footer>
 
 <!-- Bootstrap core JavaScript-->
-<script src="../vendor/jquery/jquery.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../vendor/jquery/jquery.min.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
 
-<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<script src="../js/login.js"></script>
+<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 
-<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 </body>
 

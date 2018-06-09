@@ -1,4 +1,4 @@
-document.getElementById("idRicerca").onclick= function () {
+document.getElementById("idRicerca").onclick = function () {
 
     var key= $("#InputRicerca").val();
 alert(key);

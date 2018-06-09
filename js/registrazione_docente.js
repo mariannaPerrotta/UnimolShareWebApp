@@ -1,5 +1,5 @@
 //btnlogin è l'id del bottone login
-document.getElementById("btnregisterdoc").onclick= function () {
+document.getElementById("btnregisterdoc").onclick = function () {
 
 //input da dare al servizio, quelli nelle parentesi sono gli id dei reattangoli in cui inserite i vari campi
 

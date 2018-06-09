@@ -1,4 +1,3 @@
-
 function Rimuovi_documento(id) {
     $.ajax({
         url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/rimuovidocumento/" + id,

@@ -1,4 +1,4 @@
-document.getElementById("btnaggiungidocumento").onclick= function () {
+document.getElementById("btnaggiungidocumento").onclick = function () {
     //
     //
     // var titolo = $("#InputTitolo").val();
