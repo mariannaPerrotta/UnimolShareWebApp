@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-if (empty($_SESSION['utente'])) {
+if (($_SESSION['utente']['tipo'])!= "docente") {
 
-    header("location: ./login.php");
+    header("location: ../login.php");
 } else {
 //gestione azioni
     if (isset($_GET['action'])) {
