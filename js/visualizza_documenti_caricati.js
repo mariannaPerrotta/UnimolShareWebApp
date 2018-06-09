@@ -10,20 +10,19 @@ $(document).ready(function() {
 
         success: function (data) {
 
-            var matricola = data;
             $.ajax({
 
                 url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzadocumentoperid",
 
                 type: 'POST',
 
-                data: {matricola: matricola},
+                data: {matricola: data},
 
                 dataType: "json",
 
                 success: function (data) {
 
-                    if (data.documenti.error == false) {
+                    if (data.documenti.error === false) {
 
                         var n = data.documenti.contatore;
                         var documenti = [];
@@ -34,31 +33,9 @@ $(document).ready(function() {
                                 link: data.documenti[i].link,
                                 materia: data.documenti[i].cod_materia,
                                 id: data.documenti[i].id,
-                            }
+                            };
 
-
-                            function nome_materie(){
-                                var materia;
-                                $.ajax({
-                                    url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzanomemateriaperid",
-
-                                    type: 'POST',
-                                    data: {id: documento.materia},
-                                    dataType: "json",
-                                    async: false,
-
-                                    success: function (data2) {
-                                        materia = data2.nomi[0].nome;
-
-                                    }
-
-                                });
-                                return materia;
-                            }
-
-                            var  materia2=nome_materie();
-
-                            documento.materia= materia2;
+                            documento.materia = nome_materie(documento.materia);
                             documenti.push(documento);
 
                             $('#card_documenti_caricati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important" >' +
@@ -87,8 +64,6 @@ $(document).ready(function() {
                     }
 
 
-
-
                 },
                 error: function (err) {
 
@@ -106,4 +81,24 @@ $(document).ready(function() {
 
     });
 
-})
+});
+
+
+
+function nome_materie(id){
+    var nome = " ";
+    $.ajax({
+        url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzanomemateriaperid",
+        type: 'POST',
+        data: {id: id},
+        dataType: "json",
+        async: false,
+
+        success: function (data2) {
+            nome = data2.nomi[0].nome;
+        }
+
+    });
+
+    return nome;
+}
