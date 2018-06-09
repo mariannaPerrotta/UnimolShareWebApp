@@ -44,7 +44,7 @@ $(document).ready(function () {
                             function nome_materie(){
                                 var materia;
                                     $.ajax({
-                                         url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriaperid",
+                                         url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzanomemateriaperid",
 
                                          type: 'POST',
                                          data: {id: annuncio.materia},
@@ -52,7 +52,7 @@ $(document).ready(function () {
                                         async: false,
 
                                 success: function (data2) {
-                                      materia = data2.nomi_materie[0].nome;
+                                      materia = data2.nomi[0].nome;
 
                                 }
 

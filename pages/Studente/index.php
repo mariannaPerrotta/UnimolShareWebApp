@@ -84,7 +84,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
             include 'ricerca.php';
             break;
         case 'modifica_profilo':
-            include 'modifica_profilo.php';
+            include '../modifica_profilo.php';
             break;
     }
 
@@ -112,7 +112,6 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
 <script src="../../js/registrazione_studente.js"></script>
 <script src="../../js/aggiungi_documento_docente.js"></script>
 <script src="../../js/segnala_profilo.js"></script>
-<script src="../../js/ricerca.js"></script>
 
 </body>
 </html>
