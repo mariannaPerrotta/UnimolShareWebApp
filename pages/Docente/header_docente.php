@@ -100,7 +100,7 @@
         </ul>
     </div>
 </nav>
-<div class="content-wrapper">
+<div class="content-wrapper bg-dark">
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top" style="z-index: 2147483647;" >
