@@ -16,8 +16,8 @@
         if (is_uploaded_file($_FILES['file']['tmp_name'])) {
             if ($_FILES['file']['type'] != "application/pdf") {
                 echo 'Il file non è un PDF';
-            } else if ($_FILES['file']['size'] > $maxSize) {
-                echo 'File troppo grande. Dimensione massima: ' . ($maxSize/1024) . 'MB';
+            } else if (($_FILES['file']['size']/1024) > $maxSize) {
+                echo ('File troppo grande. Dimensione massima: ' . ($maxSize/1024) . 'MB');
             } else {
                 //Se il file è corretto lo carico in una cartella locale temporanea
                 $fileName = $_POST['titolo'];
