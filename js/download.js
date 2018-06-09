@@ -11,15 +11,21 @@ function Download(id) {
 
         success: function (data) {
 
-            if(JSON.stringify(data.error)==='false'){
-                var card=id;
+            if(JSON.stringify(data.error)==='false') {
+                var card = id;
 
-                $('#link').html("");
+  if(document.getElementById(card.toString()+"dw")){
+     alert("link già caricato");
+  }
+  else{
+      $('#' + card.toString() + '').append('<div id="'+ card.toString()+"dw"+'" >Clicca qui: ' +
+          '<a href="' + data.link[0].id + '" target="_blank">' + ' ' + data.link[0].id + '</a></div>');
 
-                $('#'+card.toString()+'').append('<div id="link" >Clicca qui: '+
-                    '<a href="'+data.link[0].id+'" target="_blank">' + ' '+ data.link[0].id + '</a></div>');
+  }
+
 
             }
+
             if(data.error=="true"){
                 alert("Errore rimozione");
             }
