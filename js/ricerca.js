@@ -1,11 +1,11 @@
-$(document).ready(function() {
+document.getElementById("idRicerca").onclick= function () {
 
-
+    var key= $("#InputRicerca").val();
 alert(key);
+
     var data={
         key: key,
     };
-
 
 
     $.ajax({
@@ -33,13 +33,13 @@ alert(key);
                         tabella: data.lista[i].tabella,
                     }
 
-                    ricerche.push(ricerca);
 
 
-                        if(ricerche[i].tabella === "annuncio") {
-                            alert(JSON.stringify(ricerche[i].tabella));
 
-                            $('#ricerca').append(
+                        if(ricerca.tabella === "annuncio") {
+                            // alert(JSON.stringify(ricerca.tabella));
+
+                            document.getElementById("Ricerca").append(
                                 '<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
                                 '        <div class="card-body">' +
                                 '            <form method="POST" style="padding-left: 0.25%">' +
@@ -92,7 +92,7 @@ alert(key);
                             );
                         }
 
-                    if((JSON.stringify(ricerche[i].tabella)) === "dcs") {
+                    if((JSON.stringify(ricerca.tabella)) === "dcs") {
 
                         $('#ricerca').append('<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
                             '        <div class="card-body">\n' +
@@ -123,13 +123,14 @@ alert(key);
                         );
 
                     }
-                    if(JSON.stringify(ricerche[i].tabella) === "libri") {
+                    if(JSON.stringify(ricerca.tabella) === "libri") {
 
                     }
+                    ricerche.push(ricerca);
 
 
                 }
             }
         }
     })
-})
+}

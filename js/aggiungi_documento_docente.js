@@ -5,7 +5,7 @@ document.getElementById("btnaggiungidocumento").onclick = function () {
 
     var CodDocente = $("#exampleInputCodDocente").val();
 
-    var CodMateria = $("#exampleInputCodMateria").val();
+    var CodMateria = $("#Materia").val();
 
     var Link = $("#exampleInputLink").val();
 

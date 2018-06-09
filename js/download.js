@@ -15,9 +15,11 @@ function Download(id) {
             if(JSON.stringify(data.error)==='false'){
                 var card=id;
 
+                $('#link').html("");
 
-                $('#'+card.toString()+'').append('<a>Clicca qui: '+
-                    '<a href="'+data.link[0].id+'" target="_blank">' + ' '+ data.link[0].id + '</a></a></div>');
+                $('#'+card.toString()+'').append('<div id="link" >Clicca qui: '+
+                    '<a href="'+data.link[0].id+'" target="_blank">' + ' '+ data.link[0].id + '</a></div>');
+
             }
             if(data.error=="true"){
                 alert("Errore rimozione");

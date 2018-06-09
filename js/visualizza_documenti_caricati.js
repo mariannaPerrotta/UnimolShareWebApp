@@ -61,7 +61,7 @@ $(document).ready(function() {
                             documento.materia= materia2;
                             documenti.push(documento);
 
-                            $('#card_documenti_caricati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
+                            $('#card_documenti_caricati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important" >' +
                                 '                                    <div class="card-body"  >' +
                                 '                                    <form method="POST" style="padding-left: 0.25%" id="'+documenti[i].id+'">' +
                                 '                                    <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuovidocumento">' +
@@ -74,7 +74,7 @@ $(document).ready(function() {
                                 '                                <div class="form-group">' +
                                 '                                    <label for="materiadocumento">Materia:' + ' ' + documenti[i].materia + '</label>' +
                                 '                                </div>' +
-                                '                                <a class="btn btn-primary btn-block" style="color:white" id="'+documenti[i].id+'_download" onclick="Download('+"'"+documenti[i].id+"'"+')">Download documento</a>' +
+                                '                                <a class="btn btn-primary btn-block" style="color:white" id="'+documenti[i].id+'_download"  onclick="Download('+"'"+documenti[i].id+"'"+')">Download documento</a>' +
                                 '\n' +
                                 '                                </form>' +
                                 '                                </div>' +

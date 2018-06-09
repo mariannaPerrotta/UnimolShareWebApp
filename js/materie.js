@@ -37,7 +37,7 @@ document.getElementById("btnmaterie").onclick= function () {
                             }
                             array.push(materia);
 
-                                $('#btnmaterie').append('<option value="' + array[i].nome + '" name="' + array[i].nome + '" id="' + array[i].nome + '"> ' + array[i].nome + ' </option>'
+                                $('#btnmaterie').append('<option value="' + array[i].nome + '" name="' + array[i].nome + '" id="Materia"> ' + array[i].nome + ' </option>'
                                 );
                             }
                         }

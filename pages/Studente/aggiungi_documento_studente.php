@@ -15,7 +15,12 @@
     <!-- Custom styles for this template-->
     <link href="../../css/c.css" rel="stylesheet">
 </head>
+<?php
+if (($_SESSION['utente']['tipo'])!= "studente") {
 
+    header("location: ../login.php");
+}
+?>
 <div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%">
     <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
         <div class="card-header">Aggiungi documento Studente</div>

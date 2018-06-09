@@ -7,6 +7,7 @@ document.getElementById("btnlogin").onclick= function () {
     var password =$("#InputPassword").val();
     var campi_vuoti= false;
 
+//campi vuoti
     if(email.toString()==='' || password.toString()==='' ){
         campi_vuoti=true;
         alert("Campi vuoti");

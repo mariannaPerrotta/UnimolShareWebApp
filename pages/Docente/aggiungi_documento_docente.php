@@ -1,4 +1,9 @@
+<?php
+if (($_SESSION['utente']['tipo'])!= "docente") {
 
+    header("location: ../login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="it">
 

@@ -15,7 +15,12 @@
     <link href="../../css/c.css" rel="stylesheet">
 </head>
 
+<?php
+if (($_SESSION['utente']['tipo'])!= "docente") {
 
+    header("location: ../login.php");
+}
+?>
 <body class="fixed-nav sticky-footer bg-dark" id="page-top" style="padding-top: unset">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
