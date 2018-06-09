@@ -42,7 +42,7 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Libri consigliati">
           <a class="nav-link"  href="index.php?action=visualizza_materie">
             <i class="fa fa-fw fa-book"></i>
-            <span class="nav-link-text">Libri Consigliati</span>
+            <span class="nav-link-text">Libri consigliati</span>
           </a>
         </li>
 
@@ -82,7 +82,7 @@
         </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Segnala profilo">
                 <a class="nav-link"  href="index.php?action=segnala_profilo">
-                    <i class="fa fa-fw fa-lock"></i>
+                    <i class="fa fa-fw fa-ban"></i>
                     <span class="nav-link-text">Segnala profilo</span>
                 </a>
             </li>
@@ -96,26 +96,25 @@
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <form class="form-inline my-2 my-lg-0 mr-lg-2">
-            <div class="input-group">
-              <input class="form-control" id="InputRicerca" type="text" placeholder="Ricerca">
-              <span class="input-group-append" >
-                <button class="btn btn-primary" id="idRicerca" >
-                    <a class="nav-link"  href="index.php?action=ricerca" id="InputRicerca">
-                  <i class="fa fa-search"></i>
-                    </a>
-                </button>
-              </span>
-            </div>
-          </form>
-        </li>
+<!--        <li class="nav-item">-->
+<!--          <form class="form-inline my-2 my-lg-0 mr-lg-2">-->
+<!--            <div class="input-group">-->
+<!--              <input class="form-control" id="InputRicerca" type="text" placeholder="Ricerca">-->
+<!--              <span class="input-group-append" >-->
+<!--                <button class="btn btn-primary" id="idRicerca" type="button" href="index.php?action=ricerca_1"  onclick="ricerca('InputRicerca')">-->
+<!--                  <i class="fa fa-search"></i>-->
+<!--                </button>-->
+<!--              </span>-->
+<!--            </div>-->
+<!--          </form>-->
+<!--        </li>-->
           <li class="nav-item">
               <a class="nav-link" data-toggle="modal" data-target="#exampleModal" >
                   <i class="fa fa-fw fa-sign-out"  ></i>Logout</a>
           </li>
 
       </ul>
+
 
   </nav>
   <div class="content-wrapper">
@@ -154,6 +153,9 @@
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <script src="../../js/login.js"></script>
+
+
+  <script src="../../js/ricerca2.js"></script>
 
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
