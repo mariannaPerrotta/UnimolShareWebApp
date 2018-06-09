@@ -1,6 +1,5 @@
 function modifica_click() {
 
-
     var email = $('#Email').val();
     var matricola = $('#Matricola').val();
     var nome = $('#InputName').val();

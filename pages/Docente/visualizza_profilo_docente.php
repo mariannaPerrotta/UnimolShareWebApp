@@ -27,9 +27,9 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
         <div class="card-header">Il mio profilo</div>
     <div class="card-body">
         <form method="POST" style="padding-left: 0.25%">
-                <a class="btn btn-primary btn-block ml-auto" href="index.php?action=modifica_profilo_doc.php" style="padding-left: 0%;color:white;width: 30%"
+                <a class="btn btn-primary btn-block ml-auto" href="index_doc.php?action=modifica_profilo" style="padding-left: 0%;color:white;width: 30%"
                    id="btnmodificaprofilo">
-                    <i class="fa fa-fw fa-pencil-square-o"></i>
+                    <i class="fa fa-fw fa-pencil-square-o"> </i>
                     <label for="modificaprofilodoc" style="padding-left: auto" >Modifica</label>
                 </a>
             <div class="form-group mt-3">
@@ -59,10 +59,6 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
 <!-- Core plugin JavaScript-->
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<script src="../../js/login.js"></script>
-
-
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 

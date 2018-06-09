@@ -62,8 +62,8 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
         case 'profilo' :
             include 'visualizza_profilo_docente.php';
             break;
-        case 'modifica_profilo_doc' :
-            include 'modifica_profilo_doc.php';
+        case 'modifica_profilo' :
+            include '../modifica_profilo.php';
             break;
 
     }

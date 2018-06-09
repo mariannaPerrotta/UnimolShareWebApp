@@ -29,7 +29,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
             <form method="POST">
                 <a class="btn btn-primary btn-block ml-auto" href="index.php?action=modifica_profilo" style="padding-left: 0%;color:white;width: 30%"
                    id="btnmodificaprofilo">
-                    <i class="fa fa-fw fa-pencil-square-o"></i>
+                    <i class="fa fa-fw fa-pencil-square-o"> </i>
                     <label for="modificaprofilo" style="padding-left: auto" >Modifica</label>
                 </a>
                 <div class="form-group mt-3">
