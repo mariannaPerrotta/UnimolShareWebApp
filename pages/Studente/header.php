@@ -53,11 +53,11 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
         </li>
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documenti">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapsePages" data-parent="#exampleAccordion">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-file"></i>
             <span class="nav-link-text">Documenti</span>
           </a>
-          <ul class="sidenav-second-level collapse" id="collapsePages">
+          <ul class="sidenav-second-level collapse" id="collapseMulti">
             <li>
               <a href="index.php?action=documentoStudente">Aggiungi documento</a>
             </li>
@@ -70,11 +70,11 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Annunci">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-paper-plane"></i>
             <span class="nav-link-text">Annunci</span>
           </a>
-          <ul class="sidenav-second-level collapse" id="collapseMulti">
+          <ul class="sidenav-second-level collapse" id="collapseMulti2">
             <li>
                 <a href="index.php?action=aggiungiAnnuncio">Aggiungi annuncio</a>
             </li>
@@ -165,8 +165,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
     <!-- Toggle between fixed and static navbar-->
     <script>
     $('#toggleNavPosition').click(function() {
-      $('body').toggleClass('' +
-          'fixed-nav');
+      $('body').toggleClass('fixed-nav');
       $('nav').toggleClass('fixed-top static-top');
     });
 
