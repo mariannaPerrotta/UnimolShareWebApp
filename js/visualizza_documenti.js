@@ -20,10 +20,6 @@ function MyClick(materia) {
 
                     var n = data.documenti.contatore;
 
-
-                    if (n === 0)
-                        alert("Non ci sono documenti per questa materia");
-
                     var array = [];
                     $("#form_materie").html("");
                     for (var i = 0; i < n; i++) {
@@ -47,17 +43,15 @@ function MyClick(materia) {
                             '                <div class="form-group">\n' +
                             '                    <label for="materiadocumento">Materia: '+' '+ array[i].materia+ '</label>\n' +
                             '                </div>\n' +
-                            '                <div form="form-group">\n' +
-                            '                    <div class="form-row">\n' +
-                            '                        <label style="padding-bottom: 15px;padding-right: 2%" for="Valutazione">Valutazione</label>\n' +
-                            '                        <select name="Valutazione" id="Valutazione" style="height: 27px; border-top-width: 1px;">\n' +
-                            '                            <option value="1"> ★ </option>\n' +
-                            '                            <option value="2"> ★★ </option>\n' +
-                            '                            <option value="3"> ★★★ </option>\n' +
-                            '                            <option value="4"> ★★★★ </option>\n' +
-                            '                            <option value="5"> ★★★★★ </option>\n' +
-                            '                        </select>\n' +
-                            '                    </div>\n' +
+                            '                <div class="form-group">\n' +
+                        '                        <label for="Valutazione">Valutazione </label>\n' +
+                        '                        <select name="Valutazione" id="Valutazione"">\n' +
+                        '                            <option value="1"> ★ </option>\n' +
+                        '                            <option value="2"> ★★ </option>\n' +
+                        '                            <option value="3"> ★★★ </option>\n' +
+                        '                            <option value="4"> ★★★★ </option>\n' +
+                        '                            <option value="5"> ★★★★★ </option>\n' +
+                        '                        </select>\n' +
                             '                </div>\n' +
                             '                <a class="btn btn-primary btn-block" style="color:white" id="'+ array[i].id+'" onclick="Download('+"'"+array[i].id+"'"+')">Download documento</a>\n' +
                             '\n' +
