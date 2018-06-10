@@ -1,76 +1,99 @@
-$(document).ready(function () {
+//url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzalibripercodicedocente",
 
-    $.ajax({
-        url: "../../pages/matricola.php",
+$.ajax({
+    url: "../../pages/matricola.php",
 
-        type: 'POST',
+    type: 'POST',
 
-        data: {matricola: null},
+    data: {matr: null},
 
-        dataType: "html",
+    dataType: "html",
 
-        success: function (data) {
-            var matricola = data;
-            $.ajax({
+    success: function (data) {
 
-                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzalibripercodicedocente",
+        $.ajax({
 
-                type: 'POST',
+            url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzalibripercodicedocente",
 
-                data: {matricola: matricola},
+            type: 'POST',
 
-                dataType: "json",
+            data: {matricola: data},
 
-                success: function (data) {
+            dataType: "json",
 
-                    if (data.libri.error == false) {
+            success: function (data) {
 
-                        var n = data.libri.contatore;  // n = libri.lenght ???
-                        var libri = [];
-                        for (var i = 0; i < n; i++) {
+                if (data.documenti.error === false) {
 
-                            var libro = {
-                                titolo: data.libri[i].titolo,
-                                autore: data.libri[i].autore,
-                                casa_editrice: data.libri[i].casa_editrice,
-                                edizione: data.libri[i].edizione,
-                                //link: data.libri[i].link,
-                            }
+                    var n = data.documenti.contatore;
+                    var documenti = [];
+                    for (var i = 0; i < n; i++) {
 
-                            libri.push(libro);
+                        var documento = {
+                            titolo: data.documenti[i].titolo,
+                            link: data.documenti[i].link,
+                            materia: data.documenti[i].cod_materia,
+                            id: data.documenti[i].id,
+                        };
 
-                            /*$('#card_libri_consigliati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">' +
-                                '                                    <div class="card-body">' +
-                                '                                    <form method="POST" style="padding-left: 0.25%">' +
-                                '                                    <div class="form-group mt-4">' +
-                                '                                    <label for="titololibro">Titolo libro:' + ' ' + data.libri[i].titolo + '</label>' +
-                                '                                    <label for="autore">Autore:' + ' ' + data.libri[i].autore + '</label>' +
-                                '                                    <label for="casaEditrice">Casa editrice:' + ' ' + data.libri[i].casa_editrice + '</label>' +
-                                '                                    <label for="edizione">Edizione:' + ' ' + data.libri[i].edizione + '</label>' +
-                                '                                </div>' +
-                                '                                </div>' +
-                                '                                </form>' +
-                                '                                </div>' +
-                                '                                </div>' +
-                                '                            }');*/
-                        }
+                        documento.materia = nome_materie(documento.materia);
+                        documenti.push(documento);
+
+                        $('#card_documenti_caricati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important" >' +
+                            '                                    <div class="card-body"  >' +
+                            '                                    <form method="POST" style="padding-left: 0.25%" id="'+documenti[i].id+'">' +
+                            '                                    <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="'+documenti[i].id+'_rimuovi" onclick="Rimuovi_documento('+"'"+documenti[i].id+"'"+')">' +
+                            '                                    <i class="fa fa-fw fa-minus-circle"></i> Rimuovi documento</a>' +
+                            '                                    <div class="form-group mt-4">' +
+                            '                                    <label for="titolodocumento">Titolo documento:' + ' '+ documenti[i].titolo + '</label>' +
+                            '                                </div>' +
+                            '                                <div class="form-group">' +
+                            '                                    <label for="materiadocumento">Materia:' + ' ' + documenti[i].materia + '</label>' +
+                            '                                </div>' +
+                            '                                <a class="btn btn-primary btn-block" style="color:white" id="'+documenti[i].id+'_download"  onclick="Download('+"'"+documenti[i].id+"'"+')">Download documento</a>' +
+                            '\n' +
+                            '                                </form>' +
+                            '                                </div>' +
+                            '                                </div>' +
+                            '                            }');
+
+
+
                     }
-
-
-                },
-                error: function (err) {
-
-                    alert("NO " + err.responseJSON.toString());
-
-                    console.log(err.responseJSON);
-
-
                 }
 
-            });
 
+            },
+            error: function (err) {
+
+                alert("NO " + err.responseJSON.toString());
+
+                console.log(err.responseJSON);
+
+
+            }
+
+
+        });
+
+    }
+
+});
+
+function nome_materie(id){
+    var nome = " ";
+    $.ajax({
+        url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzanomemateriaperid",
+        type: 'POST',
+        data: {id: id},
+        dataType: "json",
+        async: false,
+
+        success: function (data2) {
+            nome = data2.nomi[0].nome;
         }
 
     });
 
-})
+    return nome;
+};
