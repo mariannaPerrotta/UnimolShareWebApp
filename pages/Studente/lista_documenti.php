@@ -42,6 +42,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
 <script src="../../js/download.js"></script>
 <script src="../../js/visualizza_materie.js"></script>
 <script src="../../js/visualizza_documenti.js"></script>
+<script src="../../js/valuta_documento.js"></script>
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 
