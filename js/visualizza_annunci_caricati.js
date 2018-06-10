@@ -38,31 +38,9 @@ $(document).ready(function () {
                                 materia: data.annunci[i].cod_materia,
                                 contatto: data.annunci[i].contatto,
                                 prezzo: data.annunci[i].prezzo,
-                            }
+                            };
 
-
-                            function nome_materie(){
-                                var materia;
-                                    $.ajax({
-                                         url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzanomemateriaperid",
-
-                                         type: 'POST',
-                                         data: {id: annuncio.materia},
-                                         dataType: "json",
-                                        async: false,
-
-                                success: function (data2) {
-                                      materia = data2.nomi[0].nome;
-
-                                }
-
-                            });
-                                return materia;
-                            }
-
-                          var  materia2=nome_materie();
-
-                            annuncio.materia=  materia2;
+                            annuncio.materia = nome_materie(annuncio.materia);
                             annunci.push(annuncio);
 
                             $('#card_annunci').append('<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
@@ -112,4 +90,24 @@ $(document).ready(function () {
 
     });
 
-})
+});
+
+
+function nome_materie(id){
+    var materia;
+    $.ajax({
+        url: "http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzanomemateriaperid",
+
+        type: 'POST',
+        data: {id: id},
+        dataType: "json",
+        async: false,
+
+        success: function (data2) {
+            materia = data2.nomi[0].nome;
+
+        }
+
+    });
+    return materia;
+}

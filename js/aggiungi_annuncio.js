@@ -32,9 +32,10 @@ document.getElementById("aggiungi_annuncio").onclick = function () {
 
     };
 
-    if(Materia === ""){
-        alert("Seleziona una materia");
-    } else {
+    if((Titolo === "") || (Prezzo === "") || (Edizione === "") || (CasaEditrice === "") || (Autore === "") || (Materia === "")) {
+        alert("Riempi tutti i campi obbligatori");
+    }
+    else {
 
         $.ajax({
 

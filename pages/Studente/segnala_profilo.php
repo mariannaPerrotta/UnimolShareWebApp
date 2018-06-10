@@ -68,8 +68,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
         </div>
         <div class="form-group">
             <div class="form-row" style="margin-right: 25px; margin-left: 25px;">
-                <a class="btn btn-primary btn-block" data-toggle="modal" data-target="#Modal"
-                   style="color: white">Invia</a>
+                <button type="button" class="btn btn-primary btn-block" id="invia">Invia</button>
             </div>
         </div>
         <div class="form-group">

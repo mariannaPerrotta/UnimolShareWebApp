@@ -71,7 +71,7 @@ header("location: ../login.php");
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="lista_materie">Materia</label>
+                            <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="lista_materie">Materia*</label>
                             <select name="Materia" id="btnmaterie" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
                             </select>
                         </div>
