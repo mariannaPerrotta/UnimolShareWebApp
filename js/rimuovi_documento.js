@@ -1,4 +1,5 @@
 function Rimuovi_documento(id) {
+
     $.ajax({
         url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/rimuovidocumento/" + id,
 
@@ -9,15 +10,19 @@ function Rimuovi_documento(id) {
         dataType: "json",
 
         success: function (data) {
-            if(data.error=="false"){
-                alert("Rimozione avvenuta con successo");
-            }
-            if(data.error=="true"){
-                alert("Errore rimozione");
-            }
+
+            alert(data.message);
+            if(!data.error)
+                location.reload();
+
+        },
+        error: function (err) {
+
+            alert("NO " + err.responseJSON.toString());
+
+            console.log(err.responseJSON);
 
 
         }
-    })
-
-        }
+    });
+}
