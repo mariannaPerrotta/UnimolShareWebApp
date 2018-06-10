@@ -65,14 +65,12 @@ $(document).ready(function () {
                             annuncio.materia=  materia2;
                             annunci.push(annuncio);
 
-                            $('#card_annunci').append('  <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
+                            $('#card_annunci').append('<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
                                 '        <div class="card-body" >\n' +
                                 '            <form method="POST" style="padding-left: 5%;">\n' +
-                                '                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="btnrimuoviannuncio">\n' +
-                                '                    <i class="fa fa-fw fa-minus-circle"></i>\n' +
-                                '                    <label for="rimuovidocumento" style="padding-left: auto" id=" '+ annunci[i].id + '"onclick="RimuoviAnnuncio('+"'"+annunci[i].id+"'"+')">Rimuovi</label>\n' +
-                                '                </a>\n' +
-                                '                <div class="form-group mt-3">\n' +
+                                '                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="'+annunci[i].id+'_rimuovi" onclick="Rimuovi_Annuncio('+"'"+annunci[i].id+"'"+')">' +
+            '                                    <i class="fa fa-fw fa-minus-circle"></i> Rimuovi</a>' +
+            '                                    <div class="form-group mt-3">\n' +
                                 '                    <label for="titololibro">Titolo Libro:' + ' ' + annunci[i].titolo + '</label>\n' +
                                 '                </div>\n' +
                                 '                <div class="form-group">\n' +
