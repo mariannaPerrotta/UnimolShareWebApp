@@ -1,3 +1,18 @@
+document.getElementById("invia").onclick = function () {
+
+    var nome = $("#InputNome").val();
+
+    var cognome = $("#InputCognome").val();
+
+    var motivo = $("#InputMotivo").val();
+
+    if((nome === "") || (cognome === "") || (motivo === "")){
+        alert("Riempi tutti i campi obbligatori");
+    } else {
+        $('#Modal').modal();
+    }
+};
+
 document.getElementById("btnsegnalaprofilo").onclick = function () {
 
     var nome = $("#InputNome").val();
@@ -25,7 +40,6 @@ document.getElementById("btnsegnalaprofilo").onclick = function () {
 
     };
 
-
     $.ajax({
 
         url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/segnalazione",
@@ -33,7 +47,6 @@ document.getElementById("btnsegnalaprofilo").onclick = function () {
         type: 'POST',
 
         data: data,
-
 
 
         success: function (data) {
@@ -47,4 +60,4 @@ document.getElementById("btnsegnalaprofilo").onclick = function () {
         },
 
     });
-}
+};

@@ -33,7 +33,7 @@ document.getElementById("aggiungi_annuncio").onclick = function () {
     };
 
     if((Titolo === "") || (Prezzo === "") || (Edizione === "") || (CasaEditrice === "") || (Autore === "") || (Materia === "")) {
-        alert("Rimpi tutti i campi obbligatori");
+        alert("Riempi tutti i campi obbligatori");
     }
     else {
 
