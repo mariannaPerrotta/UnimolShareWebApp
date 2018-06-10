@@ -10,60 +10,79 @@ document.getElementById("btnregister-studente").onclick = function () {
 
     var matricola = $("#InputMatricola1").val();
 
+
     var password =$("#InputPassword1").val();
 
-    var password =$("#ConfirmPassword").val();
+    var cdl = document.getElementById("seleziona_cdl").value;
 
 
-    var data = {
+    var conferma_password =$("#ConfirmPassword").val();
 
-        nome: nome,
-
-        cognome : cognome,
-
-        email: email,
-
-        matricola: matricola,
-
-        password: password,
-
-        conferma_pasword : conferma_password,
-    };
+    if(password.length< 12){
+        alert("Password non valida. Inserisci password di almeno 12 caratteri")
+    }
 
 
-    $.ajax({
 
-        url: "http://localhost/UnimolShare/public/register-docente",
+    else {
 
-        type: 'POST',
 
-        data: data,
 
-        dataType:"json",
+        if(password===conferma_password){
+            var data = {
+                matricola: matricola,
+                nome: nome,
+                cognome: cognome,
+                email: email,
+                password: password,
+                cds:cdl,
+            };
 
-        success: function (data) {
+                $.ajax({
 
-            if(data.error==false){
-                window.location.assign('index.php')// serve per cambiare pagina
+                    url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/registrazione",
 
+                    type: 'POST',
+
+                    data: data,
+
+                    dataType: "json",
+
+                    success: function (data) {
+
+                        if (data.error === false) {
+                            alert("Registrazione effettuata");
+                            window.location.assign('index.php')// serve per cambiare pagina
+
+                        }
+                        else{
+                            alert(data.message);
+                        }
+
+                        console.log(data);
+
+                    },
+
+                    error: function (err) {
+
+                        alert("NO " + err.responseJSON.toString());
+
+                        console.log(err.responseJSON);
+
+
+                    }
+
+
+                });
             }
 
-            console.log(data);
-
-        },
-
-        error: function ( err) {
-
-            alert("NO " + err.responseJSON.toString());
-
-            console.log(err.responseJSON);
 
 
+
+        else{
+            alert("Le password non coincidono");
         }
 
-
-    });
-
-
+    }
 
 };

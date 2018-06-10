@@ -39,11 +39,11 @@ if(!empty($_SESSION['utente']['tipo'])){
                     <div class="form-row">
                         <div class="col-md-6">
                             <label for="InputName">Nome</label>
-                            <input class="form-control" id="InputName" type="text" aria-describedby="nameHelp" placeholder="Inserisci nome">
+                            <input class="form-control" id="InputNome1" type="text"  placeholder="Inserisci nome">
                         </div>
                         <div class="col-md-6">
                             <label for="InputLastName">Cognome</label>
-                            <input class="form-control" id="InputLastName" type="text" aria-describedby="nameHelp" placeholder="Inserisci cognome">
+                            <input class="form-control" id="InputCognome1" type="text"  placeholder="Inserisci cognome">
                         </div>
                     </div>
                 </div>
@@ -51,12 +51,24 @@ if(!empty($_SESSION['utente']['tipo'])){
                     <div class="form-row">
                         <div class="col-md-6">
                             <label for="InputEmail1">Indirizzo email</label>
-                            <input class="form-control" id="InputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
+                            <input class="form-control" id="InputEmail1" type="email"  placeholder="Inserisci email">
                         </div>
                         <div class="col-md-6">
                             <label for="InputMatricola">Matricola</label>
-                            <input class="form-control" id="InputMatricola" type="matricola" placeholder="Inserisci matricola">
+                            <input class="form-control" id="InputMatricola1"  placeholder="Inserisci matricola">
                         </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="InputCDL">Corso di laurea</label>
+                            <select id="seleziona_cdl">
+
+                            </select>
+
+                        </div>
+
                     </div>
                 </div>
                 <div class="form-group">
@@ -71,7 +83,7 @@ if(!empty($_SESSION['utente']['tipo'])){
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" href="../login.php">Registrati come studente</a>
+                <a class="btn btn-primary btn-block" id="btnregister-studente">Registrati come studente</a>
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="../login.php">Login</a>
@@ -93,7 +105,8 @@ if(!empty($_SESSION['utente']['tipo'])){
     </div>
 </div>
 <!-- Bootstrap core JavaScript-->
-
+<script src="../../js/registrazione_studente.js"></script>
+<script src="../../js/cdl_studente.js"></script>
 <script src="../../vendor/jquery/jquery.min.js"></script>
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
