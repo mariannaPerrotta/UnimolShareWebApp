@@ -244,7 +244,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
                 <div class="col-12 col-md-6 col-lg-2">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="../../img/team-img/team-1.jpg" alt="">
+                            <img src="../../img/team-img/chiara.jpeg" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="https://www.facebook.com/chiara.ricciardi.10" target=”_blank”><i class="fa fa-facebook" style="margin-top: 30%" aria-hidden="true"></i></a>
