@@ -33,11 +33,12 @@ document.getElementById("btnmaterie").onclick = function () {
                         for (var i = 0; i < n; i++) {
 
                             var materia = {
-                                nome: data.nomi_materie[i].nome,
-                            }
+                                id: data.nomi_materie[i].id,
+                                nome: data.nomi_materie[i].nome
+                            };
                             array.push(materia);
 
-                                $('#btnmaterie').append('<option value="' + array[i].nome + '" name="' + array[i].nome + '" id="Materia"> ' + array[i].nome + ' </option>'
+                                $('#btnmaterie').append('<option value="' + array[i].id + '" name="' + array[i].nome + '" id="Materia"> ' + array[i].nome + ' </option>'
                                 );
                             }
                         }
