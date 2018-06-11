@@ -60,6 +60,7 @@ $(document).ready(function () {
                                                     casa_editrice: data.libri[i].casa_editrice,
                                                     autore: data.libri[i].autore,
                                                     contatto: data.libri[i].contatto,
+                                                    email: data.libri[i].email,
                                                 };
 
                                                 annunci.push(annuncio);
@@ -91,6 +92,7 @@ $(document).ready(function () {
                                                     <!-- Metto già il campo ma lo metto nascosto -->
                                                     '               <div class="form-group mt-4">\n' +
                                                     '                    <label id="hook' + i + '" for="contatto" style="display: none;">Contatto: ' + annunci[i].contatto + '</label>\n' +
+
                                                     '               </div>\n');
 
 

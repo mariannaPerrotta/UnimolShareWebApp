@@ -77,6 +77,15 @@ header("location: ../login.php");
                         </div>
                     </div>
                 </div>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label style="color: red">Campi obbligatori*</label>
+
+                        </div>
+
+                    </div>
+                </div>
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">

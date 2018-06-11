@@ -38,11 +38,11 @@ if(!empty($_SESSION['utente']['tipo'])){
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputName">Nome</label>
+                            <label for="InputName">Nome*</label>
                             <input class="form-control" id="InputNome1" type="text"  placeholder="Inserisci nome">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputLastName">Cognome</label>
+                            <label for="InputLastName">Cognome*</label>
                             <input class="form-control" id="InputCognome1" type="text"  placeholder="Inserisci cognome">
                         </div>
                     </div>
@@ -50,11 +50,11 @@ if(!empty($_SESSION['utente']['tipo'])){
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputEmail1">Indirizzo email</label>
+                            <label for="InputEmail1">Indirizzo email*</label>
                             <input class="form-control" id="InputEmail1" type="email"  placeholder="Inserisci email">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputMatricola">Matricola</label>
+                            <label for="InputMatricola">Matricola*</label>
                             <input class="form-control" id="InputMatricola1"  placeholder="Inserisci matricola">
                         </div>
                     </div>
@@ -62,7 +62,7 @@ if(!empty($_SESSION['utente']['tipo'])){
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputCDL">Corso di laurea</label>
+                            <label for="InputCDL">Corso di laurea*</label>
                             <select id="seleziona_cdl">
 
                             </select>
@@ -74,13 +74,22 @@ if(!empty($_SESSION['utente']['tipo'])){
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputPassword1">Password</label>
+                            <label for="InputPassword1">Password*</label>
                             <input class="form-control" id="InputPassword1" type="password" placeholder="Password">
                         </div>
                         <div class="col-md-6">
-                            <label for="ConfirmPassword">Conferma password</label>
+                            <label for="ConfirmPassword">Conferma password*</label>
                             <input class="form-control" id="ConfirmPassword" type="password" placeholder="Conferma password">
                         </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label style="color: red">Campi obbligatori*</label>
+
+                        </div>
+
                     </div>
                 </div>
                 <a class="btn btn-primary btn-block" id="btnregister-studente" style="color:white">Registrati come studente</a>
