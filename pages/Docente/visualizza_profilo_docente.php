@@ -39,7 +39,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
             <div class="form-group">
                 <label for="nome">Nome: <font color="blue"><?php echo($_SESSION['utente']['nome']) ?></font></label>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="cognome">
                 <label for="cognome">Cognome: <font
                             color="blue"><?php echo($_SESSION['utente']['cognome']) ?></font></label>
             </div>
