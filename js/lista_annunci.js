@@ -47,12 +47,12 @@ $(document).ready(function () {
 
                                     success: function (data) {
                                         if (data.libri.error === false) {
-                                            var n = data.libri.contatore;
+                                            var m = data.libri.contatore;
                                             var annunci = [];
 
                                             var hook = $('#card_lista_annunci');
 
-                                            for (i = 0; i < n; i++) {
+                                            for (i = 0; i < m; i++) {
                                                 var annuncio = {
                                                     titolo: data.libri[i].titolo,
                                                     prezzo: data.libri[i].prezzo,
