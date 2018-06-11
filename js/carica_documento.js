@@ -6,9 +6,10 @@ document.getElementById("aggiungi").onclick = function () {
     var matricola = document.getElementById("InputMatricola").value;
     var cod_doc = "";
     var cod_stud = "";
-    var cod_mat = 1; //Da sistemare
+    var cod_mat =  document.getElementById("btnmaterie").value; //Da sistemare
     var formData = new FormData($("#form-carica").get(0));
 
+    //seleziona se è studente o docente
     (tipo === "docente") ? (cod_doc=matricola) : (cod_stud=matricola);
 
     formData.append("titolo", titolo);
@@ -17,6 +18,8 @@ document.getElementById("aggiungi").onclick = function () {
     formData.append("cod_mat", cod_mat);
 
     //Carico localmente il file
+
+
     $.ajax({
 
         url: urlUploder,

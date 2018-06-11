@@ -83,7 +83,7 @@ if(!empty($_SESSION['utente']['tipo'])){
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" id="btnregister-studente">Registrati come studente</a>
+                <a class="btn btn-primary btn-block" id="btnregister-studente" style="color:white">Registrati come studente</a>
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="../login.php">Login</a>
