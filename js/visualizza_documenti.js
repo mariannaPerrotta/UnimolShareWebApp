@@ -44,12 +44,15 @@ function MyClick(materia) {
                             '                </div>\n' +
                             '                <div class="form-group">\n' +
                         '                        <label for="Valutazione">Valutazione </label>\n' +
-                            '                       <button type="button" value="1" id="'+array[i].id+'_val_1" onclick="valuta('+"'"+array[i].id+"_val_1'"+', ' + "'" + array[i].id + "'" + ')"> ★ </button>'+
-                            '                       <button type="button" value="2" id="'+array[i].id+'_val_2" onclick="valuta('+"'"+array[i].id+"_val_2'"+', ' + "'" + array[i].id + "'" + ')"> ★★ </button>'+
-                            '                       <button type="button" value="3" id="'+array[i].id+'_val_3" onclick="valuta('+"'"+array[i].id+"_val_3'"+', ' + "'" + array[i].id + "'" + ')"> ★★★ </button>'+
-                            '                       <button type="button" value="4" id="'+array[i].id+'_val_4" onclick="valuta('+"'"+array[i].id+"_val_4'"+', ' + "'" + array[i].id + "'" + ')"> ★★★★ </button>'+
-                            '                       <button type="button" value="5" id="'+array[i].id+'_val_5" onclick="valuta('+"'"+array[i].id+"_val_5'"+', ' + "'" + array[i].id + "'" + ')"> ★★★★★ </button>'+
-                            '                </div>\n' +
+                            '<select id="'+array[i].id+'id_button">'+
+                            '                       <option type="button" value="1" id="'+array[i].id+'_val_1"> ★ </option>'+
+                            '                       <option type="button" value="2" id="'+array[i].id+'_val_2" > ★★ </option>'+
+                            '                       <option type="button" value="3" id="'+array[i].id+'_val_3" > ★★★ </option>'+
+                            '                       <option type="button" value="4" id="'+array[i].id+'_val_4" > ★★★★ </option>'+
+                            '                       <option type="button" value="5" id="'+array[i].id+'_val_5" > ★★★★★ </option>'+
+                            '        </select>       ' +
+                            ' </div>\n' +
+                            '                <a class="btn btn-primary btn-block" style="color:white" id="'+ array[i].id+'_valuta" onclick="valuta('+"'"+array[i].id+"'"+')">Valuta</a>\n' +
                             '                <a class="btn btn-primary btn-block" style="color:white" id="'+ array[i].id+'" onclick="Download('+"'"+array[i].id+"'"+')">Download documento</a>\n' +
                             '\n' +
                             '            </form>\n' +

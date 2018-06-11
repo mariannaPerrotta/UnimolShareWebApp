@@ -56,7 +56,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
             <div class = "form-group">
                 <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
                     <div class="col-md-12">
-                        <a id = "aggiungi" class="btn btn-primary btn-block" >Aggiungi</a>
+                        <a id = "aggiungi" class="btn btn-primary btn-block" style="color:white" >Aggiungi</a>
                     </div>
                 </div>
             </div>
