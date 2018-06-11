@@ -123,7 +123,8 @@ document.getElementById("btnlogin").onclick = function () {
 
                                     var cdl = {
                                         id_cdl: data.CDL[i].id_cdl,
-                                    }
+                                        nome_cdl: data.CDL[i].nome_cdl
+                                    };
 
 
                                     lista_cdl.push(cdl);

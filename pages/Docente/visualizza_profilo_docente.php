@@ -43,9 +43,18 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
                 <label for="cognome">Cognome: <font
                             color="blue"><?php echo($_SESSION['utente']['cognome']) ?></font></label>
             </div>
-            <div class="form-group">
-                <label for="CdL">Corsi di Laurea: </label>
-            </div>
+            <?php
+
+                $str = "";
+
+                for($i = 0; $i < count($_SESSION['utente']['cdl']); $i++) {
+
+                    $str = $str.'<div class="form-group">
+                                    <label for="CdL'.$i.'">Corso di Laurea: <font color="blue">'.($_SESSION['utente']['cdl'][$i]['nome_cdl']).' </font></label>
+                                 </div>';
+                }
+                echo ($str);
+            ?>
             <div class="form-group">
                 <label for="Email">Email: <font color="blue"><?php echo($_SESSION['utente']['email']) ?> </font></label>
             </div>
@@ -57,6 +66,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
 <script src="../../vendor/jquery/jquery.min.js"></script>
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
+<!--script src="../../js/visualizza_cdl_doc.js"></script-->
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>

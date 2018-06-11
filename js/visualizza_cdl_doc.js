@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    alert("ok");
+
     $.ajax({
         url: "../../pages/matricola.php",
 
@@ -10,17 +13,21 @@ $(document).ready(function() {
 
         success: function (data) {
 
+            alert("ok2");
+
             $.ajax({
 
                 url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzacdlperiddocente",
 
                 type: 'POST',
 
-                data: {id: data},
+                data: {iddoc: data},
 
                 dataType: "json",
 
                 success: function (data) {
+
+                    alert("ok3");
 
                     if (data.CDL.error === false) {
 
