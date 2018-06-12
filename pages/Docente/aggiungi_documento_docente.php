@@ -24,7 +24,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
 
 <div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%">
     <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">
-        <div class="card-header">Aggiungi documento Docente</div>
+        <div class="card-header">Aggiungi documento </div>
         <div class="card-body">
             <form id = "form-carica">
                 <div class="form-group">
