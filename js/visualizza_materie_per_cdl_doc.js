@@ -1,78 +1,100 @@
 $(document).ready(function() {
 
+    var matricola = "";
+
     $.ajax({
-        url: "../cdls.php",
+        url: "../matricola.php",
 
         type: 'POST',
 
-        data: {cdls: true},
+        data: '',
 
-        dataType: "html",
+        async: false,
 
         success: function (data) {
 
-            var n = data;
+            matricola = data;
+        }
+    });
 
-            for (var j = 0; j < n; j++) {
+    $.ajax({
+        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriedisponibili",
 
-                var id_cdl = $('#Cdl_value' + j).val();
+        type: 'POST',
 
-                $.ajax({
-                    url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzamateriapercdl",
+        data: {
+            matricola: matricola
+        },
 
-                    type: 'POST',
+        dataType: "json",
 
-                    indexValue: j,
+        success: function (response) {
 
-                    data: {
-                        cod_cdl: id_cdl
-                    },
+            if (!response.nomi_materie.error) {
 
-                    dataType: "json",
+                var m = response.nomi_materie.contatore;
+                var materie = [];
+                var hook = '#cdls';
+                var old_cdl_printed = -1;
+                for (var i = 0; i < m; i++) {
 
-                    success: function (response) {
+                    var materia = {
+                        nome: response.nomi_materie[i].nome,
+                        id: response.nomi_materie[i].id,
+                        cod_docente: response.nomi_materie[i].cod_docente,
+                        cod_cdl: response.nomi_materie[i].cod_cdl
+                    };
 
-                        if (!response.nomi_materie.error) {
+                    materie.push(materia);
 
-                            var m = response.nomi_materie.contatore;
-                            var materie = [];
-                            var hook = '#Cdl' + this.indexValue;
-                            $(hook).append(' <input id = "start" style="display: none"/>');
-                            for (var i = 0; i < m; i++) {
+                    $.ajax({
 
-                                var materia = {
-                                    nome: response.nomi_materie[i].nome,
-                                    id: response.nomi_materie[i].id
-                                };
+                        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzacdlperid",
 
-                                materie.push(materia);
+                        indexValue: i,
 
-                                $(hook).append('  <div id="'+ materie[i].id +'_hook" class="form-group" xmlns="http://www.w3.org/1999/html">' +
-                                    '               <input type="checkbox" id="'+ materie[i].id +'"> ' + materie[i].nome + '</input>' +
+                        type: 'POST',
+
+                        data: {
+                            idcdl: materie[i].cod_cdl
+                        },
+
+                        dataType: "json",
+
+                        async: false,
+
+                        success: function (data) {
+
+                            if (!data.CDL.error) {
+
+                                var nome_cdl = data.CDL[0].nome;
+
+                                if((this.indexValue === 0) || (old_cdl_printed !== materie[this.indexValue].cod_cdl)) {
+
+                                    $(hook).append(' <input id = "stop" style="display: none"/>');
+                                    $(hook).append(' <input id="' + materie[this.indexValue].cod_cdl + '" style="display: none" />' +
+                                        '                   <label id="Cdl' + this.indexValue + '" for="CdL' + this.indexValue + '">Lista materie - CdL: <font color="blue">' + nome_cdl + '</font></label>'
+                                    );
+                                    $(hook).append(' <input id = "start" style="display: none"/>');
+                                    old_cdl_printed = materie[this.indexValue].cod_cdl;
+
+                                }
+                                $(hook).append('  <div id="' + materie[this.indexValue].id + '_hook" class="form-group" xmlns="http://www.w3.org/1999/html">' +
+                                    '               <input type="checkbox" id="' + materie[this.indexValue].id + '"> ' + materie[this.indexValue].nome + '</input>' +
                                     '             </div>');
 
-                                vecchieMaterie(materie[i].id);
+                                vecchieMaterie(materie[this.indexValue].id, materie[this.indexValue].cod_docente);
 
                             }
-                            $(hook).append(' <input id = "stop" style="display: none"/>');
-                        } else {
-                            alert(response.message);
                         }
 
-
-                    },
-                    error: function (err) {
-
-                        alert("NO " + err.responseJSON.toString());
-
-                        console.log(err.responseJSON);
-
-
-                    }
-
-
-                });
+                    });
+                }
+                $(hook).append(' <input id = "stop" style="display: none"/>');
+            } else {
+                alert(response.message);
             }
+
 
         },
         error: function (err) {
@@ -84,71 +106,17 @@ $(document).ready(function() {
 
         }
 
-    });
 
+    });
 });
 
-function vecchieMaterie(id_materia) {
+function vecchieMaterie(id_materia, doc) {
 
-    $.ajax({
-        url: "../matricola.php",
-
-        type: 'POST',
-
-        data: '',
-
-        success: function(data) {
-
-            var matricola = data;
-
-            $.ajax({
-                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/checkmateriaperiddocente",
-
-                type: 'POST',
-
-                data: {
-                    id: id_materia,
-                    codice_docente: matricola
-                },
-
-                dataType: "json",
-
-                success: function (data) {
-
-                    if(!data.Check.error) {
-
-                        if(data.Check[0].check) {
-                            $("#" + id_materia).attr({
-                                "checked" : true,
-                                "disabled" : true
-                            });
-                        }
-                    }
-                    else
-                        alert(data.Check.message);
-
-                },
-                error: function (err) {
-
-                    alert("NO " + err.responseJSON.toString());
-
-                    console.log(err.responseJSON);
-
-
-                }
-
-            });
-
-        },
-            error: function (err) {
-
-            alert("NO " + err.responseJSON.toString());
-
-            console.log(err.responseJSON);
-
-
-        }
-
-    });
+    if(doc !== null) {
+        $("#" + id_materia).attr({
+            "checked" : true,
+            "disabled" : true
+        });
+    }
 
 }

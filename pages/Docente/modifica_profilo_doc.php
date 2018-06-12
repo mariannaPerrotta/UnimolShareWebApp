@@ -15,11 +15,11 @@ if (!isset($_SESSION['utente']['tipo'])) {
     <meta name="author" content="">
     <title>UnimolShare - Il tuo profilo</title>
     <!-- Bootstrap core CSS-->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
-    <link href="../css/c.css" rel="stylesheet">
+    <link href="../../css/c.css" rel="stylesheet">
 </head>
 
 <div class="content-wrapper bg-dark" style=" background: unset; padding-left:2%; padding-right: 2%">
@@ -84,23 +84,11 @@ if (!isset($_SESSION['utente']['tipo'])) {
                             </div>
                         </div>
                     </div>
-                    <?php
-
-                    $str = "";
-
-                    for($i = 0; $i < count($_SESSION['utente']['cdl']); $i++) {
-
-                        $str = $str.'<div class="form-group">
-                                        <div class="form-row">
-                                            <div class="col-md-6" >
-                                                <input id="Cdl_value'.$i.'" style="display: none" value="'.($_SESSION['utente']['cdl'][$i]['id_cdl']).'">
-                                                <label id="Cdl'.$i.'" for="CdL'.$i.'">Lista materie - CdL: <font color="blue">'.($_SESSION['utente']['cdl'][$i]['nome_cdl']).' </font></label>
-                                            </div>
-                                        </div>
-                                     </div>';
-                    }
-                    echo ($str);
-                    ?>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6" id="cdls"></div>
+                        </div>
+                    </div>
                     <div class = "form-group">
                         <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
                             <div class="col-md-12">

@@ -45,9 +45,6 @@ function modifica_click() {
 
                 };
 
-                aggiungi_materie();
-
-/*
                 $.ajax({
 
                     url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/update",
@@ -60,7 +57,8 @@ function modifica_click() {
 
                     success: function (data) {
 
-                        alert(data.message);
+                       aggiungi_materie(matricola);
+                       alert(data.message);
 
                     },
 
@@ -73,7 +71,7 @@ function modifica_click() {
                     }
 
                 });
-*/
+
             } else {
                 alert(data.message);
             }
@@ -90,28 +88,110 @@ function modifica_click() {
     });
 }
 
-function aggiungi_materie() {
+function aggiungi_materie(matricola) {
 
     var myForm = document.getElementById("form");
     var go = false;
-    for (var i = 1; i < myForm.elements.length; i++) {
-        if(myForm.elements[i-1].id === "start")
+    var cdl = 0;
+    for (var i = 2; i < myForm.elements.length; i++) {
+        if (myForm.elements[i - 1].id === "start"){
             go = true;
-        if(myForm.elements[i].id === "stop")
+            cdl = myForm.elements[i - 2].id;
+        }
+        if (myForm.elements[i].id === "stop")
             go = false;
-        if(go) {
-            if((myForm.elements[i]).checked){
+        if (go) {
+            if ((myForm.elements[i]).checked) {
                 id = myForm.elements[i].id;
-                alert(id);
                 var data = {
-                    id: id
+                    cod_docente: matricola,
+                    cod_materia: id
                 };
 
-                //Continuare, manca la chiamata ajax perché manca nel db l'associazione n a n e di conseguenza il rest
+                aggiungi_cdl(cdl, matricola);
 
+                $.ajax({
+
+                    url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/assegnadocentemateria",
+
+                    type: 'POST',
+
+                    data: data,
+
+                    dataType: "json", //json perchè l'output deve essere un json
+
+                    success: function (data) {
+
+                    },
+
+                    error: function (err) {
+
+                        alert("NO " + err.responseJSON.toString());
+
+                        console.log(err.responseJSON);
+
+                    }
+
+                });
             }
         }
     }
 
-
 }
+
+function aggiungi_cdl(id, matricola) {
+
+    var data = {
+        id: id,
+        matricola: matricola
+    };
+    //Servizio REST per caricare cdl al Docente
+    $.ajax({
+
+        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/checkcdlperiddocente",
+
+        type: 'POST',
+
+        data: data,
+
+        dataType: "json", //json perchè l'output deve essere un json
+
+        success: function (data) {
+            if(!data.Check[0].check){
+
+                data = {
+                    id: id,
+                    matricola: matricola
+                };
+
+                //Servizio REST per caricare cdl al Docente
+                $.ajax({
+
+                    url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricacdldocente",
+
+                    type: 'POST',
+
+                    data: data,
+
+                    dataType: "json", //json perchè l'output deve essere un json
+
+                    success: function (data) {
+                    },
+
+                    error: function (err) {
+
+                        alert("NO " + err.responseJSON.toString());
+                        console.log(err.responseJSON);
+                    }
+                });
+            }
+        },
+
+        error: function (err) {
+
+            alert("NO " + err.responseJSON.toString());
+            console.log(err.responseJSON);
+        }
+    });
+}
+

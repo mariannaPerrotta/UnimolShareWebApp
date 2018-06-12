@@ -58,6 +58,7 @@ function modifica_click() {
                     success: function (data) {
 
                         alert(data.message);
+                        location.reload();
 
                     },
 
