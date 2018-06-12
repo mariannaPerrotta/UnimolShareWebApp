@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $.ajax({
-        url: "http://localhost/UnimolShareWebApp/pages/cdl.php",
+        url: "../../pages/cdl.php",
 
         type: 'POST',
 

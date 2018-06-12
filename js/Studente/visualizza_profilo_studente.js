@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url: "http://localhost/UnimolShareWebApp/pages/utente.php",
+        url: "/../../pages/utente.php",
 
         type: 'POST',
 
