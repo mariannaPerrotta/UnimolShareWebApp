@@ -45,16 +45,7 @@ function MyClick(materia) {
                                 '                    <label for="materiadocumento">Materia: ' + ' ' + array[i].materia + '</label>\n' +
                                 '                </div>\n' +
                                 '                <div class="form-group">\n' +
-                                '                        <label for="valutazione">Valutazione </label>\n' +
-                                '<select id="' + array[i].id + 'id_button">' +
-                                '                       <option type="button" value="1" id="' + array[i].id + '_val_1"> ★ </option>' +
-                                '                       <option type="button" value="2" id="' + array[i].id + '_val_2" > ★★ </option>' +
-                                '                       <option type="button" value="3" id="' + array[i].id + '_val_3" > ★★★ </option>' +
-                                '                       <option type="button" value="4" id="' + array[i].id + '_val_4" > ★★★★ </option>' +
-                                '                       <option type="button" value="5" id="' + array[i].id + '_val_5" > ★★★★★ </option>' +
-                                '        </select>       ' +
-                                '                <div class="form-group">\n' +
-                                '                        <label for="valutazione" style="padding-left: 50%"  id="val' + array[i].id + '" >Valutazione media </label>\n' +
+                                '                        <label for="valutazione"  id="val' + array[i].id + '" >Valutazione media </label>\n' +
                                 // var val=valutazione_media( array[i].id)
                                 (val = valutazione_media(array[i].id) <= 1 ? '<label>★</label>' : '') +
                                 (val = valutazione_media(array[i].id) > 1 && valutazione_media(array[i].id) <= 2 ? '<label>★★</label>' : '') +
@@ -63,6 +54,16 @@ function MyClick(materia) {
                                 (val = valutazione_media(array[i].id) > 4 && valutazione_media(array[i].id) <= 5 ? '<label>★★★★★</label>' : '') +
 
                                 ' </div>\n' +
+                                '                <div class="form-group">\n' +
+                                '                        <label for="valutazione">Valutazione </label>\n' +
+                                '<select id="' + array[i].id + 'id_button">' +
+                                '                       <option type="button" value="1" id="' + array[i].id + '_val_1"> ★ </option>' +
+                                '                       <option type="button" value="2" id="' + array[i].id + '_val_2" > ★★ </option>' +
+                                '                       <option type="button" value="3" id="' + array[i].id + '_val_3" > ★★★ </option>' +
+                                '                       <option type="button" value="4" id="' + array[i].id + '_val_4" > ★★★★ </option>' +
+                                '                       <option type="button" value="5" id="' + array[i].id + '_val_5" > ★★★★★ </option>' +
+                                '        </select>       ' +
+
 
 
                                 ' </div>\n' +
@@ -88,16 +89,7 @@ function MyClick(materia) {
                                 '                    <label for="materiadocumento">Materia: ' + ' ' + array[i].materia + '</label>\n' +
                                 '                </div>\n' +
                                 '                <div class="form-group">\n' +
-                                '                        <label for="valutazione">Valutazione </label>\n' +
-                                '<select id="' + array[i].id + 'id_button">' +
-                                '                       <option type="button" value="1" id="' + array[i].id + '_val_1"> ★ </option>' +
-                                '                       <option type="button" value="2" id="' + array[i].id + '_val_2" > ★★ </option>' +
-                                '                       <option type="button" value="3" id="' + array[i].id + '_val_3" > ★★★ </option>' +
-                                '                       <option type="button" value="4" id="' + array[i].id + '_val_4" > ★★★★ </option>' +
-                                '                       <option type="button" value="5" id="' + array[i].id + '_val_5" > ★★★★★ </option>' +
-                                '        </select>       ' +
-                                '                <div class="form-group">\n' +
-                                '                        <label for="valutazione" style="padding-left: 50%"  id="val' + array[i].id + '" >Valutazione media </label>\n' +
+                                '                        <label for="valutazione"   id="val' + array[i].id + '" >Valutazione media </label>\n' +
                                 // var val=valutazione_media( array[i].id)
                                 (val = valutazione_media(array[i].id) <= 1 ? '<label>★</label>' : '') +
                                 (val = valutazione_media(array[i].id) > 1 && valutazione_media(array[i].id) <= 2 ? '<label>★★</label>' : '') +
@@ -106,7 +98,15 @@ function MyClick(materia) {
                                 (val = valutazione_media(array[i].id) > 4 && valutazione_media(array[i].id) <= 5 ? '<label>★★★★★</label>' : '') +
 
                                 ' </div>\n' +
-
+                                '                <div class="form-group">\n' +
+                                '                        <label for="valutazione">Valutazione </label>\n' +
+                                '<select id="' + array[i].id + 'id_button">' +
+                                '                       <option type="button" value="1" id="' + array[i].id + '_val_1"> ★ </option>' +
+                                '                       <option type="button" value="2" id="' + array[i].id + '_val_2" > ★★ </option>' +
+                                '                       <option type="button" value="3" id="' + array[i].id + '_val_3" > ★★★ </option>' +
+                                '                       <option type="button" value="4" id="' + array[i].id + '_val_4" > ★★★★ </option>' +
+                                '                       <option type="button" value="5" id="' + array[i].id + '_val_5" > ★★★★★ </option>' +
+                                '        </select>       ' +
 
                                 ' </div>\n' +
 
