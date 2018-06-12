@@ -39,13 +39,13 @@ function MyClick(materia) {
                                 '                <div class="card-body">\n' +
                                 '                    <form method="post" style="padding-left: 0.25%"  id="' + array[i].id + '">\n' +
                                 '                <div class="form-group mt-4">\n' +
-                                '                    <label for="titolodocumento">titolo documento: ' + ' ' + ' ' + array[i].titolo + '</label>\n' +
+                                '                    <label for="titolodocumento">Titolo documento: ' + ' ' + ' ' + array[i].titolo + '</label>\n' +
                                 '                </div>\n' +
                                 '                <div class="form-group">\n' +
-                                '                    <label for="materiadocumento">materia: ' + ' ' + array[i].materia + '</label>\n' +
+                                '                    <label for="materiadocumento">Materia: ' + ' ' + array[i].materia + '</label>\n' +
                                 '                </div>\n' +
                                 '                <div class="form-group">\n' +
-                                '                        <label for="valutazione">valutazione </label>\n' +
+                                '                        <label for="valutazione">Valutazione </label>\n' +
                                 '<select id="' + array[i].id + 'id_button">' +
                                 '                       <option type="button" value="1" id="' + array[i].id + '_val_1"> ★ </option>' +
                                 '                       <option type="button" value="2" id="' + array[i].id + '_val_2" > ★★ </option>' +
@@ -54,7 +54,7 @@ function MyClick(materia) {
                                 '                       <option type="button" value="5" id="' + array[i].id + '_val_5" > ★★★★★ </option>' +
                                 '        </select>       ' +
                                 '                <div class="form-group">\n' +
-                                '                        <label for="valutazione" style="padding-left: 50%"  id="val' + array[i].id + '" >valutazione media </label>\n' +
+                                '                        <label for="valutazione" style="padding-left: 50%"  id="val' + array[i].id + '" >Valutazione media </label>\n' +
                                 // var val=valutazione_media( array[i].id)
                                 (val = valutazione_media(array[i].id) <= 1 ? '<label>★</label>' : '') +
                                 (val = valutazione_media(array[i].id) > 1 && valutazione_media(array[i].id) <= 2 ? '<label>★★</label>' : '') +
@@ -67,8 +67,8 @@ function MyClick(materia) {
 
                                 ' </div>\n' +
 
-                                '                <a class="btn btn-primary btn-block" style="color:white; width: 30%;" id="' + array[i].id + '_valuta" onclick="valuta(' + "'" + array[i].id + "'" + ')">valuta</a>\n' +
-                                '                <a class="btn btn-primary btn-block" style="color:white" id="' + array[i].id + '" onclick="download(' + "'" + array[i].id + "'" + ')">download documento</a>\n' +
+                                '                <a class="btn btn-primary btn-block" style="color:white; width: 30%;" id="' + array[i].id + '_valuta" onclick="valuta(' + "'" + array[i].id + "'" + ')">Valuta</a>\n' +
+                                '                <a class="btn btn-primary btn-block" style="color:white" id="' + array[i].id + '" onclick="Download(' + "'" + array[i].id + "'" + ')">Download documento</a>\n' +
                                 '\n' +
                                 '            </form>\n' +
                                 '        </div>\n' +
@@ -82,13 +82,13 @@ function MyClick(materia) {
                                 ' <div class="card-header" style="text-align: center; background: lightgrey">' + array[i].materia + '</div> ' +
                                 '                    <form method="post" style="padding-left: 0.25%"  id="' + array[i].id + '">\n' +
                                 '                <div class="form-group mt-4">\n' +
-                                '                    <label for="titolodocumento">titolo documento: ' + ' ' + ' ' + array[i].titolo + '</label>\n' +
+                                '                    <label for="titolodocumento">Titolo documento: ' + ' ' + ' ' + array[i].titolo + '</label>\n' +
                                 '                </div>\n' +
                                 '                <div class="form-group">\n' +
-                                '                    <label for="materiadocumento">materia: ' + ' ' + array[i].materia + '</label>\n' +
+                                '                    <label for="materiadocumento">Materia: ' + ' ' + array[i].materia + '</label>\n' +
                                 '                </div>\n' +
                                 '                <div class="form-group">\n' +
-                                '                        <label for="valutazione">valutazione </label>\n' +
+                                '                        <label for="valutazione">Valutazione </label>\n' +
                                 '<select id="' + array[i].id + 'id_button">' +
                                 '                       <option type="button" value="1" id="' + array[i].id + '_val_1"> ★ </option>' +
                                 '                       <option type="button" value="2" id="' + array[i].id + '_val_2" > ★★ </option>' +
@@ -97,7 +97,7 @@ function MyClick(materia) {
                                 '                       <option type="button" value="5" id="' + array[i].id + '_val_5" > ★★★★★ </option>' +
                                 '        </select>       ' +
                                 '                <div class="form-group">\n' +
-                                '                        <label for="valutazione" style="padding-left: 50%"  id="val' + array[i].id + '" >valutazione media </label>\n' +
+                                '                        <label for="valutazione" style="padding-left: 50%"  id="val' + array[i].id + '" >Valutazione media </label>\n' +
                                 // var val=valutazione_media( array[i].id)
                                 (val = valutazione_media(array[i].id) <= 1 ? '<label>★</label>' : '') +
                                 (val = valutazione_media(array[i].id) > 1 && valutazione_media(array[i].id) <= 2 ? '<label>★★</label>' : '') +
@@ -110,8 +110,8 @@ function MyClick(materia) {
 
                                 ' </div>\n' +
 
-                                '                <a class="btn btn-primary btn-block" style="color:white; width: 30%;" id="' + array[i].id + '_valuta" onclick="valuta(' + "'" + array[i].id + "'" + ')">valuta</a>\n' +
-                                '                <a class="btn btn-primary btn-block" style="color:white" id="' + array[i].id + '" onclick="download(' + "'" + array[i].id + "'" + ')">download documento</a>\n' +
+                                '                <a class="btn btn-primary btn-block" style="color:white; width: 30%;" id="' + array[i].id + '_valuta" onclick="valuta(' + "'" + array[i].id + "'" + ')">Valuta</a>\n' +
+                                '                <a class="btn btn-primary btn-block" style="color:white" id="' + array[i].id + '" onclick="Download(' + "'" + array[i].id + "'" + ')">Download documento</a>\n' +
                                 '\n' +
                                 '            </form>\n' +
                                 '    </div>' +
