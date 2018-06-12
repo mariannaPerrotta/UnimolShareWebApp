@@ -34,7 +34,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <script src="../../js/login.js"></script>
-<script src="../../js/lista_annunci.js"></script>
+<script src="../../js/Studente/lista_annunci.js"></script>
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 

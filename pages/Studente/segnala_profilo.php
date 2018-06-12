@@ -109,7 +109,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
 <!-- Core plugin JavaScript-->
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<script src="../../js/segnala_profilo.js"></script>
+<script src="../../js/Studente/segnala_profilo.js"></script>
 </body>
 
 </html>

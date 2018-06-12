@@ -108,9 +108,9 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
 <script src="../../js/sb-admin-charts.min.js"></script>
 <script src="../../js/login.js"></script>
 <script src="../../js/password_dimenticata.js"></script>
-<script src="../../js/registrazione_docente.js"></script>
-<script src="../../js/registrazione_studente.js"></script>
-<script src="../../js/segnala_profilo.js"></script>
+<script src="../../js/Docente/registrazione_docente.js"></script>
+<script src="../../js/Studente/registrazione_studente.js"></script>
+<script src="../../js/Studente/segnala_profilo.js"></script>
 
 </body>
 </html>
