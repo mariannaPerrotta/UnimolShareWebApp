@@ -45,6 +45,9 @@ function modifica_click() {
 
                 };
 
+                aggiungi_materie();
+
+/*
                 $.ajax({
 
                     url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/update",
@@ -70,7 +73,7 @@ function modifica_click() {
                     }
 
                 });
-
+*/
             } else {
                 alert(data.message);
             }
@@ -85,4 +88,30 @@ function modifica_click() {
 
         }
     });
+}
+
+function aggiungi_materie() {
+
+    var myForm = document.getElementById("form");
+    var go = false;
+    for (var i = 1; i < myForm.elements.length; i++) {
+        if(myForm.elements[i-1].id === "start")
+            go = true;
+        if(myForm.elements[i].id === "stop")
+            go = false;
+        if(go) {
+            if((myForm.elements[i]).checked){
+                id = myForm.elements[i].id;
+                alert(id);
+                var data = {
+                    id: id
+                };
+
+                //Continuare, manca la chiamata ajax perché manca nel db l'associazione n a n e di conseguenza il rest
+
+            }
+        }
+    }
+
+
 }

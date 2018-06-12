@@ -26,7 +26,7 @@ if (!isset($_SESSION['utente']['tipo'])) {
     <div class="card card-register mx-auto mt-5" style=" border-radius: 3%; margin-bottom: auto!important;">
         <div class="card-header">Modifica profilo</div>
         <div class="card-body">
-            <form method="POST">
+            <form method="POST" id="form">
                 <div class="form-group mt-3">
                     <div class="form-group" style="display: none">
                         <div class="form-row">
@@ -92,9 +92,9 @@ if (!isset($_SESSION['utente']['tipo'])) {
 
                         $str = $str.'<div class="form-group">
                                         <div class="form-row">
-                                            <div class="col-md-6">
-                                                <label id="Cdl'.$i.'" for="CdL'.$i.'">Lista materie - CdL: <font color="blue">'.($_SESSION['utente']['cdl'][$i]['nome_cdl']).' </font></label>
+                                            <div class="col-md-6" >
                                                 <input id="Cdl_value'.$i.'" style="display: none" value="'.($_SESSION['utente']['cdl'][$i]['id_cdl']).'">
+                                                <label id="Cdl'.$i.'" for="CdL'.$i.'">Lista materie - CdL: <font color="blue">'.($_SESSION['utente']['cdl'][$i]['nome_cdl']).' </font></label>
                                             </div>
                                         </div>
                                      </div>';

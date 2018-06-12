@@ -37,6 +37,7 @@ $(document).ready(function() {
                             var m = response.nomi_materie.contatore;
                             var materie = [];
                             var hook = '#Cdl' + this.indexValue;
+                            $(hook).append(' <input id = "start" style="display: none"/>');
                             for (var i = 0; i < m; i++) {
 
                                 var materia = {
@@ -53,6 +54,7 @@ $(document).ready(function() {
                                 vecchieMaterie(materie[i].id);
 
                             }
+                            $(hook).append(' <input id = "stop" style="display: none"/>');
                         } else {
                             alert(response.message);
                         }
