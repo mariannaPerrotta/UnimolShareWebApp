@@ -54,66 +54,53 @@ document.getElementById("btnregisterdoc").onclick = function () {
             success: function (data) {
 
                 if (JSON.stringify(data.error) === "false") {
+                    var myForm = document.getElementById("form");
+                    var go = false;
+                    for (var i = 1; i < myForm.elements.length; i++) {
 
-                    //Serializzo gli elemento successivi a checkbox
-                    var checkbox = document.getElementById("checkbox").childNodes;
-                    var text = (checkbox[1].textContent);
-                    text = text.replace('  ',' '); //Elimino i doppi spazi
+                        if (myForm.elements[i - 1].id === "start") {
+                            go = true;
+                        }
+                        if (myForm.elements[i].id === "stop")
+                            go = false;
+                        if (go) {
+                            if ((myForm.elements[i]).checked) {
+                                id = myForm.elements[i].value;
+                                var data = {
+                                    id: id,
+                                    matricola: matricola
+                                };
+                                //Servizio REST per caricare cdl al Docente
+                                $.ajax({
 
-                    //Converto il testo serializzato in elementi di un array
-                    var array = [];
-                    var tmp = "";
-                    for(var i = 1; i < text.length; i++) {
-                        var current = text[i];
-                        tmp = tmp + current;
-                        if(current === ' ') {
-                            // Check the element has no children && that it is not empty
-                            tmp = tmp.replace(' ',''); //Elimino gli spazi nelle stringhe
-                            array.push(tmp);
-                            tmp = "";
+                                    url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricacdldocente",
+
+                                    type: 'POST',
+
+                                    data: data,
+
+                                    dataType: "json", //json perchè l'output deve essere un json
+
+                                    success: function (data) {
+
+                                    },
+
+                                    error: function (err) {
+
+                                        alert("NO " + err.responseJSON.toString());
+                                        console.log(err.responseJSON);
+                                    }
+                                });
+                            }
                         }
                     }
-                    //Scorro l'array dalla posizione 1 perché nella posizione 0 c'è "cdl"
-                    for (var i = 1; i < array.length; i++) {
 
-                        var id = 'check_' + array[i];
-                        if (document.getElementById(id).checked) { //Solo se l'elemento è selezionato lo aggiungo al docente
-
-                            id = document.getElementById(id).value;
-                            var data = {
-                                id: id,
-                                matricola: matricola
-                            };
-
-                            //Servizio REST per caricare cdl al Docente
-                            $.ajax({
-
-                                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricacdldocente",
-
-                                type: 'POST',
-
-                                data: data,
-
-                                dataType: "json", //json perchè l'output deve essere un json
-
-                                success: function (data) {
-
-                                    alert("Abbiamo inviato un link di conferma alla tua email");
-                                    window.location.assign('index_doc.php')// serve per cambiare pagina
-
-                                },
-
-                                error: function (err) {
-
-                                    alert("NO " + err.responseJSON.toString());
-                                    console.log(err.responseJSON);
-                                }
-                            });
-                        }
-                    }
+                    alert("Abbiamo inviato un link di conferma alla tua email");
                     console.log(data);
                     window.location.assign('../../index.php')// serve per cambiare pagina
-                } else {
+                }
+
+                else {
                     alert(JSON.stringify(data.message))
                 }
 

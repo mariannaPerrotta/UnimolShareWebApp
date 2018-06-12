@@ -22,7 +22,8 @@ $(document).ready(function() {
 
                 var array = [];
 
-
+                $('#cdls').append(' <input id = "vuoto" style="display: none"/>');
+                $('#cdls').append(' <input id = "start" style="display: none"/>');
                     for (var i = 0; i < n; i++) {
 
                         var cdl = {
@@ -33,12 +34,14 @@ $(document).ready(function() {
 
 
 
-                        $('#corsi_di_laurea').append('<br>' +
+                        $('#cdls').append('<br>' +
                             '<input id="check_'+array[i].nome+'" type="checkbox" name="' + array[i].nome +'" value="' + array[i].id +'"/> '+ array[i].nome+' </input>'
 
 
                         );
                     }
+
+                $('#cdls').append(' <input id = "stop" style="display: none"/>');
 
                 }
 

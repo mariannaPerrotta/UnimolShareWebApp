@@ -61,23 +61,6 @@ header("location: index_doc.php");
                 </div>
                 <div class="form-group">
                     <div class="form-row">
-                        <div class="col-md-6" >
-                            <form action="">
-                                <fieldset id="checkbox">
-                                    <label id="corsi_di_laurea"> cdl*</label>
-
-
-                                </fieldset>
-                            </form>
-                        </div>
-<!--                        <div class="col-md-6">-->
-<!--                            <label for="InputMatricola">Matricola</label>-->
-<!--                            <input class="form-control" id="InputMatricola" type="text" aria-describedby="matricolaHelp" placeholder="Inserisci matricola">-->
-<!--                        </div>-->
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-row">
                         <div class="col-md-6">
                             <label for="InputPassword">Password*</label>
                             <input class="form-control" id="InputPassword" type="password" placeholder="Password">
@@ -86,6 +69,14 @@ header("location: index_doc.php");
                             <label for="ConfirmPassword">Conferma password*</label>
                             <input class="form-control" id="ConfirmPassword" type="password" placeholder="Conferma password">
                         </div>
+                    </div>
+                </div>
+            </form>
+            <form method="POST" id="form">
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-6" id="cdls">
+                            <label id="corsi_di_laurea"> cdl*</label></div>
                     </div>
                 </div>
                 <div class="form-group">
@@ -113,6 +104,7 @@ header("location: index_doc.php");
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="../../js/Docente/cdl_docente.js"></script>
 <script src="../../js/Docente/registrazione_docente.js"></script>
+<!--script src="../../js/Docente/testreg.js"></script-->
 </body>
 
 </html>
