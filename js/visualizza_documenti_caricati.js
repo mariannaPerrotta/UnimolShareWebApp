@@ -53,8 +53,8 @@ $(document).ready(function() {
                                 '\n' +
                                 '                                </form>' +
                                 '                                </div>' +
-                                '                                </div>' +
-                                '                            }');
+                                '                                </div>'
+                       );
 
 
 
