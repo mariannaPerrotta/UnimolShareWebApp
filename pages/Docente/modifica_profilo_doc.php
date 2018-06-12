@@ -72,7 +72,7 @@ if (!isset($_SESSION['utente']['tipo'])) {
                         <div class="form-row">
                             <div class="col-md-6">
                                 <label for="InputNewPassword">Vecchia password</label>
-                                <input class="form-control" id="InputOldPassword" type="text" aria-describedby="newpasswordHelp" placeholder="Inserisci la vecchia password">
+                                <input class="form-control" id="InputOldPassword" type="password" aria-describedby="newpasswordHelp" placeholder="Inserisci la vecchia password">
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ if (!isset($_SESSION['utente']['tipo'])) {
                         <div class="form-row">
                             <div class="col-md-6">
                                 <label for="InputOldPassword">Nuova password</label>
-                                <input class="form-control" id="InputNewPassword" type="text" aria-describedby="oldpasswordHelp" placeholder="Inserisci la nuova password">
+                                <input class="form-control" id="InputNewPassword" type="password" aria-describedby="oldpasswordHelp" placeholder="Inserisci la nuova password">
                             </div>
                         </div>
                     </div>

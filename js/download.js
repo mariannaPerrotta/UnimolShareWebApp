@@ -13,16 +13,13 @@ function Download(id) {
 
             if (JSON.stringify(data.error) === 'false') {
                 link = (data.link[0].id);
-                if(link !=null) {
+
                     window.open(
                         link,
                         '_blank'
                     );
-                }
-                else{
-                    alert("Download non disponibile");
-                }
 
+            
             } else {
                 alert("Errore rimozione");
             }

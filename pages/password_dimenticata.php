@@ -29,7 +29,7 @@
         <div class="form-group">
           <input class="form-control" id="InputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci indirizzo email">
         </div>
-        <a class="btn btn-primary btn-block" href="login.php">Recupera password</a>
+        <a class="btn btn-primary btn-block" id="recupera" style="color:white">Recupera password</a>
       </form>
       <div class="text-center">
         <a class="d-block small mt-3" href="login.php">Login</a>
@@ -41,6 +41,7 @@
 </div>
 <!-- Bootstrap core JavaScript-->
 <script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../js/password_dimenticata.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
 <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>

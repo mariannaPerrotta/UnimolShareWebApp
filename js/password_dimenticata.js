@@ -1,4 +1,4 @@
-document.getElementById("btnforgot-password").onclick = function () {
+document.getElementById("recupera").onclick = function () {
 
 
     var email = $("#InputEmail1").val();
@@ -13,7 +13,7 @@ document.getElementById("btnforgot-password").onclick = function () {
 
     $.ajax({
 
-        url: "http://localhost/UnimolShare/public/forgot-password",
+        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/recupero",
 
         type: 'POST',
 
@@ -23,7 +23,8 @@ document.getElementById("btnforgot-password").onclick = function () {
 
         success: function (data) {
             if(data.error==false){
-                window.location.assign('index.php')
+                alert("E' stata inviata una email con la nuova password");
+
 
             }
 
