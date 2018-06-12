@@ -31,8 +31,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
                     <div class="form-row">
                         <div class="col-md-6">
 
-                            <label class="btn btn-primary btn-block" style="width: 50%" for="myFile">Scegli il  file</label>
-                            <input  type="file" name="myFile" id="myFile" style="display:none">
+                            <input  type="file" name="myFile" id="myFile">
                         </div>
                     </div>
                 </div>

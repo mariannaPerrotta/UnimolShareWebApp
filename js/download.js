@@ -12,11 +12,15 @@ function Download(id) {
 
             if (JSON.stringify(data.error) === 'false') {
                 var card = id;
-
-                window.open(
-                    data.link[0].id,
-                    '_blank'
-                );
+                if(data.link[0].id!=null) {
+                    window.open(
+                        data.link[0].id,
+                        '_blank'
+                    );
+                }
+                else{
+                    alert("Download non disponibile");
+                }
 
             } else {
                 alert("Errore rimozione");

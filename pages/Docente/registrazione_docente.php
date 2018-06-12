@@ -111,8 +111,8 @@ header("location: index_doc.php");
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="../../js/cdl_docente.js"></script>
-<script src="../../js/registrazione_docente.js"></script>
+<script src="../../js/Docente/cdl_docente.js"></script>
+<script src="../../js/Docente/registrazione_docente.js"></script>
 </body>
 
 </html>

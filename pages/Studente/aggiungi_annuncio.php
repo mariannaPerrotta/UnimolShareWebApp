@@ -99,6 +99,6 @@ header("location: ../login.php");
         </div>
     </div>
 </div>
-<script src="../../js/aggiungi_annuncio.js"></script>
+<script src="../../js/Studente/aggiungi_annuncio.js"></script>
 <script src="../../js/materie.js"></script>
 </html>

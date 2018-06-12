@@ -107,8 +107,8 @@ if (!isset($_SESSION['utente']['tipo'])) {
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<script src="../../js/visualizza_materie_per_cdl_doc.js"></script>
-<script src="../../js/modifica_profilo_doc.js"></script>
+<script src="../../js/Docente/visualizza_materie_per_cdl_doc.js"></script>
+<script src="../../js/Docente/modifica_profilo_doc.js"></script>
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 

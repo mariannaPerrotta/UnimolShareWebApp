@@ -65,7 +65,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
 
 <script src="../../js/login.js"></script>
 
-<script src="../../js/visualizza_profilo_studente.js"></script>
+<script src="../../js/Studente/visualizza_profilo_studente.js"></script>
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
