@@ -1,6 +1,6 @@
 document.getElementById("btnmaterie").onclick = function () {
 
-    var matricola = $('#Matricola').val();
+    var matricola = $('#InputMatricola').val();
 
     $.ajax({
 
