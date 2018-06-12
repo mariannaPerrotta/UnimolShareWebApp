@@ -43,12 +43,12 @@ if (($_SESSION['utente']['tipo'])== "docente") {
                     <label for="InputPassword">Password</label>
                     <input class="form-control" id="InputPassword" type="password" placeholder="Password">
                 </div>
-                <div class="form-group">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox"> Memorizza password</label>
-                    </div>
-                </div>
+<!--                <div class="form-group">-->
+<!--                    <div class="form-check">-->
+<!--                        <label class="form-check-label">-->
+<!--                            <input class="form-check-input" type="checkbox"> Memorizza password</label>-->
+<!--                    </div>-->
+<!--                </div>-->
                 <a class="btn btn-primary btn-block" style="color:white" id="btnlogin">Login</a>
 
             </form>

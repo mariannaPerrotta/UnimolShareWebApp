@@ -38,11 +38,11 @@ header("location: index_doc.php");
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputNome">Nome</label>
+                            <label for="InputNome">Nome*</label>
                             <input class="form-control" id="InputNome" type="text" aria-describedby="nameHelp" placeholder="Inserisci nome">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputCognome">Cognome</label>
+                            <label for="InputCognome">Cognome*</label>
                             <input class="form-control" id="InputCognome" type="text" aria-describedby="nameHelp" placeholder="Inserisci cognome">
                         </div>
                     </div>
@@ -50,11 +50,11 @@ header("location: index_doc.php");
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputEmail">Indirizzo email</label>
+                            <label for="InputEmail">Indirizzo email*</label>
                             <input class="form-control" id="InputEmail" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputMatricola">Matricola</label>
+                            <label for="InputMatricola">Matricola*</label>
                             <input class="form-control" id="InputMatricola" type="text" aria-describedby="matricolaHelp" placeholder="Inserisci matricola">
                         </div>
                     </div>
@@ -64,7 +64,7 @@ header("location: index_doc.php");
                         <div class="col-md-6" >
                             <form action="">
                                 <fieldset id="checkbox">
-                                    <label id="corsi_di_laurea"> cdl</label>
+                                    <label id="corsi_di_laurea"> cdl*</label>
 
 
                                 </fieldset>
@@ -79,13 +79,22 @@ header("location: index_doc.php");
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputPassword">Password</label>
+                            <label for="InputPassword">Password*</label>
                             <input class="form-control" id="InputPassword" type="password" placeholder="Password">
                         </div>
                         <div class="col-md-6">
-                            <label for="ConfirmPassword">Conferma password</label>
+                            <label for="ConfirmPassword">Conferma password*</label>
                             <input class="form-control" id="ConfirmPassword" type="password" placeholder="Conferma password">
                         </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label style="color: red">Campi obbligatori*</label>
+
+                        </div>
+
                     </div>
                 </div>
                 <button type="button" class="btn btn-primary btn-block" id="btnregisterdoc">Registrati come docente</button>
