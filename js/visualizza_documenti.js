@@ -33,10 +33,11 @@ function MyClick(materia) {
                         }
 
                         array.push(doc);
-                        if (array[i].cod_docente != null) {
+                        if (array[i].cod_docente ) {
 
                             $('#lista_documenti').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
-                                '                <div class="card-body">\n' +
+                                ' <div class="card-header" style="text-align: center; background: lightgrey">' + array[i].materia + '</div> ' +
+                                '                <div class="card-body" >\n' +
                                 '                    <form method="post" style="padding-left: 0.25%"  id="' + array[i].id + '">\n' +
                                 '                <div class="form-group mt-4">\n' +
                                 '                    <label for="titolodocumento">Titolo documento: ' + ' ' + ' ' + array[i].titolo + '</label>\n' +
@@ -80,7 +81,7 @@ function MyClick(materia) {
                                 '<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
                                 '                <div class="card-body">\n' +
 
-                                ' <div class="card-header" style="text-align: center; background: lightgrey">' + array[i].materia + '</div> ' +
+
                                 '                    <form method="post" style="padding-left: 0.25%"  id="' + array[i].id + '">\n' +
                                 '                <div class="form-group mt-4">\n' +
                                 '                    <label for="titolodocumento">Titolo documento: ' + ' ' + ' ' + array[i].titolo + '</label>\n' +
