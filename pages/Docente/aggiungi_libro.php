@@ -25,7 +25,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
 
 <div class="content-wrapper bg-dark" style="padding-left:2%; padding-right: 2%">
     <div class="card card-register mx-auto mt-5">
-        <div class="card-header">Aggiungi un nuovo libro da consigliare!</div>
+        <div class="card-header">Aggiungi un nuovo libro da consigliare</div>
         <div class="card-body">
             <form>
                 <div class="form-group" style="display: none">

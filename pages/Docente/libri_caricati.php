@@ -34,7 +34,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
 <script src="../../js/rimuovi_libro.js"></script>
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<script src="../../js/visualizza_libri_caricati.js"></script>
+<script src="../../js/Docente/visualizza_libri_caricati.js"></script>
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 
