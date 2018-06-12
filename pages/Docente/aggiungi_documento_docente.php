@@ -66,5 +66,6 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
     </div>
 </div>
 <script src="../../js/carica_documento.js"></script>
+<script src="../../js/materie_docente.js"></script>
 
 </html>

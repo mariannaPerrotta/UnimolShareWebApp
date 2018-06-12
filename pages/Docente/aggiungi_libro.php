@@ -31,8 +31,8 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
                 <div class="form-group" style="display: none">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="Matricola">Matricola</label>
-                            <input class="form-control" id="Matricola" type="text" value="<?php echo $_SESSION['utente']['matr']?>">
+                            <label for="InputMatricola">Matricola</label>
+                            <input class="form-control" id="InputMatricola" type="text" value="<?php echo $_SESSION['utente']['matr']?>">
                         </div>
                     </div>
                 </div>

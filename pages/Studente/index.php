@@ -84,7 +84,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
             include 'ricerca.php';
             break;
         case 'modifica_profilo':
-            include '../modifica_profilo.php';
+            include 'modifica_profilo.php';
             break;
     }
 
