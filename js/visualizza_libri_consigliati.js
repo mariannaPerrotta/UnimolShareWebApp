@@ -61,7 +61,7 @@ function MyClick(materia) {
                     }
                 }
             } else {
-                alert(data.message);
+                alert("Non ci sono libri consigliati per questa materia");
             }
 
 
