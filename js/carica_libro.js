@@ -1,41 +1,64 @@
-document.getElementById("aggiungi").onclick = function () {
+document.getElementById("aggiungi_libro").onclick = function () {
 
-    var urlUploder = "../../php/LocalUploader.php";
-    var matricola = document.getElementById("InputMatricola").value;
-    var titolo = document.getElementById("InputTitolo").value;
-    var casaeditrice = document.getElementById("InputCasaEditrice").value;
-    var autore = document.getElementById("InputAutore").value;
-    var edizione = document.getElementById("InputEdizione").value;
+    var Matricola = $('#Matricola').val();
 
-    var cod_doc = "";
-    var cod_stud = "";
-    var cod_mat = 1; //Da sistemare
-    var formData = new FormData($("#form-carica").get(0));
+    var Titolo = $("#InputTitolo").val();
 
-    (tipo === "docente") ? (cod_doc=matricola) : (cod_stud=matricola);
+    var CasaEditrice=$("#InputCasaEditrice").val();
 
-    formData.append("matricola", matricola);
-    formData.append("titolo", titolo);
-    formData.append("casaeditrice", casaeditrice);
-    formData.append("autore", autore);
-    formData.append("edizione", edizione);
-    formData.append("cod_doc", cod_doc); //Da sistemare
-    formData.append("cod_stud", cod_stud);
-    formData.append("cod_mat", cod_mat);
+    var Autore = $("#InputAutore").val();
 
-    //Carico localmente il file
-    $.ajax({
+    var Edizione = $("#InputEdizione").val();
 
-        url: urlUploder,
-        type: "POST",
-        data: formData,
-        contentType: false,
-        processData: false,
+    var id_materia = ($('#btnmaterie').find(":selected")).val();
 
-        success: function (data) {
 
-            alert(data);
 
-        },
-    });
-}
+    if((Titolo === "") || (Edizione === "") || (CasaEditrice === "") || (Autore === "") || (id_materia === "")) {
+        alert("Riempi tutti i campi obbligatori");
+    }
+    else {
+
+        newData = {
+
+            titolo: Titolo,
+
+            edizione: Edizione,
+
+            casa_editrice: CasaEditrice,
+
+            cod_docente: Matricola,
+
+            autore: Autore,
+
+            cod_materia: id_materia,
+
+            link: ""
+
+        };
+
+        $.ajax({
+
+            url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricalibro",
+
+            type: 'POST',
+
+            data: newData,
+
+            dataType: "json",
+
+            success: function (data) {
+
+                alert(data.message);
+                console.log(data);
+            },
+
+            error: function (err) {
+
+                alert("NO " + err.responseJSON.toString());
+                console.log(err.responseJSON);
+            }
+
+        });
+    }
+};

@@ -28,11 +28,11 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
         <div class="card-header">Aggiungi un nuovo libro da consigliare!</div>
         <div class="card-body">
             <form>
-                <div class="form-group">
+                <div class="form-group" style="display: none">
                     <div class="form-row">
-                        <div class="col-md-6 mt-2">
-                            <label for="CodDocente">Matircola Docente*</label>
-                            <input class="form-control" id="CodDocente" type="text" aria-describedby="CodDocenteHelp" placeholder="Inserisci la tua matricola">
+                        <div class="col-md-6">
+                            <label for="Matricola">Matricola</label>
+                            <input class="form-control" id="Matricola" type="text" value="<?php echo $_SESSION['utente']['matr']?>">
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
                     <div class="form-row">
                         <div class="col-md-6 mt-2">
                             <label for="Titolo">Titolo*</label>
-                            <input class="form-control" id="Titolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci il titolo">
+                            <input class="form-control" id="InputTitolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci il titolo">
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
                     <div class="form-row">
                         <div class="col-md-6 mt-2">
                             <label for="CasaEditrice">Casa Editrice*</label>
-                            <input class="form-control" id="CasaEditrice" type="text" aria-describedby="CasaEditriceHelp" placeholder="Inserisci la casa editrice">
+                            <input class="form-control" id="InputCasaEditrice" type="text" aria-describedby="CasaEditriceHelp" placeholder="Inserisci la casa editrice">
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
                     <div class="form-row">
                         <div class="col-md-6 mt-3">
                             <label for="Autore">Autore*</label>
-                            <input class="form-control" id="Autore" type="text" aria-describedby="AutoreHelp" placeholder="Inserisci l'autore del libro">
+                            <input class="form-control" id="InputAutore" type="text" aria-describedby="AutoreHelp" placeholder="Inserisci l'autore del libro">
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
                     <div class="form-row">
                         <div class="col-md-6 mt-3">
                             <label for="Edizione">Edizione*</label>
-                            <input class="form-control" id="Edizione" type="text" aria-describedby="EdizioneHelp" placeholder="Inserisci l'edizione">
+                            <input class="form-control" id="InputEdizione" type="text" aria-describedby="EdizioneHelp" placeholder="Inserisci l'edizione">
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
-                <a class="btn btn-primary btn-block" href="Aggiungi_libro.php">Aggiungi</a>
+                <a id="aggiungi_libro" class="btn btn-primary btn-block"">Aggiungi</a>
             </div>
         </div>
         <div class = "form-group">
@@ -98,9 +98,8 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
 <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
-</body>
 
 <script src="../../js/carica_libro.js"></script>
-<script src="../../js/materie.js"></script>
+<script src="../../js/materie_docente.js"></script>
 
 </html>
