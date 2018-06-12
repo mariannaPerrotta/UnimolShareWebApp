@@ -48,7 +48,7 @@ function MyClick(materia) {
                             '                                    <label for="titololibro">Autore:' + ' ' + array[i].autore + '</label>' + '<br>' +
                             '                                    <label for="titololibro">Casa Editrice:' + ' ' + array[i].casa_editrice + '</label>' + '<br>' +
                             '                                    <label for="titololibro">Edizione:' + ' ' + array[i].edizione + '</label>' + '<br>' +
-                            '                                    <a for="titololibro" >Link:' + ' ' + '<a href="' + array[i].link + '">' + array[i].link + '</a></label>' + '<br>' +
+                            '                                    <label for="titololibro" >Link:' + ' ' + '<a target="_blank" href="' + array[i].link + '">' + array[i].link + '</a></label>' + '<br>' +
 
                             '                                </div>' +
                             '                                </div>' +
