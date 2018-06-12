@@ -31,7 +31,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
                     <div class="form-row">
                         <div class="col-md-6">
 
-                            <input  type="file" name="myFile" id="myFile">
+                            <input class="form-control-file" type="file" id="file" name="file">
                         </div>
                     </div>
                 </div>

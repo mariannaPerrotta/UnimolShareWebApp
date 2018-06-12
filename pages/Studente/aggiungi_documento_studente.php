@@ -29,7 +29,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col-md-6">
-                                <input  type="file" name="myFile" id="myFile" >
+                                <input class="form-control-file" type="file" id="file" name="file">
                             </div>
                         </div>
                     </div>
