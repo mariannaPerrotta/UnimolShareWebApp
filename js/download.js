@@ -1,4 +1,5 @@
 function Download(id) {
+
     $.ajax({
         url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/downloadDocumento",
 
@@ -11,10 +12,10 @@ function Download(id) {
         success: function (data) {
 
             if (JSON.stringify(data.error) === 'false') {
-                var card = id;
-                if(data.link[0].id!=null) {
+                link = (data.link[0].id);
+                if(link !=null) {
                     window.open(
-                        data.link[0].id,
+                        link,
                         '_blank'
                     );
                 }

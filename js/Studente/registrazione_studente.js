@@ -51,7 +51,7 @@ document.getElementById("btnregister-studente").onclick = function () {
                     success: function (data) {
 
                         if (data.error === false) {
-                            alert("Registrazione effettuata");
+                            alert("Abbiamo inviato un link di conferma alla tua email");
                             window.location.assign('index.php')// serve per cambiare pagina
 
                         }
