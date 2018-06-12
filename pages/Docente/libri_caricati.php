@@ -24,4 +24,19 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
 
 <div class="content-wrapper" style="background: unset; padding-left:2%; padding-right: 2%" id="card_libri_caricati">
 
+</div>
+
+
+<!-- Bootstrap core JavaScript-->
+<script src="../../vendor/jquery/jquery.min.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Core plugin JavaScript-->
+<script src="../../js/rimuovi_libro.js"></script>
+<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<script src="../../js/visualizza_libri_caricati.js"></script>
+<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
 </html>
+

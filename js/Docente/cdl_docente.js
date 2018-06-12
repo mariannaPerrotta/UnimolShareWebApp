@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-
-
     $.ajax({
         url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzatutticdl",
 

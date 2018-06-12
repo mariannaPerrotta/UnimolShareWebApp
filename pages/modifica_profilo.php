@@ -102,7 +102,7 @@ if (!isset($_SESSION['utente']['tipo'])) {
 
 <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<script src="../../js/modifica_profilo.js"></script>
+<script src="../js/modifica_profilo.js"></script>
 
 <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
