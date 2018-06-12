@@ -38,6 +38,4 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-</div>
-
 </html>
