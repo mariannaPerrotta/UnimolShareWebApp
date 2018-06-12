@@ -99,6 +99,7 @@ document.getElementById("btnregisterdoc").onclick = function () {
                                 success: function (data) {
 
                                     alert("Abbiamo inviato un link di conferma alla tua email");
+                                    window.location.assign('index_doc.php')// serve per cambiare pagina
 
                                 },
 

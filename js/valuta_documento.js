@@ -19,8 +19,6 @@ function valuta(id_button) {
 
             success: function (data) {
                matricola_stud= data;
-
-
             },
             error: function (err) {
 
@@ -34,7 +32,6 @@ function valuta(id_button) {
 
         }
         );
-
         return matricola_stud;
     }
 
