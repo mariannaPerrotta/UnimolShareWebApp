@@ -1,6 +1,6 @@
 document.getElementById("aggiungi_libro").onclick = function () {
 
-    var Matricola = $('#Matricola').val();
+    var Matricola = $('#InputMatricola').val();
 
     var Titolo = $("#InputTitolo").val();
 
