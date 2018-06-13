@@ -18,25 +18,24 @@ document.getElementById("btnregister-studente").onclick = function () {
 
     var conferma_password =$("#ConfirmPassword").val();
 
-    if(password.length< 12){
-        alert("Password non valida. Inserisci password di almeno 12 caratteri")
+    if(password.length< 8){
+        alert("Password non valida. Inserisci password di almeno 8 caratteri")
     }
-
 
 
     else {
 
 
-
-        if(password===conferma_password){
-            var data = {
-                matricola: matricola,
-                nome: nome,
-                cognome: cognome,
-                email: email,
-                password: password,
-                cds:cdl,
-            };
+        if (nome != '' && cognome != '' && email != '' && matricola != '' && cdl != '' && password != '' && conferma_password != '') {
+            if (password === conferma_password) {
+                var data = {
+                    matricola: matricola,
+                    nome: nome,
+                    cognome: cognome,
+                    email: email,
+                    password: password,
+                    cds: cdl,
+                };
 
                 $.ajax({
 
@@ -55,7 +54,7 @@ document.getElementById("btnregister-studente").onclick = function () {
                             window.location.assign('index.php')// serve per cambiare pagina
 
                         }
-                        else{
+                        else {
                             alert(data.message);
                         }
 
@@ -77,12 +76,16 @@ document.getElementById("btnregister-studente").onclick = function () {
             }
 
 
+            else {
+                alert("Le password non coincidono");
+            }
 
-
-        else{
-            alert("Le password non coincidono");
         }
-
+        else{
+              alert("Campi vuoti");
+        }
     }
+
+
 
 };
