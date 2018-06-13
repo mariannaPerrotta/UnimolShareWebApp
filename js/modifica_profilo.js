@@ -8,82 +8,90 @@ function modifica_click() {
     var nuova_password = $('#InputNewPassword').val();
     var tabella = $('#Tabella').val();
 
-    var data = {
-        email: email,
-        password: vecchia_password
-    };
 
-    // qui chiamate il servizio
+    if(vecchia_password!= ''&& nuova_password!=''){
 
-    $.ajax({
 
-        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/login",
+        var data = {
+            email: email,
+            password: vecchia_password
+        };
 
-        type: 'POST',
+        // qui chiamate il servizio
 
-        data: data,
+        $.ajax({
 
-        dataType: "json", //json perchè l'output deve essere un json
+            url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/login",
 
-        success: function (data) {
+            type: 'POST',
 
-            if (data.error === false) {
+            data: data,
 
-                //Controllo se i valori non sono cambiati
-                if(nome === "")
-                    nome = $('#InputName').attr('placeholder');
-                if(cognome === "")
-                    cognome = $('#InputSurname').attr('placeholder');
+            dataType: "json", //json perchè l'output deve essere un json
 
-                data = {
+            success: function (data) {
 
-                    matricola: matricola,
-                    nome: nome,
-                    cognome: cognome,
-                    password: nuova_password,
-                    tabella: tabella
+                if (data.error === false) {
 
-                };
+                    //Controllo se i valori non sono cambiati
+                    if (nome === "")
+                        nome = $('#InputName').attr('placeholder');
+                    if (cognome === "")
+                        cognome = $('#InputSurname').attr('placeholder');
 
-                $.ajax({
+                    data = {
 
-                    url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/update",
+                        matricola: matricola,
+                        nome: nome,
+                        cognome: cognome,
+                        password: nuova_password,
+                        tabella: tabella
 
-                    type: 'POST',
+                    };
 
-                    data: data,
+                    $.ajax({
 
-                    dataType: "json", //json perchè l'output deve essere un json
+                        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/update",
 
-                    success: function (data) {
+                        type: 'POST',
 
-                        alert(data.message);
-                        location.reload();
+                        data: data,
 
-                    },
+                        dataType: "json", //json perchè l'output deve essere un json
 
-                    error: function (err) {
+                        success: function (data) {
 
-                        alert("NO " + err.responseJSON.toString());
+                            alert(data.message);
+                            location.reload();
 
-                        console.log(err.responseJSON);
+                        },
 
-                    }
+                        error: function (err) {
 
-                });
+                            alert("NO " + err.responseJSON.toString());
 
-            } else {
-                alert(data.message);
+                            console.log(err.responseJSON);
+
+                        }
+
+                    });
+
+                } else {
+                    alert(data.message);
+                }
+
+            },
+
+            error: function (err) {
+
+                alert("NO " + err.responseJSON.toString());
+
+                console.log(err.responseJSON);
+
             }
-
-        },
-
-        error: function (err) {
-
-            alert("NO " + err.responseJSON.toString());
-
-            console.log(err.responseJSON);
-
-        }
-    });
+        });
+    }
+    else{
+        alert("Campi vuoti");
+    }
 }
