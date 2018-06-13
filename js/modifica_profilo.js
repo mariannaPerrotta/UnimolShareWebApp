@@ -9,89 +9,96 @@ function modifica_click() {
     var tabella = $('#Tabella').val();
 
 
-    if(vecchia_password!= ''&& nuova_password!=''){
+    if(vecchia_password!= ''&& nuova_password!='') {
 
+        if (nuova_password.length < 8) {
+            alert("Password non valida. Inserisci password di almeno 8 caratteri");
+        }
+        else {
 
-        var data = {
-            email: email,
-            password: vecchia_password
-        };
+            var data = {
+                email: email,
+                password: vecchia_password
+            };
 
-        // qui chiamate il servizio
+            // qui chiamate il servizio
 
-        $.ajax({
+            $.ajax({
 
-            url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/login",
+                url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/login",
 
-            type: 'POST',
+                type: 'POST',
 
-            data: data,
+                data: data,
 
-            dataType: "json", //json perchè l'output deve essere un json
+                dataType: "json", //json perchè l'output deve essere un json
 
-            success: function (data) {
+                success: function (data) {
 
-                if (data.error === false) {
+                    if (data.error === false) {
 
-                    //Controllo se i valori non sono cambiati
-                    if (nome === "")
-                        nome = $('#InputName').attr('placeholder');
-                    if (cognome === "")
-                        cognome = $('#InputSurname').attr('placeholder');
+                        //Controllo se i valori non sono cambiati
+                        if (nome === "")
+                            nome = $('#InputName').attr('placeholder');
+                        if (cognome === "")
+                            cognome = $('#InputSurname').attr('placeholder');
 
-                    data = {
+                        data = {
 
-                        matricola: matricola,
-                        nome: nome,
-                        cognome: cognome,
-                        password: nuova_password,
-                        tabella: tabella
+                            matricola: matricola,
+                            nome: nome,
+                            cognome: cognome,
+                            password: nuova_password,
+                            tabella: tabella
 
-                    };
+                        };
 
-                    $.ajax({
+                        $.ajax({
 
-                        url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/update",
+                            url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/update",
 
-                        type: 'POST',
+                            type: 'POST',
 
-                        data: data,
+                            data: data,
 
-                        dataType: "json", //json perchè l'output deve essere un json
+                            dataType: "json", //json perchè l'output deve essere un json
 
-                        success: function (data) {
+                            success: function (data) {
 
-                            alert(data.message);
-                            location.reload();
+                                alert(data.message);
+                                location.reload();
 
-                        },
+                            },
 
-                        error: function (err) {
+                            error: function (err) {
 
-                            alert("NO " + err.responseJSON.toString());
+                                alert("NO " + err.responseJSON.toString());
 
-                            console.log(err.responseJSON);
+                                console.log(err.responseJSON);
 
-                        }
+                            }
 
-                    });
+                        });
 
-                } else {
-                    alert(data.message);
+                    } else {
+                        alert(data.message);
+                    }
+
+                },
+
+                error: function (err) {
+
+                    alert("NO " + err.responseJSON.toString());
+
+                    console.log(err.responseJSON);
+
                 }
-
-            },
-
-            error: function (err) {
-
-                alert("NO " + err.responseJSON.toString());
-
-                console.log(err.responseJSON);
-
-            }
-        });
+            });
+        }
     }
-    else{
-        alert("Campi vuoti");
-    }
+    else
+        {
+            alert("Campi vuoti");
+        }
+
 }
