@@ -6,6 +6,7 @@
  * Time: 21:58
  */
     require "FtpUploader.php";
+    require "CurlFtpUploader.php";
 
     //Indirizzo
     $pdfPath = "../FILETMP/";
@@ -30,7 +31,8 @@
                     $cod_mat = $_POST['cod_mat'];
 
                     //Trasferisco il file nel server del backend
-                    $ftp = new FtpUploader();
+                    //$ftp = new FtpUploader();
+                    $ftp = new CurlFtpUploader();
                     echo ($ftp->upload($fileName, $cod_doc, $cod_stud, $cod_mat));
 
                 } else {
