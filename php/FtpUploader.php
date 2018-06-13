@@ -58,7 +58,8 @@ class FtpUploader
             // controllo se upload andato a buon fine
             if (!$upload) {
                 $response = "Si è verificato un errore durante il caricamento!";
-            } else {
+            }
+            else {
 
                 $link = $http_server.$ftpFolder.$fileName.".pdf";
                 //Aggiorno il link nel db tramite servizio REST
