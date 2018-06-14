@@ -31,7 +31,7 @@ document.getElementById("seleziona_cdl").onclick = function () {
                     }
                     array.push(cdl);
 
-                    if(document.getElementById("seleziona_cdl").options.length<2) {
+                    if(document.getElementById("seleziona_cdl")) {
 
                         $('#seleziona_cdl').append(
                             '<option id="' + array[i].nome + '"  name="' + array[i].nome + '" value="' + array[i].id + '"> ' + array[i].nome + '  </option>'

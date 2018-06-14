@@ -1,7 +1,5 @@
 document.getElementById("aggiungi").onclick = function () {
 
-    alert("Caricamento in corso. Attendere, l'operazione potrebbe richiedere alcuni minuti...");
-
     var urlUploder = "../../php/LocalUploader.php";
     var titolo = document.getElementById("InputTitolo").value;
     var tipo = document.getElementById("InputTipo").value;
@@ -10,6 +8,8 @@ document.getElementById("aggiungi").onclick = function () {
     var cod_stud = "";
     var cod_mat =  document.getElementById("btnmaterie").value; //Da sistemare
     var formData = new FormData($("#form-carica").get(0));
+
+    alert("Caricamento in corso. L'operazione potrebbe richiedere alcuni minuti...");
 
     //seleziona se è studente o docente
     (tipo === "docente") ? (cod_doc=matricola) : (cod_stud=matricola);
