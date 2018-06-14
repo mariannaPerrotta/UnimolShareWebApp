@@ -51,7 +51,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
         <div class="row">
             <!-- Single Special Area -->
             <div class="col-12 col-md-4">
-                <div button class="single-special text-center wow fadeInUp" data-wow-delay="0.2s"  onclick="window.open('index.php?action=documenti_caricati');"</button>
+                <div button class="single-special text-center wow fadeInUp" data-wow-delay="0.2s"  onclick="window.location.assign('index.php?action=documenti_caricati');"</button>
                     <div class="single-icon">
                         <i class="fa fa-fw fa-file" aria-hidden="true" style="color: #17a2b8"></i>
                     </div>
@@ -62,7 +62,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
             </div>
             <!-- Single Special Area -->
             <div class="col-12 col-md-4">
-                <div button class="single-special text-center wow fadeInUp" data-wow-delay="0.2s"  onclick="window.open('index.php?action=annunciCaricati');"</button>
+                <div button class="single-special text-center wow fadeInUp" data-wow-delay="0.2s"  onclick="window.location.assign('index.php?action=annunciCaricati');"</button>
                     <div class="single-icon">
                         <i class="fa fa-fw fa-paper-plane" aria-hidden="true" style="color: #17a2b8"></i>
                     </div>
