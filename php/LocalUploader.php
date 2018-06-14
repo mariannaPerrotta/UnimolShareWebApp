@@ -25,7 +25,18 @@
             } else {
                 //Se il file è corretto lo carico in una cartella locale temporanea
                 $fileName = $_POST['titolo'];
-                $result = move_uploaded_file($_FILES['file']['tmp_name'], $pdfPath . $fileName .".pdf");
+
+                //Automatic rename file if it exist
+                $i = 0;
+                $fileNameOld = $fileName;
+                do {
+                    if($i > 0)
+                        $fileName = $fileNameOld."_".$i;
+                    $i++;
+                }// Test if file is in the ftp_nlist array
+                while (in_array($fileName.".pdf", scandir($pdfPath)));
+
+                $result = move_uploaded_file($_FILES['file']['tmp_name'], $pdfPath . $fileName.".pdf");
                 if ($result == 1) {
 
                     //Se è andato a buon fine carico il file online
@@ -33,7 +44,7 @@
                     $cod_stud = $_POST['cod_stud'];
                     $cod_mat = $_POST['cod_mat'];
 
-                    $link = $http_server . $pdfExternalPath . $fileName . ".pdf";
+                    $link = $http_server . $pdfExternalPath . $fileName.".pdf";
                     //Aggiorno il link nel db tramite servizio REST
                     $urlRest = 'http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricadocumento';
                     if ($cod_doc !== "") {

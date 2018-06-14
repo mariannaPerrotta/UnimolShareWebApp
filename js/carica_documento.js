@@ -1,5 +1,7 @@
 document.getElementById("aggiungi").onclick = function () {
 
+    alert("Caricamento in corso. Attendere, l'operazione potrebbe richiedere alcuni minuti...");
+
     var urlUploder = "../../php/LocalUploader.php";
     var titolo = document.getElementById("InputTitolo").value;
     var tipo = document.getElementById("InputTipo").value;
