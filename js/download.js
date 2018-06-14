@@ -21,7 +21,7 @@ function Download(id) {
 
             
             } else {
-                alert("Errore rimozione");
+                alert("Impossibile aprire il link");
             }
         },
         error: function (err) {
