@@ -33,6 +33,7 @@ document.getElementById("seleziona_cdl").onclick = function () {
 
                     if(document.getElementById("seleziona_cdl")) {
 
+
                         $('#seleziona_cdl').append(
                             '<option id="' + array[i].nome + '"  name="' + array[i].nome + '" value="' + array[i].id + '"> ' + array[i].nome + '  </option>'
                         );

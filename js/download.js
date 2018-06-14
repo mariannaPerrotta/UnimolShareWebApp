@@ -1,7 +1,5 @@
 function Download(id) {
 
-    alert('test');
-
     $.ajax({
         url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/downloadDocumento",
 
