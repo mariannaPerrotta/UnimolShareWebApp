@@ -10,7 +10,10 @@
 
     //Indirizzo
     $pdfPath = "../FILETMP/";
+    $pdfExternalPath = "/FILETMP/";
     $maxSize = 102400; //MAX 100 MB
+
+    $http_server = "http://unimolsharewebapp.altervista.org";
 
     //Controlli sul file
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -22,7 +25,7 @@
             } else {
                 //Se il file è corretto lo carico in una cartella locale temporanea
                 $fileName = $_POST['titolo'];
-                $result = move_uploaded_file($_FILES['file']['tmp_name'], $pdfPath . $fileName);
+                $result = move_uploaded_file($_FILES['file']['tmp_name'], $pdfPath . $fileName .".pdf");
                 if ($result == 1) {
 
                     //Se è andato a buon fine carico il file online
@@ -30,10 +33,46 @@
                     $cod_stud = $_POST['cod_stud'];
                     $cod_mat = $_POST['cod_mat'];
 
+                    $link = $http_server . $pdfExternalPath . $fileName . ".pdf";
+                    //Aggiorno il link nel db tramite servizio REST
+                    $urlRest = 'http://unimolshare.altervista.org/logic/UnimolShare/public/index.php/caricadocumento';
+                    if ($cod_doc !== "") {
+                        $data = array(
+                            'titolo' => $fileName,
+                            'codice_docente' => $cod_doc,
+                            'codice_materia' => $cod_mat,
+                            'link' => $link
+                        );
+                    } else {
+                        $data = array(
+                            'titolo' => $fileName,
+                            'codice_studente' => $cod_stud,
+                            'codice_materia' => $cod_mat,
+                            'link' => $link
+                        );
+                    }
+
+                    $options = array(
+                        'http' => array(
+                            'method' => 'POST',
+                            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+                            'content' => http_build_query($data)
+                        )
+                    );
+                    $context = stream_context_create($options);
+                    $response = file_get_contents($urlRest, false, $context);
+
+                    if ((json_decode($response))->{'error'}) {
+                        $response = "Si è verificato un errore durante l'aggiornamento del DB!";
+                    } else {
+                        $response = (json_decode($response))->{'message'};
+                    }
+
+                    echo $response;
+
                     //Trasferisco il file nel server del backend
                     //$ftp = new FtpUploader();
-                    $ftp = new CurlFtpUploader();
-                    echo ($ftp->upload($fileName, $cod_doc, $cod_stud, $cod_mat));
+                    //echo($ftp->upload($fileName, $cod_doc, $cod_stud, $cod_mat));
 
                 } else {
                     echo 'Si è verficato un errore';

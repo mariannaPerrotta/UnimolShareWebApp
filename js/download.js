@@ -1,5 +1,7 @@
 function Download(id) {
 
+    alert('test');
+
     $.ajax({
         url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/downloadDocumento",
 
@@ -23,6 +25,14 @@ function Download(id) {
             } else {
                 alert("Errore rimozione");
             }
+        },
+        error: function (err) {
+
+            alert("NO " + err.responseJSON.toString());
+
+            console.log(err.responseJSON);
+
+
         }
     })
 }

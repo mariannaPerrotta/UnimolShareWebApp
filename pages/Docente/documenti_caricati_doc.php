@@ -31,7 +31,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
 
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<script src="../../js/login.js"></script>
+<script src="../../js/download.js"></script>
 <script src="../../js/rimuovi_documento.js"></script>
 
 <script src="../../js/visualizza_documenti_caricati.js"></script>

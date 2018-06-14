@@ -100,6 +100,6 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <script src="../../js/carica_libro.js"></script>
-<script src="../../js/materie_docente.js"></script>
+<script src="../../js/Docente/materie_docente.js"></script>
 
 </html>
