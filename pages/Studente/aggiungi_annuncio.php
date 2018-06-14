@@ -91,6 +91,11 @@ header("location: ../login.php");
         </div>
     </div>
 </div>
+<script src="../../vendor/jquery/jquery.min.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Core plugin JavaScript-->
+
+<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="../../js/Studente/aggiungi_annuncio.js"></script>
 <script src="../../js/Studente/materie.js"></script>
 </html>
