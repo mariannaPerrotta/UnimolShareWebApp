@@ -23,7 +23,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
 </head>
 
 <body class="bg-dark" style="padding-top: unset">
-<div class="content-wrapper bg-dark">
+<div class="content-wrapper bg-dark" style="padding-right: 2%; padding-left:2%;">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Segnala profilo</div>
         <div class="card-body">

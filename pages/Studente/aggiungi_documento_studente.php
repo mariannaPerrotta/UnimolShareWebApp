@@ -62,6 +62,12 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
             </div>
         </div>
     </div>
+<script src="../../vendor/jquery/jquery.min.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Core plugin JavaScript-->
+
+<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+
     <script src="../../js/visualizza_materie.js"></script>
     <script src="../../js/carica_documento.js"></script>
 <script src="../../js/Studente/materie.js"></script>
