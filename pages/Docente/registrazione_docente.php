@@ -75,7 +75,7 @@ header("location: index_doc.php");
             <form method="POST" id="form">
                 <div class="form-group">
                     <div class="form-row">
-                        <div class="col-md-6" id="cdls">
+                        <div class="col-md-6" id="cdls"    style="max-width: 100%; flex: 100%;" >
                             <label id="corsi_di_laurea"> cdl*</label></div>
                     </div>
                 </div>
