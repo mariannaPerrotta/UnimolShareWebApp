@@ -9,7 +9,6 @@ function modifica_click() {
     var tabella = $('#Tabella').val();
 
 
-    if(vecchia_password!= ''&& nuova_password!='') {
 
         if (nuova_password.length < 8) {
             alert("Password non valida. Inserisci password di almeno 8 caratteri");
@@ -95,10 +94,6 @@ function modifica_click() {
                 }
             });
         }
-    }
-    else
-        {
-            alert("Campi vuoti");
-        }
+
 
 }

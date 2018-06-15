@@ -80,7 +80,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
-                <a id="aggiungi_libro" style="word-break: break-word; white-space:  normal;" class="btn btn-primary btn-block"">Aggiungi</a>
+                <a id="aggiungi_libro" style="word-break: break-word; white-space:  normal; color: white" class="btn btn-primary btn-block"">Aggiungi</a>
             </div>
         </div>
         <div class = "form-group">
