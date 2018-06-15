@@ -41,15 +41,15 @@ $(document).ready(function() {
                             $('#card_documenti_caricati').append(' <div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important" >' +
                                 '                                    <div class="card-body"  >' +
                                 '                                    <form method="POST" style="padding-left: 0.25%" id="'+documenti[i].id+'">' +
-                                '                                    <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="'+documenti[i].id+'_rimuovi" onclick="Rimuovi_documento('+"'"+documenti[i].id+"'"+')">' +
-                                '                                    <i class="fa fa-fw fa-minus-circle"></i> Rimuovi documento</a>' +
+                                '                                    <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%;white-space: normal;word-break: break-word;" id="'+documenti[i].id+'_rimuovi" onclick="Rimuovi_documento('+"'"+documenti[i].id+"'"+')">' +
+                                '                                    <i class="fa fa-fw fa-minus-circle"  ></i> Rimuovi</a>' +
                                 '                                    <div class="form-group mt-4">' +
-                                '                                    <label for="titolodocumento">Titolo documento:' + ' '+ documenti[i].titolo + '</label>' +
+                                '                                    <label for="titolodocumento"  style="white-space: normal;word-break: break-word;">Titolo documento:' + ' '+ documenti[i].titolo + '</label>' +
                                 '                                </div>' +
                                 '                                <div class="form-group">' +
-                                '                                    <label for="materiadocumento">Materia:' + ' ' + documenti[i].materia + '</label>' +
+                                '                                    <label for="materiadocumento" style="white-space: normal;word-break: break-word;">Materia:' + ' ' + documenti[i].materia + '</label>' +
                                 '                                </div>' +
-                                '                                <a class="btn btn-primary btn-block" style="color:white" id="'+documenti[i].id+'_download"  onclick="Download('+"'"+documenti[i].id+"'"+')">Download documento</a>' +
+                                '                                <a class="btn btn-primary btn-block" style="color:white; white-space: normal;word-break: break-word;" id="'+documenti[i].id+'_download"  onclick="Download('+"'"+documenti[i].id+"'"+')">Download documento</a>' +
                                 '\n' +
                                 '                                </form>' +
                                 '                                </div>' +

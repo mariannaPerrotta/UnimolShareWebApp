@@ -36,11 +36,11 @@ if (($_SESSION['utente']['tipo'])== "docente") {
         <div class="card-body">
             <form method="POST">
                 <div class="form-group">
-                    <label for="InputEmail">Indirizzo email</label>
+                    <label for="InputEmail" style="white-space: normal;word-break: break-word; ">Indirizzo email</label>
                     <input class="form-control" id="InputEmail" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
                 </div>
                 <div class="form-group">
-                    <label for="InputPassword">Password</label>
+                    <label for="InputPassword" style="white-space: normal;word-break: break-word; ">Password</label>
                     <input class="form-control" id="InputPassword" type="password" placeholder="Password">
                 </div>
 <!--                <div class="form-group">-->
@@ -49,7 +49,7 @@ if (($_SESSION['utente']['tipo'])== "docente") {
 <!--                            <input class="form-check-input" type="checkbox"> Memorizza password</label>-->
 <!--                    </div>-->
 <!--                </div>-->
-                <a class="btn btn-primary btn-block" style="color:white" id="btnlogin">Login</a>
+                <a class="btn btn-primary btn-block" style="color:white; white-space: normal;word-break: break-word;" id="btnlogin">Login</a>
 
             </form>
             <div class="text-center">

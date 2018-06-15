@@ -38,18 +38,18 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputTitolo">Titolo</label>
+                            <label for="InputTitolo"style="word-break: break-word; white-space:  normal;">Titolo</label>
                             <input class="form-control" id="InputTitolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci titolo">
-                            <input id="InputMatricola" type="hidden" value="<?php echo ($_SESSION['utente']['matr']);?>">
-                            <input id="InputTipo" type="hidden" value="<?php echo ($_SESSION['utente']['tipo']);?>">
+                            <input id="InputMatricola" style="word-break: break-word; white-space:  normal;" type="hidden" value="<?php echo ($_SESSION['utente']['matr']);?>">
+                            <input id="InputTipo" style="word-break: break-word; white-space:  normal;" type="hidden" value="<?php echo ($_SESSION['utente']['tipo']);?>">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="lista_materie">Materia</label>
-                            <select name="Materia" id="btnmaterie" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
+                            <label style="padding-top: 15px;word-break: break-word; white-space:  normal;padding-bottom: 15px;padding-right: 2%" for="lista_materie">Materia</label>
+                            <select name="Materia" id="btnmaterie" style="height: auto; width: 100%;>
                             </select>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
                 <div class="col-md-12">
-                    <a id = "aggiungi" class="btn btn-primary btn-block" href="#">Aggiungi</a>
+                    <a id = "aggiungi"  style="word-break: break-word; white-space:  normal;"  class="btn btn-primary btn-block" href="#">Aggiungi</a>
                 </div>
             </div>
         </div>

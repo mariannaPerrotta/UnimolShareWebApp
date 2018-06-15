@@ -31,12 +31,12 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputNome">Nome*</label>
+                            <label for="InputNome" style="white-space: normal;word-break: break-word; ">Nome*</label>
                             <input class="form-control" id="InputNome" type="text" aria-describedby="NomeHelp"
                                    placeholder="Inserisci nome">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputCognome">Cognome*</label>
+                            <label for="InputCognome" style="white-space: normal;word-break: break-word; ">Cognome*</label>
                             <input class="form-control" id="InputCognome" type="text" aria-describedby="CognomeHelp"
                                    placeholder="Inserisci cognome">
                         </div>
@@ -44,7 +44,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
                 </div>
                 <div class="form-group">
                     <div class="form-row">
-                        <label for="InputMotivo">Motivo della segnalazione*</label>
+                        <label for="InputMotivo" style="white-space: normal;word-break: break-word; ">Motivo della segnalazione*</label>
                         <input textarea class="form-control" id="InputMotivo" type="text" aria-describedby="MotivoHelp"
                                   placeholder="Inserisci il motivo della segnalazione"
                                   style="padding-bottom:200px; word-break: break-all;">
@@ -54,12 +54,12 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputContatto">Contatto da segnalare</label>
+                            <label for="InputContatto" style="white-space: normal;word-break: break-word; ">Contatto da segnalare</label>
                             <input class="form-control" id="InputContatto" type="text" aria-describedby="ContattoHelp"
                                    placeholder="Inserisci contatto">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputEmail">Email da segnalare</label>
+                            <label for="InputEmail" style="white-space: normal;word-break: break-word; ">Email da segnalare</label>
                             <input class="form-control" id="InputEmail" type="text" aria-describedby=EmailHelp"
                                    placeholder="Inserisci email">
                         </div>
@@ -68,12 +68,12 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
         </div>
         <div class="form-group">
             <div class="form-row" style="margin-right: 25px; margin-left: 25px;">
-                <button type="button" class="btn btn-primary btn-block" id="invia">Invia</button>
+                <button style="white-space: normal;word-break: break-word; " type="button" class="btn btn-primary btn-block" id="invia">Invia</button>
             </div>
         </div>
         <div class="form-group">
             <div class="form-row" style="margin-right: 25px; margin-left: 25px; color: #bd2130">
-                <a>* campi obbligatori</a>
+                <a style="white-space: normal;word-break: break-word; ">* campi obbligatori</a>
             </div>
         </div>
 

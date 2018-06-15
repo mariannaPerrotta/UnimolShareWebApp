@@ -31,7 +31,7 @@ if (!isset($_SESSION['utente']['tipo'])) {
                     <div class="form-group" style="display: none">
                         <div class="form-row">
                             <div class="col-md-6">
-                                <label for="InputName">Email</label>
+                                <label for="InputName" style="white-space: normal;word-break: break-word;">Email</label>
                                 <input class="form-control" id="Email" type="text" value="<?php echo $_SESSION['utente']['email']?>">
                             </div>
                         </div>
@@ -39,7 +39,7 @@ if (!isset($_SESSION['utente']['tipo'])) {
                     <div class="form-group" style="display: none">
                         <div class="form-row">
                             <div class="col-md-6">
-                                <label for="InputName">Matricola</label>
+                                <label for="InputName" style="white-space: normal;word-break: break-word;">Matricola</label>
                                 <input class="form-control" id="Matricola" type="text" value="<?php echo $_SESSION['utente']['matr']?>">
                             </div>
                         </div>
@@ -47,7 +47,7 @@ if (!isset($_SESSION['utente']['tipo'])) {
                     <div class="form-group" style="display: none">
                         <div class="form-row">
                             <div class="col-md-6">
-                                <label for="InputName">Tabella</label>
+                                <label for="InputName" style="white-space: normal;word-break: break-word;">Tabella</label>
                                 <input class="form-control" id="Tabella" type="text" value="<?php echo $_SESSION['utente']['tipo']?>">
                             </div>
                         </div>
@@ -55,7 +55,7 @@ if (!isset($_SESSION['utente']['tipo'])) {
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col-md-6">
-                                <label for="InputName">Nome</label>
+                                <label for="InputName" style="white-space: normal;word-break: break-word;">Nome</label>
                                 <input readonly class="form-control" id="InputName" type="text" aria-describedby="nameHelp" placeholder="<?php echo $_SESSION['utente']['nome']?>">
                             </div>
                         </div>
@@ -63,7 +63,7 @@ if (!isset($_SESSION['utente']['tipo'])) {
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col-md-6">
-                                <label for="InputSurname">Cognome</label>
+                                <label for="InputSurname" style="white-space: normal;word-break: break-word;">Cognome</label>
                                 <input readonly class="form-control" id="InputSurname" type="text" aria-describedby="surnameHelp" placeholder="<?php echo $_SESSION['utente']['cognome']?>">
                             </div>
                         </div>
@@ -71,7 +71,7 @@ if (!isset($_SESSION['utente']['tipo'])) {
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col-md-6">
-                                <label for="InputNewPassword">Vecchia password</label>
+                                <label for="InputNewPassword" style="white-space: normal;word-break: break-word;">Vecchia password</label>
                                 <input class="form-control" id="InputOldPassword" type="password" aria-describedby="newpasswordHelp" placeholder="Inserisci la vecchia password">
                             </div>
                         </div>
@@ -79,15 +79,15 @@ if (!isset($_SESSION['utente']['tipo'])) {
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col-md-6">
-                                <label for="InputOldPassword">Nuova password</label>
-                                <input class="form-control" id="InputNewPassword" type="password" aria-describedby="oldpasswordHelp" placeholder="Inserisci la nuova password">
+                                <label for="InputOldPassword" style="white-space: normal;word-break: break-word;">Nuova password</label>
+                                <input class="form-control" id="InputNewPassword" type="password" aria-describedby="oldpasswordHelp"  style="white-space: normal;word-break: break-word;" placeholder="Inserisci la nuova password">
                             </div>
                         </div>
                     </div>
                     <div class = "form-group">
                         <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
                             <div class="col-md-12">
-                                <button type="button" id = "modifica" class="btn btn-primary btn-block" onclick="modifica_click()">Modifica</button>
+                                <button type="button" id = "modifica"  style="white-space: normal;word-break: break-word;"  class="btn btn-primary btn-block" onclick="modifica_click()">Modifica</button>
                             </div>
                         </div>
                     </div>

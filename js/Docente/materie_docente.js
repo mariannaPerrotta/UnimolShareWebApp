@@ -28,7 +28,7 @@ document.getElementById("btnmaterie").onclick = function () {
                         };
                         array.push(materia);
 
-                        $('#btnmaterie').append('<option value="' + array[i].id + '" name="' + array[i].nome + '" id="Materia"> ' + array[i].nome + ' </option>'
+                        $('#btnmaterie').append('<option style=" word-break: break-word; white-space:  normal;" value="' + array[i].id + '" name="' + array[i].nome + '" id="Materia"> ' + array[i].nome + ' </option>'
                         );
                     }
 

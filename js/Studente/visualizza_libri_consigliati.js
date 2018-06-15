@@ -43,12 +43,12 @@ function MyClick(materia) {
                             '                                    <div class="card-body">' +
                             '                                    <form method="POST" style="padding-left: 0.25%">' +
                             '                                    <div class="form-group mt-4">' +
-                            '                                    <label for="titololibro">Titolo:' + ' ' + array[i].titolo + '</label>\n' + '<br>' +
+                            '                                    <label for="titololibro" style="white-space: normal;word-break: break-word;">Titolo:' + ' ' + array[i].titolo + '</label>\n' + '<br>' +
 
-                            '                                    <label for="titololibro">Autore:' + ' ' + array[i].autore + '</label>' + '<br>' +
-                            '                                    <label for="titololibro">Casa Editrice:' + ' ' + array[i].casa_editrice + '</label>' + '<br>' +
-                            '                                    <label for="titololibro">Edizione:' + ' ' + array[i].edizione + '</label>' + '<br>' +
-                            '                                    <label for="titololibro" >Link:' + ' ' + '<a target="_blank" href="' + array[i].link + '">' + array[i].link + '</a></label>' + '<br>' +
+                            '                                    <label for="titololibro" style="white-space: normal;word-break: break-word;">Autore:' + ' ' + array[i].autore + '</label>' + '<br>' +
+                            '                                    <label for="titololibro" style="white-space: normal;word-break: break-word;">Casa Editrice:' + ' ' + array[i].casa_editrice + '</label>' + '<br>' +
+                            '                                    <label for="titololibro" style="white-space: normal;word-break: break-word;">Edizione:' + ' ' + array[i].edizione + '</label>' + '<br>' +
+                            '                                    <label for="titololibro"  style="white-space: normal;word-break: break-word;">Link:' + ' ' + '<a target="_blank" href="' + array[i].link + '">' + array[i].link + '</a></label>' + '<br>' +
 
                             '                                </div>' +
                             '                                </div>' +

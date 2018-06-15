@@ -31,11 +31,11 @@ header("location: ../login.php");
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputTitolo">Titolo*</label>
+                            <label for="InputTitolo" style="white-space: normal;word-break: break-word; " >Titolo*</label>
                             <input class="form-control" id="InputTitolo" type="text" aria-describedby="TitoloHelp" placeholder="Inserisci titolo">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputContatto">Contatto</label>
+                            <label for="InputContatto" style="white-space: normal;word-break: break-word; " >Contatto</label>
                             <input class="form-control" id="InputContatto" type="text" aria-describedby="ContattoHelp" placeholder="Inserisci contatto">
                         </div>
                     </div>
@@ -43,11 +43,11 @@ header("location: ../login.php");
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputPrezzo">Prezzo*</label>
+                            <label for="InputPrezzo" style="white-space: normal;word-break: break-word; " >Prezzo*</label>
                             <input class="form-control" id="InputPrezzo" type="text" aria-describedby="PrezzoHelp" placeholder="Inserisci prezzo">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputEdizione">Edizione*</label>
+                            <label for="InputEdizione" style="white-space: normal;word-break: break-word; " >Edizione*</label>
                             <input class="form-control" id="InputEdizione" type="text" aria-describedby="EdizioneHelp" placeholder="Inserisci edizione">
                         </div>
                     </div>
@@ -55,15 +55,15 @@ header("location: ../login.php");
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputCasaEditrice">Casa editrice*</label>
+                            <label for="InputCasaEditrice" style="white-space: normal;word-break: break-word; " >Casa editrice*</label>
                             <input class="form-control" id="InputCasaEditrice" type="text" aria-describedby="CasaEditriceHelp" placeholder="Inserisci casa editrice">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputAutore">Autore*</label>
+                            <label for="InputAutore" style="white-space: normal;word-break: break-word; " >Autore*</label>
                             <input class="form-control" id="InputAutore" type="text" aria-describedby="AutoreHelp" placeholder="Inserisci autore">
                         </div>
                         <div class="col-md-6" style="display: none">
-                            <label for="InputStudente">Autore*</label>
+                            <label for="InputStudente" style="white-space: normal;word-break: break-word; " >Autore*</label>
                             <input class="form-control" id="InputStudente" type="text" value="<?php echo ($_SESSION['utente']['matr'])?>" ">
                         </div>
                     </div>
@@ -71,8 +71,8 @@ header("location: ../login.php");
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="lista_materie">Materia*</label>
-                            <select name="Materia" id="btnmaterie" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
+                            <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%;white-space: normal;word-break: break-word;" for="lista_materie">Materia*</label>
+                            <select name="Materia" id="btnmaterie" style="height: auto; width: 100%;">
                             </select>
                         </div>
                     </div>
@@ -81,12 +81,12 @@ header("location: ../login.php");
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
-                <a id="aggiungi_annuncio" class="btn btn-primary btn-block">Aggiungi</a>
+                <a id="aggiungi_annuncio"  style="white-space: normal;word-break: break-word; color: white" class="btn btn-primary btn-block">Aggiungi</a>
             </div>
         </div>
         <div class = "form-group">
             <div class = "form-row" style="margin-right: 25px; margin-left: 25px; color: #bd2130">
-                <a>* campi obbligatori</a>
+                <a style="white-space: normal;word-break: break-word; ">* campi obbligatori</a>
             </div>
         </div>
     </div>

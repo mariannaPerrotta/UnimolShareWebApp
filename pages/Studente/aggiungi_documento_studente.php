@@ -47,7 +47,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
                         <div class="form-row">
                             <div class="col-md-6">
                                 <label style="padding-top: 15px;padding-bottom: 15px;padding-right: 2%" for="lista_materie">Materia</label>
-                                <select name="Materia" id="btnmaterie" style="height: 27px; border-top-width: 1px; margin-top: 14px;">
+                                <select name="Materia" id="btnmaterie" style="height: auto; width: 100%;">
                                 </select>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
             <div class = "form-group">
                 <div class = "form-row" style="margin-right: 25px; margin-left: 25px;">
                     <div class="col-md-12">
-                        <a id = "aggiungi" class="btn btn-primary btn-block" style="color:white" >Aggiungi</a>
+                        <a id = "aggiungi" class="btn btn-primary btn-block" style="color:white;word-break: break-word; white-space:  normal;" >Aggiungi</a>
                     </div>
                 </div>
             </div>

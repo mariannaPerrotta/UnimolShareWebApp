@@ -46,22 +46,22 @@ $(document).ready(function () {
                             $('#card_annunci').append('<div class="card card-register mx-auto mt-5" style="margin-bottom: 3rem!important">\n' +
                                 '        <div class="card-body" >\n' +
                                 '            <form method="POST" style="padding-left: 5%;">\n' +
-                                '                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="'+annunci[i].id+'_rimuovi" onclick="Rimuovi_Annuncio('+"'"+annunci[i].id+"'"+')">' +
-            '                                    <i class="fa fa-fw fa-minus-circle"></i> Rimuovi</a>' +
+                                '                <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%; white-space: normal;word-break: break-word; " id="'+annunci[i].id+'_rimuovi" onclick="Rimuovi_Annuncio('+"'"+annunci[i].id+"'"+')">' +
+            '                                    <i  class="fa fa-fw fa-minus-circle"></i> Rimuovi</a>' +
             '                                    <div class="form-group mt-3">\n' +
-                                '                    <label for="titololibro">Titolo Libro:' + ' ' + annunci[i].titolo + '</label>\n' +
+                                '                    <label style="white-space: normal;word-break: break-word; "  for="titololibro">Titolo Libro:' + ' ' + annunci[i].titolo + '</label>\n' +
                                 '                </div>\n' +
                                 '                <div class="form-group">\n' +
-                                '                    <label for="autorelibro">Autore:' + ' ' + annunci[i].autore + '</label>\n' +
+                                '                    <label style="white-space: normal;word-break: break-word; " for="autorelibro">Autore:' + ' ' + annunci[i].autore + '</label>\n' +
                                 '                </div>\n' +
                                 '                <div class="form-group">\n' +
-                                '                    <label for="edizionelibro">Materia:' + ' ' + annunci[i].materia + '</label>\n' +
+                                '                    <label style="white-space: normal;word-break: break-word; "  for="edizionelibro">Materia:' + ' ' + annunci[i].materia + '</label>\n' +
                                 '                </div>\n' +
                                 '                <div class="form-group">\n' +
-                                '                    <label for="prezzoannuncio">Prezzo:' + ' ' + annunci[i].prezzo + '</label>\n' +
+                                '                    <label style="white-space: normal;word-break: break-word; " for="prezzoannuncio">Prezzo:' + ' ' + annunci[i].prezzo + '</label>\n' +
                                 '                </div>\n' +
                                 '                <div class="form-group">\n' +
-                                '                    <label for="casaeditrice">Contatto:' + ' ' + annunci[i].contatto + '</label>\n' +
+                                '                    <label style="white-space: normal;word-break: break-word; " for="casaeditrice">Contatto:' + ' ' + annunci[i].contatto + '</label>\n' +
                                 '                </div>\n' +
                                 '            </form>\n' +
                                 '        </div>\n' +

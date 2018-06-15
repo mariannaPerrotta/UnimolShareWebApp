@@ -49,19 +49,19 @@ $(document).ready(function() {
                                 '                                    <div class="card-body"  >' +
 
                                 '                                    <form method="POST" style="padding-left: 0.25%" id="'+libri[i].id+'">' +
-                                '                                    <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;color:white;width: 30%" id="'+libri[i].id+'_rimuovi" onclick="Rimuovi_libro('+"'"+libri[i].id+"'"+')">' +
+                                '                                    <a class="btn btn-primary btn-block ml-auto" style="padding-left: 0%;word-break: break-word; white-space:  normal;color:white;width: 30%" id="'+libri[i].id+'_rimuovi" onclick="Rimuovi_libro('+"'"+libri[i].id+"'"+')">' +
                                 '                                    <i class="fa fa-fw fa-minus-circle"></i> Rimuovi libro</a>' +
                                 '                                    <div class="form-group mt-4">' +
-                                '                                    <label for="titolodocumento">Titolo:' + ' '+ libri[i].titolo + '</label>' +
+                                '                                    <label style=" word-break: break-word; white-space:  normal;" for="titolodocumento">Titolo:' + ' '+ libri[i].titolo + '</label>' +
                                 '                                </div>' +
                                 '                                <div class="form-group">' +
-                                '                                    <label for="materiadocumento">Autore:' + ' ' + libri[i].autore + '</label>' +
+                                '                                    <label style=" word-break: break-word; white-space:  normal;"  for="materiadocumento">Autore:' + ' ' + libri[i].autore + '</label>' +
                                 '                                </div>' +
                                 '                                <div class="form-group">' +
-                                '                                    <label for="materiadocumento">Casa editrice:' + ' ' + libri[i].casa_editrice + '</label>' +
+                                '                                    <label style=" word-break: break-word; white-space:  normal;" for="materiadocumento">Casa editrice:' + ' ' + libri[i].casa_editrice + '</label>' +
                                 '                                </div>' +
                                 '                                <div class="form-group">' +
-                                '                                    <label for="materiadocumento">Edizione:' + ' ' + libri[i].edizione + '</label>' +
+                                '                                    <label style=" word-break: break-word; white-space:  normal;"for="materiadocumento">Edizione:' + ' ' + libri[i].edizione + '</label>' +
                                 '                                </div>' +
                                 '\n' +
                                 '                                </form>' +

@@ -30,7 +30,7 @@ if(!empty($_SESSION['utente']['tipo'])){
 </head>
 
 <body class="bg-dark" style="padding-top: unset">
-<div class="container">
+<div class="content-wrapper bg-dark" style="padding-right: 2%; padding-left:2%;">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Registra studente</div>
         <div class="card-body">
@@ -38,11 +38,11 @@ if(!empty($_SESSION['utente']['tipo'])){
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputName">Nome*</label>
+                            <label for="InputName" style="white-space: normal;word-break: break-word;">Nome*</label>
                             <input class="form-control" id="InputNome1" type="text"  placeholder="Inserisci nome">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputLastName">Cognome*</label>
+                            <label for="InputLastName" style="white-space: normal;word-break: break-word;">Cognome*</label>
                             <input class="form-control" id="InputCognome1" type="text"  placeholder="Inserisci cognome">
                         </div>
                     </div>
@@ -50,11 +50,11 @@ if(!empty($_SESSION['utente']['tipo'])){
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputEmail1">Indirizzo email*</label>
+                            <label for="InputEmail1" style="white-space: normal;word-break: break-word;">Indirizzo email*</label>
                             <input class="form-control" id="InputEmail1" type="email"  placeholder="Inserisci email">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputMatricola">Matricola*</label>
+                            <label for="InputMatricola" style="white-space: normal;word-break: break-word;">Matricola*</label>
                             <input class="form-control" id="InputMatricola1"  placeholder="Inserisci matricola">
                         </div>
                     </div>
@@ -62,7 +62,7 @@ if(!empty($_SESSION['utente']['tipo'])){
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputCDL">Corso di laurea*</label>
+                            <label for="InputCDL" style="white-space: normal;word-break: break-word;">Corso di laurea*</label>
                             <select id="seleziona_cdl">
 
                             </select>
@@ -74,11 +74,11 @@ if(!empty($_SESSION['utente']['tipo'])){
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputPassword1">Password*</label>
+                            <label for="InputPassword1" style="white-space: normal;word-break: break-word;">Password*</label>
                             <input class="form-control" id="InputPassword1" type="password" placeholder="Password">
                         </div>
                         <div class="col-md-6">
-                            <label for="ConfirmPassword">Conferma password*</label>
+                            <label for="ConfirmPassword" style="white-space: normal;word-break: break-word;">Conferma password*</label>
                             <input class="form-control" id="ConfirmPassword" type="password" placeholder="Conferma password">
                         </div>
                     </div>
@@ -86,13 +86,13 @@ if(!empty($_SESSION['utente']['tipo'])){
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label style="color: red">Campi obbligatori*</label>
+                            <label style="color: red; white-space: normal;word-break: break-word;">Campi obbligatori*</label>
 
                         </div>
 
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" id="btnregister-studente" style="color:white">Registrati come studente</a>
+                <a class="btn btn-primary btn-block" id="btnregister-studente" style="color:white ;white-space: normal;word-break: break-word;">Registrati come studente</a>
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="../login.php">Login</a>

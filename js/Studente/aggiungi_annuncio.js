@@ -14,42 +14,13 @@ document.getElementById("aggiungi_annuncio").onclick = function () {
 
     var Cod_Studente=$("#InputStudente").val();
 
-    var Materia = $('#btnmaterie').find(":selected").text();
+    var Materia =document.getElementById("btnmaterie").value;
 
-    var tmp = "";
-    for(var i = 0; i < Materia.length; i++) {
-        var current = Materia[i];
-        if(current !== ' ') {
-            // Check the element has no children && that it is not empty
-            tmp = tmp + current;
-        }
-    }
-    Materia = tmp;
-
-    var data = {
-
-        materia: Materia
-
-    };
 
     if((Titolo === "") || (Prezzo === "") || (Edizione === "") || (CasaEditrice === "") || (Autore === "") || (Materia === "")) {
         alert("Riempi tutti i campi obbligatori");
     }
     else {
-
-        $.ajax({
-
-            url: "http://www.unimolshare.altervista.org/logic/UnimolShare/public/index.php/visualizzaidmateriapernome",
-
-            type: 'POST',
-
-            data: data,
-
-            dataType: "json",
-
-            success: function (data) {
-
-                var id = data.id[0].id;
 
                 newData = {
 
@@ -67,11 +38,10 @@ document.getElementById("aggiungi_annuncio").onclick = function () {
 
                     autore: Autore,
 
-                    cod_materia: id
+                    cod_materia: Materia
 
                 };
 
-                if (!data.error) {
 
                     $.ajax({
 
@@ -96,17 +66,10 @@ document.getElementById("aggiungi_annuncio").onclick = function () {
                         }
 
                     });
-                } else {
-                    alert(data.message);
-                }
-            },
 
-            error: function (err) {
-
-                alert("NO " + err.responseJSON.toString());
-                console.log(err.responseJSON);
             }
-        });
-    }
+
+
+
 
 };

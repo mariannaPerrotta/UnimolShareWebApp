@@ -30,7 +30,7 @@ header("location: index_doc.php");
 </head>
 
 <body class="bg-dark" style="padding-top: unset">
-<div class="container">
+<div class="content-wrapper bg-dark" style="padding-right: 2%; padding-left:2%;">
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Registra docente</div>
         <div class="card-body">
@@ -38,11 +38,11 @@ header("location: index_doc.php");
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputNome">Nome*</label>
+                            <label for="InputNome" style="white-space: normal;word-break: break-word;">Nome*</label>
                             <input class="form-control" id="InputNome" type="text" aria-describedby="nameHelp" placeholder="Inserisci nome">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputCognome">Cognome*</label>
+                            <label for="InputCognome" style="white-space: normal;word-break: break-word;">Cognome*</label>
                             <input class="form-control" id="InputCognome" type="text" aria-describedby="nameHelp" placeholder="Inserisci cognome">
                         </div>
                     </div>
@@ -50,11 +50,11 @@ header("location: index_doc.php");
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputEmail">Indirizzo email*</label>
+                            <label for="InputEmail" style="white-space: normal;word-break: break-word;">Indirizzo email*</label>
                             <input class="form-control" id="InputEmail" type="email" aria-describedby="emailHelp" placeholder="Inserisci email">
                         </div>
                         <div class="col-md-6">
-                            <label for="InputMatricola">Matricola*</label>
+                            <label for="InputMatricola" style="white-space: normal;word-break: break-word;">Matricola*</label>
                             <input class="form-control" id="InputMatricola" type="text" aria-describedby="matricolaHelp" placeholder="Inserisci matricola">
                         </div>
                     </div>
@@ -62,11 +62,11 @@ header("location: index_doc.php");
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="InputPassword">Password*</label>
+                            <label for="InputPassword" style="white-space: normal;word-break: break-word;">Password*</label>
                             <input class="form-control" id="InputPassword" type="password" placeholder="Password">
                         </div>
                         <div class="col-md-6">
-                            <label for="ConfirmPassword">Conferma password*</label>
+                            <label for="ConfirmPassword" style="white-space: normal;word-break: break-word;">Conferma password*</label>
                             <input class="form-control" id="ConfirmPassword" type="password" placeholder="Conferma password">
                         </div>
                     </div>
@@ -76,19 +76,19 @@ header("location: index_doc.php");
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6" id="cdls"    style="max-width: 100%; flex: 100%;" >
-                            <label id="corsi_di_laurea"> cdl*</label></div>
+                            <label id="corsi_di_laurea" style="white-space: normal;word-break: break-word;"> cdl*</label></div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label style="color: red">Campi obbligatori*</label>
+                            <label style="color: red; white-space: normal;word-break: break-word;">Campi obbligatori*</label>
 
                         </div>
 
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary btn-block" id="btnregisterdoc">Registrati come docente</button>
+                <button type="button" class="btn btn-primary btn-block" style="white-space: normal;word-break: break-word;"id="btnregisterdoc">Registrati come docente</button>
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="../login.php">Login</a>

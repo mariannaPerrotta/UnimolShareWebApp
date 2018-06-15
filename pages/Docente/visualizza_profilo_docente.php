@@ -30,17 +30,17 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
                 <a class="btn btn-primary btn-block ml-auto" href="index_doc.php?action=modifica_profilo" style="padding-left: 0%;color:white;width: 30%"
                    id="btnmodificaprofilo">
                     <i class="fa fa-fw fa-pencil-square-o"> </i>
-                    <label for="modificaprofilodoc" style="padding-left: auto" >Modifica</label>
+                    <label for="modificaprofilodoc" style="padding-left: auto; word-break: break-word; white-space:  normal;" >Modifica</label>
                 </a>
             <div class="form-group mt-3">
-                <label for="matricola">Matricola: <font
+                <label for="matricola" style="word-break: break-word; white-space:  normal;">Matricola: <font
                             color="blue"><?php echo($_SESSION['utente']['matr']) ?></font></label>
             </div>
-            <div class="form-group">
-                <label for="nome">Nome: <font color="blue"><?php echo($_SESSION['utente']['nome']) ?></font></label>
+            <div class="form-group" >
+                <label for="nome" style="word-break: break-word; white-space:  normal;">Nome: <font color="blue"><?php echo($_SESSION['utente']['nome']) ?></font></label>
             </div>
             <div class="form-group" id="cognome">
-                <label for="cognome">Cognome: <font
+                <label for="cognome" style="word-break: break-word; white-space:  normal;">Cognome: <font
                             color="blue"><?php echo($_SESSION['utente']['cognome']) ?></font></label>
             </div>
             <?php
@@ -50,13 +50,13 @@ if (($_SESSION['utente']['tipo'])!= "docente") {
                 for($i = 0; $i < count($_SESSION['utente']['cdl']); $i++) {
 
                     $str = $str.'<div class="form-group">
-                                    <label for="CdL'.$i.'">Corso di Laurea: <font color="blue">'.($_SESSION['utente']['cdl'][$i]['nome_cdl']).' </font></label>
+                                    <label style="word-break: break-word; white-space:  normal;" for="CdL'.$i.'">Corso di Laurea: <font color="blue">'.($_SESSION['utente']['cdl'][$i]['nome_cdl']).' </font></label>
                                  </div>';
                 }
                 echo ($str);
             ?>
             <div class="form-group">
-                <label for="Email">Email: <font color="blue"><?php echo($_SESSION['utente']['email']) ?> </font></label>
+                <label style="word-break: break-word; white-space:  normal;" for="Email">Email: <font color="blue"><?php echo($_SESSION['utente']['email']) ?> </font></label>
             </div>
 
         </form>

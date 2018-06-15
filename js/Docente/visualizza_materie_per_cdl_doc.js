@@ -73,14 +73,14 @@ $(document).ready(function() {
 
                                     $(hook).append(' <input id = "stop" style="display: none"/>');
                                     $(hook).append(' <input id="' + materie[this.indexValue].cod_cdl + '" style="display: none" />' +
-                                        '                   <label id="Cdl' + this.indexValue + '" for="CdL' + this.indexValue + '">Lista materie - CdL: <font color="blue">' + nome_cdl + '</font></label>'
+                                        '                   <label style="word-break: break-word; white-space:  normal;" id="Cdl' + this.indexValue + '" for="CdL' + this.indexValue + '">Lista materie - CdL: <font color="blue">' + nome_cdl + '</font></label>'
                                     );
                                     $(hook).append(' <input id = "start" style="display: none"/>');
                                     old_cdl_printed = materie[this.indexValue].cod_cdl;
 
                                 }
                                 $(hook).append('  <div id="' + materie[this.indexValue].id + '_hook" class="form-group" xmlns="http://www.w3.org/1999/html">' +
-                                    '               <input type="checkbox" id="' + materie[this.indexValue].id + '"> ' + materie[this.indexValue].nome + '</input>' +
+                                    '               <input  style="word-break: break-word; white-space:  normal;"type="checkbox" id="' + materie[this.indexValue].id + '"> ' + materie[this.indexValue].nome + '</input>' +
                                     '             </div>');
 
                                 vecchieMaterie(materie[this.indexValue].id, materie[this.indexValue].cod_docente);

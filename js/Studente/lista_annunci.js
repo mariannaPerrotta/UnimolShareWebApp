@@ -70,23 +70,23 @@ $(document).ready(function () {
                                                     '        <div class="card-body">\n' +
                                                     '            <form method="POST" style="padding-left: 0.25%">\n' +
                                                     '                <div class="form-group mt-4">\n' +
-                                                    '                    <label for="titoloannuncio">Titolo:' + ' ' + annunci[i].titolo + '</label>\n' +
+                                                    '                    <label for="titoloannuncio" style="white-space: normal;word-break: break-word; ">Titolo:' + ' ' + annunci[i].titolo + '</label>\n' +
                                                     '                </div>\n' +
                                                     '                <div class="form-group mt-4">\n' +
-                                                    '                    <label for="autoreannuncio">Autore:' + ' ' + annunci[i].autore + '</label>\n' +
+                                                    '                    <label for="autoreannuncio" style="white-space: normal;word-break: break-word; ">Autore:' + ' ' + annunci[i].autore + '</label>\n' +
                                                     '                </div>\n' +
                                                     '                <div class="form-group mt-4">\n' +
-                                                    '                    <label for="prezzoannuncio">Prezzo:' + ' ' + annunci[i].prezzo + '</label>\n' +
+                                                    '                    <label for="prezzoannuncio" style="white-space: normal;word-break: break-word; ">Prezzo:' + ' ' + annunci[i].prezzo + '</label>\n' +
                                                     '                </div>\n' +
                                                     '                <div class="form-group mt-4">\n' +
-                                                    '                       <label for="casa_editrice">Casa Editrice:' + ' ' + annunci[i].casa_editrice + '</label>\n' +
+                                                    '                       <label for="casa_editrice" style="white-space: normal;word-break: break-word; ">Casa Editrice:' + ' ' + annunci[i].casa_editrice + '</label>\n' +
                                                     '                        </div>\n' +
                                                     '                <div class="form-group mt-4">\n' +
-                                                    '                    <label for="edizione">Edizione:' + ' ' + annunci[i].edizione + '</label>\n' +
+                                                    '                    <label for="edizione" style="white-space: normal;word-break: break-word; ">Edizione:' + ' ' + annunci[i].edizione + '</label>\n' +
                                                     '                        </div>\n' +
                                                     '                <div class = "form-group mt-4">\n' +
                                                     '                    <div class = "form-row" style="margin-right: 25%; margin-left: 25%;">\n' +
-                                                    '                        <button type="button" class="btn btn-primary btn-block mt-4" onclick="ContattaVenditore(' + "'" + 'hook' + i + "'" + ')" id="btnContattaVenditore' + i + '" style="color: white">Contatta Venditore</button>\n' +
+                                                    '                        <button style="white-space: normal;word-break: break-word; " type="button" class="btn btn-primary btn-block mt-4" onclick="ContattaVenditore(' + "'" + 'hook' + i + "'" + ')" id="btnContattaVenditore' + i + '" style="color: white">Contatta Venditore</button>\n' +
                                                     '                    </div>\n' +
                                                     '               </div>\n' +
                                                     <!-- Metto già il campo ma lo metto nascosto -->

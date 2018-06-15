@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 
                         $('#cdls').append('<br>' +
-                            '<input id="check_'+array[i].nome+'" type="checkbox" name="' + array[i].nome +'" value="' + array[i].id +'"/> '+ array[i].nome+' </input>'
+                            '<input style=" word-break: break-word; white-space:  normal;" id="check_'+array[i].nome+'" type="checkbox" name="' + array[i].nome +'" value="' + array[i].id +'"/> '+ array[i].nome+' </input>'
 
 
                         );

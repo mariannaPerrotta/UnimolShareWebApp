@@ -27,28 +27,29 @@ if (($_SESSION['utente']['tipo'])!= "studente") {
         <div class="card-header">Il mio profilo</div>
         <div class="card-body">
             <form method="POST">
+
                 <a class="btn btn-primary btn-block ml-auto" href="index.php?action=modifica_profilo" style="padding-left: 0%;color:white;width: 30%"
                    id="btnmodificaprofilo">
                     <i class="fa fa-fw fa-pencil-square-o"> </i>
-                    <label for="modificaprofilo" style="padding-left: auto" >Modifica</label>
+                    <label for="modificaprofilo" style="padding-left: auto; white-space: normal;word-break: break-word;">Modifica</label>
                 </a>
                 <div class="form-group mt-3">
 
-                    <label for="matricola">Matricola: <font
+                    <label for="matricola" style="white-space: normal;word-break: break-word;">Matricola: <font
                                 color="blue"><?php echo($_SESSION['utente']['matr']) ?></font></label>
                 </div>
                 <div class="form-group">
-                    <label for="nome ">Nome: <font color="blue"><?php echo($_SESSION['utente']['nome']) ?></font>
+                    <label for="nome "  style="white-space: normal;word-break: break-word;">Nome: <font color="blue"><?php echo($_SESSION['utente']['nome']) ?></font>
                     </label>
                 </div>
                 <div class="form-group">
-                    <label for="cognome">Cognome: <font
+                    <label for="cognome" style="white-space: normal;word-break: break-word;">Cognome: <font
                                 color="blue"><?php echo($_SESSION['utente']['cognome']) ?> </font></label>
                 </div>
                 <div class="form-group" id="idCdL">
                 </div>
                 <div class="form-group">
-                    <label for="Email">Email: <font
+                    <label for="Email" style="white-space: normal;word-break: break-word;">Email: <font
                                 color="blue"><?php echo($_SESSION['utente']['email']) ?> </font></label>
 
 

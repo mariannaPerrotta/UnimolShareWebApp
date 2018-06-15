@@ -29,7 +29,7 @@
         <div class="form-group">
           <input class="form-control" id="InputEmail1" type="email" aria-describedby="emailHelp" placeholder="Inserisci indirizzo email">
         </div>
-        <a class="btn btn-primary btn-block" id="recupera" style="color:white">Recupera password</a>
+        <a class="btn btn-primary btn-block" id="recupera" style="color:white; white-space: normal;word-break: break-word;">Recupera password</a>
       </form>
       <div class="text-center">
         <a class="d-block small mt-3" href="login.php">Login</a>
